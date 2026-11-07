@@ -1,6 +1,6 @@
 # CAT Intelligence — ten complete practice papers and forecast research
 
-Open the local website at [http://localhost:8000](http://localhost:8000).
+Live website: [cyberanonymous05.github.io/cat-2026-mocks](https://cyberanonymous05.github.io/cat-2026-mocks/). Locally, open [http://localhost:8000](http://localhost:8000) after starting the server below. To publish changes, run `./deploy/publish-github.sh "What changed"`.
 
 - [Topic forecast](topics.html): how many questions to expect from each of twelve Quant topics, the usual question form (MCQ or typed answer), DILR set types and the VARC mix, with IIM Indore's earlier paper tested.
 - [Forecast validation](validation.html): the expanded, source-linked historical study, method comparison, 2026 count forecast and source-sensitivity controls.
