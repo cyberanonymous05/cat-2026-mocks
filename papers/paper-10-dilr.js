@@ -1,0 +1,368 @@
+/* Original CAT-style DILR practice for Paper 10; solved by tests/dilr-series-06-10.py. Not an actual exam paper. */
+(() => {
+window.CAT2026_DILR = [
+  {
+    "id": "D01",
+    "section": "DILR",
+    "topic": "DI · timetable and transfers",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Changing buses",
+    "passage": "Three bus routes serve towns A, B, C and D.\nRoute 1 runs A → B → C. Buses leave A every 20 minutes from 7:00 a.m. to 8:40 a.m.; they take 25 minutes from A to B and 15 more minutes from B to C.\nRoute 2 runs B → D. Buses leave B at 7:10 a.m. and then every 25 minutes; the trip takes 30 minutes.\nRoute 3 runs C → D. Buses leave C at 7:30, 8:15 and 9:00 a.m.; the trip takes 12 minutes.\nA passenger can board any bus that leaves a town at or after the time the passenger reaches it.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "A passenger leaves A on the 7:20 a.m. bus. How many minutes after 7:00 a.m. is the earliest time the passenger can reach D?",
+    "options": [],
+    "answer": "87",
+    "solution": "For each departure from A, compare reaching D by changing at B (next Route 2 bus) with continuing to C (next Route 3 bus).\nLeave A | Reach B | Reach C | Best arrival at D | Change at\n7:00 | 7:25 | 7:40 | 8:05 | B\n7:20 | 7:45 | 8:00 | 8:27 | C\n7:40 | 8:05 | 8:20 | 8:55 | B\n8:00 | 8:25 | 8:40 | 8:55 | B\n8:20 | 8:45 | 9:00 | 9:12 | C\n8:40 | 9:05 | 9:20 | 9:45 | B\n\nChanging at C: reach C at 8:00, leave at 8:15, reach D at 8:27, which is 87 minutes after 7:00. Changing at B gives 8:30."
+  },
+  {
+    "id": "D02",
+    "section": "DILR",
+    "topic": "DI · timetable and transfers",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Changing buses",
+    "passage": "Three bus routes serve towns A, B, C and D.\nRoute 1 runs A → B → C. Buses leave A every 20 minutes from 7:00 a.m. to 8:40 a.m.; they take 25 minutes from A to B and 15 more minutes from B to C.\nRoute 2 runs B → D. Buses leave B at 7:10 a.m. and then every 25 minutes; the trip takes 30 minutes.\nRoute 3 runs C → D. Buses leave C at 7:30, 8:15 and 9:00 a.m.; the trip takes 12 minutes.\nA passenger can board any bus that leaves a town at or after the time the passenger reaches it.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the latest departure from A that still reaches D by 8:30 a.m.?",
+    "options": [
+      "7:40",
+      "7:00",
+      "7:20",
+      "8:00"
+    ],
+    "answer": 2,
+    "solution": "For each departure from A, compare reaching D by changing at B (next Route 2 bus) with continuing to C (next Route 3 bus).\nLeave A | Reach B | Reach C | Best arrival at D | Change at\n7:00 | 7:25 | 7:40 | 8:05 | B\n7:20 | 7:45 | 8:00 | 8:27 | C\n7:40 | 8:05 | 8:20 | 8:55 | B\n8:00 | 8:25 | 8:40 | 8:55 | B\n8:20 | 8:45 | 9:00 | 9:12 | C\n8:40 | 9:05 | 9:20 | 9:45 | B\n\nThe 7:20 bus reaches D at 8:27; the 7:40 bus cannot reach D before 8:55."
+  },
+  {
+    "id": "D03",
+    "section": "DILR",
+    "topic": "DI · timetable and transfers",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Changing buses",
+    "passage": "Three bus routes serve towns A, B, C and D.\nRoute 1 runs A → B → C. Buses leave A every 20 minutes from 7:00 a.m. to 8:40 a.m.; they take 25 minutes from A to B and 15 more minutes from B to C.\nRoute 2 runs B → D. Buses leave B at 7:10 a.m. and then every 25 minutes; the trip takes 30 minutes.\nRoute 3 runs C → D. Buses leave C at 7:30, 8:15 and 9:00 a.m.; the trip takes 12 minutes.\nA passenger can board any bus that leaves a town at or after the time the passenger reaches it.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "A passenger on the 7:00 a.m. bus from A stays on to C. How many minutes must the passenger wait at C for a Route 3 bus?",
+    "options": [],
+    "answer": "35",
+    "solution": "For each departure from A, compare reaching D by changing at B (next Route 2 bus) with continuing to C (next Route 3 bus).\nLeave A | Reach B | Reach C | Best arrival at D | Change at\n7:00 | 7:25 | 7:40 | 8:05 | B\n7:20 | 7:45 | 8:00 | 8:27 | C\n7:40 | 8:05 | 8:20 | 8:55 | B\n8:00 | 8:25 | 8:40 | 8:55 | B\n8:20 | 8:45 | 9:00 | 9:12 | C\n8:40 | 9:05 | 9:20 | 9:45 | B\n\nThe bus reaches C at 7:40 and the next Route 3 bus leaves at 8:15: a wait of 35 minutes."
+  },
+  {
+    "id": "D04",
+    "section": "DILR",
+    "topic": "DI · timetable and transfers",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Changing buses",
+    "passage": "Three bus routes serve towns A, B, C and D.\nRoute 1 runs A → B → C. Buses leave A every 20 minutes from 7:00 a.m. to 8:40 a.m.; they take 25 minutes from A to B and 15 more minutes from B to C.\nRoute 2 runs B → D. Buses leave B at 7:10 a.m. and then every 25 minutes; the trip takes 30 minutes.\nRoute 3 runs C → D. Buses leave C at 7:30, 8:15 and 9:00 a.m.; the trip takes 12 minutes.\nA passenger can board any bus that leaves a town at or after the time the passenger reaches it.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many of the buses leaving A at or before 8:00 a.m. allow a passenger to reach D before 9:00 a.m.?",
+    "options": [
+      "4",
+      "8",
+      "6",
+      "5"
+    ],
+    "answer": 0,
+    "solution": "For each departure from A, compare reaching D by changing at B (next Route 2 bus) with continuing to C (next Route 3 bus).\nLeave A | Reach B | Reach C | Best arrival at D | Change at\n7:00 | 7:25 | 7:40 | 8:05 | B\n7:20 | 7:45 | 8:00 | 8:27 | C\n7:40 | 8:05 | 8:20 | 8:55 | B\n8:00 | 8:25 | 8:40 | 8:55 | B\n8:20 | 8:45 | 9:00 | 9:12 | C\n8:40 | 9:05 | 9:20 | 9:45 | B\n\nBest arrivals at D: 7:00 bus 8:05 (via B), 7:20 bus 8:27 (via C), 7:40 bus 8:55 (via B) and 8:00 bus 8:55 (via B, catching the 8:25 at B). All four arrive before 9:00."
+  },
+  {
+    "id": "D05",
+    "section": "DILR",
+    "topic": "DI · timetable and transfers",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Changing buses",
+    "passage": "Three bus routes serve towns A, B, C and D.\nRoute 1 runs A → B → C. Buses leave A every 20 minutes from 7:00 a.m. to 8:40 a.m.; they take 25 minutes from A to B and 15 more minutes from B to C.\nRoute 2 runs B → D. Buses leave B at 7:10 a.m. and then every 25 minutes; the trip takes 30 minutes.\nRoute 3 runs C → D. Buses leave C at 7:30, 8:15 and 9:00 a.m.; the trip takes 12 minutes.\nA passenger can board any bus that leaves a town at or after the time the passenger reaches it.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "For a passenger who leaves A at 7:40 a.m. and wants the earliest arrival at D, where should the passenger change buses?",
+    "options": [
+      "At B",
+      "At C",
+      "Either B or C; both arrive together",
+      "No change is needed"
+    ],
+    "answer": 0,
+    "solution": "For each departure from A, compare reaching D by changing at B (next Route 2 bus) with continuing to C (next Route 3 bus).\nLeave A | Reach B | Reach C | Best arrival at D | Change at\n7:00 | 7:25 | 7:40 | 8:05 | B\n7:20 | 7:45 | 8:00 | 8:27 | C\n7:40 | 8:05 | 8:20 | 8:55 | B\n8:00 | 8:25 | 8:40 | 8:55 | B\n8:20 | 8:45 | 9:00 | 9:12 | C\n8:40 | 9:05 | 9:20 | 9:45 | B\n\nFrom the 7:40 bus, changing at B (leave 8:25) reaches D at 8:55; changing at C (leave 9:00) reaches D at 9:12."
+  },
+  {
+    "id": "D06",
+    "section": "DILR",
+    "topic": "DI · slab tariff",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Electricity bills",
+    "passage": "A town charges for electricity as follows each month: a fixed charge of ₹50, plus ₹4 per unit for the first 100 units, ₹6 per unit for the next 100 units (units 101 to 200) and ₹8 per unit for every unit above 200. Five households used the following numbers of units last month.\n\nHousehold | Units used\nH1 | 80\nH2 | 150\nH3 | 210\nH4 | 260\nH5 | 120\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What was H4's bill, in rupees?",
+    "options": [],
+    "answer": "1530",
+    "solution": "Bill = ₹50 fixed + ₹4 per unit for the first 100 units + ₹6 per unit for units 101 to 200 + ₹8 per unit above 200.\nHousehold | Units | Bill (₹) | ₹ per unit\nH1 | 80 | 370 | 4.62\nH2 | 150 | 750 | 5.0\nH3 | 210 | 1130 | 5.38\nH4 | 260 | 1530 | 5.88\nH5 | 120 | 570 | 4.75\n\n50 + 400 + 600 + 60 × 8 = ₹1,530."
+  },
+  {
+    "id": "D07",
+    "section": "DILR",
+    "topic": "DI · slab tariff",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Electricity bills",
+    "passage": "A town charges for electricity as follows each month: a fixed charge of ₹50, plus ₹4 per unit for the first 100 units, ₹6 per unit for the next 100 units (units 101 to 200) and ₹8 per unit for every unit above 200. Five households used the following numbers of units last month.\n\nHousehold | Units used\nH1 | 80\nH2 | 150\nH3 | 210\nH4 | 260\nH5 | 120\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Whose bill was closest to ₹1,000?",
+    "options": [
+      "H3",
+      "H5",
+      "H2",
+      "H4"
+    ],
+    "answer": 0,
+    "solution": "Bill = ₹50 fixed + ₹4 per unit for the first 100 units + ₹6 per unit for units 101 to 200 + ₹8 per unit above 200.\nHousehold | Units | Bill (₹) | ₹ per unit\nH1 | 80 | 370 | 4.62\nH2 | 150 | 750 | 5.0\nH3 | 210 | 1130 | 5.38\nH4 | 260 | 1530 | 5.88\nH5 | 120 | 570 | 4.75\n\nBills were 370, 750, 1,130, 1,530 and 570; H3's ₹1,130 is closest."
+  },
+  {
+    "id": "D08",
+    "section": "DILR",
+    "topic": "DI · slab tariff",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Electricity bills",
+    "passage": "A town charges for electricity as follows each month: a fixed charge of ₹50, plus ₹4 per unit for the first 100 units, ₹6 per unit for the next 100 units (units 101 to 200) and ₹8 per unit for every unit above 200. Five households used the following numbers of units last month.\n\nHousehold | Units used\nH1 | 80\nH2 | 150\nH3 | 210\nH4 | 260\nH5 | 120\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What was the total of the five bills, in rupees?",
+    "options": [],
+    "answer": "4350",
+    "solution": "Bill = ₹50 fixed + ₹4 per unit for the first 100 units + ₹6 per unit for units 101 to 200 + ₹8 per unit above 200.\nHousehold | Units | Bill (₹) | ₹ per unit\nH1 | 80 | 370 | 4.62\nH2 | 150 | 750 | 5.0\nH3 | 210 | 1130 | 5.38\nH4 | 260 | 1530 | 5.88\nH5 | 120 | 570 | 4.75\n\n370 + 750 + 1,130 + 1,530 + 570 = ₹4,350."
+  },
+  {
+    "id": "D09",
+    "section": "DILR",
+    "topic": "DI · slab tariff",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Electricity bills",
+    "passage": "A town charges for electricity as follows each month: a fixed charge of ₹50, plus ₹4 per unit for the first 100 units, ₹6 per unit for the next 100 units (units 101 to 200) and ₹8 per unit for every unit above 200. Five households used the following numbers of units last month.\n\nHousehold | Units used\nH1 | 80\nH2 | 150\nH3 | 210\nH4 | 260\nH5 | 120\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If the rate for units 101 to 200 rises from ₹6 to ₹7, by how many rupees does the total of the five bills rise?",
+    "options": [],
+    "answer": "270",
+    "solution": "Bill = ₹50 fixed + ₹4 per unit for the first 100 units + ₹6 per unit for units 101 to 200 + ₹8 per unit above 200.\nHousehold | Units | Bill (₹) | ₹ per unit\nH1 | 80 | 370 | 4.62\nH2 | 150 | 750 | 5.0\nH3 | 210 | 1130 | 5.38\nH4 | 260 | 1530 | 5.88\nH5 | 120 | 570 | 4.75\n\nUnits in that slab: 50 + 100 + 100 + 20 = 270, each ₹1 dearer."
+  },
+  {
+    "id": "D10",
+    "section": "DILR",
+    "topic": "DI · slab tariff",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Electricity bills",
+    "passage": "A town charges for electricity as follows each month: a fixed charge of ₹50, plus ₹4 per unit for the first 100 units, ₹6 per unit for the next 100 units (units 101 to 200) and ₹8 per unit for every unit above 200. Five households used the following numbers of units last month.\n\nHousehold | Units used\nH1 | 80\nH2 | 150\nH3 | 210\nH4 | 260\nH5 | 120\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which household paid the most per unit used, counting the fixed charge?",
+    "options": [
+      "H1",
+      "H3",
+      "H4",
+      "H2"
+    ],
+    "answer": 2,
+    "solution": "Bill = ₹50 fixed + ₹4 per unit for the first 100 units + ₹6 per unit for units 101 to 200 + ₹8 per unit above 200.\nHousehold | Units | Bill (₹) | ₹ per unit\nH1 | 80 | 370 | 4.62\nH2 | 150 | 750 | 5.0\nH3 | 210 | 1130 | 5.38\nH4 | 260 | 1530 | 5.88\nH5 | 120 | 570 | 4.75\n\nPer-unit amounts: H1 4.63, H2 5.00, H3 5.38, H4 5.88, H5 4.75."
+  },
+  {
+    "id": "D11",
+    "section": "DILR",
+    "topic": "LR · scoring combinations",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Archery totals",
+    "passage": "A target has four rings worth 10, 7, 5 and 3 points. An arrow that misses the target scores 0. In a round, an archer shoots exactly six arrows, and the score is the sum of the six arrows. Two rounds are considered the same if the same number of arrows land in each ring.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "In how many different ways can an archer score exactly 40 in a round?",
+    "options": [],
+    "answer": "7",
+    "solution": "Write a, b, c and d for the arrows in the 10, 7, 5 and 3 rings; misses are the rest of the six arrows. Totals are checked over all such splits.\nWays to score 40: 0×10 5×7 1×5 0×3 0 miss; 2×10 0×7 4×5 0×3 0 miss; 2×10 1×7 2×5 1×3 0 miss; 2×10 2×7 0×5 2×3 0 miss; 3×10 0×7 2×5 0×3 1 miss; 3×10 1×7 0×5 1×3 1 miss; 4×10 0×7 0×5 0×3 2 miss\n\nEnumerating every split of six arrows gives the listed ways."
+  },
+  {
+    "id": "D12",
+    "section": "DILR",
+    "topic": "LR · scoring combinations",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Archery totals",
+    "passage": "A target has four rings worth 10, 7, 5 and 3 points. An arrow that misses the target scores 0. In a round, an archer shoots exactly six arrows, and the score is the sum of the six arrows. Two rounds are considered the same if the same number of arrows land in each ring.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which of these round totals is impossible?",
+    "options": [
+      "52",
+      "44",
+      "48",
+      "59"
+    ],
+    "answer": 3,
+    "solution": "Write a, b, c and d for the arrows in the 10, 7, 5 and 3 rings; misses are the rest of the six arrows. Totals are checked over all such splits.\nWays to score 40: 0×10 5×7 1×5 0×3 0 miss; 2×10 0×7 4×5 0×3 0 miss; 2×10 1×7 2×5 1×3 0 miss; 2×10 2×7 0×5 2×3 0 miss; 3×10 0×7 2×5 0×3 1 miss; 3×10 1×7 0×5 1×3 1 miss; 4×10 0×7 0×5 0×3 2 miss\n\nThe top two totals are 60 (six 10s) and 57 (five 10s and a 7); 59 cannot be reached. 52, 48 and 44 are all possible."
+  },
+  {
+    "id": "D13",
+    "section": "DILR",
+    "topic": "LR · scoring combinations",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Archery totals",
+    "passage": "A target has four rings worth 10, 7, 5 and 3 points. An arrow that misses the target scores 0. In a round, an archer shoots exactly six arrows, and the score is the sum of the six arrows. Two rounds are considered the same if the same number of arrows land in each ring.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Raju scored 42 in a round and hit each of the four rings at least once. How many of his arrows hit the 10 ring?",
+    "options": [],
+    "answer": "2",
+    "solution": "Write a, b, c and d for the arrows in the 10, 7, 5 and 3 rings; misses are the rest of the six arrows. Totals are checked over all such splits.\nWays to score 40: 0×10 5×7 1×5 0×3 0 miss; 2×10 0×7 4×5 0×3 0 miss; 2×10 1×7 2×5 1×3 0 miss; 2×10 2×7 0×5 2×3 0 miss; 3×10 0×7 2×5 0×3 1 miss; 3×10 1×7 0×5 1×3 1 miss; 4×10 0×7 0×5 0×3 2 miss\n\nOne arrow in each ring scores 10 + 7 + 5 + 3 = 25 with four arrows. The other two arrows must add 17, and only 10 + 7 does that. So two arrows hit the 10 ring (and two the 7 ring)."
+  },
+  {
+    "id": "D14",
+    "section": "DILR",
+    "topic": "LR · scoring combinations",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Archery totals",
+    "passage": "A target has four rings worth 10, 7, 5 and 3 points. An arrow that misses the target scores 0. In a round, an archer shoots exactly six arrows, and the score is the sum of the six arrows. Two rounds are considered the same if the same number of arrows land in each ring.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the highest possible score in a round in which exactly one arrow misses?",
+    "options": [
+      "54",
+      "51",
+      "50",
+      "52"
+    ],
+    "answer": 2,
+    "solution": "Write a, b, c and d for the arrows in the 10, 7, 5 and 3 rings; misses are the rest of the six arrows. Totals are checked over all such splits.\nWays to score 40: 0×10 5×7 1×5 0×3 0 miss; 2×10 0×7 4×5 0×3 0 miss; 2×10 1×7 2×5 1×3 0 miss; 2×10 2×7 0×5 2×3 0 miss; 3×10 0×7 2×5 0×3 1 miss; 3×10 1×7 0×5 1×3 1 miss; 4×10 0×7 0×5 0×3 2 miss\n\nFive arrows in the 10 ring score 50."
+  },
+  {
+    "id": "D15",
+    "section": "DILR",
+    "topic": "LR · selection with conditions",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Choosing a committee",
+    "passage": "A committee of five is to be chosen from five men M1, M2, M3, M4 and M5 and four women W1, W2, W3 and W4.\nThe committee must include at least two women.\nM1 and W1 cannot both be on the committee.\nIf M2 is on the committee, W2 must also be on it.\nM3 and M4 are either both on the committee or both off it.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many different committees can be formed?",
+    "options": [],
+    "answer": "25",
+    "solution": "Enumerate all 126 five-person groups from the nine people and keep those meeting every rule: 25 committees.\n\nChecking all 126 groups leaves 25."
+  },
+  {
+    "id": "D16",
+    "section": "DILR",
+    "topic": "LR · selection with conditions",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Choosing a committee",
+    "passage": "A committee of five is to be chosen from five men M1, M2, M3, M4 and M5 and four women W1, W2, W3 and W4.\nThe committee must include at least two women.\nM1 and W1 cannot both be on the committee.\nIf M2 is on the committee, W2 must also be on it.\nM3 and M4 are either both on the committee or both off it.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many of the possible committees include M2?",
+    "options": [
+      "10",
+      "14",
+      "12",
+      "11"
+    ],
+    "answer": 0,
+    "solution": "Enumerate all 126 five-person groups from the nine people and keep those meeting every rule: 25 committees.\n\n10 of the committees include M2 (and therefore W2)."
+  },
+  {
+    "id": "D17",
+    "section": "DILR",
+    "topic": "LR · selection with conditions",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Choosing a committee",
+    "passage": "A committee of five is to be chosen from five men M1, M2, M3, M4 and M5 and four women W1, W2, W3 and W4.\nThe committee must include at least two women.\nM1 and W1 cannot both be on the committee.\nIf M2 is on the committee, W2 must also be on it.\nM3 and M4 are either both on the committee or both off it.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many of the possible committees include all four women?",
+    "options": [],
+    "answer": "2",
+    "solution": "Enumerate all 126 five-person groups from the nine people and keep those meeting every rule: 25 committees.\n\nWith all four women, the fifth member must be a man who is not M1 (W1 is present), not M3 or M4 (they come as a pair), so M2 or M5: 2 committees."
+  },
+  {
+    "id": "D18",
+    "section": "DILR",
+    "topic": "LR · selection with conditions",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Choosing a committee",
+    "passage": "A committee of five is to be chosen from five men M1, M2, M3, M4 and M5 and four women W1, W2, W3 and W4.\nThe committee must include at least two women.\nM1 and W1 cannot both be on the committee.\nIf M2 is on the committee, W2 must also be on it.\nM3 and M4 are either both on the committee or both off it.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many of the possible committees have exactly three men?",
+    "options": [
+      "14",
+      "16",
+      "18",
+      "15"
+    ],
+    "answer": 0,
+    "solution": "Enumerate all 126 five-person groups from the nine people and keep those meeting every rule: 25 committees.\n\nThree men means M3 and M4 together with one of M1, M2 or M5, or else M1, M2 and M5; adding two women under the other rules gives 14 committees."
+  },
+  {
+    "id": "D19",
+    "section": "DILR",
+    "topic": "LR · grid with sums",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "A number square",
+    "passage": "The numbers 1 to 9 are written in a 3 × 3 grid, one number per cell, so that the three numbers in every row, every column and each of the two diagonals add up to the same total.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many such grids are possible?",
+    "options": [],
+    "answer": "8",
+    "solution": "Every row, column and diagonal of a 3 × 3 square using 1 to 9 must total 15 (the full total 45 split into three rows). Checking all 362,880 fillings leaves the eight rotations and reflections of one square; the centre is always 5.\n\nThere are eight: one square and its rotations and reflections."
+  },
+  {
+    "id": "D20",
+    "section": "DILR",
+    "topic": "LR · grid with sums",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "A number square",
+    "passage": "The numbers 1 to 9 are written in a 3 × 3 grid, one number per cell, so that the three numbers in every row, every column and each of the two diagonals add up to the same total.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which number is always in the centre cell?",
+    "options": [
+      "1",
+      "5",
+      "4",
+      "9"
+    ],
+    "answer": 1,
+    "solution": "Every row, column and diagonal of a 3 × 3 square using 1 to 9 must total 15 (the full total 45 split into three rows). Checking all 362,880 fillings leaves the eight rotations and reflections of one square; the centre is always 5.\n\nThe four lines through the centre add to 60 and include every other cell once and the centre four times: 45 + 3 × centre = 60, so the centre is 5."
+  },
+  {
+    "id": "D21",
+    "section": "DILR",
+    "topic": "LR · grid with sums",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "A number square",
+    "passage": "The numbers 1 to 9 are written in a 3 × 3 grid, one number per cell, so that the three numbers in every row, every column and each of the two diagonals add up to the same total.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If the top-left cell holds 8 and the top-middle cell holds 1, what number is in the bottom-right cell?",
+    "options": [],
+    "answer": "2",
+    "solution": "Every row, column and diagonal of a 3 × 3 square using 1 to 9 must total 15 (the full total 45 split into three rows). Checking all 362,880 fillings leaves the eight rotations and reflections of one square; the centre is always 5.\n\nThat fixes the square 8 1 6 / 3 5 7 / 4 9 2, so the bottom-right cell holds 2."
+  },
+  {
+    "id": "D22",
+    "section": "DILR",
+    "topic": "LR · grid with sums",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "A number square",
+    "passage": "The numbers 1 to 9 are written in a 3 × 3 grid, one number per cell, so that the three numbers in every row, every column and each of the two diagonals add up to the same total.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the sum of the four corner cells?",
+    "options": [
+      "24",
+      "18",
+      "20",
+      "16"
+    ],
+    "answer": 2,
+    "solution": "Every row, column and diagonal of a 3 × 3 square using 1 to 9 must total 15 (the full total 45 split into three rows). Checking all 362,880 fillings leaves the eight rotations and reflections of one square; the centre is always 5.\n\nThe corners are always the four even numbers 2, 4, 6 and 8, which total 20."
+  }
+];
+})();

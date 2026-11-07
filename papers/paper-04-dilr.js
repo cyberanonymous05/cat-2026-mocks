@@ -1,0 +1,368 @@
+/* Original CAT-style DILR practice; not an actual future exam paper. */
+(() => {
+window.CAT2026_DILR = [
+  {
+    "id": "D01",
+    "section": "DILR",
+    "topic": "DI · weighted price indices",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "What changed in the basket index?",
+    "passage": "A standard basket contains 90 items of types A, B and C. Base prices per item are ₹2, ₹3 and ₹5 respectively. The basket's base cost is ₹270 and its A:B quantity ratio is 4:3. In the next period A's price rises 25%, B's rises 10% and C's rises 20%. Basket quantities remain fixed unless a question explicitly changes them.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many C items does the standard basket contain?",
+    "options": [],
+    "answer": "20",
+    "solution": "Write quantities A = 4t, B = 3t and C = 90 − 7t. The base-cost equation is 8t + 9t + 5(90 − 7t) = 270, giving t = 10. Thus quantities are 40, 30 and 20. New prices are ₹2.50, ₹3.30 and ₹6.00, and new contributions are ₹100, ₹99 and ₹120. Base contributions were ₹80, ₹90 and ₹100.\n\nC = 90 − 70 = 20."
+  },
+  {
+    "id": "D02",
+    "section": "DILR",
+    "topic": "DI · weighted price indices",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "What changed in the basket index?",
+    "passage": "A standard basket contains 90 items of types A, B and C. Base prices per item are ₹2, ₹3 and ₹5 respectively. The basket's base cost is ₹270 and its A:B quantity ratio is 4:3. In the next period A's price rises 25%, B's rises 10% and C's rises 20%. Basket quantities remain fixed unless a question explicitly changes them.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the new cost of the unchanged basket?",
+    "options": [
+      "297",
+      "319",
+      "324",
+      "309"
+    ],
+    "answer": 1,
+    "solution": "Write quantities A = 4t, B = 3t and C = 90 − 7t. The base-cost equation is 8t + 9t + 5(90 − 7t) = 270, giving t = 10. Thus quantities are 40, 30 and 20. New prices are ₹2.50, ₹3.30 and ₹6.00, and new contributions are ₹100, ₹99 and ₹120. Base contributions were ₹80, ₹90 and ₹100.\n\n100 + 99 + 120 = ₹319."
+  },
+  {
+    "id": "D03",
+    "section": "DILR",
+    "topic": "DI · weighted price indices",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "What changed in the basket index?",
+    "passage": "A standard basket contains 90 items of types A, B and C. Base prices per item are ₹2, ₹3 and ₹5 respectively. The basket's base cost is ₹270 and its A:B quantity ratio is 4:3. In the next period A's price rises 25%, B's rises 10% and C's rises 20%. Basket quantities remain fixed unless a question explicitly changes them.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "At the new prices, how many rupees are saved if ten B items are replaced by ten A items?",
+    "options": [],
+    "answer": "8",
+    "solution": "Write quantities A = 4t, B = 3t and C = 90 − 7t. The base-cost equation is 8t + 9t + 5(90 − 7t) = 270, giving t = 10. Thus quantities are 40, 30 and 20. New prices are ₹2.50, ₹3.30 and ₹6.00, and new contributions are ₹100, ₹99 and ₹120. Base contributions were ₹80, ₹90 and ₹100.\n\nThe per-item saving is 3.30 − 2.50 = ₹0.80; ten replacements save ₹8."
+  },
+  {
+    "id": "D04",
+    "section": "DILR",
+    "topic": "DI · weighted price indices",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "What changed in the basket index?",
+    "passage": "A standard basket contains 90 items of types A, B and C. Base prices per item are ₹2, ₹3 and ₹5 respectively. The basket's base cost is ₹270 and its A:B quantity ratio is 4:3. In the next period A's price rises 25%, B's rises 10% and C's rises 20%. Basket quantities remain fixed unless a question explicitly changes them.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which type or types contribute the greatest absolute increase in basket cost?",
+    "options": [
+      "B only",
+      "C only",
+      "A only",
+      "A and C equally"
+    ],
+    "answer": 3,
+    "solution": "Write quantities A = 4t, B = 3t and C = 90 − 7t. The base-cost equation is 8t + 9t + 5(90 − 7t) = 270, giving t = 10. Thus quantities are 40, 30 and 20. New prices are ₹2.50, ₹3.30 and ₹6.00, and new contributions are ₹100, ₹99 and ₹120. Base contributions were ₹80, ₹90 and ₹100.\n\nA adds ₹20, B adds ₹9, and C adds ₹20."
+  },
+  {
+    "id": "D05",
+    "section": "DILR",
+    "topic": "DI · weighted price indices",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "What changed in the basket index?",
+    "passage": "A standard basket contains 90 items of types A, B and C. Base prices per item are ₹2, ₹3 and ₹5 respectively. The basket's base cost is ₹270 and its A:B quantity ratio is 4:3. In the next period A's price rises 25%, B's rises 10% and C's rises 20%. Basket quantities remain fixed unless a question explicitly changes them.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the new fixed-basket price index, with the base period set to 100, rounded to two decimals?",
+    "options": [
+      "118.15",
+      "117.00",
+      "120.00",
+      "118.00"
+    ],
+    "answer": 0,
+    "solution": "Write quantities A = 4t, B = 3t and C = 90 − 7t. The base-cost equation is 8t + 9t + 5(90 − 7t) = 270, giving t = 10. Thus quantities are 40, 30 and 20. New prices are ₹2.50, ₹3.30 and ₹6.00, and new contributions are ₹100, ₹99 and ₹120. Base contributions were ₹80, ₹90 and ₹100.\n\nThe index is 319/270 × 100 = 118.148..., which rounds to 118.15."
+  },
+  {
+    "id": "D06",
+    "section": "DILR",
+    "topic": "LR · resource-constrained scheduling",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Two machines and one technician",
+    "passage": "Five jobs A, B, C, D and E must be completed. Times are measured in whole minutes from time 0. Every start time is a nonnegative integer. Jobs cannot be interrupted, and two jobs cannot use the same machine simultaneously.\nJob | Machine(s) | Duration | Restriction\nA | 1 | 2 | Starts at 0\nB | 2 | 2 | Starts at 1\nC | 1 | 1 | Starts only after A finishes\nD | 2 | 1 | Starts only after B finishes\nE | 1 and 2 | 2 | Starts only after both C and D finish\nC and D each additionally need the same single technician throughout their execution, so they cannot overlap. That technician is unavailable from time 4 inclusive to time 5 exclusive. No other job needs the technician. One job may start exactly when another finishes. Idle time is permitted. Every job must finish by time 8. Two schedules are different if at least one of C, D or E has a different start time.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the earliest possible time at which all jobs are complete?",
+    "options": [],
+    "answer": "6",
+    "solution": "A occupies machine 1 during [0,2), and B occupies machine 2 during [1,3). Consequently C must start at c≥2 and D at d≥3. Their one-minute durations and the common technician imply c≠d; the technician's outage forbids c=4 and d=4. E must start at e≥max(c+1,d+1) and e≤6. Enumerating these integer bounds gives:\nC start | D start | E start | Final completion\n2 | 3 | 4 | 6\n2 | 3 | 5 | 7\n2 | 3 | 6 | 8\n2 | 5 | 6 | 8\n3 | 5 | 6 | 8\n5 | 3 | 6 | 8\nAll unused machine or technician time is allowed to remain idle.\n\nC can run during [2,3), D during [3,4), and E during [4,6). The two one-minute technician jobs cannot both finish before 4, so final completion before 6 is impossible."
+  },
+  {
+    "id": "D07",
+    "section": "DILR",
+    "topic": "LR · resource-constrained scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Two machines and one technician",
+    "passage": "Five jobs A, B, C, D and E must be completed. Times are measured in whole minutes from time 0. Every start time is a nonnegative integer. Jobs cannot be interrupted, and two jobs cannot use the same machine simultaneously.\nJob | Machine(s) | Duration | Restriction\nA | 1 | 2 | Starts at 0\nB | 2 | 2 | Starts at 1\nC | 1 | 1 | Starts only after A finishes\nD | 2 | 1 | Starts only after B finishes\nE | 1 and 2 | 2 | Starts only after both C and D finish\nC and D each additionally need the same single technician throughout their execution, so they cannot overlap. That technician is unavailable from time 4 inclusive to time 5 exclusive. No other job needs the technician. One job may start exactly when another finishes. Idle time is permitted. Every job must finish by time 8. Two schedules are different if at least one of C, D or E has a different start time.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many different complete schedules meet all the conditions?",
+    "options": [
+      "4",
+      "6",
+      "5",
+      "8"
+    ],
+    "answer": 1,
+    "solution": "A occupies machine 1 during [0,2), and B occupies machine 2 during [1,3). Consequently C must start at c≥2 and D at d≥3. Their one-minute durations and the common technician imply c≠d; the technician's outage forbids c=4 and d=4. E must start at e≥max(c+1,d+1) and e≤6. Enumerating these integer bounds gives:\nC start | D start | E start | Final completion\n2 | 3 | 4 | 6\n2 | 3 | 5 | 7\n2 | 3 | 6 | 8\n2 | 5 | 6 | 8\n3 | 5 | 6 | 8\n5 | 3 | 6 | 8\nAll unused machine or technician time is allowed to remain idle.\n\nThe full enumeration has six distinct triples of start times for C, D and E."
+  },
+  {
+    "id": "D08",
+    "section": "DILR",
+    "topic": "LR · resource-constrained scheduling",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Two machines and one technician",
+    "passage": "Five jobs A, B, C, D and E must be completed. Times are measured in whole minutes from time 0. Every start time is a nonnegative integer. Jobs cannot be interrupted, and two jobs cannot use the same machine simultaneously.\nJob | Machine(s) | Duration | Restriction\nA | 1 | 2 | Starts at 0\nB | 2 | 2 | Starts at 1\nC | 1 | 1 | Starts only after A finishes\nD | 2 | 1 | Starts only after B finishes\nE | 1 and 2 | 2 | Starts only after both C and D finish\nC and D each additionally need the same single technician throughout their execution, so they cannot overlap. That technician is unavailable from time 4 inclusive to time 5 exclusive. No other job needs the technician. One job may start exactly when another finishes. Idle time is permitted. Every job must finish by time 8. Two schedules are different if at least one of C, D or E has a different start time.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If E starts at time 6, how many different schedules are possible?",
+    "options": [],
+    "answer": "4",
+    "solution": "A occupies machine 1 during [0,2), and B occupies machine 2 during [1,3). Consequently C must start at c≥2 and D at d≥3. Their one-minute durations and the common technician imply c≠d; the technician's outage forbids c=4 and d=4. E must start at e≥max(c+1,d+1) and e≤6. Enumerating these integer bounds gives:\nC start | D start | E start | Final completion\n2 | 3 | 4 | 6\n2 | 3 | 5 | 7\n2 | 3 | 6 | 8\n2 | 5 | 6 | 8\n3 | 5 | 6 | 8\n5 | 3 | 6 | 8\nAll unused machine or technician time is allowed to remain idle.\n\nThe possible (C,D) start pairs are (2,3), (2,5), (3,5) and (5,3): four schedules."
+  },
+  {
+    "id": "D09",
+    "section": "DILR",
+    "topic": "LR · resource-constrained scheduling",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Two machines and one technician",
+    "passage": "Five jobs A, B, C, D and E must be completed. Times are measured in whole minutes from time 0. Every start time is a nonnegative integer. Jobs cannot be interrupted, and two jobs cannot use the same machine simultaneously.\nJob | Machine(s) | Duration | Restriction\nA | 1 | 2 | Starts at 0\nB | 2 | 2 | Starts at 1\nC | 1 | 1 | Starts only after A finishes\nD | 2 | 1 | Starts only after B finishes\nE | 1 and 2 | 2 | Starts only after both C and D finish\nC and D each additionally need the same single technician throughout their execution, so they cannot overlap. That technician is unavailable from time 4 inclusive to time 5 exclusive. No other job needs the technician. One job may start exactly when another finishes. Idle time is permitted. Every job must finish by time 8. Two schedules are different if at least one of C, D or E has a different start time.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If C starts at time 3 and D at time 5, for how many minutes in total is machine 1 idle from time 0 until E starts?",
+    "options": [],
+    "answer": "3",
+    "solution": "A occupies machine 1 during [0,2), and B occupies machine 2 during [1,3). Consequently C must start at c≥2 and D at d≥3. Their one-minute durations and the common technician imply c≠d; the technician's outage forbids c=4 and d=4. E must start at e≥max(c+1,d+1) and e≤6. Enumerating these integer bounds gives:\nC start | D start | E start | Final completion\n2 | 3 | 4 | 6\n2 | 3 | 5 | 7\n2 | 3 | 6 | 8\n2 | 5 | 6 | 8\n3 | 5 | 6 | 8\n5 | 3 | 6 | 8\nAll unused machine or technician time is allowed to remain idle.\n\nD finishes at 6, forcing E to start at 6 to meet the deadline. Before time 6, machine 1 works for two minutes on A and one minute on C. Its idle time is 6−2−1=3 minutes: [2,3) and [4,6)."
+  },
+  {
+    "id": "D10",
+    "section": "DILR",
+    "topic": "LR · resource-constrained scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Two machines and one technician",
+    "passage": "Five jobs A, B, C, D and E must be completed. Times are measured in whole minutes from time 0. Every start time is a nonnegative integer. Jobs cannot be interrupted, and two jobs cannot use the same machine simultaneously.\nJob | Machine(s) | Duration | Restriction\nA | 1 | 2 | Starts at 0\nB | 2 | 2 | Starts at 1\nC | 1 | 1 | Starts only after A finishes\nD | 2 | 1 | Starts only after B finishes\nE | 1 and 2 | 2 | Starts only after both C and D finish\nC and D each additionally need the same single technician throughout their execution, so they cannot overlap. That technician is unavailable from time 4 inclusive to time 5 exclusive. No other job needs the technician. One job may start exactly when another finishes. Idle time is permitted. Every job must finish by time 8. Two schedules are different if at least one of C, D or E has a different start time.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If every job must instead finish by time 7, which start-time pair for C and D is possible?",
+    "options": [
+      "C at 2, D at 3",
+      "C at 3, D at 5",
+      "C at 5, D at 3",
+      "C at 2, D at 5"
+    ],
+    "answer": 0,
+    "solution": "A occupies machine 1 during [0,2), and B occupies machine 2 during [1,3). Consequently C must start at c≥2 and D at d≥3. Their one-minute durations and the common technician imply c≠d; the technician's outage forbids c=4 and d=4. E must start at e≥max(c+1,d+1) and e≤6. Enumerating these integer bounds gives:\nC start | D start | E start | Final completion\n2 | 3 | 4 | 6\n2 | 3 | 5 | 7\n2 | 3 | 6 | 8\n2 | 5 | 6 | 8\n3 | 5 | 6 | 8\n5 | 3 | 6 | 8\nAll unused machine or technician time is allowed to remain idle.\n\nOnly the first two rows finish by 7. Both have C starting at 2 and D at 3. Each other listed pair forces E to start at 6, so completion is at 8."
+  },
+  {
+    "id": "D11",
+    "section": "DILR",
+    "topic": "DI · percentages with changing bases",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Turnout and a tied election",
+    "passage": "Booths A, B and C have 1250, 1250 and 1000 registered voters respectively. The same percentage of registered voters votes at each booth. Every voter casts one ballot. Invalid ballots are 10% of votes cast at A, 20% at B and 12.5% at C. There are 2400 valid ballots overall. All valid ballots go to candidates R or S. Their valid-vote ratios R:S are 5:4 at A, 3:5 at B and 4:3 at C.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the common turnout percentage?",
+    "options": [],
+    "answer": "80",
+    "solution": "If the common turnout fraction is t, valid ballots total t(1250 × 0.9 + 1250 × 0.8 + 1000 × 0.875) = 3000t = 2400. Thus t = 0.8.\nBooth | Cast | Valid | R | S\nA | 1000 | 900 | 500 | 400\nB | 1000 | 800 | 300 | 500\nC | 800 | 700 | 400 | 300\n\nt = 0.8, so turnout is 80%."
+  },
+  {
+    "id": "D12",
+    "section": "DILR",
+    "topic": "DI · percentages with changing bases",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Turnout and a tied election",
+    "passage": "Booths A, B and C have 1250, 1250 and 1000 registered voters respectively. The same percentage of registered voters votes at each booth. Every voter casts one ballot. Invalid ballots are 10% of votes cast at A, 20% at B and 12.5% at C. There are 2400 valid ballots overall. All valid ballots go to candidates R or S. Their valid-vote ratios R:S are 5:4 at A, 3:5 at B and 4:3 at C.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the overall outcome based on valid ballots?",
+    "options": [
+      "S wins by 100",
+      "R wins by 100",
+      "Tie",
+      "R wins by 200"
+    ],
+    "answer": 2,
+    "solution": "If the common turnout fraction is t, valid ballots total t(1250 × 0.9 + 1250 × 0.8 + 1000 × 0.875) = 3000t = 2400. Thus t = 0.8.\nBooth | Cast | Valid | R | S\nA | 1000 | 900 | 500 | 400\nB | 1000 | 800 | 300 | 500\nC | 800 | 700 | 400 | 300\n\nBoth candidates receive 1200 valid votes."
+  },
+  {
+    "id": "D13",
+    "section": "DILR",
+    "topic": "DI · percentages with changing bases",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Turnout and a tied election",
+    "passage": "Booths A, B and C have 1250, 1250 and 1000 registered voters respectively. The same percentage of registered voters votes at each booth. Every voter casts one ballot. Invalid ballots are 10% of votes cast at A, 20% at B and 12.5% at C. There are 2400 valid ballots overall. All valid ballots go to candidates R or S. Their valid-vote ratios R:S are 5:4 at A, 3:5 at B and 4:3 at C.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many invalid ballots are cast in total?",
+    "options": [],
+    "answer": "400",
+    "solution": "If the common turnout fraction is t, valid ballots total t(1250 × 0.9 + 1250 × 0.8 + 1000 × 0.875) = 3000t = 2400. Thus t = 0.8.\nBooth | Cast | Valid | R | S\nA | 1000 | 900 | 500 | 400\nB | 1000 | 800 | 300 | 500\nC | 800 | 700 | 400 | 300\n\nBallots cast total 2800; subtract 2400 valid ballots to obtain 400 invalid ballots."
+  },
+  {
+    "id": "D14",
+    "section": "DILR",
+    "topic": "DI · percentages with changing bases",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Turnout and a tied election",
+    "passage": "Booths A, B and C have 1250, 1250 and 1000 registered voters respectively. The same percentage of registered voters votes at each booth. Every voter casts one ballot. Invalid ballots are 10% of votes cast at A, 20% at B and 12.5% at C. There are 2400 valid ballots overall. All valid ballots go to candidates R or S. Their valid-vote ratios R:S are 5:4 at A, 3:5 at B and 4:3 at C.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If a recount transfers 10% of S's booth-B votes to R, leaving all else unchanged, what is R's winning margin?",
+    "options": [
+      "150",
+      "50",
+      "200",
+      "100"
+    ],
+    "answer": 3,
+    "solution": "If the common turnout fraction is t, valid ballots total t(1250 × 0.9 + 1250 × 0.8 + 1000 × 0.875) = 3000t = 2400. Thus t = 0.8.\nBooth | Cast | Valid | R | S\nA | 1000 | 900 | 500 | 400\nB | 1000 | 800 | 300 | 500\nC | 800 | 700 | 400 | 300\n\nS has 500 votes at B, so 50 votes transfer. R gains 50 and S loses 50, producing a 100-vote margin."
+  },
+  {
+    "id": "D15",
+    "section": "DILR",
+    "topic": "LR · truth-condition decoding",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Number holders and true statements",
+    "passage": "Five people A, B, C, D and E hold the integers 1, 2, 3, 4 and 5, one distinct integer each. They make the following statements.\nA: 'B's number is greater than mine.'\nB: 'C's number is even.'\nC: 'D's number is either 1 or 5.'\nD: 'A's and E's numbers add to 6.'\nE: 'B's number is 3.'\nExactly two of these five statements are true. The numbers held by the two people whose statements are true add to 7. A statement's truth is determined only by the number assignment; there is no additional rule about permanent truth-tellers or liars.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many assignments of numbers satisfy all the information?",
+    "options": [],
+    "answer": "5",
+    "solution": "The two truthful speakers must hold numbers 2 and 5, or 3 and 4, since their distinct numbers total 7. For each assignment of the five numbers, calculate all five statements and retain it only if exactly two are true and those speakers' numbers total 7. The complete possibilities are:\nA | B | C | D | E | Truthful speakers\n2 | 3 | 1 | 4 | 5 | AE\n2 | 4 | 5 | 1 | 3 | AC\n2 | 5 | 4 | 3 | 1 | AB\n4 | 5 | 1 | 3 | 2 | AD\n5 | 4 | 2 | 3 | 1 | BD\nFor example, in the first row only A's comparison (3>2) and E's claim (B=3) are true; those speakers hold 2 and 5. The other rows are checked in the same way.\n\nThere are five assignments in the exhaustive table."
+  },
+  {
+    "id": "D16",
+    "section": "DILR",
+    "topic": "LR · truth-condition decoding",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Number holders and true statements",
+    "passage": "Five people A, B, C, D and E hold the integers 1, 2, 3, 4 and 5, one distinct integer each. They make the following statements.\nA: 'B's number is greater than mine.'\nB: 'C's number is even.'\nC: 'D's number is either 1 or 5.'\nD: 'A's and E's numbers add to 6.'\nE: 'B's number is 3.'\nExactly two of these five statements are true. The numbers held by the two people whose statements are true add to 7. A statement's truth is determined only by the number assignment; there is no additional rule about permanent truth-tellers or liars.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which pair cannot be exactly the two people making true statements?",
+    "options": [
+      "A and D",
+      "C and E",
+      "A and C",
+      "A and B"
+    ],
+    "answer": 1,
+    "solution": "The two truthful speakers must hold numbers 2 and 5, or 3 and 4, since their distinct numbers total 7. For each assignment of the five numbers, calculate all five statements and retain it only if exactly two are true and those speakers' numbers total 7. The complete possibilities are:\nA | B | C | D | E | Truthful speakers\n2 | 3 | 1 | 4 | 5 | AE\n2 | 4 | 5 | 1 | 3 | AC\n2 | 5 | 4 | 3 | 1 | AB\n4 | 5 | 1 | 3 | 2 | AD\n5 | 4 | 2 | 3 | 1 | BD\nFor example, in the first row only A's comparison (3>2) and E's claim (B=3) are true; those speakers hold 2 and 5. The other rows are checked in the same way.\n\nThe feasible truthful pairs are AE, AC, AB, AD and BD. CE does not occur, whereas each of AB, AC and AD does."
+  },
+  {
+    "id": "D17",
+    "section": "DILR",
+    "topic": "LR · truth-condition decoding",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Number holders and true statements",
+    "passage": "Five people A, B, C, D and E hold the integers 1, 2, 3, 4 and 5, one distinct integer each. They make the following statements.\nA: 'B's number is greater than mine.'\nB: 'C's number is even.'\nC: 'D's number is either 1 or 5.'\nD: 'A's and E's numbers add to 6.'\nE: 'B's number is 3.'\nExactly two of these five statements are true. The numbers held by the two people whose statements are true add to 7. A statement's truth is determined only by the number assignment; there is no additional rule about permanent truth-tellers or liars.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If E holds 1, what is the largest possible product of the numbers held by A and C?",
+    "options": [],
+    "answer": "10",
+    "solution": "The two truthful speakers must hold numbers 2 and 5, or 3 and 4, since their distinct numbers total 7. For each assignment of the five numbers, calculate all five statements and retain it only if exactly two are true and those speakers' numbers total 7. The complete possibilities are:\nA | B | C | D | E | Truthful speakers\n2 | 3 | 1 | 4 | 5 | AE\n2 | 4 | 5 | 1 | 3 | AC\n2 | 5 | 4 | 3 | 1 | AB\n4 | 5 | 1 | 3 | 2 | AD\n5 | 4 | 2 | 3 | 1 | BD\nFor example, in the first row only A's comparison (3>2) and E's claim (B=3) are true; those speakers hold 2 and 5. The other rows are checked in the same way.\n\nTwo assignments have E=1: (A,B,C,D,E)=(2,5,4,3,1) and (5,4,2,3,1). The products A×C are 8 and 10 respectively. Thus the maximum is 10."
+  },
+  {
+    "id": "D18",
+    "section": "DILR",
+    "topic": "LR · truth-condition decoding",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Number holders and true statements",
+    "passage": "Five people A, B, C, D and E hold the integers 1, 2, 3, 4 and 5, one distinct integer each. They make the following statements.\nA: 'B's number is greater than mine.'\nB: 'C's number is even.'\nC: 'D's number is either 1 or 5.'\nD: 'A's and E's numbers add to 6.'\nE: 'B's number is 3.'\nExactly two of these five statements are true. The numbers held by the two people whose statements are true add to 7. A statement's truth is determined only by the number assignment; there is no additional rule about permanent truth-tellers or liars.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the largest number that A can hold?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 3,
+    "solution": "The two truthful speakers must hold numbers 2 and 5, or 3 and 4, since their distinct numbers total 7. For each assignment of the five numbers, calculate all five statements and retain it only if exactly two are true and those speakers' numbers total 7. The complete possibilities are:\nA | B | C | D | E | Truthful speakers\n2 | 3 | 1 | 4 | 5 | AE\n2 | 4 | 5 | 1 | 3 | AC\n2 | 5 | 4 | 3 | 1 | AB\n4 | 5 | 1 | 3 | 2 | AD\n5 | 4 | 2 | 3 | 1 | BD\nFor example, in the first row only A's comparison (3>2) and E's claim (B=3) are true; those speakers hold 2 and 5. The other rows are checked in the same way.\n\nA can hold 2, 4 or 5. In the final row A holds 5 and only B and D are truthful, holding 4 and 3. Hence 5 is attainable and is the maximum."
+  },
+  {
+    "id": "D19",
+    "section": "DILR",
+    "topic": "DI · rates and duration ratios",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "Three phases of filling a reservoir",
+    "passage": "An empty 720-litre reservoir is filled using inlet P at 30 litres/minute and inlet Q at 20 litres/minute. A leak removes 10 litres/minute whenever water is present. First only P runs for a minutes; next P and Q run together for b minutes; finally only Q runs for c minutes. The phase durations satisfy a:b = 3:2 and c = 2b. The reservoir becomes exactly full at the end of the third phase and never overflows.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many minutes does the middle phase last?",
+    "options": [],
+    "answer": "8",
+    "solution": "Net filling rates in the phases are 20, 40 and 10 litres/minute. Put a = 3t, b = 2t and c = 4t. Then total water is 60t + 80t + 40t = 180t = 720, giving t = 4 and durations 12, 8 and 16 minutes. The phases contribute 240, 320 and 160 litres. Total time is 36 minutes; gross inflow is 1080 litres and leak loss is 360 litres.\n\nb = 2t = 8."
+  },
+  {
+    "id": "D20",
+    "section": "DILR",
+    "topic": "DI · rates and duration ratios",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "Three phases of filling a reservoir",
+    "passage": "An empty 720-litre reservoir is filled using inlet P at 30 litres/minute and inlet Q at 20 litres/minute. A leak removes 10 litres/minute whenever water is present. First only P runs for a minutes; next P and Q run together for b minutes; finally only Q runs for c minutes. The phase durations satisfy a:b = 3:2 and c = 2b. The reservoir becomes exactly full at the end of the third phase and never overflows.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What fraction of final water is added during the middle phase?",
+    "options": [
+      "2/5",
+      "4/9",
+      "1/2",
+      "1/3"
+    ],
+    "answer": 1,
+    "solution": "Net filling rates in the phases are 20, 40 and 10 litres/minute. Put a = 3t, b = 2t and c = 4t. Then total water is 60t + 80t + 40t = 180t = 720, giving t = 4 and durations 12, 8 and 16 minutes. The phases contribute 240, 320 and 160 litres. Total time is 36 minutes; gross inflow is 1080 litres and leak loss is 360 litres.\n\nIts 320 litres form 320/720 = 4/9 of the final contents."
+  },
+  {
+    "id": "D21",
+    "section": "DILR",
+    "topic": "DI · rates and duration ratios",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "Three phases of filling a reservoir",
+    "passage": "An empty 720-litre reservoir is filled using inlet P at 30 litres/minute and inlet Q at 20 litres/minute. A leak removes 10 litres/minute whenever water is present. First only P runs for a minutes; next P and Q run together for b minutes; finally only Q runs for c minutes. The phase durations satisfy a:b = 3:2 and c = 2b. The reservoir becomes exactly full at the end of the third phase and never overflows.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many litres escape through the leak during the entire process?",
+    "options": [],
+    "answer": "360",
+    "solution": "Net filling rates in the phases are 20, 40 and 10 litres/minute. Put a = 3t, b = 2t and c = 4t. Then total water is 60t + 80t + 40t = 180t = 720, giving t = 4 and durations 12, 8 and 16 minutes. The phases contribute 240, 320 and 160 litres. Total time is 36 minutes; gross inflow is 1080 litres and leak loss is 360 litres.\n\nWater is present after filling starts, and the leak operates for 36 minutes: 10 × 36 = 360 litres."
+  },
+  {
+    "id": "D22",
+    "section": "DILR",
+    "topic": "DI · rates and duration ratios",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "Three phases of filling a reservoir",
+    "passage": "An empty 720-litre reservoir is filled using inlet P at 30 litres/minute and inlet Q at 20 litres/minute. A leak removes 10 litres/minute whenever water is present. First only P runs for a minutes; next P and Q run together for b minutes; finally only Q runs for c minutes. The phase durations satisfy a:b = 3:2 and c = 2b. The reservoir becomes exactly full at the end of the third phase and never overflows.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If the leak were blocked but the same inlet schedule were run in a larger initially empty reservoir, what capacity would just avoid overflow?",
+    "options": [
+      "1200",
+      "960",
+      "900",
+      "1080"
+    ],
+    "answer": 3,
+    "solution": "Net filling rates in the phases are 20, 40 and 10 litres/minute. Put a = 3t, b = 2t and c = 4t. Then total water is 60t + 80t + 40t = 180t = 720, giving t = 4 and durations 12, 8 and 16 minutes. The phases contribute 240, 320 and 160 litres. Total time is 36 minutes; gross inflow is 1080 litres and leak loss is 360 litres.\n\nGross inflow is 30(12 + 8) + 20(8 + 16) = 600 + 480 = 1080 litres."
+  }
+];
+})();

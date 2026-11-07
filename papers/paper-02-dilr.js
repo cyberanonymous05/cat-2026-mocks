@@ -1,0 +1,368 @@
+/* Original CAT-style DILR practice; not an actual future exam paper. */
+(() => {
+window.CAT2026_DILR = [
+  {
+    "id": "D01",
+    "section": "DILR",
+    "topic": "DI · transfers and missing stocks",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Four-depot stock reconciliation",
+    "passage": "Four depots A, B, C and D together initially hold 400 sealed crates. They simultaneously make these transfers: A sends 20 to B; B sends 15 to C; C sends 10 to D; D sends 5 to A. There are no other receipts, dispatches or losses. After the transfers, A:B stocks are 5:7 and C:D stocks are 25:19. Before the transfers, C held exactly four-thirds as many crates as A. All stocks are whole crates.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many crates did B hold initially?",
+    "options": [],
+    "answer": "100",
+    "solution": "The transfers change A, B, C and D by −15, +5, +5 and +5. Put their final stocks at 5k, 7k, 25m and 19m. Then 12k + 44m = 400 and 3(25m − 5) = 4(5k + 15). Solving gives k = 15 and m = 5.\nDepot | Before | After\nA | 90 | 75\nB | 100 | 105\nC | 120 | 125\nD | 90 | 95\n\nB initially held 105 − 5 = 100 crates."
+  },
+  {
+    "id": "D02",
+    "section": "DILR",
+    "topic": "DI · transfers and missing stocks",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Four-depot stock reconciliation",
+    "passage": "Four depots A, B, C and D together initially hold 400 sealed crates. They simultaneously make these transfers: A sends 20 to B; B sends 15 to C; C sends 10 to D; D sends 5 to A. There are no other receipts, dispatches or losses. After the transfers, A:B stocks are 5:7 and C:D stocks are 25:19. Before the transfers, C held exactly four-thirds as many crates as A. All stocks are whole crates.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which depot has the greatest final stock?",
+    "options": [
+      "C",
+      "A",
+      "B",
+      "D"
+    ],
+    "answer": 0,
+    "solution": "The transfers change A, B, C and D by −15, +5, +5 and +5. Put their final stocks at 5k, 7k, 25m and 19m. Then 12k + 44m = 400 and 3(25m − 5) = 4(5k + 15). Solving gives k = 15 and m = 5.\nDepot | Before | After\nA | 90 | 75\nB | 100 | 105\nC | 120 | 125\nD | 90 | 95\n\nFinal stocks are 75, 105, 125 and 95; C is greatest."
+  },
+  {
+    "id": "D03",
+    "section": "DILR",
+    "topic": "DI · transfers and missing stocks",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Four-depot stock reconciliation",
+    "passage": "Four depots A, B, C and D together initially hold 400 sealed crates. They simultaneously make these transfers: A sends 20 to B; B sends 15 to C; C sends 10 to D; D sends 5 to A. There are no other receipts, dispatches or losses. After the transfers, A:B stocks are 5:7 and C:D stocks are 25:19. Before the transfers, C held exactly four-thirds as many crates as A. All stocks are whole crates.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "After the stated transfers, how many crates must B send to D to make their stocks equal?",
+    "options": [],
+    "answer": "5",
+    "solution": "The transfers change A, B, C and D by −15, +5, +5 and +5. Put their final stocks at 5k, 7k, 25m and 19m. Then 12k + 44m = 400 and 3(25m − 5) = 4(5k + 15). Solving gives k = 15 and m = 5.\nDepot | Before | After\nA | 90 | 75\nB | 100 | 105\nC | 120 | 125\nD | 90 | 95\n\n105 − x = 95 + x gives x = 5."
+  },
+  {
+    "id": "D04",
+    "section": "DILR",
+    "topic": "DI · transfers and missing stocks",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Four-depot stock reconciliation",
+    "passage": "Four depots A, B, C and D together initially hold 400 sealed crates. They simultaneously make these transfers: A sends 20 to B; B sends 15 to C; C sends 10 to D; D sends 5 to A. There are no other receipts, dispatches or losses. After the transfers, A:B stocks are 5:7 and C:D stocks are 25:19. Before the transfers, C held exactly four-thirds as many crates as A. All stocks are whole crates.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which depot has the greatest percentage increase relative to its own initial stock?",
+    "options": [
+      "A",
+      "D",
+      "B",
+      "C"
+    ],
+    "answer": 1,
+    "solution": "The transfers change A, B, C and D by −15, +5, +5 and +5. Put their final stocks at 5k, 7k, 25m and 19m. Then 12k + 44m = 400 and 3(25m − 5) = 4(5k + 15). Solving gives k = 15 and m = 5.\nDepot | Before | After\nA | 90 | 75\nB | 100 | 105\nC | 120 | 125\nD | 90 | 95\n\nB, C and D each gain five, but D's initial base is smallest: 5/90 exceeds 5/100 and 5/120. A loses stock."
+  },
+  {
+    "id": "D05",
+    "section": "DILR",
+    "topic": "DI · transfers and missing stocks",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Four-depot stock reconciliation",
+    "passage": "Four depots A, B, C and D together initially hold 400 sealed crates. They simultaneously make these transfers: A sends 20 to B; B sends 15 to C; C sends 10 to D; D sends 5 to A. There are no other receipts, dispatches or losses. After the transfers, A:B stocks are 5:7 and C:D stocks are 25:19. Before the transfers, C held exactly four-thirds as many crates as A. All stocks are whole crates.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the smallest combined final stock of any two depots?",
+    "options": [
+      "200",
+      "190",
+      "170",
+      "180"
+    ],
+    "answer": 2,
+    "solution": "The transfers change A, B, C and D by −15, +5, +5 and +5. Put their final stocks at 5k, 7k, 25m and 19m. Then 12k + 44m = 400 and 3(25m − 5) = 4(5k + 15). Solving gives k = 15 and m = 5.\nDepot | Before | After\nA | 90 | 75\nB | 100 | 105\nC | 120 | 125\nD | 90 | 95\n\nChoose A and D: 75 + 95 = 170."
+  },
+  {
+    "id": "D06",
+    "section": "DILR",
+    "topic": "LR · circular arrangement",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Seats around the circular table",
+    "passage": "Eight people A through H occupy eight equally spaced seats around a circular table. Number the positions 1 to 8 clockwise, and fix A in position 1. E is in position 4, 5 or 6. C is immediately clockwise from B, and F is immediately clockwise from D. G is opposite C. H is adjacent to E. Every person occupies one seat. A gap of two clockwise positions means one occupied seat lies between the two people.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many seating arrangements satisfy every condition?",
+    "options": [],
+    "answer": "3",
+    "solution": "Fix A in position 1 to remove rotational duplicates. B–C and D–F must each be clockwise adjacent blocks; G is opposite C. Checking the permitted E positions and the H adjacency leaves exactly:\nADFGEHBC\nADFGHEBC\nAGHEBCDF\nEach row lists positions 1 through 8 clockwise. Mirror images are distinct because clockwise conditions matter.\n\nThe exhaustive block placement gives the three displayed orders."
+  },
+  {
+    "id": "D07",
+    "section": "DILR",
+    "topic": "LR · circular arrangement",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Seats around the circular table",
+    "passage": "Eight people A through H occupy eight equally spaced seats around a circular table. Number the positions 1 to 8 clockwise, and fix A in position 1. E is in position 4, 5 or 6. C is immediately clockwise from B, and F is immediately clockwise from D. G is opposite C. H is adjacent to E. Every person occupies one seat. A gap of two clockwise positions means one occupied seat lies between the two people.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which person cannot be opposite A?",
+    "options": [
+      "B",
+      "F",
+      "H",
+      "E"
+    ],
+    "answer": 1,
+    "solution": "Fix A in position 1 to remove rotational duplicates. B–C and D–F must each be clockwise adjacent blocks; G is opposite C. Checking the permitted E positions and the H adjacency leaves exactly:\nADFGEHBC\nADFGHEBC\nAGHEBCDF\nEach row lists positions 1 through 8 clockwise. Mirror images are distinct because clockwise conditions matter.\n\nThe persons opposite A in the three orders are E, H and B; never F."
+  },
+  {
+    "id": "D08",
+    "section": "DILR",
+    "topic": "LR · circular arrangement",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Seats around the circular table",
+    "passage": "Eight people A through H occupy eight equally spaced seats around a circular table. Number the positions 1 to 8 clockwise, and fix A in position 1. E is in position 4, 5 or 6. C is immediately clockwise from B, and F is immediately clockwise from D. G is opposite C. H is adjacent to E. Every person occupies one seat. A gap of two clockwise positions means one occupied seat lies between the two people.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If E is opposite A, what is F's position number?",
+    "options": [],
+    "answer": "3",
+    "solution": "Fix A in position 1 to remove rotational duplicates. B–C and D–F must each be clockwise adjacent blocks; G is opposite C. Checking the permitted E positions and the H adjacency leaves exactly:\nADFGEHBC\nADFGHEBC\nAGHEBCDF\nEach row lists positions 1 through 8 clockwise. Mirror images are distinct because clockwise conditions matter.\n\nOnly ADFGEHBC has E opposite A. F occupies position 3."
+  },
+  {
+    "id": "D09",
+    "section": "DILR",
+    "topic": "LR · circular arrangement",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Seats around the circular table",
+    "passage": "Eight people A through H occupy eight equally spaced seats around a circular table. Number the positions 1 to 8 clockwise, and fix A in position 1. E is in position 4, 5 or 6. C is immediately clockwise from B, and F is immediately clockwise from D. G is opposite C. H is adjacent to E. Every person occupies one seat. A gap of two clockwise positions means one occupied seat lies between the two people.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If H is two positions clockwise from G, how many people lie strictly between C and D when travelling clockwise from C?",
+    "options": [],
+    "answer": "1",
+    "solution": "Fix A in position 1 to remove rotational duplicates. B–C and D–F must each be clockwise adjacent blocks; G is opposite C. Checking the permitted E positions and the H adjacency leaves exactly:\nADFGEHBC\nADFGHEBC\nAGHEBCDF\nEach row lists positions 1 through 8 clockwise. Mirror images are distinct because clockwise conditions matter.\n\nOnly ADFGEHBC satisfies the extra condition. Clockwise from C to D, only A lies between them, so the answer is 1."
+  },
+  {
+    "id": "D10",
+    "section": "DILR",
+    "topic": "LR · circular arrangement",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Seats around the circular table",
+    "passage": "Eight people A through H occupy eight equally spaced seats around a circular table. Number the positions 1 to 8 clockwise, and fix A in position 1. E is in position 4, 5 or 6. C is immediately clockwise from B, and F is immediately clockwise from D. G is opposite C. H is adjacent to E. Every person occupies one seat. A gap of two clockwise positions means one occupied seat lies between the two people.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Who can occupy the position immediately clockwise from A?",
+    "options": [
+      "D or G only",
+      "D only",
+      "D, F or G",
+      "F or G only"
+    ],
+    "answer": 0,
+    "solution": "Fix A in position 1 to remove rotational duplicates. B–C and D–F must each be clockwise adjacent blocks; G is opposite C. Checking the permitted E positions and the H adjacency leaves exactly:\nADFGEHBC\nADFGHEBC\nAGHEBCDF\nEach row lists positions 1 through 8 clockwise. Mirror images are distinct because clockwise conditions matter.\n\nThe three arrangements have D, D and G in position 2."
+  },
+  {
+    "id": "D11",
+    "section": "DILR",
+    "topic": "DI · three-set overlap",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Course-registration overlap",
+    "passage": "A college has 150 students. Courses A, B and C have 90, 80 and 70 registrants respectively. Exactly 135 students take at least one of them. The numbers taking both A and B, both A and C, and both B and C are 50, 40 and 35 respectively; each of these pair counts includes students taking all three. A student may take zero, one, two or all three courses.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many students take all three courses?",
+    "options": [],
+    "answer": "20",
+    "solution": "Inclusion–exclusion gives 135 = 90 + 80 + 70 − 50 − 40 − 35 + t, hence t = 20. Subtract t from each pair total before obtaining single-course regions.\nRegion | Students\nA only | 20\nB only | 15\nC only | 15\nAB only | 30\nAC only | 20\nBC only | 15\nABC | 20\nNone | 15\n\nThe inclusion–exclusion equation gives 20."
+  },
+  {
+    "id": "D12",
+    "section": "DILR",
+    "topic": "DI · three-set overlap",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Course-registration overlap",
+    "passage": "A college has 150 students. Courses A, B and C have 90, 80 and 70 registrants respectively. Exactly 135 students take at least one of them. The numbers taking both A and B, both A and C, and both B and C are 50, 40 and 35 respectively; each of these pair counts includes students taking all three. A student may take zero, one, two or all three courses.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many students take exactly two courses?",
+    "options": [
+      "45",
+      "85",
+      "50",
+      "65"
+    ],
+    "answer": 3,
+    "solution": "Inclusion–exclusion gives 135 = 90 + 80 + 70 − 50 − 40 − 35 + t, hence t = 20. Subtract t from each pair total before obtaining single-course regions.\nRegion | Students\nA only | 20\nB only | 15\nC only | 15\nAB only | 30\nAC only | 20\nBC only | 15\nABC | 20\nNone | 15\n\nAdd the pair-only regions: 30 + 20 + 15 = 65."
+  },
+  {
+    "id": "D13",
+    "section": "DILR",
+    "topic": "DI · three-set overlap",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Course-registration overlap",
+    "passage": "A college has 150 students. Courses A, B and C have 90, 80 and 70 registrants respectively. Exactly 135 students take at least one of them. The numbers taking both A and B, both A and C, and both B and C are 50, 40 and 35 respectively; each of these pair counts includes students taking all three. A student may take zero, one, two or all three courses.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many students take A but neither B nor C?",
+    "options": [],
+    "answer": "20",
+    "solution": "Inclusion–exclusion gives 135 = 90 + 80 + 70 − 50 − 40 − 35 + t, hence t = 20. Subtract t from each pair total before obtaining single-course regions.\nRegion | Students\nA only | 20\nB only | 15\nC only | 15\nAB only | 30\nAC only | 20\nBC only | 15\nABC | 20\nNone | 15\n\nA-only = 90 − 50 − 40 + 20 = 20."
+  },
+  {
+    "id": "D14",
+    "section": "DILR",
+    "topic": "DI · three-set overlap",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Course-registration overlap",
+    "passage": "A college has 150 students. Courses A, B and C have 90, 80 and 70 registrants respectively. Exactly 135 students take at least one of them. The numbers taking both A and B, both A and C, and both B and C are 50, 40 and 35 respectively; each of these pair counts includes students taking all three. A student may take zero, one, two or all three courses.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Among C registrants, what fraction take exactly two courses?",
+    "options": [
+      "1/2",
+      "5/7",
+      "2/7",
+      "3/7"
+    ],
+    "answer": 0,
+    "solution": "Inclusion–exclusion gives 135 = 90 + 80 + 70 − 50 − 40 − 35 + t, hence t = 20. Subtract t from each pair total before obtaining single-course regions.\nRegion | Students\nA only | 20\nB only | 15\nC only | 15\nAB only | 30\nAC only | 20\nBC only | 15\nABC | 20\nNone | 15\n\nOf C's 70 registrants, AC-only + BC-only = 20 + 15 = 35 take exactly two; 35/70 = 1/2."
+  },
+  {
+    "id": "D15",
+    "section": "DILR",
+    "topic": "DI · network conservation with losses",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Deliveries with transit loss",
+    "passage": "Hub A receives 80 packages and hub B receives 120. Each hub sends every package to either C or D. Exactly one quarter of packages sent on A→C are damaged and discarded before arrival; none are lost on A→D or B→C. Exactly one fifth of packages sent on B→D are damaged and discarded. C receives 100 usable packages and D receives 80. No other routes or losses exist, and all numbers of packages sent and lost are integers.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many packages were sent on A→C?",
+    "options": [],
+    "answer": "40",
+    "solution": "Let x be packages sent A→C and y those sent B→C. Then 3x/4 + y = 100 and (80 − x) + 4(120 − y)/5 = 80. Solving gives x = 40 and y = 70. The sent/usable route counts are A→C 40/30, A→D 40/40, B→C 70/70 and B→D 50/40.\n\nThe simultaneous conservation equations give x = 40."
+  },
+  {
+    "id": "D16",
+    "section": "DILR",
+    "topic": "DI · network conservation with losses",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Deliveries with transit loss",
+    "passage": "Hub A receives 80 packages and hub B receives 120. Each hub sends every package to either C or D. Exactly one quarter of packages sent on A→C are damaged and discarded before arrival; none are lost on A→D or B→C. Exactly one fifth of packages sent on B→D are damaged and discarded. C receives 100 usable packages and D receives 80. No other routes or losses exist, and all numbers of packages sent and lost are integers.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many usable packages does D receive from B?",
+    "options": [
+      "40",
+      "60",
+      "30",
+      "50"
+    ],
+    "answer": 0,
+    "solution": "Let x be packages sent A→C and y those sent B→C. Then 3x/4 + y = 100 and (80 − x) + 4(120 − y)/5 = 80. Solving gives x = 40 and y = 70. The sent/usable route counts are A→C 40/30, A→D 40/40, B→C 70/70 and B→D 50/40.\n\nB sends 120 − 70 = 50 towards D; four fifths, or 40, arrive usable."
+  },
+  {
+    "id": "D17",
+    "section": "DILR",
+    "topic": "DI · network conservation with losses",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Deliveries with transit loss",
+    "passage": "Hub A receives 80 packages and hub B receives 120. Each hub sends every package to either C or D. Exactly one quarter of packages sent on A→C are damaged and discarded before arrival; none are lost on A→D or B→C. Exactly one fifth of packages sent on B→D are damaged and discarded. C receives 100 usable packages and D receives 80. No other routes or losses exist, and all numbers of packages sent and lost are integers.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many packages are damaged in total?",
+    "options": [],
+    "answer": "20",
+    "solution": "Let x be packages sent A→C and y those sent B→C. Then 3x/4 + y = 100 and (80 − x) + 4(120 − y)/5 = 80. Solving gives x = 40 and y = 70. The sent/usable route counts are A→C 40/30, A→D 40/40, B→C 70/70 and B→D 50/40.\n\nUsable arrivals total 180 against 200 dispatched; the difference is 20."
+  },
+  {
+    "id": "D18",
+    "section": "DILR",
+    "topic": "DI · network conservation with losses",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Deliveries with transit loss",
+    "passage": "Hub A receives 80 packages and hub B receives 120. Each hub sends every package to either C or D. Exactly one quarter of packages sent on A→C are damaged and discarded before arrival; none are lost on A→D or B→C. Exactly one fifth of packages sent on B→D are damaged and discarded. C receives 100 usable packages and D receives 80. No other routes or losses exist, and all numbers of packages sent and lost are integers.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What percentage of C's usable arrivals came from B?",
+    "options": [
+      "60%",
+      "70%",
+      "75%",
+      "80%"
+    ],
+    "answer": 1,
+    "solution": "Let x be packages sent A→C and y those sent B→C. Then 3x/4 + y = 100 and (80 − x) + 4(120 − y)/5 = 80. Solving gives x = 40 and y = 70. The sent/usable route counts are A→C 40/30, A→D 40/40, B→C 70/70 and B→D 50/40.\n\nB supplies 70 of C's 100 usable arrivals."
+  },
+  {
+    "id": "D19",
+    "section": "DILR",
+    "topic": "LR · selection and optimisation",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "Three-project development portfolio",
+    "passage": "A council chooses exactly three of eight projects. Total cost must not exceed 12 units and total risk must not exceed 6. Benefits add. Exactly one of A and B must be chosen. If C is chosen, D must also be chosen. There are no other restrictions.\nProject | Cost | Risk | Benefit\nA | 4 | 2 | 9\nB | 5 | 3 | 12\nC | 3 | 3 | 8\nD | 4 | 1 | 7\nE | 6 | 2 | 15\nF | 2 | 2 | 6\nG | 5 | 4 | 14\nH | 3 | 1 | 8\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many feasible portfolios are there?",
+    "options": [],
+    "answer": "8",
+    "solution": "Enumerate the triples with exactly one of A and B, apply C's prerequisite, and reject excess cost or risk. The complete feasible table is:\nProjects | Cost | Risk | Benefit\nACD | 11 | 6 | 24\nADF | 10 | 5 | 22\nADH | 11 | 4 | 24\nAEF | 12 | 6 | 30\nAFH | 9 | 5 | 23\nBDF | 11 | 6 | 25\nBDH | 12 | 5 | 27\nBFH | 10 | 6 | 26\n\nEight triples survive every restriction."
+  },
+  {
+    "id": "D20",
+    "section": "DILR",
+    "topic": "LR · selection and optimisation",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "Three-project development portfolio",
+    "passage": "A council chooses exactly three of eight projects. Total cost must not exceed 12 units and total risk must not exceed 6. Benefits add. Exactly one of A and B must be chosen. If C is chosen, D must also be chosen. There are no other restrictions.\nProject | Cost | Risk | Benefit\nA | 4 | 2 | 9\nB | 5 | 3 | 12\nC | 3 | 3 | 8\nD | 4 | 1 | 7\nE | 6 | 2 | 15\nF | 2 | 2 | 6\nG | 5 | 4 | 14\nH | 3 | 1 | 8\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which portfolio has the maximum benefit?",
+    "options": [
+      "BFH",
+      "ACD",
+      "AEF",
+      "BDH"
+    ],
+    "answer": 2,
+    "solution": "Enumerate the triples with exactly one of A and B, apply C's prerequisite, and reject excess cost or risk. The complete feasible table is:\nProjects | Cost | Risk | Benefit\nACD | 11 | 6 | 24\nADF | 10 | 5 | 22\nADH | 11 | 4 | 24\nAEF | 12 | 6 | 30\nAFH | 9 | 5 | 23\nBDF | 11 | 6 | 25\nBDH | 12 | 5 | 27\nBFH | 10 | 6 | 26\n\nAEF has benefit 30, exceeding the next-best BDH at 27."
+  },
+  {
+    "id": "D21",
+    "section": "DILR",
+    "topic": "LR · selection and optimisation",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "Three-project development portfolio",
+    "passage": "A council chooses exactly three of eight projects. Total cost must not exceed 12 units and total risk must not exceed 6. Benefits add. Exactly one of A and B must be chosen. If C is chosen, D must also be chosen. There are no other restrictions.\nProject | Cost | Risk | Benefit\nA | 4 | 2 | 9\nB | 5 | 3 | 12\nC | 3 | 3 | 8\nD | 4 | 1 | 7\nE | 6 | 2 | 15\nF | 2 | 2 | 6\nG | 5 | 4 | 14\nH | 3 | 1 | 8\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If H must be selected, what is the largest attainable benefit?",
+    "options": [],
+    "answer": "27",
+    "solution": "Enumerate the triples with exactly one of A and B, apply C's prerequisite, and reject excess cost or risk. The complete feasible table is:\nProjects | Cost | Risk | Benefit\nACD | 11 | 6 | 24\nADF | 10 | 5 | 22\nADH | 11 | 4 | 24\nAEF | 12 | 6 | 30\nAFH | 9 | 5 | 23\nBDF | 11 | 6 | 25\nBDH | 12 | 5 | 27\nBFH | 10 | 6 | 26\n\nThe feasible H portfolios are ADH, AFH, BDH and BFH; their benefits are 24, 23, 27 and 26. The maximum is 27."
+  },
+  {
+    "id": "D22",
+    "section": "DILR",
+    "topic": "LR · selection and optimisation",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "Three-project development portfolio",
+    "passage": "A council chooses exactly three of eight projects. Total cost must not exceed 12 units and total risk must not exceed 6. Benefits add. Exactly one of A and B must be chosen. If C is chosen, D must also be chosen. There are no other restrictions.\nProject | Cost | Risk | Benefit\nA | 4 | 2 | 9\nB | 5 | 3 | 12\nC | 3 | 3 | 8\nD | 4 | 1 | 7\nE | 6 | 2 | 15\nF | 2 | 2 | 6\nG | 5 | 4 | 14\nH | 3 | 1 | 8\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the minimum cost among feasible portfolios with benefit at least 25?",
+    "options": [
+      "12",
+      "11",
+      "10",
+      "9"
+    ],
+    "answer": 2,
+    "solution": "Enumerate the triples with exactly one of A and B, apply C's prerequisite, and reject excess cost or risk. The complete feasible table is:\nProjects | Cost | Risk | Benefit\nACD | 11 | 6 | 24\nADF | 10 | 5 | 22\nADH | 11 | 4 | 24\nAEF | 12 | 6 | 30\nAFH | 9 | 5 | 23\nBDF | 11 | 6 | 25\nBDH | 12 | 5 | 27\nBFH | 10 | 6 | 26\n\nQualifying portfolios AEF, BDF, BDH and BFH cost 12, 11, 12 and 10. BFH attains the minimum 10."
+  }
+];
+})();

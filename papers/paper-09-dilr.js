@@ -1,0 +1,368 @@
+/* Original CAT-style DILR practice for Paper 09; solved by tests/dilr-series-06-10.py. Not an actual exam paper. */
+(() => {
+window.CAT2026_DILR = [
+  {
+    "id": "D01",
+    "section": "DILR",
+    "topic": "LR · scheduling",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Meetings in two rooms",
+    "passage": "Six one-hour meetings A, B, C, D, E and F are held in two rooms, Room 1 and Room 2, on one morning. Each meeting starts at 9 a.m., 10 a.m., 11 a.m. or 12 noon, and a room can host only one meeting at a time.\nRoom 1 is not available from 11 a.m. to 12 noon, and Room 2 is not available from 10 a.m. to 11 a.m.\nA and B have the same chairperson, so they are not held at the same time.\nC is held earlier than D, and D is not held at the same time as F.\nE is held in Room 2, and B is held later than E.\nF starts at 12 noon.\nA and C are held in the same room.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many different schedules (rooms and times for all six meetings) are possible?",
+    "options": [],
+    "answer": "6",
+    "solution": "E must be in Room 2 and before B; F is at noon; Room 1 is closed at 11 and Room 2 at 10. With A and C sharing a room and C before D, six schedules remain:\nSchedule | A | B | C | D | E | F\n1 | R1 9 a.m. | R1 12 noon | R1 10 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n2 | R1 9 a.m. | R2 12 noon | R1 10 a.m. | R2 11 a.m. | R2 9 a.m. | R1 12 noon\n3 | R1 10 a.m. | R1 12 noon | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n4 | R1 10 a.m. | R2 12 noon | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R1 12 noon\n5 | R1 12 noon | R1 10 a.m. | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n6 | R1 12 noon | R2 11 a.m. | R1 9 a.m. | R1 10 a.m. | R2 9 a.m. | R2 12 noon\n\nSix schedules satisfy every condition."
+  },
+  {
+    "id": "D02",
+    "section": "DILR",
+    "topic": "LR · scheduling",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Meetings in two rooms",
+    "passage": "Six one-hour meetings A, B, C, D, E and F are held in two rooms, Room 1 and Room 2, on one morning. Each meeting starts at 9 a.m., 10 a.m., 11 a.m. or 12 noon, and a room can host only one meeting at a time.\nRoom 1 is not available from 11 a.m. to 12 noon, and Room 2 is not available from 10 a.m. to 11 a.m.\nA and B have the same chairperson, so they are not held at the same time.\nC is held earlier than D, and D is not held at the same time as F.\nE is held in Room 2, and B is held later than E.\nF starts at 12 noon.\nA and C are held in the same room.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which meeting is held at 9 a.m. in every possible schedule?",
+    "options": [
+      "D",
+      "C",
+      "E",
+      "A"
+    ],
+    "answer": 2,
+    "solution": "E must be in Room 2 and before B; F is at noon; Room 1 is closed at 11 and Room 2 at 10. With A and C sharing a room and C before D, six schedules remain:\nSchedule | A | B | C | D | E | F\n1 | R1 9 a.m. | R1 12 noon | R1 10 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n2 | R1 9 a.m. | R2 12 noon | R1 10 a.m. | R2 11 a.m. | R2 9 a.m. | R1 12 noon\n3 | R1 10 a.m. | R1 12 noon | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n4 | R1 10 a.m. | R2 12 noon | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R1 12 noon\n5 | R1 12 noon | R1 10 a.m. | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n6 | R1 12 noon | R2 11 a.m. | R1 9 a.m. | R1 10 a.m. | R2 9 a.m. | R2 12 noon\n\nE is in Room 2 at 9 a.m. in all six schedules."
+  },
+  {
+    "id": "D03",
+    "section": "DILR",
+    "topic": "LR · scheduling",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Meetings in two rooms",
+    "passage": "Six one-hour meetings A, B, C, D, E and F are held in two rooms, Room 1 and Room 2, on one morning. Each meeting starts at 9 a.m., 10 a.m., 11 a.m. or 12 noon, and a room can host only one meeting at a time.\nRoom 1 is not available from 11 a.m. to 12 noon, and Room 2 is not available from 10 a.m. to 11 a.m.\nA and B have the same chairperson, so they are not held at the same time.\nC is held earlier than D, and D is not held at the same time as F.\nE is held in Room 2, and B is held later than E.\nF starts at 12 noon.\nA and C are held in the same room.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "In how many of the possible schedules is B held at 12 noon?",
+    "options": [],
+    "answer": "4",
+    "solution": "E must be in Room 2 and before B; F is at noon; Room 1 is closed at 11 and Room 2 at 10. With A and C sharing a room and C before D, six schedules remain:\nSchedule | A | B | C | D | E | F\n1 | R1 9 a.m. | R1 12 noon | R1 10 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n2 | R1 9 a.m. | R2 12 noon | R1 10 a.m. | R2 11 a.m. | R2 9 a.m. | R1 12 noon\n3 | R1 10 a.m. | R1 12 noon | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n4 | R1 10 a.m. | R2 12 noon | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R1 12 noon\n5 | R1 12 noon | R1 10 a.m. | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n6 | R1 12 noon | R2 11 a.m. | R1 9 a.m. | R1 10 a.m. | R2 9 a.m. | R2 12 noon\n\nSchedules 1 to 4 hold B at noon."
+  },
+  {
+    "id": "D04",
+    "section": "DILR",
+    "topic": "LR · scheduling",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Meetings in two rooms",
+    "passage": "Six one-hour meetings A, B, C, D, E and F are held in two rooms, Room 1 and Room 2, on one morning. Each meeting starts at 9 a.m., 10 a.m., 11 a.m. or 12 noon, and a room can host only one meeting at a time.\nRoom 1 is not available from 11 a.m. to 12 noon, and Room 2 is not available from 10 a.m. to 11 a.m.\nA and B have the same chairperson, so they are not held at the same time.\nC is held earlier than D, and D is not held at the same time as F.\nE is held in Room 2, and B is held later than E.\nF starts at 12 noon.\nA and C are held in the same room.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If A is held at 12 noon and D at 10 a.m., where and when is B held?",
+    "options": [
+      "Room 2 at 11 a.m.",
+      "Room 1 at 12 noon",
+      "Room 1 at 10 a.m.",
+      "Room 2 at 12 noon"
+    ],
+    "answer": 0,
+    "solution": "E must be in Room 2 and before B; F is at noon; Room 1 is closed at 11 and Room 2 at 10. With A and C sharing a room and C before D, six schedules remain:\nSchedule | A | B | C | D | E | F\n1 | R1 9 a.m. | R1 12 noon | R1 10 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n2 | R1 9 a.m. | R2 12 noon | R1 10 a.m. | R2 11 a.m. | R2 9 a.m. | R1 12 noon\n3 | R1 10 a.m. | R1 12 noon | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n4 | R1 10 a.m. | R2 12 noon | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R1 12 noon\n5 | R1 12 noon | R1 10 a.m. | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n6 | R1 12 noon | R2 11 a.m. | R1 9 a.m. | R1 10 a.m. | R2 9 a.m. | R2 12 noon\n\nOnly schedule 6 fits, with B in Room 2 at 11 a.m."
+  },
+  {
+    "id": "D05",
+    "section": "DILR",
+    "topic": "LR · scheduling",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Meetings in two rooms",
+    "passage": "Six one-hour meetings A, B, C, D, E and F are held in two rooms, Room 1 and Room 2, on one morning. Each meeting starts at 9 a.m., 10 a.m., 11 a.m. or 12 noon, and a room can host only one meeting at a time.\nRoom 1 is not available from 11 a.m. to 12 noon, and Room 2 is not available from 10 a.m. to 11 a.m.\nA and B have the same chairperson, so they are not held at the same time.\nC is held earlier than D, and D is not held at the same time as F.\nE is held in Room 2, and B is held later than E.\nF starts at 12 noon.\nA and C are held in the same room.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which of the following can never happen?",
+    "options": [
+      "C is held at 10 a.m.",
+      "B is held at 10 a.m.",
+      "D is held at 9 a.m.",
+      "A is held at 12 noon"
+    ],
+    "answer": 2,
+    "solution": "E must be in Room 2 and before B; F is at noon; Room 1 is closed at 11 and Room 2 at 10. With A and C sharing a room and C before D, six schedules remain:\nSchedule | A | B | C | D | E | F\n1 | R1 9 a.m. | R1 12 noon | R1 10 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n2 | R1 9 a.m. | R2 12 noon | R1 10 a.m. | R2 11 a.m. | R2 9 a.m. | R1 12 noon\n3 | R1 10 a.m. | R1 12 noon | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n4 | R1 10 a.m. | R2 12 noon | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R1 12 noon\n5 | R1 12 noon | R1 10 a.m. | R1 9 a.m. | R2 11 a.m. | R2 9 a.m. | R2 12 noon\n6 | R1 12 noon | R2 11 a.m. | R1 9 a.m. | R1 10 a.m. | R2 9 a.m. | R2 12 noon\n\nC must come before D, so D cannot take the first hour; each other option occurs in some schedule."
+  },
+  {
+    "id": "D06",
+    "section": "DILR",
+    "topic": "DI · month-on-month change",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Sales of three car models",
+    "passage": "A dealer sells three car models X, Y and Z. In January it sold 400 X, 350 Y and 250 Z cars. The table shows the percentage change in each model's sales over the previous month.\n\nModel | February change | March change\nX | +25% | -10%\nY | -20% | +25%\nZ | +20% | +40%\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many cars did the dealer sell in March?",
+    "options": [],
+    "answer": "1220",
+    "solution": "Apply each month's change to the previous month's sales.\nModel | Jan | Feb | Mar\nX | 400 | 500 | 450\nY | 350 | 280 | 350\nZ | 250 | 300 | 420\nTotals: 1000, 1080, 1220.\n\n450 + 350 + 420 = 1,220 cars."
+  },
+  {
+    "id": "D07",
+    "section": "DILR",
+    "topic": "DI · month-on-month change",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Sales of three car models",
+    "passage": "A dealer sells three car models X, Y and Z. In January it sold 400 X, 350 Y and 250 Z cars. The table shows the percentage change in each model's sales over the previous month.\n\nModel | February change | March change\nX | +25% | -10%\nY | -20% | +25%\nZ | +20% | +40%\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which model sold the most cars in March?",
+    "options": [
+      "Z",
+      "X",
+      "X and Z sold equal numbers",
+      "Y"
+    ],
+    "answer": 1,
+    "solution": "Apply each month's change to the previous month's sales.\nModel | Jan | Feb | Mar\nX | 400 | 500 | 450\nY | 350 | 280 | 350\nZ | 250 | 300 | 420\nTotals: 1000, 1080, 1220.\n\nMarch sales: X 450, Y 350, Z 420."
+  },
+  {
+    "id": "D08",
+    "section": "DILR",
+    "topic": "DI · month-on-month change",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Sales of three car models",
+    "passage": "A dealer sells three car models X, Y and Z. In January it sold 400 X, 350 Y and 250 Z cars. The table shows the percentage change in each model's sales over the previous month.\n\nModel | February change | March change\nX | +25% | -10%\nY | -20% | +25%\nZ | +20% | +40%\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "By how many cars did total monthly sales rise from January to March?",
+    "options": [],
+    "answer": "220",
+    "solution": "Apply each month's change to the previous month's sales.\nModel | Jan | Feb | Mar\nX | 400 | 500 | 450\nY | 350 | 280 | 350\nZ | 250 | 300 | 420\nTotals: 1000, 1080, 1220.\n\n1,220 − 1,000 = 220."
+  },
+  {
+    "id": "D09",
+    "section": "DILR",
+    "topic": "DI · month-on-month change",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Sales of three car models",
+    "passage": "A dealer sells three car models X, Y and Z. In January it sold 400 X, 350 Y and 250 Z cars. The table shows the percentage change in each model's sales over the previous month.\n\nModel | February change | March change\nX | +25% | -10%\nY | -20% | +25%\nZ | +20% | +40%\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Over the three months together, how many more X cars than Y cars were sold?",
+    "options": [],
+    "answer": "370",
+    "solution": "Apply each month's change to the previous month's sales.\nModel | Jan | Feb | Mar\nX | 400 | 500 | 450\nY | 350 | 280 | 350\nZ | 250 | 300 | 420\nTotals: 1000, 1080, 1220.\n\nX sold 400 + 500 + 450 = 1,350 and Y sold 350 + 280 + 350 = 980: a difference of 370."
+  },
+  {
+    "id": "D10",
+    "section": "DILR",
+    "topic": "DI · month-on-month change",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Sales of three car models",
+    "passage": "A dealer sells three car models X, Y and Z. In January it sold 400 X, 350 Y and 250 Z cars. The table shows the percentage change in each model's sales over the previous month.\n\nModel | February change | March change\nX | +25% | -10%\nY | -20% | +25%\nZ | +20% | +40%\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "In which month was model Z's share of the dealer's total sales the largest?",
+    "options": [
+      "February",
+      "January",
+      "It was the same in all three months",
+      "March"
+    ],
+    "answer": 3,
+    "solution": "Apply each month's change to the previous month's sales.\nModel | Jan | Feb | Mar\nX | 400 | 500 | 450\nY | 350 | 280 | 350\nZ | 250 | 300 | 420\nTotals: 1000, 1080, 1220.\n\nZ's share was 25% in January, 300/1,080 ≈ 27.8% in February and 420/1,220 ≈ 34.4% in March."
+  },
+  {
+    "id": "D11",
+    "section": "DILR",
+    "topic": "LR · ranked ballots",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "A preferential vote",
+    "passage": "One hundred members elected a chairperson from candidates A, B, C and D. Each member ranked all four candidates. Identical rankings are grouped below (first preference on the left).\n\nRanking | Members\nA > B > C > D | 34\nB > C > A > D | 24\nC > B > A > D | 20\nD > C > B > A | 14\nB > A > C > D | 8\n\nCounting rule: if a candidate has more than half of the first preferences, that candidate wins. Otherwise the candidate with the fewest votes is eliminated, and each of that candidate's ballots counts for its highest-ranked remaining candidate; this repeats until someone has more than half.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many votes does the winner have in the final round of counting?",
+    "options": [],
+    "answer": "58",
+    "solution": "Count first preferences, remove the weakest candidate, pass each removed ballot to its next remaining preference and repeat until someone has a majority (over 50) of the 100 votes.\nRound 1: A 34, B 32, C 20, D 14\nRound 2: A 34, B 32, C 34\nRound 3: A 42, C 58\nPoints (3, 2, 1, 0): A 162, B 218, C 178, D 42.\n\nIn the last round C has 58 votes against A's 42."
+  },
+  {
+    "id": "D12",
+    "section": "DILR",
+    "topic": "LR · ranked ballots",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "A preferential vote",
+    "passage": "One hundred members elected a chairperson from candidates A, B, C and D. Each member ranked all four candidates. Identical rankings are grouped below (first preference on the left).\n\nRanking | Members\nA > B > C > D | 34\nB > C > A > D | 24\nC > B > A > D | 20\nD > C > B > A | 14\nB > A > C > D | 8\n\nCounting rule: if a candidate has more than half of the first preferences, that candidate wins. Otherwise the candidate with the fewest votes is eliminated, and each of that candidate's ballots counts for its highest-ranked remaining candidate; this repeats until someone has more than half.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Who wins under the counting rule?",
+    "options": [
+      "C",
+      "B",
+      "A",
+      "D"
+    ],
+    "answer": 0,
+    "solution": "Count first preferences, remove the weakest candidate, pass each removed ballot to its next remaining preference and repeat until someone has a majority (over 50) of the 100 votes.\nRound 1: A 34, B 32, C 20, D 14\nRound 2: A 34, B 32, C 34\nRound 3: A 42, C 58\nPoints (3, 2, 1, 0): A 162, B 218, C 178, D 42.\n\nD is eliminated first (C rises to 34), then B (32); B's ballots split 24 to C and 8 to A, so C wins 58–42."
+  },
+  {
+    "id": "D13",
+    "section": "DILR",
+    "topic": "LR · ranked ballots",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "A preferential vote",
+    "passage": "One hundred members elected a chairperson from candidates A, B, C and D. Each member ranked all four candidates. Identical rankings are grouped below (first preference on the left).\n\nRanking | Members\nA > B > C > D | 34\nB > C > A > D | 24\nC > B > A > D | 20\nD > C > B > A | 14\nB > A > C > D | 8\n\nCounting rule: if a candidate has more than half of the first preferences, that candidate wins. Otherwise the candidate with the fewest votes is eliminated, and each of that candidate's ballots counts for its highest-ranked remaining candidate; this repeats until someone has more than half.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Under a different rule, each ballot gives 3 points to its first choice, 2 to its second, 1 to its third and 0 to its fourth. What is the highest points total any candidate receives?",
+    "options": [],
+    "answer": "218",
+    "solution": "Count first preferences, remove the weakest candidate, pass each removed ballot to its next remaining preference and repeat until someone has a majority (over 50) of the 100 votes.\nRound 1: A 34, B 32, C 20, D 14\nRound 2: A 34, B 32, C 34\nRound 3: A 42, C 58\nPoints (3, 2, 1, 0): A 162, B 218, C 178, D 42.\n\nB receives 96 + 108 + 14 = 218 points, the most."
+  },
+  {
+    "id": "D14",
+    "section": "DILR",
+    "topic": "LR · ranked ballots",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "A preferential vote",
+    "passage": "One hundred members elected a chairperson from candidates A, B, C and D. Each member ranked all four candidates. Identical rankings are grouped below (first preference on the left).\n\nRanking | Members\nA > B > C > D | 34\nB > C > A > D | 24\nC > B > A > D | 20\nD > C > B > A | 14\nB > A > C > D | 8\n\nCounting rule: if a candidate has more than half of the first preferences, that candidate wins. Otherwise the candidate with the fewest votes is eliminated, and each of that candidate's ballots counts for its highest-ranked remaining candidate; this repeats until someone has more than half.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If the 14 members who ranked D first had instead ranked the candidates D > B > C > A, who would win under the original counting rule?",
+    "options": [
+      "C",
+      "No candidate would reach a majority",
+      "B",
+      "A"
+    ],
+    "answer": 2,
+    "solution": "Count first preferences, remove the weakest candidate, pass each removed ballot to its next remaining preference and repeat until someone has a majority (over 50) of the 100 votes.\nRound 1: A 34, B 32, C 20, D 14\nRound 2: A 34, B 32, C 34\nRound 3: A 42, C 58\nPoints (3, 2, 1, 0): A 162, B 218, C 178, D 42.\n\nD is still eliminated first, but those ballots now go to B (46). C (20) is eliminated next and C's ballots go to B, giving B 66 votes."
+  },
+  {
+    "id": "D15",
+    "section": "DILR",
+    "topic": "LR · matching",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Professions and cities",
+    "passage": "Anil, Bina, Chitra, Dev and Esha are a doctor, an engineer, a lawyer, a pilot and a teacher, in some order. They live in Agra, Bhopal, Chennai, Delhi and Pune, one person per city.\nThe doctor lives in Delhi and the engineer lives in Bhopal.\nChitra is the teacher.\nAnil is neither the pilot nor the teacher, and does not live in Agra.\nBina lives in Chennai and is not the lawyer.\nDev is not the doctor and does not live in Agra.\nEsha does not live in Pune.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many complete assignments of professions and cities are possible?",
+    "options": [],
+    "answer": "4",
+    "solution": "Chitra is the teacher. The doctor lives in Delhi and the engineer in Bhopal, while Bina lives in Chennai, so Bina is neither of those and not the lawyer: Bina is the pilot. Checking the remaining cases gives four assignments:\nAnil | Bina | Chitra | Dev | Esha\ndoctor, Delhi | pilot, Chennai | teacher, Pune | engineer, Bhopal | lawyer, Agra\ndoctor, Delhi | pilot, Chennai | teacher, Agra | lawyer, Pune | engineer, Bhopal\nengineer, Bhopal | pilot, Chennai | teacher, Agra | lawyer, Pune | doctor, Delhi\nlawyer, Pune | pilot, Chennai | teacher, Agra | engineer, Bhopal | doctor, Delhi\n\nFour assignments remain."
+  },
+  {
+    "id": "D16",
+    "section": "DILR",
+    "topic": "LR · matching",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Professions and cities",
+    "passage": "Anil, Bina, Chitra, Dev and Esha are a doctor, an engineer, a lawyer, a pilot and a teacher, in some order. They live in Agra, Bhopal, Chennai, Delhi and Pune, one person per city.\nThe doctor lives in Delhi and the engineer lives in Bhopal.\nChitra is the teacher.\nAnil is neither the pilot nor the teacher, and does not live in Agra.\nBina lives in Chennai and is not the lawyer.\nDev is not the doctor and does not live in Agra.\nEsha does not live in Pune.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is Bina's profession?",
+    "options": [
+      "lawyer",
+      "doctor",
+      "pilot",
+      "engineer"
+    ],
+    "answer": 2,
+    "solution": "Chitra is the teacher. The doctor lives in Delhi and the engineer in Bhopal, while Bina lives in Chennai, so Bina is neither of those and not the lawyer: Bina is the pilot. Checking the remaining cases gives four assignments:\nAnil | Bina | Chitra | Dev | Esha\ndoctor, Delhi | pilot, Chennai | teacher, Pune | engineer, Bhopal | lawyer, Agra\ndoctor, Delhi | pilot, Chennai | teacher, Agra | lawyer, Pune | engineer, Bhopal\nengineer, Bhopal | pilot, Chennai | teacher, Agra | lawyer, Pune | doctor, Delhi\nlawyer, Pune | pilot, Chennai | teacher, Agra | engineer, Bhopal | doctor, Delhi\n\nChennai rules out doctor and engineer, and Bina is not the lawyer or the teacher."
+  },
+  {
+    "id": "D17",
+    "section": "DILR",
+    "topic": "LR · matching",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Professions and cities",
+    "passage": "Anil, Bina, Chitra, Dev and Esha are a doctor, an engineer, a lawyer, a pilot and a teacher, in some order. They live in Agra, Bhopal, Chennai, Delhi and Pune, one person per city.\nThe doctor lives in Delhi and the engineer lives in Bhopal.\nChitra is the teacher.\nAnil is neither the pilot nor the teacher, and does not live in Agra.\nBina lives in Chennai and is not the lawyer.\nDev is not the doctor and does not live in Agra.\nEsha does not live in Pune.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "In how many of the possible assignments does Esha live in Delhi?",
+    "options": [],
+    "answer": "2",
+    "solution": "Chitra is the teacher. The doctor lives in Delhi and the engineer in Bhopal, while Bina lives in Chennai, so Bina is neither of those and not the lawyer: Bina is the pilot. Checking the remaining cases gives four assignments:\nAnil | Bina | Chitra | Dev | Esha\ndoctor, Delhi | pilot, Chennai | teacher, Pune | engineer, Bhopal | lawyer, Agra\ndoctor, Delhi | pilot, Chennai | teacher, Agra | lawyer, Pune | engineer, Bhopal\nengineer, Bhopal | pilot, Chennai | teacher, Agra | lawyer, Pune | doctor, Delhi\nlawyer, Pune | pilot, Chennai | teacher, Agra | engineer, Bhopal | doctor, Delhi\n\nEsha is the doctor in Delhi in two of the four assignments."
+  },
+  {
+    "id": "D18",
+    "section": "DILR",
+    "topic": "LR · matching",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Professions and cities",
+    "passage": "Anil, Bina, Chitra, Dev and Esha are a doctor, an engineer, a lawyer, a pilot and a teacher, in some order. They live in Agra, Bhopal, Chennai, Delhi and Pune, one person per city.\nThe doctor lives in Delhi and the engineer lives in Bhopal.\nChitra is the teacher.\nAnil is neither the pilot nor the teacher, and does not live in Agra.\nBina lives in Chennai and is not the lawyer.\nDev is not the doctor and does not live in Agra.\nEsha does not live in Pune.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If Chitra lives in Pune, what is Dev's profession?",
+    "options": [
+      "pilot",
+      "engineer",
+      "doctor",
+      "lawyer"
+    ],
+    "answer": 1,
+    "solution": "Chitra is the teacher. The doctor lives in Delhi and the engineer in Bhopal, while Bina lives in Chennai, so Bina is neither of those and not the lawyer: Bina is the pilot. Checking the remaining cases gives four assignments:\nAnil | Bina | Chitra | Dev | Esha\ndoctor, Delhi | pilot, Chennai | teacher, Pune | engineer, Bhopal | lawyer, Agra\ndoctor, Delhi | pilot, Chennai | teacher, Agra | lawyer, Pune | engineer, Bhopal\nengineer, Bhopal | pilot, Chennai | teacher, Agra | lawyer, Pune | doctor, Delhi\nlawyer, Pune | pilot, Chennai | teacher, Agra | engineer, Bhopal | doctor, Delhi\n\nOnly the assignment with Dev as the engineer in Bhopal and Esha as the lawyer in Agra has Chitra in Pune."
+  },
+  {
+    "id": "D19",
+    "section": "DILR",
+    "topic": "LR · network flow",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "Pipes between tanks",
+    "passage": "Water flows from tank S to tank T through one-way pipes. The table gives each pipe's maximum flow in litres per minute. Water is not stored or lost at the intermediate junctions A, B, C and D.\n\nPipe | Capacity (litres/min)\nS → A | 30\nS → B | 25\nA → B | 10\nA → C | 20\nB → C | 10\nB → D | 25\nC → T | 30\nD → C | 5\nD → T | 20\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the maximum flow, in litres per minute, from S to T?",
+    "options": [],
+    "answer": "50",
+    "solution": "Push flow along paths with spare capacity until none remains. The largest flow is 50 litres per minute: S→A→C→T carries 20, S→A→B→C→T 10 and S→B→D→T 20. The two pipes into T (C→T 30, D→T 20) can carry only 50 in total, so no larger flow exists.\n\nFlows S→A→C→T 20, S→A→B→C→T 10, S→B→D→T 20 reach the two pipes into T at full capacity: 50."
+  },
+  {
+    "id": "D20",
+    "section": "DILR",
+    "topic": "LR · network flow",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "Pipes between tanks",
+    "passage": "Water flows from tank S to tank T through one-way pipes. The table gives each pipe's maximum flow in litres per minute. Water is not stored or lost at the intermediate junctions A, B, C and D.\n\nPipe | Capacity (litres/min)\nS → A | 30\nS → B | 25\nA → B | 10\nA → C | 20\nB → C | 10\nB → D | 25\nC → T | 30\nD → C | 5\nD → T | 20\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Raising the capacity of which one of these pipes by 10 litres per minute increases the maximum flow?",
+    "options": [
+      "A → C",
+      "B → D",
+      "D → T",
+      "S → A"
+    ],
+    "answer": 2,
+    "solution": "Push flow along paths with spare capacity until none remains. The largest flow is 50 litres per minute: S→A→C→T carries 20, S→A→B→C→T 10 and S→B→D→T 20. The two pipes into T (C→T 30, D→T 20) can carry only 50 in total, so no larger flow exists.\n\nWith D → T at 30 the two pipes into T can take 60, and the limit becomes the two pipes out of S (30 + 25 = 55): the maximum rises to 55. Raising A → C, S → A or B → D leaves both pipes into T full at 50."
+  },
+  {
+    "id": "D21",
+    "section": "DILR",
+    "topic": "LR · network flow",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "Pipes between tanks",
+    "passage": "Water flows from tank S to tank T through one-way pipes. The table gives each pipe's maximum flow in litres per minute. Water is not stored or lost at the intermediate junctions A, B, C and D.\n\nPipe | Capacity (litres/min)\nS → A | 30\nS → B | 25\nA → B | 10\nA → C | 20\nB → C | 10\nB → D | 25\nC → T | 30\nD → C | 5\nD → T | 20\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If pipe A → C is shut, what is the maximum flow, in litres per minute, from S to T?",
+    "options": [],
+    "answer": "35",
+    "solution": "Push flow along paths with spare capacity until none remains. The largest flow is 50 litres per minute: S→A→C→T carries 20, S→A→B→C→T 10 and S→B→D→T 20. The two pipes into T (C→T 30, D→T 20) can carry only 50 in total, so no larger flow exists.\n\nWater from A must then pass through A → B (10). Together with S → B (25), at most 35 reaches B, and B can deliver it via C and D: 35."
+  },
+  {
+    "id": "D22",
+    "section": "DILR",
+    "topic": "LR · network flow",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "Pipes between tanks",
+    "passage": "Water flows from tank S to tank T through one-way pipes. The table gives each pipe's maximum flow in litres per minute. Water is not stored or lost at the intermediate junctions A, B, C and D.\n\nPipe | Capacity (litres/min)\nS → A | 30\nS → B | 25\nA → B | 10\nA → C | 20\nB → C | 10\nB → D | 25\nC → T | 30\nD → C | 5\nD → T | 20\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the smallest number of pipes that must be shut to stop all flow from S to T?",
+    "options": [
+      "4",
+      "6",
+      "3",
+      "2"
+    ],
+    "answer": 3,
+    "solution": "Push flow along paths with spare capacity until none remains. The largest flow is 50 litres per minute: S→A→C→T carries 20, S→A→B→C→T 10 and S→B→D→T 20. The two pipes into T (C→T 30, D→T 20) can carry only 50 in total, so no larger flow exists.\n\nShutting C → T and D → T cuts every route; no single pipe does."
+  }
+];
+})();

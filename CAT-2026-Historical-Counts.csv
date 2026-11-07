@@ -1,0 +1,9 @@
+year,slot,provider,arithmetic,algebra,geometry,numbers,modern_math,qa_total,varc_rc,varc_summary,varc_sentence_placement,varc_odd_sentence,varc_parajumbles,varc_section,dilr_section,qa_section,dilr_set_sizes,source,source_access,note
+2021,2,IMS India,9,5,3,2,3,22,16,3,0,2,3,24,20,22,6|6|4|4,https://www.imsindia.com/cat-2021-slot-2-analysis/,Full provider page; root URL redirects to blog URL.,
+2021,3,IMS India,10,4,3,1,4,22,16,3,0,2,3,24,20,22,6|6|4|4,https://www.imsindia.com/cat-2021-slot-3-analysis/,Full provider page; root URL redirects to blog URL.,
+2022,2,IMS India,8,6,3,1,4,22,16,3,2,0,3,24,20,22,5|5|5|5,https://www.imsindia.com/blog/cat/cat-2022-slot-2-analysis/,Full provider article content in search index; direct opening unavailable.,
+2024,1,IMS India,8,7,3,1,3,22,16,3,3,2,0,24,22,22,5|5|4|4|4,https://www.imsindia.com/blog/cat/cat-exam-analysis-2024/,Full provider article content in search index; direct opening returned 410.,
+2024,2,IMS India,8,5,3,3,3,22,16,3,3,2,0,24,22,22,5|5|4|4|4,https://www.imsindia.com/blog/cat/cat-2024-slot-2-analysis/,Full provider article content in search index; direct opening returned 410.,
+2025,1,IMS India,8,4,3,3,4,22,16,2,2,2,2,24,22,22,5|5|4|4|4,https://www.imsindia.com/cat-overall-analysis-2025/,Full provider page.,Overall table selected; slot-specific table reallocates one Modern Math question to Algebra. Source prose also differs.
+2025,2,IMS India,8,5,3,2,4,22,16,2,2,2,2,24,22,22,5|5|4|4|4,https://www.imsindia.com/cat-2025-slot-2-analysis/,Full provider page.,
+2025,3,IMS India,7,4,3,4,4,22,16,2,2,2,2,24,22,22,5|5|4|4|4,https://www.imsindia.com/cat-2025-slot-3-analysis/,Full provider page.,

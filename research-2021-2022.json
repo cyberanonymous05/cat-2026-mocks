@@ -1,0 +1,79 @@
+{
+  "checkedOn": "2026-09-08",
+  "provider": "IMS India",
+  "qaOrder": ["Arithmetic", "Algebra", "Geometry", "Numbers", "Modern Math"],
+  "varcOrder": ["Reading comprehension", "Summary", "Sentence placement", "Odd sentence out", "Parajumbles"],
+  "sectionsOrder": ["VARC", "DILR", "QA"],
+  "dilrMeaning": "Question counts per set, sorted in descending order; not topic classifications.",
+  "rows": [
+    {
+      "year": 2021,
+      "slot": 2,
+      "qa": [9, 5, 3, 2, 3],
+      "varc": [16, 3, 0, 2, 3],
+      "sections": [24, 20, 22],
+      "dilr": [6, 6, 4, 4],
+      "source": "https://www.imsindia.com/cat-2021-slot-2-analysis/",
+      "canonicalSource": "https://www.imsindia.com/blog/cat/cat-2021-slot-2-analysis/",
+      "sourceTitle": "CAT 2021 - Slot 2 Analysis",
+      "sourceAccess": "Full provider page retrieved through the root URL, which redirects to the blog URL.",
+      "evidenceLocations": ["Quantitative Ability table", "Verbal Ability table and explanatory paragraph", "Opening section-count table", "DILR set table"],
+      "note": "All five QA counts are explicitly present and sum to 22. The exhaustive VARC description lists RC, summaries, odd-sentence questions and parajumbles; sentence placement is absent. DILR narrative contains a generic MCQ/TITA split inconsistent with the slot-specific table; no MCQ/TITA split is included in this dataset."
+    },
+    {
+      "year": 2021,
+      "slot": 3,
+      "qa": [10, 4, 3, 1, 4],
+      "varc": [16, 3, 0, 2, 3],
+      "sections": [24, 20, 22],
+      "dilr": [6, 6, 4, 4],
+      "source": "https://www.imsindia.com/cat-2021-slot-3-analysis/",
+      "canonicalSource": "https://www.imsindia.com/blog/cat/cat-2021-slot-3-analysis/",
+      "sourceTitle": "CAT 2021 - Slot 3 Analysis",
+      "sourceAccess": "Full provider page retrieved through the root URL, which redirects to the blog URL.",
+      "evidenceLocations": ["Quantitative Ability paragraph and table", "Verbal Ability paragraph and table", "Opening section-count table", "DILR set table"],
+      "note": "All five QA counts are explicitly present and sum to 22. The exhaustive VARC description lists RC, summaries, odd-sentence questions and parajumbles; sentence placement is absent. QA prose says six TITA questions while both tables say eight; no MCQ/TITA split is included in this dataset."
+    },
+    {
+      "year": 2022,
+      "slot": 2,
+      "qa": [8, 6, 3, 1, 4],
+      "varc": [16, 3, 2, 0, 3],
+      "sections": [24, 20, 22],
+      "dilr": [5, 5, 5, 5],
+      "source": "https://www.imsindia.com/blog/cat/cat-2022-slot-2-analysis/",
+      "sourceTitle": "CAT 2022 Slot 2 Analysis",
+      "sourceAccess": "Provider article content recovered in the web search index; direct page opening was unavailable during this check.",
+      "evidenceLocations": ["Quantitative Ability paragraph and table", "Verbal Ability table and definition of para-completion", "Opening section-count table", "DILR set table"],
+      "note": "All five QA counts are explicitly present and sum to 22. IMS explicitly groups Functions, Logarithms, Progression and Permutations and Combinations under Modern Math. Its para-completion format is sentence placement into one of four numbered blanks. The source explicitly states that this replaced odd-sentence questions."
+    }
+  ],
+  "excluded": [
+    {
+      "year": 2021,
+      "slot": 1,
+      "source": "https://www.imsindia.com/cat-2021-slot-1-analysis/",
+      "reason": "Four explicit QA counts are Arithmetic 10, Algebra 5, Geometry 3 and Modern Math 4. These sum to 22, but the Numbers row is absent. Excluded from a strict five-explicit-category QA panel instead of filling an omitted category with zero. Structural fields are available but not added as a separate QA row."
+    },
+    {
+      "year": 2022,
+      "slot": 1,
+      "source": "https://www.imsindia.com/cat-2022-slot-1-analysis/",
+      "reason": "Original root and blog page retrieval failed; no complete primary IMS QA table independently retrieved."
+    },
+    {
+      "year": 2022,
+      "slot": 3,
+      "source": "https://www.imsindia.com/cat-2022-slot-3-analysis/",
+      "reason": "Original root and blog page retrieval failed; no complete primary IMS QA table independently retrieved."
+    }
+  ],
+  "notes": [
+    "These are coaching-provider classifications, not an official IIM topic taxonomy. Retain the IMS provider identity when combining rows across years.",
+    "Do not combine the Career Launcher QA vectors with these IMS vectors without question-level recoding. In particular, logarithms, functions and progressions may be assigned to different broad categories.",
+    "The 2021 sources do not define the contents of Modern Math as explicitly as the 2022 Slot 2 source. Holding the provider constant reduces but does not eliminate taxonomy uncertainty.",
+    "The page https://www.imsindia.com/ims-cat-2024-ananlysis/ displays 2023 analysis despite its URL. Its 2021 and 2022 archive cards point to javascript:void(0), so they did not supply usable archive links.",
+    "These sources were inspected retrospectively on 2026-09-08. Their historical article dates and exam-year labels are not evidence of immutable pre-cutoff snapshots. A replay using these rows must not be described as an originally issued or genuinely blind forecast.",
+    "The 2022 Slot 2 page displays a publication date of 23 November 2022 while describing the completed examination. This date inconsistency is not used as evidence that its analysis existed before the exam."
+  ]
+}

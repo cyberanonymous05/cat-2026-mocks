@@ -1,0 +1,368 @@
+/* Original CAT-style DILR practice for Paper 06; solved by tests/dilr-series-06-10.py. Not an actual exam paper. */
+(() => {
+window.CAT2026_DILR = [
+  {
+    "id": "D01",
+    "section": "DILR",
+    "topic": "LR · linear arrangement",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Parcels on a shelf",
+    "passage": "Seven parcels A, B, C, D, E, F and G are placed in a single row in positions 1 to 7 from left to right, one parcel per position.\nA is at one end of the row.\nB is immediately to the right of C.\nE is to the right of D, with exactly two parcels between them.\nG is in an even-numbered position.\nF is not in position 4.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many different arrangements satisfy all the conditions?",
+    "options": [],
+    "answer": "10",
+    "solution": "Place C and B as a block, then D and E three places apart, and keep A at an end, G in an even place and F out of place 4. Exhaustive checking leaves exactly ten orders (positions 1 to 7, left to right):\nACBDFGE\nADCBEGF\nADFGECB\nAGDCBEF\nAGFDCBE\nCBDGFEA\nDCBEFGA\nDGFECBA\nFDCBEGA\nFGDCBEA\n\nCounting the listed orders gives 10."
+  },
+  {
+    "id": "D02",
+    "section": "DILR",
+    "topic": "LR · linear arrangement",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Parcels on a shelf",
+    "passage": "Seven parcels A, B, C, D, E, F and G are placed in a single row in positions 1 to 7 from left to right, one parcel per position.\nA is at one end of the row.\nB is immediately to the right of C.\nE is to the right of D, with exactly two parcels between them.\nG is in an even-numbered position.\nF is not in position 4.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which parcel occupies position 2 in the largest number of possible arrangements?",
+    "options": [
+      "G",
+      "D",
+      "B",
+      "C"
+    ],
+    "answer": 0,
+    "solution": "Place C and B as a block, then D and E three places apart, and keep A at an end, G in an even place and F out of place 4. Exhaustive checking leaves exactly ten orders (positions 1 to 7, left to right):\nACBDFGE\nADCBEGF\nADFGECB\nAGDCBEF\nAGFDCBE\nCBDGFEA\nDCBEFGA\nDGFECBA\nFDCBEGA\nFGDCBEA\n\nAcross the ten orders position 2 holds G four times, D three times, C twice and B once."
+  },
+  {
+    "id": "D03",
+    "section": "DILR",
+    "topic": "LR · linear arrangement",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Parcels on a shelf",
+    "passage": "Seven parcels A, B, C, D, E, F and G are placed in a single row in positions 1 to 7 from left to right, one parcel per position.\nA is at one end of the row.\nB is immediately to the right of C.\nE is to the right of D, with exactly two parcels between them.\nG is in an even-numbered position.\nF is not in position 4.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If C is in position 6, what is the position number of G?",
+    "options": [],
+    "answer": "4",
+    "solution": "Place C and B as a block, then D and E three places apart, and keep A at an end, G in an even place and F out of place 4. Exhaustive checking leaves exactly ten orders (positions 1 to 7, left to right):\nACBDFGE\nADCBEGF\nADFGECB\nAGDCBEF\nAGFDCBE\nCBDGFEA\nDCBEFGA\nDGFECBA\nFDCBEGA\nFGDCBEA\n\nOnly ADFGECB has C in position 6, and G is in position 4 there."
+  },
+  {
+    "id": "D04",
+    "section": "DILR",
+    "topic": "LR · linear arrangement",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Parcels on a shelf",
+    "passage": "Seven parcels A, B, C, D, E, F and G are placed in a single row in positions 1 to 7 from left to right, one parcel per position.\nA is at one end of the row.\nB is immediately to the right of C.\nE is to the right of D, with exactly two parcels between them.\nG is in an even-numbered position.\nF is not in position 4.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If D is in position 1, which parcel is in position 7?",
+    "options": [
+      "B",
+      "E",
+      "A",
+      "F"
+    ],
+    "answer": 2,
+    "solution": "Place C and B as a block, then D and E three places apart, and keep A at an end, G in an even place and F out of place 4. Exhaustive checking leaves exactly ten orders (positions 1 to 7, left to right):\nACBDFGE\nADCBEGF\nADFGECB\nAGDCBEF\nAGFDCBE\nCBDGFEA\nDCBEFGA\nDGFECBA\nFDCBEGA\nFGDCBEA\n\nThe orders starting with D are DCBEFGA and DGFECBA; both end with A."
+  },
+  {
+    "id": "D05",
+    "section": "DILR",
+    "topic": "LR · linear arrangement",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Parcels on a shelf",
+    "passage": "Seven parcels A, B, C, D, E, F and G are placed in a single row in positions 1 to 7 from left to right, one parcel per position.\nA is at one end of the row.\nB is immediately to the right of C.\nE is to the right of D, with exactly two parcels between them.\nG is in an even-numbered position.\nF is not in position 4.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "In how many of the possible arrangements is B next to A?",
+    "options": [
+      "2",
+      "5",
+      "3",
+      "1"
+    ],
+    "answer": 3,
+    "solution": "Place C and B as a block, then D and E three places apart, and keep A at an end, G in an even place and F out of place 4. Exhaustive checking leaves exactly ten orders (positions 1 to 7, left to right):\nACBDFGE\nADCBEGF\nADFGECB\nAGDCBEF\nAGFDCBE\nCBDGFEA\nDCBEFGA\nDGFECBA\nFDCBEGA\nFGDCBEA\n\nOnly DGFECBA places B immediately beside A."
+  },
+  {
+    "id": "D06",
+    "section": "DILR",
+    "topic": "DI · percentage change and shares",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Footfall at four museums",
+    "passage": "The table gives January visitors (in thousands) at four city museums, the percentage change in visitors from January to February, and the share of February visitors who were children.\n\nMuseum | January visitors (thousands) | Change, Jan to Feb | Children among Feb visitors\nAster | 40 | +25% | 30%\nBirch | 55 | -20% | 25%\nCedar | 32 | +50% | 25%\nDelta | 48 | +12.5% | one third\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What was the total number of February visitors, in thousands, across the four museums?",
+    "options": [],
+    "answer": "196",
+    "solution": "February visitors (thousands) = January × (1 + change). Children = February visitors × share.\nMuseum | Feb visitors | Feb children | Mar visitors at same change\nAster | 50 | 15 | 62.5\nBirch | 44 | 11 | 35.2\nCedar | 48 | 12 | 72.0\nDelta | 54 | 18 | 60.75\n\n50 + 44 + 48 + 54 = 196 thousand."
+  },
+  {
+    "id": "D07",
+    "section": "DILR",
+    "topic": "DI · percentage change and shares",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Footfall at four museums",
+    "passage": "The table gives January visitors (in thousands) at four city museums, the percentage change in visitors from January to February, and the share of February visitors who were children.\n\nMuseum | January visitors (thousands) | Change, Jan to Feb | Children among Feb visitors\nAster | 40 | +25% | 30%\nBirch | 55 | -20% | 25%\nCedar | 32 | +50% | 25%\nDelta | 48 | +12.5% | one third\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which museum had the most child visitors in February?",
+    "options": [
+      "Delta",
+      "Cedar",
+      "Birch",
+      "Aster"
+    ],
+    "answer": 0,
+    "solution": "February visitors (thousands) = January × (1 + change). Children = February visitors × share.\nMuseum | Feb visitors | Feb children | Mar visitors at same change\nAster | 50 | 15 | 62.5\nBirch | 44 | 11 | 35.2\nCedar | 48 | 12 | 72.0\nDelta | 54 | 18 | 60.75\n\nChild visitors were 15, 11, 12 and 18 thousand respectively; Delta is highest."
+  },
+  {
+    "id": "D08",
+    "section": "DILR",
+    "topic": "DI · percentage change and shares",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Footfall at four museums",
+    "passage": "The table gives January visitors (in thousands) at four city museums, the percentage change in visitors from January to February, and the share of February visitors who were children.\n\nMuseum | January visitors (thousands) | Change, Jan to Feb | Children among Feb visitors\nAster | 40 | +25% | 30%\nBirch | 55 | -20% | 25%\nCedar | 32 | +50% | 25%\nDelta | 48 | +12.5% | one third\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What was the total number of adult visitors, in thousands, across the four museums in February?",
+    "options": [],
+    "answer": "140",
+    "solution": "February visitors (thousands) = January × (1 + change). Children = February visitors × share.\nMuseum | Feb visitors | Feb children | Mar visitors at same change\nAster | 50 | 15 | 62.5\nBirch | 44 | 11 | 35.2\nCedar | 48 | 12 | 72.0\nDelta | 54 | 18 | 60.75\n\nChildren total 15 + 11 + 12 + 18 = 56 thousand, so adults number 196 − 56 = 140 thousand."
+  },
+  {
+    "id": "D09",
+    "section": "DILR",
+    "topic": "DI · percentage change and shares",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Footfall at four museums",
+    "passage": "The table gives January visitors (in thousands) at four city museums, the percentage change in visitors from January to February, and the share of February visitors who were children.\n\nMuseum | January visitors (thousands) | Change, Jan to Feb | Children among Feb visitors\nAster | 40 | +25% | 30%\nBirch | 55 | -20% | 25%\nCedar | 32 | +50% | 25%\nDelta | 48 | +12.5% | one third\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "In February, by how many thousand did adult visitors at Birch exceed child visitors at Birch?",
+    "options": [],
+    "answer": "22",
+    "solution": "February visitors (thousands) = January × (1 + change). Children = February visitors × share.\nMuseum | Feb visitors | Feb children | Mar visitors at same change\nAster | 50 | 15 | 62.5\nBirch | 44 | 11 | 35.2\nCedar | 48 | 12 | 72.0\nDelta | 54 | 18 | 60.75\n\nBirch had 44 thousand February visitors, of whom a quarter (11 thousand) were children and 33 thousand adults: a gap of 22 thousand."
+  },
+  {
+    "id": "D10",
+    "section": "DILR",
+    "topic": "DI · percentage change and shares",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Footfall at four museums",
+    "passage": "The table gives January visitors (in thousands) at four city museums, the percentage change in visitors from January to February, and the share of February visitors who were children.\n\nMuseum | January visitors (thousands) | Change, Jan to Feb | Children among Feb visitors\nAster | 40 | +25% | 30%\nBirch | 55 | -20% | 25%\nCedar | 32 | +50% | 25%\nDelta | 48 | +12.5% | one third\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If each museum's visitors changed from February to March by the same percentage as from January to February, which museum would have the most visitors in March?",
+    "options": [
+      "Aster",
+      "Birch",
+      "Delta",
+      "Cedar"
+    ],
+    "answer": 3,
+    "solution": "February visitors (thousands) = January × (1 + change). Children = February visitors × share.\nMuseum | Feb visitors | Feb children | Mar visitors at same change\nAster | 50 | 15 | 62.5\nBirch | 44 | 11 | 35.2\nCedar | 48 | 12 | 72.0\nDelta | 54 | 18 | 60.75\n\nMarch visitors would be 62.5, 35.2, 72 and 60.75 thousand; Cedar is highest."
+  },
+  {
+    "id": "D11",
+    "section": "DILR",
+    "topic": "LR · tournament points",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Round-robin chess",
+    "passage": "Five players A, B, C, D and E played a chess tournament in which every player met every other player exactly once. A win earned 2 points, a draw 1 point and a loss 0 points. Final points: A 6, B 5, C 4, D 3 and E 2.\nExactly three games were drawn, one of them between B and C.\nA did not lose any game.\nE won exactly one game.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many games did B win?",
+    "options": [],
+    "answer": "2",
+    "solution": "A has 6 points from 4 games with no loss, so A has 2 wins and 2 draws. With only 3 draws in all and B–C drawn, A's two draws are the other two. Checking all 3^10 result tables leaves two:\nA>B, A=C, A=D, A>E, B=C, B>D, B>E, C>D, C<E, D>E\nA>B, A=C, A=D, A>E, B=C, B>D, B>E, C<D, C>E, D<E\n(X>Y means X won; X=Y a draw.)\n\nIn both possible tables B beat D and E, lost to A and drew with C: 2 wins."
+  },
+  {
+    "id": "D12",
+    "section": "DILR",
+    "topic": "LR · tournament points",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Round-robin chess",
+    "passage": "Five players A, B, C, D and E played a chess tournament in which every player met every other player exactly once. A win earned 2 points, a draw 1 point and a loss 0 points. Final points: A 6, B 5, C 4, D 3 and E 2.\nExactly three games were drawn, one of them between B and C.\nA did not lose any game.\nE won exactly one game.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If C defeated D, whom did E defeat?",
+    "options": [
+      "A",
+      "B",
+      "D",
+      "C"
+    ],
+    "answer": 3,
+    "solution": "A has 6 points from 4 games with no loss, so A has 2 wins and 2 draws. With only 3 draws in all and B–C drawn, A's two draws are the other two. Checking all 3^10 result tables leaves two:\nA>B, A=C, A=D, A>E, B=C, B>D, B>E, C>D, C<E, D>E\nA>B, A=C, A=D, A>E, B=C, B>D, B>E, C<D, C>E, D<E\n(X>Y means X won; X=Y a draw.)\n\nC beating D leaves only the first table, in which E beat C."
+  },
+  {
+    "id": "D13",
+    "section": "DILR",
+    "topic": "LR · tournament points",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Round-robin chess",
+    "passage": "Five players A, B, C, D and E played a chess tournament in which every player met every other player exactly once. A win earned 2 points, a draw 1 point and a loss 0 points. Final points: A 6, B 5, C 4, D 3 and E 2.\nExactly three games were drawn, one of them between B and C.\nA did not lose any game.\nE won exactly one game.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many games did D win?",
+    "options": [],
+    "answer": "1",
+    "solution": "A has 6 points from 4 games with no loss, so A has 2 wins and 2 draws. With only 3 draws in all and B–C drawn, A's two draws are the other two. Checking all 3^10 result tables leaves two:\nA>B, A=C, A=D, A>E, B=C, B>D, B>E, C>D, C<E, D>E\nA>B, A=C, A=D, A>E, B=C, B>D, B>E, C<D, C>E, D<E\n(X>Y means X won; X=Y a draw.)\n\nD has 3 points with one draw (against A) in both tables, so D won exactly one game."
+  },
+  {
+    "id": "D14",
+    "section": "DILR",
+    "topic": "LR · tournament points",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Round-robin chess",
+    "passage": "Five players A, B, C, D and E played a chess tournament in which every player met every other player exactly once. A win earned 2 points, a draw 1 point and a loss 0 points. Final points: A 6, B 5, C 4, D 3 and E 2.\nExactly three games were drawn, one of them between B and C.\nA did not lose any game.\nE won exactly one game.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which of the following results is certain?",
+    "options": [
+      "A defeated E",
+      "C defeated D",
+      "D defeated E",
+      "E defeated C"
+    ],
+    "answer": 0,
+    "solution": "A has 6 points from 4 games with no loss, so A has 2 wins and 2 draws. With only 3 draws in all and B–C drawn, A's two draws are the other two. Checking all 3^10 result tables leaves two:\nA>B, A=C, A=D, A>E, B=C, B>D, B>E, C>D, C<E, D>E\nA>B, A=C, A=D, A>E, B=C, B>D, B>E, C<D, C>E, D<E\n(X>Y means X won; X=Y a draw.)\n\nOnly the A–E result is the same in both tables among the options; the others hold in just one table."
+  },
+  {
+    "id": "D15",
+    "section": "DILR",
+    "topic": "DI · three-set overlap",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "A three-language club",
+    "passage": "A language club has 60 members, and each member studies at least one of French, German and Japanese. 32 members study French, 27 study German and 23 study Japanese. Exactly 14 members study exactly two of the languages.\nThe number studying French and German but not Japanese equals the number studying German and Japanese but not French.\nMore members study only French than only German, and more study only German than only Japanese.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many members study all three languages?",
+    "options": [],
+    "answer": "4",
+    "solution": "Let F only = a, G only = b, J only = c, F and G only = x, G and J only = y, F and J only = z and all three = t. Totals give a + x + z + t = 32, b + x + y + t = 27, c + y + z + t = 23 and x + y + z = 14 with 60 members in all. Adding the three language totals: 82 = (a + b + c) + 2 × 14 + 3t, while 60 = (a + b + c) + 14 + t, so t = 4. With x = y the conditions a > b > c leave:\nF only | G only | J only | FG only | GJ only | FJ only | All three\n18 | 15 | 9 | 4 | 4 | 6 | 4\n19 | 13 | 10 | 5 | 5 | 4 | 4\n\nComparing the two totals forces t = 4."
+  },
+  {
+    "id": "D16",
+    "section": "DILR",
+    "topic": "DI · three-set overlap",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "A three-language club",
+    "passage": "A language club has 60 members, and each member studies at least one of French, German and Japanese. 32 members study French, 27 study German and 23 study Japanese. Exactly 14 members study exactly two of the languages.\nThe number studying French and German but not Japanese equals the number studying German and Japanese but not French.\nMore members study only French than only German, and more study only German than only Japanese.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many members study exactly one language?",
+    "options": [
+      "42",
+      "44",
+      "46",
+      "43"
+    ],
+    "answer": 0,
+    "solution": "Let F only = a, G only = b, J only = c, F and G only = x, G and J only = y, F and J only = z and all three = t. Totals give a + x + z + t = 32, b + x + y + t = 27, c + y + z + t = 23 and x + y + z = 14 with 60 members in all. Adding the three language totals: 82 = (a + b + c) + 2 × 14 + 3t, while 60 = (a + b + c) + 14 + t, so t = 4. With x = y the conditions a > b > c leave:\nF only | G only | J only | FG only | GJ only | FJ only | All three\n18 | 15 | 9 | 4 | 4 | 6 | 4\n19 | 13 | 10 | 5 | 5 | 4 | 4\n\n60 − 14 − 4 = 42 in either case."
+  },
+  {
+    "id": "D17",
+    "section": "DILR",
+    "topic": "DI · three-set overlap",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "A three-language club",
+    "passage": "A language club has 60 members, and each member studies at least one of French, German and Japanese. 32 members study French, 27 study German and 23 study Japanese. Exactly 14 members study exactly two of the languages.\nThe number studying French and German but not Japanese equals the number studying German and Japanese but not French.\nMore members study only French than only German, and more study only German than only Japanese.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If 9 members study only Japanese, how many study French and Japanese but not German?",
+    "options": [],
+    "answer": "6",
+    "solution": "Let F only = a, G only = b, J only = c, F and G only = x, G and J only = y, F and J only = z and all three = t. Totals give a + x + z + t = 32, b + x + y + t = 27, c + y + z + t = 23 and x + y + z = 14 with 60 members in all. Adding the three language totals: 82 = (a + b + c) + 2 × 14 + 3t, while 60 = (a + b + c) + 14 + t, so t = 4. With x = y the conditions a > b > c leave:\nF only | G only | J only | FG only | GJ only | FJ only | All three\n18 | 15 | 9 | 4 | 4 | 6 | 4\n19 | 13 | 10 | 5 | 5 | 4 | 4\n\nOnly the first split has 9 Japanese-only members; there FJ-only is 6."
+  },
+  {
+    "id": "D18",
+    "section": "DILR",
+    "topic": "DI · three-set overlap",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "A three-language club",
+    "passage": "A language club has 60 members, and each member studies at least one of French, German and Japanese. 32 members study French, 27 study German and 23 study Japanese. Exactly 14 members study exactly two of the languages.\nThe number studying French and German but not Japanese equals the number studying German and Japanese but not French.\nMore members study only French than only German, and more study only German than only Japanese.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the largest possible number of members who study German and Japanese but not French?",
+    "options": [
+      "5",
+      "6",
+      "9",
+      "7"
+    ],
+    "answer": 0,
+    "solution": "Let F only = a, G only = b, J only = c, F and G only = x, G and J only = y, F and J only = z and all three = t. Totals give a + x + z + t = 32, b + x + y + t = 27, c + y + z + t = 23 and x + y + z = 14 with 60 members in all. Adding the three language totals: 82 = (a + b + c) + 2 × 14 + 3t, while 60 = (a + b + c) + 14 + t, so t = 4. With x = y the conditions a > b > c leave:\nF only | G only | J only | FG only | GJ only | FJ only | All three\n18 | 15 | 9 | 4 | 4 | 6 | 4\n19 | 13 | 10 | 5 | 5 | 4 | 4\n\nThe two feasible splits give 4 and 5; the largest is 5."
+  },
+  {
+    "id": "D19",
+    "section": "DILR",
+    "topic": "LR · network shortest paths",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "Delivery routes",
+    "passage": "A courier van starts at depot P and serves hubs Q, R, S, T, U and V. The only roads are the two-way roads below, with travel times in minutes. Time spent at hubs is ignored.\n\nRoad | Minutes\nP–Q | 7\nP–R | 9\nP–S | 11\nQ–R | 10\nQ–T | 15\nR–S | 2\nR–T | 11\nS–U | 9\nT–U | 6\nT–V | 8\nU–V | 5\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the minimum travel time, in minutes, from P to V?",
+    "options": [],
+    "answer": "25",
+    "solution": "Compute shortest times from P (Dijkstra’s method):\nHub | Q | R | S | T | U | V\nMinutes from P | 7 | 9 | 11 | 20 | 20 | 25\nTwo routes reach V in 25 minutes: P–S–U–V (11 + 9 + 5) and P–R–S–U–V (9 + 2 + 9 + 5).\n\nThe shortest routes take 25 minutes."
+  },
+  {
+    "id": "D20",
+    "section": "DILR",
+    "topic": "LR · network shortest paths",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "Delivery routes",
+    "passage": "A courier van starts at depot P and serves hubs Q, R, S, T, U and V. The only roads are the two-way roads below, with travel times in minutes. Time spent at hubs is ignored.\n\nRoad | Minutes\nP–Q | 7\nP–R | 9\nP–S | 11\nQ–R | 10\nQ–T | 15\nR–S | 2\nR–T | 11\nS–U | 9\nT–U | 6\nT–V | 8\nU–V | 5\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If road R–S is closed, what is the minimum travel time, in minutes, from P to V?",
+    "options": [
+      "29",
+      "25",
+      "26",
+      "27"
+    ],
+    "answer": 1,
+    "solution": "Compute shortest times from P (Dijkstra’s method):\nHub | Q | R | S | T | U | V\nMinutes from P | 7 | 9 | 11 | 20 | 20 | 25\nTwo routes reach V in 25 minutes: P–S–U–V (11 + 9 + 5) and P–R–S–U–V (9 + 2 + 9 + 5).\n\nP–S–U–V still takes 11 + 9 + 5 = 25 minutes, so the minimum is unchanged."
+  },
+  {
+    "id": "D21",
+    "section": "DILR",
+    "topic": "LR · network shortest paths",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "Delivery routes",
+    "passage": "A courier van starts at depot P and serves hubs Q, R, S, T, U and V. The only roads are the two-way roads below, with travel times in minutes. Time spent at hubs is ignored.\n\nRoad | Minutes\nP–Q | 7\nP–R | 9\nP–S | 11\nQ–R | 10\nQ–T | 15\nR–S | 2\nR–T | 11\nS–U | 9\nT–U | 6\nT–V | 8\nU–V | 5\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "A van must travel from P to V passing through T. What is its minimum travel time, in minutes?",
+    "options": [],
+    "answer": "28",
+    "solution": "Compute shortest times from P (Dijkstra’s method):\nHub | Q | R | S | T | U | V\nMinutes from P | 7 | 9 | 11 | 20 | 20 | 25\nTwo routes reach V in 25 minutes: P–S–U–V (11 + 9 + 5) and P–R–S–U–V (9 + 2 + 9 + 5).\n\nP to T takes at least 20 minutes (P–R–T) and T to V at least 8, so 28 minutes."
+  },
+  {
+    "id": "D22",
+    "section": "DILR",
+    "topic": "LR · network shortest paths",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "Delivery routes",
+    "passage": "A courier van starts at depot P and serves hubs Q, R, S, T, U and V. The only roads are the two-way roads below, with travel times in minutes. Time spent at hubs is ignored.\n\nRoad | Minutes\nP–Q | 7\nP–R | 9\nP–S | 11\nQ–R | 10\nQ–T | 15\nR–S | 2\nR–T | 11\nS–U | 9\nT–U | 6\nT–V | 8\nU–V | 5\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many different routes from P to V, visiting no hub twice, take the minimum time?",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "6"
+    ],
+    "answer": 2,
+    "solution": "Compute shortest times from P (Dijkstra’s method):\nHub | Q | R | S | T | U | V\nMinutes from P | 7 | 9 | 11 | 20 | 20 | 25\nTwo routes reach V in 25 minutes: P–S–U–V (11 + 9 + 5) and P–R–S–U–V (9 + 2 + 9 + 5).\n\nP–S–U–V and P–R–S–U–V both take 25 minutes; no other route does."
+  }
+];
+})();

@@ -1,0 +1,368 @@
+/* Original CAT-style DILR practice; not an actual future exam paper. */
+(() => {
+window.CAT2026_DILR = [
+  {
+    "id": "D01",
+    "section": "DILR",
+    "topic": "LR · number-grid reconstruction",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "The incomplete number panel",
+    "passage": "A 3 by 3 panel contains each integer from 1 to 9 exactly once. The totals of its top, middle and bottom rows are 12, 15 and 18 respectively. The totals of its left, middle and right columns are 14, 17 and 14 respectively. The main diagonal, from the top-left cell through the centre to the bottom-right cell, totals 14. The top-middle cell contains an odd number. There are no other conditions.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many complete grids satisfy all the conditions?",
+    "options": [],
+    "answer": "3",
+    "solution": "The row totals sum to 45, exactly the sum of 1 through 9. Select a distinct-digit top row summing to 12 with an odd middle, then a disjoint middle row summing to 15. Each column total determines its bottom entry. Reject repeated or missing digits and test the main diagonal. The complete list is:\nTop row | Middle row | Bottom row\n1 9 2 | 6 5 4 | 7 3 8\n2 9 1 | 4 5 6 | 8 3 7\n3 1 8 | 6 7 2 | 5 9 4\nThus there are three, and only three, feasible grids. Rows and columns refer to their displayed positions; rotations are not identified.\n\nThere are three distinct grids in the complete list."
+  },
+  {
+    "id": "D02",
+    "section": "DILR",
+    "topic": "LR · number-grid reconstruction",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "The incomplete number panel",
+    "passage": "A 3 by 3 panel contains each integer from 1 to 9 exactly once. The totals of its top, middle and bottom rows are 12, 15 and 18 respectively. The totals of its left, middle and right columns are 14, 17 and 14 respectively. The main diagonal, from the top-left cell through the centre to the bottom-right cell, totals 14. The top-middle cell contains an odd number. There are no other conditions.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which statement must be true?",
+    "options": [
+      "The centre contains an odd number",
+      "The top-middle contains 9",
+      "The bottom-left is the largest entry in its row",
+      "The centre contains 5"
+    ],
+    "answer": 0,
+    "solution": "The row totals sum to 45, exactly the sum of 1 through 9. Select a distinct-digit top row summing to 12 with an odd middle, then a disjoint middle row summing to 15. Each column total determines its bottom entry. Reject repeated or missing digits and test the main diagonal. The complete list is:\nTop row | Middle row | Bottom row\n1 9 2 | 6 5 4 | 7 3 8\n2 9 1 | 4 5 6 | 8 3 7\n3 1 8 | 6 7 2 | 5 9 4\nThus there are three, and only three, feasible grids. Rows and columns refer to their displayed positions; rotations are not identified.\n\nThe centre is 5, 5 or 7, so it is always odd. It need not be 5; the top-middle need not be 9. In the third grid, the bottom-left entry 5 is not the largest in its row."
+  },
+  {
+    "id": "D03",
+    "section": "DILR",
+    "topic": "LR · number-grid reconstruction",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "The incomplete number panel",
+    "passage": "A 3 by 3 panel contains each integer from 1 to 9 exactly once. The totals of its top, middle and bottom rows are 12, 15 and 18 respectively. The totals of its left, middle and right columns are 14, 17 and 14 respectively. The main diagonal, from the top-left cell through the centre to the bottom-right cell, totals 14. The top-middle cell contains an odd number. There are no other conditions.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If the top-left entry is 2, what is the bottom-middle entry?",
+    "options": [],
+    "answer": "3",
+    "solution": "The row totals sum to 45, exactly the sum of 1 through 9. Select a distinct-digit top row summing to 12 with an odd middle, then a disjoint middle row summing to 15. Each column total determines its bottom entry. Reject repeated or missing digits and test the main diagonal. The complete list is:\nTop row | Middle row | Bottom row\n1 9 2 | 6 5 4 | 7 3 8\n2 9 1 | 4 5 6 | 8 3 7\n3 1 8 | 6 7 2 | 5 9 4\nThus there are three, and only three, feasible grids. Rows and columns refer to their displayed positions; rotations are not identified.\n\nOnly the second grid has top-left entry 2. Its bottom row is 8, 3, 7, giving bottom-middle 3."
+  },
+  {
+    "id": "D04",
+    "section": "DILR",
+    "topic": "LR · number-grid reconstruction",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "The incomplete number panel",
+    "passage": "A 3 by 3 panel contains each integer from 1 to 9 exactly once. The totals of its top, middle and bottom rows are 12, 15 and 18 respectively. The totals of its left, middle and right columns are 14, 17 and 14 respectively. The main diagonal, from the top-left cell through the centre to the bottom-right cell, totals 14. The top-middle cell contains an odd number. There are no other conditions.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the largest possible sum of the top-left and bottom-right entries?",
+    "options": [
+      "9",
+      "7",
+      "11",
+      "10"
+    ],
+    "answer": 0,
+    "solution": "The row totals sum to 45, exactly the sum of 1 through 9. Select a distinct-digit top row summing to 12 with an odd middle, then a disjoint middle row summing to 15. Each column total determines its bottom entry. Reject repeated or missing digits and test the main diagonal. The complete list is:\nTop row | Middle row | Bottom row\n1 9 2 | 6 5 4 | 7 3 8\n2 9 1 | 4 5 6 | 8 3 7\n3 1 8 | 6 7 2 | 5 9 4\nThus there are three, and only three, feasible grids. Rows and columns refer to their displayed positions; rotations are not identified.\n\nThe three corner sums are 1+8=9, 2+7=9 and 3+4=7. The maximum is 9."
+  },
+  {
+    "id": "D05",
+    "section": "DILR",
+    "topic": "LR · number-grid reconstruction",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "The incomplete number panel",
+    "passage": "A 3 by 3 panel contains each integer from 1 to 9 exactly once. The totals of its top, middle and bottom rows are 12, 15 and 18 respectively. The totals of its left, middle and right columns are 14, 17 and 14 respectively. The main diagonal, from the top-left cell through the centre to the bottom-right cell, totals 14. The top-middle cell contains an odd number. There are no other conditions.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If the centre contains 7, what is the top-right entry?",
+    "options": [
+      "8",
+      "9",
+      "4",
+      "1"
+    ],
+    "answer": 0,
+    "solution": "The row totals sum to 45, exactly the sum of 1 through 9. Select a distinct-digit top row summing to 12 with an odd middle, then a disjoint middle row summing to 15. Each column total determines its bottom entry. Reject repeated or missing digits and test the main diagonal. The complete list is:\nTop row | Middle row | Bottom row\n1 9 2 | 6 5 4 | 7 3 8\n2 9 1 | 4 5 6 | 8 3 7\n3 1 8 | 6 7 2 | 5 9 4\nThus there are three, and only three, feasible grids. Rows and columns refer to their displayed positions; rotations are not identified.\n\nThe third grid is the only one with centre 7. Its top-right entry is 8."
+  },
+  {
+    "id": "D06",
+    "section": "DILR",
+    "topic": "DI · ratios and time-weighted capital",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "When the partners invested",
+    "passage": "Partners A, B, C and D invest ₹40,000, ₹60,000, ₹80,000 and ₹100,000 respectively. Each makes one investment, unchanged until a common year-end. Their investment durations are 6, 8, 10 and 12 months, one each. Profit is divided in proportion to capital multiplied by months invested. A:B profit shares are 4:3 and C and D receive equal shares. The total profit is ₹244,000.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How much profit, in rupees, does B receive?",
+    "options": [],
+    "answer": "36000",
+    "solution": "Measure capital in thousands. The A:B condition gives 40m_A/(60m_B) = 4/3, hence m_A = 2m_B. The available durations force m_A = 12 and m_B = 6. Equal C and D shares require 80m_C = 100m_D, fixing m_C = 10 and m_D = 8.\nPartner | Months | Capital-month weight | Profit (₹)\nA | 12 | 480 | 48000\nB | 6 | 360 | 36000\nC | 10 | 800 | 80000\nD | 8 | 800 | 80000\n\nWeights total 2440, so each weight unit receives ₹100; B receives 360 × 100 = ₹36,000."
+  },
+  {
+    "id": "D07",
+    "section": "DILR",
+    "topic": "DI · ratios and time-weighted capital",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "When the partners invested",
+    "passage": "Partners A, B, C and D invest ₹40,000, ₹60,000, ₹80,000 and ₹100,000 respectively. Each makes one investment, unchanged until a common year-end. Their investment durations are 6, 8, 10 and 12 months, one each. Profit is divided in proportion to capital multiplied by months invested. A:B profit shares are 4:3 and C and D receive equal shares. The total profit is ₹244,000.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which pair receives equal amounts?",
+    "options": [
+      "A and B",
+      "A and C",
+      "C and D",
+      "B and D"
+    ],
+    "answer": 2,
+    "solution": "Measure capital in thousands. The A:B condition gives 40m_A/(60m_B) = 4/3, hence m_A = 2m_B. The available durations force m_A = 12 and m_B = 6. Equal C and D shares require 80m_C = 100m_D, fixing m_C = 10 and m_D = 8.\nPartner | Months | Capital-month weight | Profit (₹)\nA | 12 | 480 | 48000\nB | 6 | 360 | 36000\nC | 10 | 800 | 80000\nD | 8 | 800 | 80000\n\nBoth have capital-month weight 800 and receive ₹80,000."
+  },
+  {
+    "id": "D08",
+    "section": "DILR",
+    "topic": "DI · ratios and time-weighted capital",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "When the partners invested",
+    "passage": "Partners A, B, C and D invest ₹40,000, ₹60,000, ₹80,000 and ₹100,000 respectively. Each makes one investment, unchanged until a common year-end. Their investment durations are 6, 8, 10 and 12 months, one each. Profit is divided in proportion to capital multiplied by months invested. A:B profit shares are 4:3 and C and D receive equal shares. The total profit is ₹244,000.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "For how many months was B's original investment active?",
+    "options": [],
+    "answer": "6",
+    "solution": "Measure capital in thousands. The A:B condition gives 40m_A/(60m_B) = 4/3, hence m_A = 2m_B. The available durations force m_A = 12 and m_B = 6. Equal C and D shares require 80m_C = 100m_D, fixing m_C = 10 and m_D = 8.\nPartner | Months | Capital-month weight | Profit (₹)\nA | 12 | 480 | 48000\nB | 6 | 360 | 36000\nC | 10 | 800 | 80000\nD | 8 | 800 | 80000\n\nThe ratio and duration list force B's duration to 6 months."
+  },
+  {
+    "id": "D09",
+    "section": "DILR",
+    "topic": "DI · ratios and time-weighted capital",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "When the partners invested",
+    "passage": "Partners A, B, C and D invest ₹40,000, ₹60,000, ₹80,000 and ₹100,000 respectively. Each makes one investment, unchanged until a common year-end. Their investment durations are 6, 8, 10 and 12 months, one each. Profit is divided in proportion to capital multiplied by months invested. A:B profit shares are 4:3 and C and D receive equal shares. The total profit is ₹244,000.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Instead, suppose B doubles its capital only for the final two months of its six-month investment. Other investments are unchanged and the profit pool is ₹256,000. What is B's revised profit in rupees?",
+    "options": [],
+    "answer": "48000",
+    "solution": "Measure capital in thousands. The A:B condition gives 40m_A/(60m_B) = 4/3, hence m_A = 2m_B. The available durations force m_A = 12 and m_B = 6. Equal C and D shares require 80m_C = 100m_D, fixing m_C = 10 and m_D = 8.\nPartner | Months | Capital-month weight | Profit (₹)\nA | 12 | 480 | 48000\nB | 6 | 360 | 36000\nC | 10 | 800 | 80000\nD | 8 | 800 | 80000\n\nB's weight rises from 360 to 480; total weight rises from 2440 to 2560. Its share is 480/2560 × 256000 = ₹48,000."
+  },
+  {
+    "id": "D10",
+    "section": "DILR",
+    "topic": "DI · ratios and time-weighted capital",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "When the partners invested",
+    "passage": "Partners A, B, C and D invest ₹40,000, ₹60,000, ₹80,000 and ₹100,000 respectively. Each makes one investment, unchanged until a common year-end. Their investment durations are 6, 8, 10 and 12 months, one each. Profit is divided in proportion to capital multiplied by months invested. A:B profit shares are 4:3 and C and D receive equal shares. The total profit is ₹244,000.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What fraction of the original profit pool belongs to A?",
+    "options": [
+      "12/61",
+      "20/61",
+      "9/61",
+      "1/4"
+    ],
+    "answer": 0,
+    "solution": "Measure capital in thousands. The A:B condition gives 40m_A/(60m_B) = 4/3, hence m_A = 2m_B. The available durations force m_A = 12 and m_B = 6. Equal C and D shares require 80m_C = 100m_D, fixing m_C = 10 and m_D = 8.\nPartner | Months | Capital-month weight | Profit (₹)\nA | 12 | 480 | 48000\nB | 6 | 360 | 36000\nC | 10 | 800 | 80000\nD | 8 | 800 | 80000\n\nA's fraction 480/2440 reduces to 12/61."
+  },
+  {
+    "id": "D11",
+    "section": "DILR",
+    "topic": "DI · refunds and retained revenue",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Returns across two sales channels",
+    "passage": "A retailer sells 120 units online at ₹200 each and 80 units in shops at ₹250 each. Later, exactly 38 of these units are returned, for full refunds at the original channel price. The total refund is ₹8,000. There are no taxes, discounts, exchanges or other transactions. Each unit is returned at most once.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What percentage of online units is returned?",
+    "options": [],
+    "answer": "25",
+    "solution": "Let x be online returns; shop returns are 38 − x. The refund equation 200x + 250(38 − x) = 8000 gives x = 30 and shop returns 8. Retained units are 90 online and 72 in shops. Original revenue is ₹44,000 and retained revenue is ₹36,000.\n\n30/120 × 100 = 25%."
+  },
+  {
+    "id": "D12",
+    "section": "DILR",
+    "topic": "DI · refunds and retained revenue",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Returns across two sales channels",
+    "passage": "A retailer sells 120 units online at ₹200 each and 80 units in shops at ₹250 each. Later, exactly 38 of these units are returned, for full refunds at the original channel price. The total refund is ₹8,000. There are no taxes, discounts, exchanges or other transactions. Each unit is returned at most once.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How much revenue is retained from shop sales?",
+    "options": [
+      "18000",
+      "17500",
+      "16000",
+      "20000"
+    ],
+    "answer": 0,
+    "solution": "Let x be online returns; shop returns are 38 − x. The refund equation 200x + 250(38 − x) = 8000 gives x = 30 and shop returns 8. Retained units are 90 online and 72 in shops. Original revenue is ₹44,000 and retained revenue is ₹36,000.\n\n(80 − 8) × 250 = ₹18,000."
+  },
+  {
+    "id": "D13",
+    "section": "DILR",
+    "topic": "DI · refunds and retained revenue",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Returns across two sales channels",
+    "passage": "A retailer sells 120 units online at ₹200 each and 80 units in shops at ₹250 each. Later, exactly 38 of these units are returned, for full refunds at the original channel price. The total refund is ₹8,000. There are no taxes, discounts, exchanges or other transactions. Each unit is returned at most once.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many sold units are retained by customers overall?",
+    "options": [],
+    "answer": "162",
+    "solution": "Let x be online returns; shop returns are 38 − x. The refund equation 200x + 250(38 − x) = 8000 gives x = 30 and shop returns 8. Retained units are 90 online and 72 in shops. Original revenue is ₹44,000 and retained revenue is ₹36,000.\n\n200 − 38 = 162 units are not returned."
+  },
+  {
+    "id": "D14",
+    "section": "DILR",
+    "topic": "DI · refunds and retained revenue",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Returns across two sales channels",
+    "passage": "A retailer sells 120 units online at ₹200 each and 80 units in shops at ₹250 each. Later, exactly 38 of these units are returned, for full refunds at the original channel price. The total refund is ₹8,000. There are no taxes, discounts, exchanges or other transactions. Each unit is returned at most once.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If the online selling price had been 10% higher, with the same numbers sold and returned in both channels and full refunds at that revised price, what total revenue would be retained?",
+    "options": [
+      "36800",
+      "38000",
+      "38800",
+      "37800"
+    ],
+    "answer": 3,
+    "solution": "Let x be online returns; shop returns are 38 − x. The refund equation 200x + 250(38 − x) = 8000 gives x = 30 and shop returns 8. Retained units are 90 online and 72 in shops. Original revenue is ₹44,000 and retained revenue is ₹36,000.\n\nOnline net revenue becomes 90 × 220 = ₹19,800; shop net revenue remains ₹18,000. Total: ₹37,800."
+  },
+  {
+    "id": "D15",
+    "section": "DILR",
+    "topic": "LR · parity and constrained optimization",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "The priced switchboard",
+    "passage": "Five lamps numbered 1 to 5 are initially OFF. Six buttons are available. Pressing a button toggles exactly the two lamps listed below: an OFF lamp becomes ON and an ON lamp becomes OFF. Each button may be pressed at most once.\nButton | Lamps toggled | Cost\nA | 1 and 2 | 1\nB | 2 and 3 | 4\nC | 1 and 3 | 6\nD | 3 and 4 | 2\nE | 4 and 5 | 3\nF | 3 and 5 | 7\nA valid plan ends with lamps 1 and 5 ON and lamps 2, 3 and 4 OFF. A plan is a set of buttons; different orders of pressing the same set do not count as different plans. Total cost is the sum of costs of the buttons pressed.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many valid plans are there?",
+    "options": [],
+    "answer": "4",
+    "solution": "Let a,b,c,d,e,f be 0 or 1 according to whether each button is pressed. Lamp 2 must remain OFF, so a=b. Lamp 4 must remain OFF, so d=e. Lamp 1 must be ON, so c=1−a; lamp 5 must be ON, so f=1−d. With these substitutions, lamp 3 receives an even number of toggles automatically. Thus the independent choices of a and d yield four plans:\nButtons pressed | Number of presses | Total cost\nCF | 2 | 13\nCDE | 3 | 11\nABF | 3 | 12\nABDE | 4 | 10\nThis also shows why the minimum-press plan need not be the cheapest plan.\n\nThe four possibilities are CF, CDE, ABF and ABDE."
+  },
+  {
+    "id": "D16",
+    "section": "DILR",
+    "topic": "LR · parity and constrained optimization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "The priced switchboard",
+    "passage": "Five lamps numbered 1 to 5 are initially OFF. Six buttons are available. Pressing a button toggles exactly the two lamps listed below: an OFF lamp becomes ON and an ON lamp becomes OFF. Each button may be pressed at most once.\nButton | Lamps toggled | Cost\nA | 1 and 2 | 1\nB | 2 and 3 | 4\nC | 1 and 3 | 6\nD | 3 and 4 | 2\nE | 4 and 5 | 3\nF | 3 and 5 | 7\nA valid plan ends with lamps 1 and 5 ON and lamps 2, 3 and 4 OFF. A plan is a set of buttons; different orders of pressing the same set do not count as different plans. Total cost is the sum of costs of the buttons pressed.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which valid plan has the least total cost?",
+    "options": [
+      "CDE",
+      "CF",
+      "ABF",
+      "ABDE"
+    ],
+    "answer": 3,
+    "solution": "Let a,b,c,d,e,f be 0 or 1 according to whether each button is pressed. Lamp 2 must remain OFF, so a=b. Lamp 4 must remain OFF, so d=e. Lamp 1 must be ON, so c=1−a; lamp 5 must be ON, so f=1−d. With these substitutions, lamp 3 receives an even number of toggles automatically. Thus the independent choices of a and d yield four plans:\nButtons pressed | Number of presses | Total cost\nCF | 2 | 13\nCDE | 3 | 11\nABF | 3 | 12\nABDE | 4 | 10\nThis also shows why the minimum-press plan need not be the cheapest plan.\n\nABDE costs 1+4+2+3=10. The alternatives CDE, ABF and CF cost 11, 12 and 13 respectively."
+  },
+  {
+    "id": "D17",
+    "section": "DILR",
+    "topic": "LR · parity and constrained optimization",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "The priced switchboard",
+    "passage": "Five lamps numbered 1 to 5 are initially OFF. Six buttons are available. Pressing a button toggles exactly the two lamps listed below: an OFF lamp becomes ON and an ON lamp becomes OFF. Each button may be pressed at most once.\nButton | Lamps toggled | Cost\nA | 1 and 2 | 1\nB | 2 and 3 | 4\nC | 1 and 3 | 6\nD | 3 and 4 | 2\nE | 4 and 5 | 3\nF | 3 and 5 | 7\nA valid plan ends with lamps 1 and 5 ON and lamps 2, 3 and 4 OFF. A plan is a set of buttons; different orders of pressing the same set do not count as different plans. Total cost is the sum of costs of the buttons pressed.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the smallest number of button presses in any valid plan?",
+    "options": [],
+    "answer": "2",
+    "solution": "Let a,b,c,d,e,f be 0 or 1 according to whether each button is pressed. Lamp 2 must remain OFF, so a=b. Lamp 4 must remain OFF, so d=e. Lamp 1 must be ON, so c=1−a; lamp 5 must be ON, so f=1−d. With these substitutions, lamp 3 receives an even number of toggles automatically. Thus the independent choices of a and d yield four plans:\nButtons pressed | Number of presses | Total cost\nCF | 2 | 13\nCDE | 3 | 11\nABF | 3 | 12\nABDE | 4 | 10\nThis also shows why the minimum-press plan need not be the cheapest plan.\n\nCF needs two presses: lamp 3 is toggled twice, while lamps 1 and 5 are each toggled once. No single button toggles exactly lamps 1 and 5."
+  },
+  {
+    "id": "D18",
+    "section": "DILR",
+    "topic": "LR · parity and constrained optimization",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "The priced switchboard",
+    "passage": "Five lamps numbered 1 to 5 are initially OFF. Six buttons are available. Pressing a button toggles exactly the two lamps listed below: an OFF lamp becomes ON and an ON lamp becomes OFF. Each button may be pressed at most once.\nButton | Lamps toggled | Cost\nA | 1 and 2 | 1\nB | 2 and 3 | 4\nC | 1 and 3 | 6\nD | 3 and 4 | 2\nE | 4 and 5 | 3\nF | 3 and 5 | 7\nA valid plan ends with lamps 1 and 5 ON and lamps 2, 3 and 4 OFF. A plan is a set of buttons; different orders of pressing the same set do not count as different plans. Total cost is the sum of costs of the buttons pressed.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If total cost cannot exceed 11, what is the smallest possible number of button presses?",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "4"
+    ],
+    "answer": 1,
+    "solution": "Let a,b,c,d,e,f be 0 or 1 according to whether each button is pressed. Lamp 2 must remain OFF, so a=b. Lamp 4 must remain OFF, so d=e. Lamp 1 must be ON, so c=1−a; lamp 5 must be ON, so f=1−d. With these substitutions, lamp 3 receives an even number of toggles automatically. Thus the independent choices of a and d yield four plans:\nButtons pressed | Number of presses | Total cost\nCF | 2 | 13\nCDE | 3 | 11\nABF | 3 | 12\nABDE | 4 | 10\nThis also shows why the minimum-press plan need not be the cheapest plan.\n\nThe affordable valid plans are ABDE (cost 10, four presses) and CDE (cost 11, three presses). CF has fewer presses but exceeds the budget. Hence the required minimum is 3."
+  },
+  {
+    "id": "D19",
+    "section": "DILR",
+    "topic": "LR · selection with linked membership",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "The dual-quota review committee",
+    "passage": "A four-person committee must be selected from eight staff. It must contain exactly two analysts, exactly two engineers and exactly two certified people. The table also gives each person's participation cost, in the same units.\nPerson | Role | Certified? | Cost\nA | Analyst | Yes | 5\nB | Analyst | No | 3\nC | Analyst | Yes | 4\nD | Analyst | No | 6\nE | Engineer | No | 4\nF | Engineer | Yes | 7\nG | Engineer | No | 2\nH | Engineer | Yes | 5\nA and E cannot both be selected. B is selected if and only if G is selected: either both are selected or neither is selected. C and H cannot both be selected. There are no other restrictions unless a question adds one. The committee's total cost is the sum of its members' costs.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many committees satisfy all the original conditions?",
+    "options": [],
+    "answer": "4",
+    "solution": "Start with the 6 possible pairs of analysts and 6 pairs of engineers. Keep exactly two certified people, enforce the exclusions AE and CH, and enforce that B and G either both occur or both do not. The complete feasible committees are:\nCommittee | Cost\nABFG | 17\nABGH | 15\nBCFG | 16\nCDEF | 21\nWhen B and G are selected, the remaining analyst and engineer must both be certified: AF, AH or CF works, while CH is excluded. When B and G are both absent, the only feasible committee is CDEF. This split proves completeness without listing all 70 four-person subsets.\n\nThe possibilities are ABFG, ABGH, BCFG and CDEF: four committees."
+  },
+  {
+    "id": "D20",
+    "section": "DILR",
+    "topic": "LR · selection with linked membership",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "The dual-quota review committee",
+    "passage": "A four-person committee must be selected from eight staff. It must contain exactly two analysts, exactly two engineers and exactly two certified people. The table also gives each person's participation cost, in the same units.\nPerson | Role | Certified? | Cost\nA | Analyst | Yes | 5\nB | Analyst | No | 3\nC | Analyst | Yes | 4\nD | Analyst | No | 6\nE | Engineer | No | 4\nF | Engineer | Yes | 7\nG | Engineer | No | 2\nH | Engineer | Yes | 5\nA and E cannot both be selected. B is selected if and only if G is selected: either both are selected or neither is selected. C and H cannot both be selected. There are no other restrictions unless a question adds one. The committee's total cost is the sum of its members' costs.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the minimum possible committee cost?",
+    "options": [
+      "17",
+      "16",
+      "14",
+      "15"
+    ],
+    "answer": 3,
+    "solution": "Start with the 6 possible pairs of analysts and 6 pairs of engineers. Keep exactly two certified people, enforce the exclusions AE and CH, and enforce that B and G either both occur or both do not. The complete feasible committees are:\nCommittee | Cost\nABFG | 17\nABGH | 15\nBCFG | 16\nCDEF | 21\nWhen B and G are selected, the remaining analyst and engineer must both be certified: AF, AH or CF works, while CH is excluded. When B and G are both absent, the only feasible committee is CDEF. This split proves completeness without listing all 70 four-person subsets.\n\nABGH costs 5+3+2+5=15. The remaining feasible costs are 17, 16 and 21, all larger."
+  },
+  {
+    "id": "D21",
+    "section": "DILR",
+    "topic": "LR · selection with linked membership",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "The dual-quota review committee",
+    "passage": "A four-person committee must be selected from eight staff. It must contain exactly two analysts, exactly two engineers and exactly two certified people. The table also gives each person's participation cost, in the same units.\nPerson | Role | Certified? | Cost\nA | Analyst | Yes | 5\nB | Analyst | No | 3\nC | Analyst | Yes | 4\nD | Analyst | No | 6\nE | Engineer | No | 4\nF | Engineer | Yes | 7\nG | Engineer | No | 2\nH | Engineer | Yes | 5\nA and E cannot both be selected. B is selected if and only if G is selected: either both are selected or neither is selected. C and H cannot both be selected. There are no other restrictions unless a question adds one. The committee's total cost is the sum of its members' costs.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If C must be selected, what is the maximum possible committee cost?",
+    "options": [],
+    "answer": "21",
+    "solution": "Start with the 6 possible pairs of analysts and 6 pairs of engineers. Keep exactly two certified people, enforce the exclusions AE and CH, and enforce that B and G either both occur or both do not. The complete feasible committees are:\nCommittee | Cost\nABFG | 17\nABGH | 15\nBCFG | 16\nCDEF | 21\nWhen B and G are selected, the remaining analyst and engineer must both be certified: AF, AH or CF works, while CH is excluded. When B and G are both absent, the only feasible committee is CDEF. This split proves completeness without listing all 70 four-person subsets.\n\nWith C selected the possible committees are BCFG (cost 16) and CDEF (cost 21). Therefore the maximum is 21."
+  },
+  {
+    "id": "D22",
+    "section": "DILR",
+    "topic": "LR · selection with linked membership",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "The dual-quota review committee",
+    "passage": "A four-person committee must be selected from eight staff. It must contain exactly two analysts, exactly two engineers and exactly two certified people. The table also gives each person's participation cost, in the same units.\nPerson | Role | Certified? | Cost\nA | Analyst | Yes | 5\nB | Analyst | No | 3\nC | Analyst | Yes | 4\nD | Analyst | No | 6\nE | Engineer | No | 4\nF | Engineer | Yes | 7\nG | Engineer | No | 2\nH | Engineer | Yes | 5\nA and E cannot both be selected. B is selected if and only if G is selected: either both are selected or neither is selected. C and H cannot both be selected. There are no other restrictions unless a question adds one. The committee's total cost is the sum of its members' costs.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If total cost cannot exceed 16, which pair is present in every permissible committee?",
+    "options": [
+      "B and G",
+      "A and H",
+      "F and G",
+      "C and F"
+    ],
+    "answer": 0,
+    "solution": "Start with the 6 possible pairs of analysts and 6 pairs of engineers. Keep exactly two certified people, enforce the exclusions AE and CH, and enforce that B and G either both occur or both do not. The complete feasible committees are:\nCommittee | Cost\nABFG | 17\nABGH | 15\nBCFG | 16\nCDEF | 21\nWhen B and G are selected, the remaining analyst and engineer must both be certified: AF, AH or CF works, while CH is excluded. When B and G are both absent, the only feasible committee is CDEF. This split proves completeness without listing all 70 four-person subsets.\n\nThe budget permits ABGH and BCFG only. Their common members are exactly B and G. Each other option contains someone absent from at least one of those committees."
+  }
+];
+})();

@@ -1,0 +1,368 @@
+/* Original CAT-style DILR practice for Paper 08; solved by tests/dilr-series-06-10.py. Not an actual exam paper. */
+(() => {
+window.CAT2026_DILR = [
+  {
+    "id": "D01",
+    "section": "DILR",
+    "topic": "DI · missing values from averages",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Scores in three tests",
+    "passage": "Six students took three tests, each marked out of 50. Some scores are missing from the table below.\n\nStudent | Test 1 | Test 2 | Test 3\nU | 42 | 38 | ?\nV | 35 | ? | 44\nW | ? | 41 | 39\nX | 30 | 36 | 33\nY | 47 | 29 | 40\nZ | 38 | 45 | ?\n\nThe average Test 1 score of the six students was 39 and the average Test 2 score was 38. U's total over the three tests was 120. Z scored the same in Test 3 as in Test 1.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What was W's total score over the three tests?",
+    "options": [],
+    "answer": "122",
+    "solution": "Test 1 total must be 6 × 39 = 234, so W scored 42. Test 2 total must be 6 × 38 = 228, so V scored 39. U's total of 120 gives U 40 in Test 3, and Z's Test 3 score equals its Test 1 score, 38.\nStudent | Test 1 | Test 2 | Test 3 | Total\nU | 42 | 38 | 40 | 120\nV | 35 | 39 | 44 | 118\nW | 42 | 41 | 39 | 122\nX | 30 | 36 | 33 | 99\nY | 47 | 29 | 40 | 116\nZ | 38 | 45 | 38 | 121\n\nW scored 42 + 41 + 39 = 122."
+  },
+  {
+    "id": "D02",
+    "section": "DILR",
+    "topic": "DI · missing values from averages",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Scores in three tests",
+    "passage": "Six students took three tests, each marked out of 50. Some scores are missing from the table below.\n\nStudent | Test 1 | Test 2 | Test 3\nU | 42 | 38 | ?\nV | 35 | ? | 44\nW | ? | 41 | 39\nX | 30 | 36 | 33\nY | 47 | 29 | 40\nZ | 38 | 45 | ?\n\nThe average Test 1 score of the six students was 39 and the average Test 2 score was 38. U's total over the three tests was 120. Z scored the same in Test 3 as in Test 1.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which student had the highest total?",
+    "options": [
+      "V",
+      "U",
+      "W",
+      "Z"
+    ],
+    "answer": 2,
+    "solution": "Test 1 total must be 6 × 39 = 234, so W scored 42. Test 2 total must be 6 × 38 = 228, so V scored 39. U's total of 120 gives U 40 in Test 3, and Z's Test 3 score equals its Test 1 score, 38.\nStudent | Test 1 | Test 2 | Test 3 | Total\nU | 42 | 38 | 40 | 120\nV | 35 | 39 | 44 | 118\nW | 42 | 41 | 39 | 122\nX | 30 | 36 | 33 | 99\nY | 47 | 29 | 40 | 116\nZ | 38 | 45 | 38 | 121\n\nTotals: U 120, V 118, W 122, X 99, Y 116, Z 121. W is highest."
+  },
+  {
+    "id": "D03",
+    "section": "DILR",
+    "topic": "DI · missing values from averages",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Scores in three tests",
+    "passage": "Six students took three tests, each marked out of 50. Some scores are missing from the table below.\n\nStudent | Test 1 | Test 2 | Test 3\nU | 42 | 38 | ?\nV | 35 | ? | 44\nW | ? | 41 | 39\nX | 30 | 36 | 33\nY | 47 | 29 | 40\nZ | 38 | 45 | ?\n\nThe average Test 1 score of the six students was 39 and the average Test 2 score was 38. U's total over the three tests was 120. Z scored the same in Test 3 as in Test 1.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What was the average Test 3 score of the six students?",
+    "options": [],
+    "answer": "39",
+    "solution": "Test 1 total must be 6 × 39 = 234, so W scored 42. Test 2 total must be 6 × 38 = 228, so V scored 39. U's total of 120 gives U 40 in Test 3, and Z's Test 3 score equals its Test 1 score, 38.\nStudent | Test 1 | Test 2 | Test 3 | Total\nU | 42 | 38 | 40 | 120\nV | 35 | 39 | 44 | 118\nW | 42 | 41 | 39 | 122\nX | 30 | 36 | 33 | 99\nY | 47 | 29 | 40 | 116\nZ | 38 | 45 | 38 | 121\n\nTest 3 scores 40, 44, 39, 33, 40 and 38 total 234, an average of 39."
+  },
+  {
+    "id": "D04",
+    "section": "DILR",
+    "topic": "DI · missing values from averages",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Scores in three tests",
+    "passage": "Six students took three tests, each marked out of 50. Some scores are missing from the table below.\n\nStudent | Test 1 | Test 2 | Test 3\nU | 42 | 38 | ?\nV | 35 | ? | 44\nW | ? | 41 | 39\nX | 30 | 36 | 33\nY | 47 | 29 | 40\nZ | 38 | 45 | ?\n\nThe average Test 1 score of the six students was 39 and the average Test 2 score was 38. U's total over the three tests was 120. Z scored the same in Test 3 as in Test 1.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "A student qualifies if every one of his or her three scores is at least 35. How many students qualify?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "8"
+    ],
+    "answer": 1,
+    "solution": "Test 1 total must be 6 × 39 = 234, so W scored 42. Test 2 total must be 6 × 38 = 228, so V scored 39. U's total of 120 gives U 40 in Test 3, and Z's Test 3 score equals its Test 1 score, 38.\nStudent | Test 1 | Test 2 | Test 3 | Total\nU | 42 | 38 | 40 | 120\nV | 35 | 39 | 44 | 118\nW | 42 | 41 | 39 | 122\nX | 30 | 36 | 33 | 99\nY | 47 | 29 | 40 | 116\nZ | 38 | 45 | 38 | 121\n\nX (30) and Y (29) fall short; U, V, W and Z qualify."
+  },
+  {
+    "id": "D05",
+    "section": "DILR",
+    "topic": "DI · missing values from averages",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Scores in three tests",
+    "passage": "Six students took three tests, each marked out of 50. Some scores are missing from the table below.\n\nStudent | Test 1 | Test 2 | Test 3\nU | 42 | 38 | ?\nV | 35 | ? | 44\nW | ? | 41 | 39\nX | 30 | 36 | 33\nY | 47 | 29 | 40\nZ | 38 | 45 | ?\n\nThe average Test 1 score of the six students was 39 and the average Test 2 score was 38. U's total over the three tests was 120. Z scored the same in Test 3 as in Test 1.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "In how many of the three tests did U score above that test's average?",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ],
+    "answer": 0,
+    "solution": "Test 1 total must be 6 × 39 = 234, so W scored 42. Test 2 total must be 6 × 38 = 228, so V scored 39. U's total of 120 gives U 40 in Test 3, and Z's Test 3 score equals its Test 1 score, 38.\nStudent | Test 1 | Test 2 | Test 3 | Total\nU | 42 | 38 | 40 | 120\nV | 35 | 39 | 44 | 118\nW | 42 | 41 | 39 | 122\nX | 30 | 36 | 33 | 99\nY | 47 | 29 | 40 | 116\nZ | 38 | 45 | 38 | 121\n\nU scored 42 against 39, 38 against 38 and 40 against 39: above average in two tests."
+  },
+  {
+    "id": "D06",
+    "section": "DILR",
+    "topic": "LR · floors and attributes",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Five families, five floors",
+    "passage": "Five families, the Aroras, Boses, Chawlas, Dases and Iyers, live on floors 1 to 5 of a building, one family per floor. Each family keeps exactly one pet: a cat, a dog, a fish, a parrot or a rabbit, all different.\nThe Boses live on a higher floor than the Dases.\nThe family with the parrot lives on floor 3.\nThe Aroras live on the floor immediately above the family with the dog.\nThe Chawlas keep the fish and live on neither floor 1 nor floor 5.\nThe Iyers do not live on floor 5.\nThe cat and the dog are not on adjacent floors.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many different assignments of floors and pets are possible?",
+    "options": [],
+    "answer": "7",
+    "solution": "The parrot is on floor 3, so Chawla (fish, not on floors 1 or 5) is on floor 2 or 4. Arora sits directly above the dog, the cat is not next to the dog, Bose is above Das and Iyer is not on top. Checking all 14,400 floor-and-pet assignments leaves seven (floor 1 to floor 5):\nDas (dog) / Arora (rabbit) / Iyer (parrot) / Chawla (fish) / Bose (cat)\nIyer (dog) / Arora (rabbit) / Das (parrot) / Chawla (fish) / Bose (cat)\nDas (rabbit) / Iyer (dog) / Arora (parrot) / Chawla (fish) / Bose (cat)\nIyer (rabbit) / Das (dog) / Arora (parrot) / Chawla (fish) / Bose (cat)\nDas (cat) / Chawla (fish) / Bose (parrot) / Iyer (dog) / Arora (rabbit)\nDas (cat) / Chawla (fish) / Iyer (parrot) / Bose (dog) / Arora (rabbit)\nIyer (cat) / Chawla (fish) / Das (parrot) / Bose (dog) / Arora (rabbit)\n\nSeven assignments satisfy every condition."
+  },
+  {
+    "id": "D07",
+    "section": "DILR",
+    "topic": "LR · floors and attributes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Five families, five floors",
+    "passage": "Five families, the Aroras, Boses, Chawlas, Dases and Iyers, live on floors 1 to 5 of a building, one family per floor. Each family keeps exactly one pet: a cat, a dog, a fish, a parrot or a rabbit, all different.\nThe Boses live on a higher floor than the Dases.\nThe family with the parrot lives on floor 3.\nThe Aroras live on the floor immediately above the family with the dog.\nThe Chawlas keep the fish and live on neither floor 1 nor floor 5.\nThe Iyers do not live on floor 5.\nThe cat and the dog are not on adjacent floors.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which family can never live on floor 3?",
+    "options": [
+      "Bose",
+      "Arora",
+      "Das",
+      "Chawla"
+    ],
+    "answer": 3,
+    "solution": "The parrot is on floor 3, so Chawla (fish, not on floors 1 or 5) is on floor 2 or 4. Arora sits directly above the dog, the cat is not next to the dog, Bose is above Das and Iyer is not on top. Checking all 14,400 floor-and-pet assignments leaves seven (floor 1 to floor 5):\nDas (dog) / Arora (rabbit) / Iyer (parrot) / Chawla (fish) / Bose (cat)\nIyer (dog) / Arora (rabbit) / Das (parrot) / Chawla (fish) / Bose (cat)\nDas (rabbit) / Iyer (dog) / Arora (parrot) / Chawla (fish) / Bose (cat)\nIyer (rabbit) / Das (dog) / Arora (parrot) / Chawla (fish) / Bose (cat)\nDas (cat) / Chawla (fish) / Bose (parrot) / Iyer (dog) / Arora (rabbit)\nDas (cat) / Chawla (fish) / Iyer (parrot) / Bose (dog) / Arora (rabbit)\nIyer (cat) / Chawla (fish) / Das (parrot) / Bose (dog) / Arora (rabbit)\n\nFloor 3 holds the parrot, but the Chawlas keep the fish. Every other family appears on floor 3 in some assignment."
+  },
+  {
+    "id": "D08",
+    "section": "DILR",
+    "topic": "LR · floors and attributes",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Five families, five floors",
+    "passage": "Five families, the Aroras, Boses, Chawlas, Dases and Iyers, live on floors 1 to 5 of a building, one family per floor. Each family keeps exactly one pet: a cat, a dog, a fish, a parrot or a rabbit, all different.\nThe Boses live on a higher floor than the Dases.\nThe family with the parrot lives on floor 3.\nThe Aroras live on the floor immediately above the family with the dog.\nThe Chawlas keep the fish and live on neither floor 1 nor floor 5.\nThe Iyers do not live on floor 5.\nThe cat and the dog are not on adjacent floors.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "In how many of the possible assignments do the Aroras live on floor 2?",
+    "options": [],
+    "answer": "2",
+    "solution": "The parrot is on floor 3, so Chawla (fish, not on floors 1 or 5) is on floor 2 or 4. Arora sits directly above the dog, the cat is not next to the dog, Bose is above Das and Iyer is not on top. Checking all 14,400 floor-and-pet assignments leaves seven (floor 1 to floor 5):\nDas (dog) / Arora (rabbit) / Iyer (parrot) / Chawla (fish) / Bose (cat)\nIyer (dog) / Arora (rabbit) / Das (parrot) / Chawla (fish) / Bose (cat)\nDas (rabbit) / Iyer (dog) / Arora (parrot) / Chawla (fish) / Bose (cat)\nIyer (rabbit) / Das (dog) / Arora (parrot) / Chawla (fish) / Bose (cat)\nDas (cat) / Chawla (fish) / Bose (parrot) / Iyer (dog) / Arora (rabbit)\nDas (cat) / Chawla (fish) / Iyer (parrot) / Bose (dog) / Arora (rabbit)\nIyer (cat) / Chawla (fish) / Das (parrot) / Bose (dog) / Arora (rabbit)\n\nTwo assignments place the Aroras on floor 2."
+  },
+  {
+    "id": "D09",
+    "section": "DILR",
+    "topic": "LR · floors and attributes",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Five families, five floors",
+    "passage": "Five families, the Aroras, Boses, Chawlas, Dases and Iyers, live on floors 1 to 5 of a building, one family per floor. Each family keeps exactly one pet: a cat, a dog, a fish, a parrot or a rabbit, all different.\nThe Boses live on a higher floor than the Dases.\nThe family with the parrot lives on floor 3.\nThe Aroras live on the floor immediately above the family with the dog.\nThe Chawlas keep the fish and live on neither floor 1 nor floor 5.\nThe Iyers do not live on floor 5.\nThe cat and the dog are not on adjacent floors.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If the cat is on floor 1 and the Iyers live on floor 4, on which floor do the Boses live?",
+    "options": [],
+    "answer": "3",
+    "solution": "The parrot is on floor 3, so Chawla (fish, not on floors 1 or 5) is on floor 2 or 4. Arora sits directly above the dog, the cat is not next to the dog, Bose is above Das and Iyer is not on top. Checking all 14,400 floor-and-pet assignments leaves seven (floor 1 to floor 5):\nDas (dog) / Arora (rabbit) / Iyer (parrot) / Chawla (fish) / Bose (cat)\nIyer (dog) / Arora (rabbit) / Das (parrot) / Chawla (fish) / Bose (cat)\nDas (rabbit) / Iyer (dog) / Arora (parrot) / Chawla (fish) / Bose (cat)\nIyer (rabbit) / Das (dog) / Arora (parrot) / Chawla (fish) / Bose (cat)\nDas (cat) / Chawla (fish) / Bose (parrot) / Iyer (dog) / Arora (rabbit)\nDas (cat) / Chawla (fish) / Iyer (parrot) / Bose (dog) / Arora (rabbit)\nIyer (cat) / Chawla (fish) / Das (parrot) / Bose (dog) / Arora (rabbit)\n\nOnly Das (cat), Chawla, Bose, Iyer, Arora fits, so the Boses are on floor 3."
+  },
+  {
+    "id": "D10",
+    "section": "DILR",
+    "topic": "LR · floors and attributes",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Five families, five floors",
+    "passage": "Five families, the Aroras, Boses, Chawlas, Dases and Iyers, live on floors 1 to 5 of a building, one family per floor. Each family keeps exactly one pet: a cat, a dog, a fish, a parrot or a rabbit, all different.\nThe Boses live on a higher floor than the Dases.\nThe family with the parrot lives on floor 3.\nThe Aroras live on the floor immediately above the family with the dog.\nThe Chawlas keep the fish and live on neither floor 1 nor floor 5.\nThe Iyers do not live on floor 5.\nThe cat and the dog are not on adjacent floors.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which of the following must be true?",
+    "options": [
+      "Das lives on floor 1",
+      "Arora lives on a higher floor than Iyer",
+      "The rabbit lives on an even-numbered floor",
+      "Chawla lives on a lower floor than Bose"
+    ],
+    "answer": 3,
+    "solution": "The parrot is on floor 3, so Chawla (fish, not on floors 1 or 5) is on floor 2 or 4. Arora sits directly above the dog, the cat is not next to the dog, Bose is above Das and Iyer is not on top. Checking all 14,400 floor-and-pet assignments leaves seven (floor 1 to floor 5):\nDas (dog) / Arora (rabbit) / Iyer (parrot) / Chawla (fish) / Bose (cat)\nIyer (dog) / Arora (rabbit) / Das (parrot) / Chawla (fish) / Bose (cat)\nDas (rabbit) / Iyer (dog) / Arora (parrot) / Chawla (fish) / Bose (cat)\nIyer (rabbit) / Das (dog) / Arora (parrot) / Chawla (fish) / Bose (cat)\nDas (cat) / Chawla (fish) / Bose (parrot) / Iyer (dog) / Arora (rabbit)\nDas (cat) / Chawla (fish) / Iyer (parrot) / Bose (dog) / Arora (rabbit)\nIyer (cat) / Chawla (fish) / Das (parrot) / Bose (dog) / Arora (rabbit)\n\nIn all seven assignments the Chawlas are below the Boses; each other statement fails in some assignment."
+  },
+  {
+    "id": "D11",
+    "section": "DILR",
+    "topic": "LR · results from points",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "A four-team league",
+    "passage": "Four teams A, B, C and D played a league in which every team played every other team exactly once. A win earned 3 points, a draw 1 point each and a loss 0 points. The final points were A 7, B 5, C 3 and D 1.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many matches ended in a draw?",
+    "options": [],
+    "answer": "2",
+    "solution": "Six matches give 18 points when every match is decisive and one point fewer for each draw. The points total 16, so exactly two matches were drawn. Checking all 729 result tables leaves one: A drew with B, A beat C, A beat D, B beat C, B drew with D and C beat D.\n\n16 points from 6 matches means 18 − 16 = 2 draws."
+  },
+  {
+    "id": "D12",
+    "section": "DILR",
+    "topic": "LR · results from points",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "A four-team league",
+    "passage": "Four teams A, B, C and D played a league in which every team played every other team exactly once. A win earned 3 points, a draw 1 point each and a loss 0 points. The final points were A 7, B 5, C 3 and D 1.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What was the result of the match between B and C?",
+    "options": [
+      "Cannot be determined",
+      "B won",
+      "Drawn",
+      "C won"
+    ],
+    "answer": 1,
+    "solution": "Six matches give 18 points when every match is decisive and one point fewer for each draw. The points total 16, so exactly two matches were drawn. Checking all 729 result tables leaves one: A drew with B, A beat C, A beat D, B beat C, B drew with D and C beat D.\n\nB's 5 points must be one win and two draws; the only consistent table has B beating C."
+  },
+  {
+    "id": "D13",
+    "section": "DILR",
+    "topic": "LR · results from points",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "A four-team league",
+    "passage": "Four teams A, B, C and D played a league in which every team played every other team exactly once. A win earned 3 points, a draw 1 point each and a loss 0 points. The final points were A 7, B 5, C 3 and D 1.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many matches did D lose?",
+    "options": [],
+    "answer": "2",
+    "solution": "Six matches give 18 points when every match is decisive and one point fewer for each draw. The points total 16, so exactly two matches were drawn. Checking all 729 result tables leaves one: A drew with B, A beat C, A beat D, B beat C, B drew with D and C beat D.\n\nD drew with B and lost to A and C."
+  },
+  {
+    "id": "D14",
+    "section": "DILR",
+    "topic": "LR · results from points",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "A four-team league",
+    "passage": "Four teams A, B, C and D played a league in which every team played every other team exactly once. A win earned 3 points, a draw 1 point each and a loss 0 points. The final points were A 7, B 5, C 3 and D 1.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which team did not win any match?",
+    "options": [
+      "B",
+      "Every team won at least one match",
+      "C",
+      "D"
+    ],
+    "answer": 3,
+    "solution": "Six matches give 18 points when every match is decisive and one point fewer for each draw. The points total 16, so exactly two matches were drawn. Checking all 729 result tables leaves one: A drew with B, A beat C, A beat D, B beat C, B drew with D and C beat D.\n\nD's single point came from a draw; every other team won at least once."
+  },
+  {
+    "id": "D15",
+    "section": "DILR",
+    "topic": "DI · selection under constraints",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Choosing projects",
+    "passage": "A firm can fund some of six projects. Each project is either funded in full or not at all.\n\nProject | Cost (₹ lakh) | Annual return (₹ lakh)\nP1 | 30 | 9\nP2 | 25 | 8\nP3 | 40 | 13\nP4 | 20 | 5\nP5 | 35 | 11\nP6 | 15 | 4\n\nRules: the total cost may not exceed ₹100 lakh; at most four projects may be funded; P1 and P2 cannot both be funded; if P3 is funded, P4 must also be funded.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the largest possible total annual return, in ₹ lakh?",
+    "options": [],
+    "answer": "30",
+    "solution": "Enumerate every portfolio of one to four projects that respects the rules and the budget. Within ₹100 lakh the best is P2 + P3 + P4 + P6: cost 25 + 40 + 20 + 15 = 100, return 8 + 13 + 5 + 4 = 30.\nProject | Cost (₹ lakh) | Return (₹ lakh)\nP1 | 30 | 9\nP2 | 25 | 8\nP3 | 40 | 13\nP4 | 20 | 5\nP5 | 35 | 11\nP6 | 15 | 4\n\nThe best portfolio, P2 + P3 + P4 + P6, returns ₹30 lakh."
+  },
+  {
+    "id": "D16",
+    "section": "DILR",
+    "topic": "DI · selection under constraints",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Choosing projects",
+    "passage": "A firm can fund some of six projects. Each project is either funded in full or not at all.\n\nProject | Cost (₹ lakh) | Annual return (₹ lakh)\nP1 | 30 | 9\nP2 | 25 | 8\nP3 | 40 | 13\nP4 | 20 | 5\nP5 | 35 | 11\nP6 | 15 | 4\n\nRules: the total cost may not exceed ₹100 lakh; at most four projects may be funded; P1 and P2 cannot both be funded; if P3 is funded, P4 must also be funded.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which project is not funded in the portfolio with the largest return?",
+    "options": [
+      "P5",
+      "P4",
+      "P2",
+      "P3"
+    ],
+    "answer": 0,
+    "solution": "Enumerate every portfolio of one to four projects that respects the rules and the budget. Within ₹100 lakh the best is P2 + P3 + P4 + P6: cost 25 + 40 + 20 + 15 = 100, return 8 + 13 + 5 + 4 = 30.\nProject | Cost (₹ lakh) | Return (₹ lakh)\nP1 | 30 | 9\nP2 | 25 | 8\nP3 | 40 | 13\nP4 | 20 | 5\nP5 | 35 | 11\nP6 | 15 | 4\n\nThe best portfolio is P2, P3, P4 and P6, so P5 (and P1) are left out."
+  },
+  {
+    "id": "D17",
+    "section": "DILR",
+    "topic": "DI · selection under constraints",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Choosing projects",
+    "passage": "A firm can fund some of six projects. Each project is either funded in full or not at all.\n\nProject | Cost (₹ lakh) | Annual return (₹ lakh)\nP1 | 30 | 9\nP2 | 25 | 8\nP3 | 40 | 13\nP4 | 20 | 5\nP5 | 35 | 11\nP6 | 15 | 4\n\nRules: the total cost may not exceed ₹100 lakh; at most four projects may be funded; P1 and P2 cannot both be funded; if P3 is funded, P4 must also be funded.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If the budget limit rises to ₹120 lakh with all other rules unchanged, what is the largest possible total annual return, in ₹ lakh?",
+    "options": [],
+    "answer": "37",
+    "solution": "Enumerate every portfolio of one to four projects that respects the rules and the budget. Within ₹100 lakh the best is P2 + P3 + P4 + P6: cost 25 + 40 + 20 + 15 = 100, return 8 + 13 + 5 + 4 = 30.\nProject | Cost (₹ lakh) | Return (₹ lakh)\nP1 | 30 | 9\nP2 | 25 | 8\nP3 | 40 | 13\nP4 | 20 | 5\nP5 | 35 | 11\nP6 | 15 | 4\n\nWith ₹120 lakh the best portfolio is P2 + P3 + P4 + P5 (cost 120, return 37)."
+  },
+  {
+    "id": "D18",
+    "section": "DILR",
+    "topic": "DI · selection under constraints",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Choosing projects",
+    "passage": "A firm can fund some of six projects. Each project is either funded in full or not at all.\n\nProject | Cost (₹ lakh) | Annual return (₹ lakh)\nP1 | 30 | 9\nP2 | 25 | 8\nP3 | 40 | 13\nP4 | 20 | 5\nP5 | 35 | 11\nP6 | 15 | 4\n\nRules: the total cost may not exceed ₹100 lakh; at most four projects may be funded; P1 and P2 cannot both be funded; if P3 is funded, P4 must also be funded.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If P3 may be funded without P4 (other rules and the ₹100 lakh limit unchanged), what is the largest possible total annual return, in ₹ lakh?",
+    "options": [
+      "36",
+      "32",
+      "33",
+      "34"
+    ],
+    "answer": 1,
+    "solution": "Enumerate every portfolio of one to four projects that respects the rules and the budget. Within ₹100 lakh the best is P2 + P3 + P4 + P6: cost 25 + 40 + 20 + 15 = 100, return 8 + 13 + 5 + 4 = 30.\nProject | Cost (₹ lakh) | Return (₹ lakh)\nP1 | 30 | 9\nP2 | 25 | 8\nP3 | 40 | 13\nP4 | 20 | 5\nP5 | 35 | 11\nP6 | 15 | 4\n\nWithout the P3–P4 rule the best portfolio within ₹100 lakh is P2 + P3 + P5 (cost 100, return 32)."
+  },
+  {
+    "id": "D19",
+    "section": "DILR",
+    "topic": "LR · spatial counting",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "A painted cube",
+    "passage": "A solid wooden cube is painted on all six faces: the top and bottom faces red, the front and back faces blue, and the left and right faces green. It is then cut into 125 identical small cubes by cuts parallel to its faces (a 5 × 5 × 5 arrangement).\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many small cubes have no paint on them?",
+    "options": [],
+    "answer": "27",
+    "solution": "Label each unit cube by its position (x, y, z) from 1 to 5. A cube shows red if it lies in the top or bottom layer, blue if in the front or back layer and green if in the left or right layer. Opposite faces share a colour, so a cube can show at most three colours.\nUnpainted cubes form the inner 3 × 3 × 3 block: 27. Cubes on an edge but not a corner show two colours: 12 edges × 3 = 36.\n\nThe inner 3 × 3 × 3 block of 27 cubes has no painted face."
+  },
+  {
+    "id": "D20",
+    "section": "DILR",
+    "topic": "LR · spatial counting",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "A painted cube",
+    "passage": "A solid wooden cube is painted on all six faces: the top and bottom faces red, the front and back faces blue, and the left and right faces green. It is then cut into 125 identical small cubes by cuts parallel to its faces (a 5 × 5 × 5 arrangement).\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many small cubes show exactly two different colours?",
+    "options": [
+      "38",
+      "37",
+      "36",
+      "40"
+    ],
+    "answer": 2,
+    "solution": "Label each unit cube by its position (x, y, z) from 1 to 5. A cube shows red if it lies in the top or bottom layer, blue if in the front or back layer and green if in the left or right layer. Opposite faces share a colour, so a cube can show at most three colours.\nUnpainted cubes form the inner 3 × 3 × 3 block: 27. Cubes on an edge but not a corner show two colours: 12 edges × 3 = 36.\n\nEdge cubes other than corners: 12 edges with 3 such cubes each, 36 in all."
+  },
+  {
+    "id": "D21",
+    "section": "DILR",
+    "topic": "LR · spatial counting",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "A painted cube",
+    "passage": "A solid wooden cube is painted on all six faces: the top and bottom faces red, the front and back faces blue, and the left and right faces green. It is then cut into 125 identical small cubes by cuts parallel to its faces (a 5 × 5 × 5 arrangement).\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many small cubes show red and green but not blue?",
+    "options": [],
+    "answer": "12",
+    "solution": "Label each unit cube by its position (x, y, z) from 1 to 5. A cube shows red if it lies in the top or bottom layer, blue if in the front or back layer and green if in the left or right layer. Opposite faces share a colour, so a cube can show at most three colours.\nUnpainted cubes form the inner 3 × 3 × 3 block: 27. Cubes on an edge but not a corner show two colours: 12 edges × 3 = 36.\n\nThese lie on the 4 edges where a red face meets a green face, 3 cubes per edge: 12."
+  },
+  {
+    "id": "D22",
+    "section": "DILR",
+    "topic": "LR · spatial counting",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "A painted cube",
+    "passage": "A solid wooden cube is painted on all six faces: the top and bottom faces red, the front and back faces blue, and the left and right faces green. It is then cut into 125 identical small cubes by cuts parallel to its faces (a 5 × 5 × 5 arrangement).\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many small cubes have at least one red face?",
+    "options": [
+      "50",
+      "52",
+      "54",
+      "51"
+    ],
+    "answer": 0,
+    "solution": "Label each unit cube by its position (x, y, z) from 1 to 5. A cube shows red if it lies in the top or bottom layer, blue if in the front or back layer and green if in the left or right layer. Opposite faces share a colour, so a cube can show at most three colours.\nUnpainted cubes form the inner 3 × 3 × 3 block: 27. Cubes on an edge but not a corner show two colours: 12 edges × 3 = 36.\n\nThe top and bottom layers hold 25 cubes each: 50."
+  }
+];
+})();

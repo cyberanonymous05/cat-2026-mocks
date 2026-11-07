@@ -1,0 +1,5999 @@
+{
+  "schemaVersion": "CAT-forecast-audit-1.0",
+  "generatedAt": "2026-11-07T10:47:24.081Z",
+  "metadata": {
+    "title": "CAT 2026 historical QA allocation study",
+    "datasetVersion": "CAT-count-study-v4.0",
+    "sourceReviewDate": "2026-11-05",
+    "studyType": "Retrospective chronological reconstruction assembled after the historical outcomes were known.",
+    "targetYear": 2026,
+    "primaryProvider": "IMS India",
+    "primaryRows": 13,
+    "primaryQuestionAllocations": 286,
+    "independentPredictionCountClaimed": false,
+    "chronologicalEvaluationYears": [
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "omittedYearsWithinCoverage": [],
+    "coverage": [
+      {
+        "year": 2021,
+        "includedSlots": [
+          2,
+          3
+        ],
+        "excludedOrUnrecoveredSlots": [
+          1
+        ]
+      },
+      {
+        "year": 2022,
+        "includedSlots": [
+          1,
+          2,
+          3
+        ],
+        "excludedOrUnrecoveredSlots": []
+      },
+      {
+        "year": 2023,
+        "includedSlots": [
+          1,
+          2,
+          3
+        ],
+        "excludedOrUnrecoveredSlots": []
+      },
+      {
+        "year": 2024,
+        "includedSlots": [
+          1,
+          2
+        ],
+        "excludedOrUnrecoveredSlots": [
+          3
+        ]
+      },
+      {
+        "year": 2025,
+        "includedSlots": [
+          1,
+          2,
+          3
+        ],
+        "excludedOrUnrecoveredSlots": []
+      }
+    ],
+    "supplementaryRowsExcludedFromEveryStudy": 3,
+    "scope": "The selector scores QA family counts. The diagnostics block separately scores a damped-trend rule, a slot-noise floor, Verbal Ability type mix and DILR set layout. Section totals remain descriptive metadata.",
+    "convenors": {
+      "2020": "IIM Indore",
+      "2021": "IIM Ahmedabad",
+      "2022": "IIM Bangalore",
+      "2023": "IIM Lucknow",
+      "2024": "IIM Calcutta",
+      "2025": "IIM Kozhikode",
+      "2026": "IIM Indore"
+    },
+    "indore2020": {
+      "questions": 76,
+      "sections": [
+        26,
+        24,
+        26
+      ],
+      "minutesPerSection": 40,
+      "slots": 3,
+      "source": "https://cracku.in/blog/cat-2020-slot-1-analysis/",
+      "note": "Section totals read directly from Cracku slot pages (VARC 26, DILR 24, QA 26). No reliable 2020 topic table was recovered: the only one found did not sum to 26 per slot, so it is not used."
+    },
+    "limitations": [
+      "No archived pre-exam publication of these predictions is claimed.",
+      "Each exam year in 2021-2025 had a different convening IIM, so a setter-specific style cannot be estimated; IIM Indore's last CAT (2020) used a different 76-question format.",
+      "The official CAT 2026 mock repeats the 2025 mock and, by its own note, is not meant to reveal the 2026 pattern; it confirms format rules only. Scored on 2025, that mock missed the Verbal Ability mix and the TITA count.",
+      "Rows added in v4.0 other than 2022 Slot 1 were read from IMS page content in search results, not opened directly.",
+      "Rules and source selection were assembled retrospectively; chronological computation does not remove retrospective design choices.",
+      "Slots within a year are correlated, coverage is incomplete, and the evaluation contains only a few target years.",
+      "Topic-count overlap is an allocation similarity measure, not the percentage of exact exam questions predicted.",
+      "Observed ranges and maximum historical errors are descriptive, not calibrated confidence or prediction intervals.",
+      "No exact-paper guarantee, question-match probability, difficulty forecast, percentile prediction or individual paper-author inference is supplied."
+    ],
+    "sourceNotes": [
+      "The primary model uses thirteen complete IMS QA reports from 2021, 2022, 2023, 2024 and 2025: 286 reported question allocations, not 286 independent predictions. Evaluation targets are 2022, 2023, 2024 and 2025. No calendar year inside the covered span is missing.",
+      "v4.0 added five rows (2022 Slots 1 and 3, 2023 Slots 1-3). Only 2022 Slot 1 was opened directly. The others were read from IMS page content in search results because direct IMS URLs returned 404 or 410, the same access limit already noted for 2022 Slot 2 and 2024. These rows are less verified than directly opened pages.",
+      "2023 Slot 2 has two conflicting IMS tables: overall page Geometry 2 / Modern Math 3, slot article Geometry 3 / Modern Math 2. The overall table is primary and the other is a sensitivity row, as for 2025 Slot 1. Under the alternative, the raw selector changes its 2026 choice, so treat the raw 2026 split as sensitive to this single cell.",
+      "2021 Slot 1 is excluded because IMS lists no Numbers row (the four stated counts sum to 22). No implicit zero is inserted under this strict complete-explicit-cell rule. 2022 Slots 1 and 3 are now included; see above.",
+      "2024 Slot 3 stays excluded. IMS overall table leaves Modern Math blank; the slot page table (8/7/3/1/3 with Modern Math 3) equals the Slot 1 vector, while its narrative gives Algebra 5. Copy error cannot be ruled out, so no value is used.",
+      "Career Launcher 2023 counts differ from IMS 2023 counts (for example Slot 1 9/8/3/1/1 against 7/8/4/1/2). Providers classify borderline questions differently, so a count error of about one question per category is classification noise before any forecasting error.",
+      "Taxonomy remains uncertain even within one provider. The 2022 report places functions, logarithms and progressions in Modern Math, while some later descriptions place functions in Algebra. Combining Algebra and Modern Math reduces this known boundary issue but does not establish complete question-level consistency.",
+      "Geometry is not fixed at 3: 2022 Slot 3 and 2023 Slot 1 report 4, and the 2023 Slot 2 overall table reports 2. It is the steadiest family, not a constant.",
+      "Every CAT in 2021-2025 was convened by a different IIM, so each setter appears once and no setter-specific style can be estimated. IIM Indore last convened CAT in 2020, in a 76-question pandemic format that is not comparable to the current 68-question format.",
+      "Source pages were inspected in September and November 2026; some historical articles were available only through indexed provider content while direct URLs returned errors. Source links may therefore fail. No archived pre-exam snapshot is claimed. Detailed recovery notes are saved in research-2021-2022.json and research-2023-2024.json.",
+      "Small, incomplete modern-format coverage can bias the study toward stable structure. The model does not analyse every paper since 1991, infer the authors of individual questions, estimate exam difficulty, or predict exact future question text. No calibrated confidence interval, percentile or question-match probability is provided.",
+      "DILR arrays are sorted set-size multisets, not the source’s set order or topic frequencies. VARC arrays are [RC, summary, sentence placement, odd sentence, parajumbles]. Rows without varc or dilr fields (2023 Slots 1 and 3, 2023 Slot 2 VARC) are skipped by the VARC and DILR studies, not imputed.",
+      "Official CAT 2026 mock (released 6 November 2026): its instructions give 24/22/22 questions, 40 minutes per section, four questions per RC passage, four or five questions per DILR set and whole-number TITA answers. With 22 DILR questions, sets of four or five allow only one layout, 5/5/4/4/4. The mock-link PDF states the 120-minute, 40-per-section timing for CAT 2026 itself.",
+      "The 2026 official mock repeats the 2025 official mock question for question, in a new order. Scored against the real 2025 paper, the 2025 mock got the section counts and DILR layout right (as did simply repeating 2024) but not the Verbal Ability mix (3/3/2/0 against 2/2/2/2) or the TITA count (20 against 23). The 2026 mock therefore confirms format rules but carries no new information about CAT 2026 topics.",
+      "TITA counts per section come from IMS for 2025 only (4/11/8 in all three slots). The 2026 TITA forecast repeats 2025; one 2024 slot report gives 2/10/8, so 20 to 23 is the recent range."
+    ],
+    "reproducibility": {
+      "command": "node tests/export-audit.cjs",
+      "engine": "forecast-engine.js",
+      "dataset": "history-data.js",
+      "sha256": {
+        "history-data.js": "8495e8f9a9cf4cda41d59458a36979ac28b728a89f4f7973f2910ee536071352",
+        "topic-data.js": "cd283105f6f125bcdeb5360f83ef02c61ac58e13fa1a0aac82d0748488d12099",
+        "forecast-engine.js": "79c1c49296d891eded92e869e4f5427677600ccf8bb87d4c8c36461b189c7619"
+      }
+    }
+  },
+  "modelSettings": {
+    "rawLabels": [
+      "Arithmetic",
+      "Algebra",
+      "Geometry",
+      "Numbers",
+      "Modern Math"
+    ],
+    "broadLabels": [
+      "Arithmetic",
+      "Algebra + Modern Math",
+      "Geometry",
+      "Numbers"
+    ],
+    "rawToBroad": "Merge Algebra and Modern Math; retain Arithmetic, Geometry and Numbers.",
+    "targetQuestionTotal": 22,
+    "trainingCutoff": "For each target year, use primary rows with year strictly less than target year.",
+    "foldDefinition": "Each observed year after the first is one target fold; missing years do not create folds or imputed rows.",
+    "withinYearWeighting": "Equal mean of available slots in each training year.",
+    "comparisonAggregation": "Equal mean over target-year metric values, not a pooled average over all historical slots.",
+    "methods": [
+      {
+        "id": "last",
+        "name": "Last-year baseline",
+        "rule": "Mean of the latest available year’s slots."
+      },
+      {
+        "id": "annual",
+        "name": "Equal-year history",
+        "rule": "Mean of yearly means; every training year gets equal weight."
+      },
+      {
+        "id": "recency",
+        "name": "Recency, 2-year half-life",
+        "rule": "Yearly means weighted by 2^((year − latest year)/2)."
+      },
+      {
+        "id": "ensemble",
+        "name": "Fixed three-rule ensemble",
+        "rule": "Equal average of last-year, equal-year and recency forecasts."
+      },
+      {
+        "id": "uniform",
+        "name": "Uniform null baseline",
+        "rule": "22/5 for each original family, then merge if using broad groups."
+      }
+    ],
+    "recencyHalfLifeCalendarYears": 2,
+    "selector": {
+      "candidatesInTiePreferenceOrder": [
+        "last",
+        "annual",
+        "recency",
+        "ensemble"
+      ],
+      "objective": "Lowest mean target-year MAE among completed earlier folds only.",
+      "firstFoldFallback": "last",
+      "equalityTolerance": 1e-9,
+      "uniformNullExcludedFromSelection": true
+    },
+    "metrics": {
+      "mae": "Mean absolute difference between forecast and actual question counts across topic cells within a target year.",
+      "overlapPercent": "100 * (1 - absolute_count_error / (2 * target_slots * 22)). Averaged equally over target years in summaries.",
+      "exact": "Cells with absolute error below 1e-9. Summaries sum exact counts and evaluated cells across target folds.",
+      "maxHistoricalErrors": "Largest absolute error by family in the selector predictions for historical target slots; not a future bound."
+    },
+    "rounding": "Only displayed integer scenarios are rounded. Largest remainders preserve 22 questions; ties follow displayed family order. All evaluation scores use unrounded forecasts."
+  },
+  "primaryRows": [
+    {
+      "year": 2021,
+      "slot": 2,
+      "qa": [
+        9,
+        5,
+        3,
+        2,
+        3
+      ],
+      "varc": [
+        16,
+        3,
+        0,
+        2,
+        3
+      ],
+      "sections": [
+        24,
+        20,
+        22
+      ],
+      "dilr": [
+        6,
+        6,
+        4,
+        4
+      ],
+      "source": "https://www.imsindia.com/cat-2021-slot-2-analysis/",
+      "sourceAccess": "Full provider page; root URL redirects to blog URL.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2021,
+      "slot": 3,
+      "qa": [
+        10,
+        4,
+        3,
+        1,
+        4
+      ],
+      "varc": [
+        16,
+        3,
+        0,
+        2,
+        3
+      ],
+      "sections": [
+        24,
+        20,
+        22
+      ],
+      "dilr": [
+        6,
+        6,
+        4,
+        4
+      ],
+      "source": "https://www.imsindia.com/cat-2021-slot-3-analysis/",
+      "sourceAccess": "Full provider page; root URL redirects to blog URL.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2022,
+      "slot": 1,
+      "qa": [
+        8,
+        5,
+        3,
+        3,
+        3
+      ],
+      "varc": [
+        16,
+        3,
+        2,
+        0,
+        3
+      ],
+      "sections": [
+        24,
+        20,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "source": "https://techassignments.imsindia.com/?p=2831",
+      "sourceAccess": "Opened directly on 2026-11-05 (IMS-hosted page); QA, VARC and DILR tables read from the page.",
+      "note": "Para-completion (2) is placed in the sentence-placement column, as for 2022 Slot 2.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2022,
+      "slot": 2,
+      "qa": [
+        8,
+        6,
+        3,
+        1,
+        4
+      ],
+      "varc": [
+        16,
+        3,
+        2,
+        0,
+        3
+      ],
+      "sections": [
+        24,
+        20,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "source": "https://www.imsindia.com/blog/cat/cat-2022-slot-2-analysis/",
+      "sourceAccess": "Full provider article content in search index; direct opening unavailable.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2022,
+      "slot": 3,
+      "qa": [
+        8,
+        5,
+        4,
+        2,
+        3
+      ],
+      "varc": [
+        16,
+        3,
+        2,
+        0,
+        3
+      ],
+      "sections": [
+        24,
+        20,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "source": "https://www.imsindia.com/cat-2022-slot-3-analysis/",
+      "sourceAccess": "Direct opening returned 404. Counts read from IMS page content in search results; IMS overall page gave the same QA split.",
+      "note": "MCQ/TITA mix differs between IMS pages; topic counts do not. Para-completion (2) is placed in the sentence-placement column.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2023,
+      "slot": 1,
+      "qa": [
+        7,
+        8,
+        4,
+        1,
+        2
+      ],
+      "source": "https://www.imsindia.com/blog/cat/cat-2023-slot-1-analysis/",
+      "sourceAccess": "Direct opening returned 404/410 for 2023 pages. Counts read from IMS page content in search results; IMS overall page gave the same split.",
+      "note": "Career Launcher reports 9/8/3/1/1 for this slot (supplementary, not fitted). VARC and DILR detail was not recovered from IMS.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2023,
+      "slot": 2,
+      "qa": [
+        7,
+        8,
+        2,
+        2,
+        3
+      ],
+      "alternativeQA": [
+        7,
+        8,
+        3,
+        2,
+        2
+      ],
+      "sections": [
+        24,
+        20,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "source": "https://www.imsindia.com/cat-2023-overall-analysis/",
+      "alternativeSource": "https://www.imsindia.com/blog/cat/cat-2023-slot-2-analysis/",
+      "sourceAccess": "Direct opening not possible. Counts read from IMS page content in search results.",
+      "note": "IMS overall table: Geometry 2, Modern Math 3. IMS slot article: Geometry 3, Modern Math 2. Overall table is selected, matching the 2025 Slot 1 rule.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2023,
+      "slot": 3,
+      "qa": [
+        8,
+        4,
+        3,
+        3,
+        4
+      ],
+      "source": "https://www.imsindia.com/blog/cat/cat-2023-slot-3-analysis/",
+      "sourceAccess": "Direct opening returned 410. Counts read from IMS page content in search results; IMS overall page gave the same split.",
+      "note": "VARC and DILR detail was not recovered from IMS.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2024,
+      "slot": 1,
+      "qa": [
+        8,
+        7,
+        3,
+        1,
+        3
+      ],
+      "varc": [
+        16,
+        3,
+        3,
+        2,
+        0
+      ],
+      "sections": [
+        24,
+        22,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        4,
+        4,
+        4
+      ],
+      "source": "https://www.imsindia.com/blog/cat/cat-exam-analysis-2024/",
+      "sourceAccess": "Full provider article content in search index; direct opening returned 410.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2024,
+      "slot": 2,
+      "qa": [
+        8,
+        5,
+        3,
+        3,
+        3
+      ],
+      "varc": [
+        16,
+        3,
+        3,
+        2,
+        0
+      ],
+      "sections": [
+        24,
+        22,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        4,
+        4,
+        4
+      ],
+      "source": "https://www.imsindia.com/blog/cat/cat-2024-slot-2-analysis/",
+      "sourceAccess": "Full provider article content in search index; direct opening returned 410.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2025,
+      "slot": 1,
+      "qa": [
+        8,
+        4,
+        3,
+        3,
+        4
+      ],
+      "varc": [
+        16,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sections": [
+        24,
+        22,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        4,
+        4,
+        4
+      ],
+      "tita": [
+        4,
+        11,
+        8
+      ],
+      "source": "https://www.imsindia.com/cat-overall-analysis-2025/",
+      "alternativeQA": [
+        8,
+        5,
+        3,
+        3,
+        3
+      ],
+      "alternativeSource": "https://www.imsindia.com/cat-2025-slot-1-analysis/",
+      "sourceAccess": "Full provider page. TITA counts from the IMS slot page, read 2026-11-06.",
+      "note": "Overall table selected; slot-specific table reallocates one Modern Math question to Algebra. Source prose also differs.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2025,
+      "slot": 2,
+      "qa": [
+        8,
+        5,
+        3,
+        2,
+        4
+      ],
+      "varc": [
+        16,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sections": [
+        24,
+        22,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        4,
+        4,
+        4
+      ],
+      "tita": [
+        4,
+        11,
+        8
+      ],
+      "source": "https://www.imsindia.com/cat-2025-slot-2-analysis/",
+      "sourceAccess": "Full provider page. TITA counts read 2026-11-06.",
+      "provider": "IMS India"
+    },
+    {
+      "year": 2025,
+      "slot": 3,
+      "qa": [
+        7,
+        4,
+        3,
+        4,
+        4
+      ],
+      "varc": [
+        16,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sections": [
+        24,
+        22,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        4,
+        4,
+        4
+      ],
+      "tita": [
+        4,
+        11,
+        8
+      ],
+      "source": "https://www.imsindia.com/cat-2025-slot-3-analysis/",
+      "sourceAccess": "Full provider page. TITA counts read 2026-11-06.",
+      "provider": "IMS India"
+    }
+  ],
+  "studies": {
+    "raw": {
+      "taxonomy": "raw",
+      "labels": [
+        "Arithmetic",
+        "Algebra",
+        "Geometry",
+        "Numbers",
+        "Modern Math"
+      ],
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "slots": 13,
+      "questions": 286,
+      "folds": [
+        {
+          "year": 2022,
+          "trainingYears": [
+            2021
+          ],
+          "trainingSlots": 2,
+          "targetSlots": 3,
+          "methods": {
+            "last": {
+              "prediction": [
+                9.5,
+                4.5,
+                3,
+                1.5,
+                3.5
+              ],
+              "rounded": [
+                10,
+                5,
+                3,
+                1,
+                3
+              ],
+              "metrics": {
+                "mae": 0.8,
+                "absolute": 12,
+                "total": 66,
+                "cells": 15,
+                "overlap": 90.9090909090909,
+                "exact": 2,
+                "maxError": 1.5,
+                "perFamily": [
+                  1.5,
+                  0.8333333333333334,
+                  0.3333333333333333,
+                  0.8333333333333334,
+                  0.5
+                ]
+              }
+            },
+            "annual": {
+              "prediction": [
+                9.5,
+                4.5,
+                3,
+                1.5,
+                3.5
+              ],
+              "rounded": [
+                10,
+                5,
+                3,
+                1,
+                3
+              ],
+              "metrics": {
+                "mae": 0.8,
+                "absolute": 12,
+                "total": 66,
+                "cells": 15,
+                "overlap": 90.9090909090909,
+                "exact": 2,
+                "maxError": 1.5,
+                "perFamily": [
+                  1.5,
+                  0.8333333333333334,
+                  0.3333333333333333,
+                  0.8333333333333334,
+                  0.5
+                ]
+              }
+            },
+            "recency": {
+              "prediction": [
+                9.5,
+                4.5,
+                3,
+                1.5,
+                3.5
+              ],
+              "rounded": [
+                10,
+                5,
+                3,
+                1,
+                3
+              ],
+              "metrics": {
+                "mae": 0.8,
+                "absolute": 12,
+                "total": 66,
+                "cells": 15,
+                "overlap": 90.9090909090909,
+                "exact": 2,
+                "maxError": 1.5,
+                "perFamily": [
+                  1.5,
+                  0.8333333333333334,
+                  0.3333333333333333,
+                  0.8333333333333334,
+                  0.5
+                ]
+              }
+            },
+            "ensemble": {
+              "prediction": [
+                9.5,
+                4.5,
+                3,
+                1.5,
+                3.5
+              ],
+              "rounded": [
+                10,
+                5,
+                3,
+                1,
+                3
+              ],
+              "metrics": {
+                "mae": 0.8,
+                "absolute": 12,
+                "total": 66,
+                "cells": 15,
+                "overlap": 90.9090909090909,
+                "exact": 2,
+                "maxError": 1.5,
+                "perFamily": [
+                  1.5,
+                  0.8333333333333334,
+                  0.3333333333333333,
+                  0.8333333333333334,
+                  0.5
+                ]
+              }
+            },
+            "uniform": {
+              "prediction": [
+                4.4,
+                4.4,
+                4.4,
+                4.4,
+                4.4
+              ],
+              "rounded": [
+                5,
+                5,
+                4,
+                4,
+                4
+              ],
+              "metrics": {
+                "mae": 1.813333333333333,
+                "absolute": 27.199999999999996,
+                "total": 66,
+                "cells": 15,
+                "overlap": 79.39393939393939,
+                "exact": 0,
+                "maxError": 3.5999999999999996,
+                "perFamily": [
+                  3.5999999999999996,
+                  0.933333333333333,
+                  1.066666666666667,
+                  2.4000000000000004,
+                  1.066666666666667
+                ]
+              }
+            }
+          },
+          "selectedMethod": "last",
+          "selected": {
+            "prediction": [
+              9.5,
+              4.5,
+              3,
+              1.5,
+              3.5
+            ],
+            "rounded": [
+              10,
+              5,
+              3,
+              1,
+              3
+            ],
+            "metrics": {
+              "mae": 0.8,
+              "absolute": 12,
+              "total": 66,
+              "cells": 15,
+              "overlap": 90.9090909090909,
+              "exact": 2,
+              "maxError": 1.5,
+              "perFamily": [
+                1.5,
+                0.8333333333333334,
+                0.3333333333333333,
+                0.8333333333333334,
+                0.5
+              ]
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "trainingYears": [
+            2021,
+            2022
+          ],
+          "trainingSlots": 5,
+          "targetSlots": 3,
+          "methods": {
+            "last": {
+              "prediction": [
+                8,
+                5.333333333333333,
+                3.3333333333333335,
+                2,
+                3.3333333333333335
+              ],
+              "rounded": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 1.0222222222222224,
+                "absolute": 15.333333333333336,
+                "total": 66,
+                "cells": 15,
+                "overlap": 88.38383838383838,
+                "exact": 2,
+                "maxError": 2.666666666666667,
+                "perFamily": [
+                  0.6666666666666666,
+                  2.2222222222222223,
+                  0.7777777777777778,
+                  0.6666666666666666,
+                  0.7777777777777778
+                ]
+              }
+            },
+            "annual": {
+              "prediction": [
+                8.75,
+                4.916666666666666,
+                3.166666666666667,
+                1.75,
+                3.416666666666667
+              ],
+              "rounded": [
+                9,
+                5,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 1.2111111111111115,
+                "absolute": 18.16666666666667,
+                "total": 66,
+                "cells": 15,
+                "overlap": 86.23737373737373,
+                "exact": 0,
+                "maxError": 3.083333333333334,
+                "perFamily": [
+                  1.4166666666666667,
+                  2.361111111111111,
+                  0.7222222222222223,
+                  0.75,
+                  0.8055555555555557
+                ]
+              }
+            },
+            "recency": {
+              "prediction": [
+                8.621320343559644,
+                4.988155364689088,
+                3.195262145875635,
+                1.7928932188134525,
+                3.4023689270621826
+              ],
+              "rounded": [
+                9,
+                5,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 1.1787029013409471,
+                "absolute": 17.680543520114206,
+                "total": 66,
+                "cells": 15,
+                "overlap": 86.60564884839833,
+                "exact": 0,
+                "maxError": 3.0118446353109123,
+                "perFamily": [
+                  1.2879870102263105,
+                  2.3372815451036373,
+                  0.7317540486252118,
+                  0.7357022603955158,
+                  0.8007896423540609
+                ]
+              }
+            },
+            "ensemble": {
+              "prediction": [
+                8.457106781186548,
+                5.079385121563029,
+                3.2317540486252114,
+                1.8476310729378174,
+                3.384122975687394
+              ],
+              "rounded": [
+                9,
+                5,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 1.1373454115580934,
+                "absolute": 17.0601811733714,
+                "total": 66,
+                "cells": 15,
+                "overlap": 87.07562032320348,
+                "exact": 0,
+                "maxError": 2.9206148784369708,
+                "perFamily": [
+                  1.1237734478532146,
+                  2.3068716261456568,
+                  0.7439180162084038,
+                  0.7174563090207275,
+                  0.7947076585624647
+                ]
+              }
+            },
+            "uniform": {
+              "prediction": [
+                4.4,
+                4.4,
+                4.4,
+                4.4,
+                4.4
+              ],
+              "rounded": [
+                5,
+                5,
+                4,
+                4,
+                4
+              ],
+              "metrics": {
+                "mae": 2.133333333333333,
+                "absolute": 31.999999999999993,
+                "total": 66,
+                "cells": 15,
+                "overlap": 75.75757575757575,
+                "exact": 0,
+                "maxError": 3.5999999999999996,
+                "perFamily": [
+                  2.933333333333333,
+                  2.533333333333333,
+                  1.4000000000000004,
+                  2.4000000000000004,
+                  1.4000000000000004
+                ]
+              }
+            }
+          },
+          "selectedMethod": "last",
+          "selected": {
+            "prediction": [
+              8,
+              5.333333333333333,
+              3.3333333333333335,
+              2,
+              3.3333333333333335
+            ],
+            "rounded": [
+              8,
+              6,
+              3,
+              2,
+              3
+            ],
+            "metrics": {
+              "mae": 1.0222222222222224,
+              "absolute": 15.333333333333336,
+              "total": 66,
+              "cells": 15,
+              "overlap": 88.38383838383838,
+              "exact": 2,
+              "maxError": 2.666666666666667,
+              "perFamily": [
+                0.6666666666666666,
+                2.2222222222222223,
+                0.7777777777777778,
+                0.6666666666666666,
+                0.7777777777777778
+              ]
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "trainingYears": [
+            2021,
+            2022,
+            2023
+          ],
+          "trainingSlots": 8,
+          "targetSlots": 2,
+          "methods": {
+            "last": {
+              "prediction": [
+                7.333333333333333,
+                6.666666666666667,
+                3,
+                2,
+                3
+              ],
+              "rounded": [
+                7,
+                7,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 0.5333333333333334,
+                "absolute": 5.333333333333334,
+                "total": 44,
+                "cells": 10,
+                "overlap": 93.93939393939394,
+                "exact": 4,
+                "maxError": 1.666666666666667,
+                "perFamily": [
+                  0.666666666666667,
+                  1,
+                  0,
+                  1,
+                  0
+                ]
+              }
+            },
+            "annual": {
+              "prediction": [
+                8.277777777777777,
+                5.5,
+                3.111111111111111,
+                1.8333333333333333,
+                3.277777777777778
+              ],
+              "rounded": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 0.5333333333333332,
+                "absolute": 5.333333333333332,
+                "total": 44,
+                "cells": 10,
+                "overlap": 93.93939393939394,
+                "exact": 0,
+                "maxError": 1.5,
+                "perFamily": [
+                  0.2777777777777768,
+                  1,
+                  0.11111111111111116,
+                  1,
+                  0.2777777777777781
+                ]
+              }
+            },
+            "recency": {
+              "prediction": [
+                8.037756819943498,
+                5.748658352711809,
+                3.106792413672347,
+                1.8867295401695068,
+                3.2200628735028403
+              ],
+              "rounded": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 0.472922421423737,
+                "absolute": 4.72922421423737,
+                "total": 44,
+                "cells": 10,
+                "overlap": 94.62588157473026,
+                "exact": 0,
+                "maxError": 1.251341647288191,
+                "perFamily": [
+                  0.03775681994349789,
+                  1,
+                  0.10679241367234704,
+                  1,
+                  0.22006287350284026
+                ]
+              }
+            },
+            "ensemble": {
+              "prediction": [
+                7.882955977018203,
+                5.9717750064594926,
+                3.0726345082611526,
+                1.9066876245009468,
+                3.1659468837602063
+              ],
+              "rounded": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 0.47112508300063116,
+                "absolute": 4.711250830006311,
+                "total": 44,
+                "cells": 10,
+                "overlap": 94.64630587499283,
+                "exact": 0,
+                "maxError": 1.0933123754990532,
+                "perFamily": [
+                  0.11704402298179684,
+                  1,
+                  0.07263450826115259,
+                  1,
+                  0.16594688376020628
+                ]
+              }
+            },
+            "uniform": {
+              "prediction": [
+                4.4,
+                4.4,
+                4.4,
+                4.4,
+                4.4
+              ],
+              "rounded": [
+                5,
+                5,
+                4,
+                4,
+                4
+              ],
+              "metrics": {
+                "mae": 2.0799999999999996,
+                "absolute": 20.799999999999997,
+                "total": 44,
+                "cells": 10,
+                "overlap": 76.36363636363637,
+                "exact": 0,
+                "maxError": 3.5999999999999996,
+                "perFamily": [
+                  3.5999999999999996,
+                  1.5999999999999996,
+                  1.4000000000000004,
+                  2.4000000000000004,
+                  1.4000000000000004
+                ]
+              }
+            }
+          },
+          "selectedMethod": "last",
+          "selected": {
+            "prediction": [
+              7.333333333333333,
+              6.666666666666667,
+              3,
+              2,
+              3
+            ],
+            "rounded": [
+              7,
+              7,
+              3,
+              2,
+              3
+            ],
+            "metrics": {
+              "mae": 0.5333333333333334,
+              "absolute": 5.333333333333334,
+              "total": 44,
+              "cells": 10,
+              "overlap": 93.93939393939394,
+              "exact": 4,
+              "maxError": 1.666666666666667,
+              "perFamily": [
+                0.666666666666667,
+                1,
+                0,
+                1,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "trainingYears": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "trainingSlots": 10,
+          "targetSlots": 3,
+          "methods": {
+            "last": {
+              "prediction": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "rounded": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 0.8,
+                "absolute": 12,
+                "total": 66,
+                "cells": 15,
+                "overlap": 90.9090909090909,
+                "exact": 6,
+                "maxError": 2,
+                "perFamily": [
+                  0.3333333333333333,
+                  1.6666666666666667,
+                  0,
+                  1,
+                  1
+                ]
+              }
+            },
+            "annual": {
+              "prediction": [
+                8.208333333333332,
+                5.625,
+                3.0833333333333335,
+                1.875,
+                3.2083333333333335
+              ],
+              "rounded": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 0.7666666666666664,
+                "absolute": 11.499999999999996,
+                "total": 66,
+                "cells": 15,
+                "overlap": 91.28787878787878,
+                "exact": 0,
+                "maxError": 2.125,
+                "perFamily": [
+                  0.5416666666666655,
+                  1.2916666666666667,
+                  0.08333333333333348,
+                  1.125,
+                  0.7916666666666665
+                ]
+              }
+            },
+            "recency": {
+              "prediction": [
+                8.023011864576283,
+                5.846813371506626,
+                3.065087381958545,
+                1.9309644062711506,
+                3.134122975687394
+              ],
+              "rounded": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 0.7739650472165818,
+                "absolute": 11.609475708248727,
+                "total": 66,
+                "cells": 15,
+                "overlap": 91.20494264526612,
+                "exact": 0,
+                "maxError": 2.0690355937288496,
+                "perFamily": [
+                  0.3563451979096162,
+                  1.5134800381732931,
+                  0.06508738195854491,
+                  1.0690355937288494,
+                  0.8658770243126059
+                ]
+              }
+            },
+            "ensemble": {
+              "prediction": [
+                8.077115065969872,
+                5.823937790502209,
+                3.0494735717639596,
+                1.9353214687570501,
+                3.114152103006909
+              ],
+              "rounded": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 0.7802105712944164,
+                "absolute": 11.703158569416246,
+                "total": 66,
+                "cells": 15,
+                "overlap": 91.13397078074527,
+                "exact": 0,
+                "maxError": 2.06467853124295,
+                "perFamily": [
+                  0.4104483993032056,
+                  1.4906044571688761,
+                  0.04947357176395961,
+                  1.0646785312429499,
+                  0.885847896993091
+                ]
+              }
+            },
+            "uniform": {
+              "prediction": [
+                4.4,
+                4.4,
+                4.4,
+                4.4,
+                4.4
+              ],
+              "rounded": [
+                5,
+                5,
+                4,
+                4,
+                4
+              ],
+              "metrics": {
+                "mae": 1.3866666666666665,
+                "absolute": 20.799999999999997,
+                "total": 66,
+                "cells": 15,
+                "overlap": 84.24242424242424,
+                "exact": 0,
+                "maxError": 3.5999999999999996,
+                "perFamily": [
+                  3.266666666666666,
+                  0.4666666666666668,
+                  1.4000000000000004,
+                  1.4000000000000004,
+                  0.40000000000000036
+                ]
+              }
+            }
+          },
+          "selectedMethod": "last",
+          "selected": {
+            "prediction": [
+              8,
+              6,
+              3,
+              2,
+              3
+            ],
+            "rounded": [
+              8,
+              6,
+              3,
+              2,
+              3
+            ],
+            "metrics": {
+              "mae": 0.8,
+              "absolute": 12,
+              "total": 66,
+              "cells": 15,
+              "overlap": 90.9090909090909,
+              "exact": 6,
+              "maxError": 2,
+              "perFamily": [
+                0.3333333333333333,
+                1.6666666666666667,
+                0,
+                1,
+                1
+              ]
+            }
+          }
+        }
+      ],
+      "summary": {
+        "last": {
+          "mae": 0.788888888888889,
+          "overlap": 91.03535353535352,
+          "exact": 14,
+          "cells": 55,
+          "annualMAE": [
+            0.8,
+            1.0222222222222224,
+            0.5333333333333334,
+            0.8
+          ]
+        },
+        "annual": {
+          "mae": 0.8277777777777777,
+          "overlap": 90.59343434343432,
+          "exact": 2,
+          "cells": 55,
+          "annualMAE": [
+            0.8,
+            1.2111111111111115,
+            0.5333333333333332,
+            0.7666666666666664
+          ]
+        },
+        "recency": {
+          "mae": 0.8063975924953165,
+          "overlap": 90.8363909943714,
+          "exact": 2,
+          "cells": 55,
+          "annualMAE": [
+            0.8,
+            1.1787029013409471,
+            0.472922421423737,
+            0.7739650472165818
+          ]
+        },
+        "ensemble": {
+          "mae": 0.7971702664632853,
+          "overlap": 90.94124697200812,
+          "exact": 2,
+          "cells": 55,
+          "annualMAE": [
+            0.8,
+            1.1373454115580934,
+            0.47112508300063116,
+            0.7802105712944164
+          ]
+        },
+        "uniform": {
+          "mae": 1.853333333333333,
+          "overlap": 78.93939393939394,
+          "exact": 0,
+          "cells": 55,
+          "annualMAE": [
+            1.813333333333333,
+            2.133333333333333,
+            2.0799999999999996,
+            1.3866666666666665
+          ]
+        },
+        "selector": {
+          "mae": 0.788888888888889,
+          "overlap": 91.03535353535352,
+          "exact": 14,
+          "cells": 55,
+          "annualMAE": [
+            0.8,
+            1.0222222222222224,
+            0.5333333333333334,
+            0.8
+          ]
+        }
+      },
+      "forecast": {
+        "targetYear": 2026,
+        "selectedMethod": "last",
+        "prediction": [
+          7.666666666666667,
+          4.333333333333333,
+          3,
+          3,
+          4
+        ],
+        "rounded": [
+          8,
+          4,
+          3,
+          3,
+          4
+        ],
+        "observed": [
+          [
+            7,
+            10
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "maxHistoricalErrors": [
+          1.5,
+          2.666666666666667,
+          1.3333333333333335,
+          2,
+          1.3333333333333335
+        ]
+      }
+    },
+    "broad": {
+      "taxonomy": "broad",
+      "labels": [
+        "Arithmetic",
+        "Algebra + Modern Math",
+        "Geometry",
+        "Numbers"
+      ],
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "slots": 13,
+      "questions": 286,
+      "folds": [
+        {
+          "year": 2022,
+          "trainingYears": [
+            2021
+          ],
+          "trainingSlots": 2,
+          "targetSlots": 3,
+          "methods": {
+            "last": {
+              "prediction": [
+                9.5,
+                8,
+                3,
+                1.5
+              ],
+              "rounded": [
+                10,
+                8,
+                3,
+                1
+              ],
+              "metrics": {
+                "mae": 0.8333333333333334,
+                "absolute": 10,
+                "total": 66,
+                "cells": 12,
+                "overlap": 92.42424242424242,
+                "exact": 4,
+                "maxError": 2,
+                "perFamily": [
+                  1.5,
+                  0.6666666666666666,
+                  0.3333333333333333,
+                  0.8333333333333334
+                ]
+              }
+            },
+            "annual": {
+              "prediction": [
+                9.5,
+                8,
+                3,
+                1.5
+              ],
+              "rounded": [
+                10,
+                8,
+                3,
+                1
+              ],
+              "metrics": {
+                "mae": 0.8333333333333334,
+                "absolute": 10,
+                "total": 66,
+                "cells": 12,
+                "overlap": 92.42424242424242,
+                "exact": 4,
+                "maxError": 2,
+                "perFamily": [
+                  1.5,
+                  0.6666666666666666,
+                  0.3333333333333333,
+                  0.8333333333333334
+                ]
+              }
+            },
+            "recency": {
+              "prediction": [
+                9.5,
+                8,
+                3,
+                1.5
+              ],
+              "rounded": [
+                10,
+                8,
+                3,
+                1
+              ],
+              "metrics": {
+                "mae": 0.8333333333333334,
+                "absolute": 10,
+                "total": 66,
+                "cells": 12,
+                "overlap": 92.42424242424242,
+                "exact": 4,
+                "maxError": 2,
+                "perFamily": [
+                  1.5,
+                  0.6666666666666666,
+                  0.3333333333333333,
+                  0.8333333333333334
+                ]
+              }
+            },
+            "ensemble": {
+              "prediction": [
+                9.5,
+                8,
+                3,
+                1.5
+              ],
+              "rounded": [
+                10,
+                8,
+                3,
+                1
+              ],
+              "metrics": {
+                "mae": 0.8333333333333334,
+                "absolute": 10,
+                "total": 66,
+                "cells": 12,
+                "overlap": 92.42424242424242,
+                "exact": 4,
+                "maxError": 2,
+                "perFamily": [
+                  1.5,
+                  0.6666666666666666,
+                  0.3333333333333333,
+                  0.8333333333333334
+                ]
+              }
+            },
+            "uniform": {
+              "prediction": [
+                4.4,
+                8.8,
+                4.4,
+                4.4
+              ],
+              "rounded": [
+                5,
+                9,
+                4,
+                4
+              ],
+              "metrics": {
+                "mae": 2,
+                "absolute": 24,
+                "total": 66,
+                "cells": 12,
+                "overlap": 81.81818181818181,
+                "exact": 0,
+                "maxError": 3.5999999999999996,
+                "perFamily": [
+                  3.5999999999999996,
+                  0.9333333333333336,
+                  1.066666666666667,
+                  2.4000000000000004
+                ]
+              }
+            }
+          },
+          "selectedMethod": "last",
+          "selected": {
+            "prediction": [
+              9.5,
+              8,
+              3,
+              1.5
+            ],
+            "rounded": [
+              10,
+              8,
+              3,
+              1
+            ],
+            "metrics": {
+              "mae": 0.8333333333333334,
+              "absolute": 10,
+              "total": 66,
+              "cells": 12,
+              "overlap": 92.42424242424242,
+              "exact": 4,
+              "maxError": 2,
+              "perFamily": [
+                1.5,
+                0.6666666666666666,
+                0.3333333333333333,
+                0.8333333333333334
+              ]
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "trainingYears": [
+            2021,
+            2022
+          ],
+          "trainingSlots": 5,
+          "targetSlots": 3,
+          "methods": {
+            "last": {
+              "prediction": [
+                8,
+                8.666666666666666,
+                3.3333333333333335,
+                2
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.888888888888889,
+                "absolute": 10.666666666666668,
+                "total": 66,
+                "cells": 12,
+                "overlap": 91.91919191919192,
+                "exact": 2,
+                "maxError": 2.333333333333334,
+                "perFamily": [
+                  0.6666666666666666,
+                  1.4444444444444446,
+                  0.7777777777777778,
+                  0.6666666666666666
+                ]
+              }
+            },
+            "annual": {
+              "prediction": [
+                8.75,
+                8.333333333333332,
+                3.166666666666667,
+                1.75
+              ],
+              "rounded": [
+                9,
+                8,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 1.1111111111111114,
+                "absolute": 13.333333333333336,
+                "total": 66,
+                "cells": 12,
+                "overlap": 89.8989898989899,
+                "exact": 0,
+                "maxError": 2.666666666666668,
+                "perFamily": [
+                  1.4166666666666667,
+                  1.555555555555556,
+                  0.7222222222222223,
+                  0.75
+                ]
+              }
+            },
+            "recency": {
+              "prediction": [
+                8.621320343559644,
+                8.390524291751271,
+                3.195262145875635,
+                1.7928932188134525
+              ],
+              "rounded": [
+                9,
+                8,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 1.0729838054991536,
+                "absolute": 12.875805665989843,
+                "total": 66,
+                "cells": 12,
+                "overlap": 90.24560176818952,
+                "exact": 0,
+                "maxError": 2.6094757082487288,
+                "perFamily": [
+                  1.2879870102263105,
+                  1.5364919027495763,
+                  0.7317540486252118,
+                  0.7357022603955158
+                ]
+              }
+            },
+            "ensemble": {
+              "prediction": [
+                8.457106781186548,
+                8.463508097250424,
+                3.2317540486252114,
+                1.8476310729378174
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 1.0243279351663845,
+                "absolute": 12.291935221996614,
+                "total": 66,
+                "cells": 12,
+                "overlap": 90.68792786212377,
+                "exact": 0,
+                "maxError": 2.5364919027495763,
+                "perFamily": [
+                  1.1237734478532146,
+                  1.5121639675831922,
+                  0.7439180162084038,
+                  0.7174563090207275
+                ]
+              }
+            },
+            "uniform": {
+              "prediction": [
+                4.4,
+                8.8,
+                4.4,
+                4.4
+              ],
+              "rounded": [
+                5,
+                9,
+                4,
+                4
+              ],
+              "metrics": {
+                "mae": 2.033333333333333,
+                "absolute": 24.4,
+                "total": 66,
+                "cells": 12,
+                "overlap": 81.51515151515152,
+                "exact": 0,
+                "maxError": 3.5999999999999996,
+                "perFamily": [
+                  2.933333333333333,
+                  1.3999999999999997,
+                  1.4000000000000004,
+                  2.4000000000000004
+                ]
+              }
+            }
+          },
+          "selectedMethod": "last",
+          "selected": {
+            "prediction": [
+              8,
+              8.666666666666666,
+              3.3333333333333335,
+              2
+            ],
+            "rounded": [
+              8,
+              9,
+              3,
+              2
+            ],
+            "metrics": {
+              "mae": 0.888888888888889,
+              "absolute": 10.666666666666668,
+              "total": 66,
+              "cells": 12,
+              "overlap": 91.91919191919192,
+              "exact": 2,
+              "maxError": 2.333333333333334,
+              "perFamily": [
+                0.6666666666666666,
+                1.4444444444444446,
+                0.7777777777777778,
+                0.6666666666666666
+              ]
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "trainingYears": [
+            2021,
+            2022,
+            2023
+          ],
+          "trainingSlots": 8,
+          "targetSlots": 2,
+          "methods": {
+            "last": {
+              "prediction": [
+                7.333333333333333,
+                9.666666666666666,
+                3,
+                2
+              ],
+              "rounded": [
+                7,
+                10,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.6666666666666667,
+                "absolute": 5.333333333333334,
+                "total": 44,
+                "cells": 8,
+                "overlap": 93.93939393939394,
+                "exact": 2,
+                "maxError": 1.666666666666666,
+                "perFamily": [
+                  0.666666666666667,
+                  1,
+                  0,
+                  1
+                ]
+              }
+            },
+            "annual": {
+              "prediction": [
+                8.277777777777777,
+                8.777777777777777,
+                3.111111111111111,
+                1.8333333333333333
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.597222222222222,
+                "absolute": 4.777777777777776,
+                "total": 44,
+                "cells": 8,
+                "overlap": 94.57070707070707,
+                "exact": 0,
+                "maxError": 1.2222222222222232,
+                "perFamily": [
+                  0.2777777777777768,
+                  1,
+                  0.11111111111111116,
+                  1
+                ]
+              }
+            },
+            "recency": {
+              "prediction": [
+                8.037756819943498,
+                8.96872122621465,
+                3.106792413672347,
+                1.8867295401695068
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.5361373084039612,
+                "absolute": 4.28909846723169,
+                "total": 44,
+                "cells": 8,
+                "overlap": 95.1260244690549,
+                "exact": 0,
+                "maxError": 1.1132704598304932,
+                "perFamily": [
+                  0.03775681994349789,
+                  1,
+                  0.10679241367234704,
+                  1
+                ]
+              }
+            },
+            "ensemble": {
+              "prediction": [
+                7.882955977018203,
+                9.137721890219696,
+                3.0726345082611526,
+                1.9066876245009468
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.5474196328107374,
+                "absolute": 4.379357062485899,
+                "total": 44,
+                "cells": 8,
+                "overlap": 95.02345788353875,
+                "exact": 0,
+                "maxError": 1.1377218902196962,
+                "perFamily": [
+                  0.11704402298179684,
+                  1,
+                  0.07263450826115259,
+                  1
+                ]
+              }
+            },
+            "uniform": {
+              "prediction": [
+                4.4,
+                8.8,
+                4.4,
+                4.4
+              ],
+              "rounded": [
+                5,
+                9,
+                4,
+                4
+              ],
+              "metrics": {
+                "mae": 2.1,
+                "absolute": 16.8,
+                "total": 44,
+                "cells": 8,
+                "overlap": 80.9090909090909,
+                "exact": 0,
+                "maxError": 3.5999999999999996,
+                "perFamily": [
+                  3.5999999999999996,
+                  1,
+                  1.4000000000000004,
+                  2.4000000000000004
+                ]
+              }
+            }
+          },
+          "selectedMethod": "last",
+          "selected": {
+            "prediction": [
+              7.333333333333333,
+              9.666666666666666,
+              3,
+              2
+            ],
+            "rounded": [
+              7,
+              10,
+              3,
+              2
+            ],
+            "metrics": {
+              "mae": 0.6666666666666667,
+              "absolute": 5.333333333333334,
+              "total": 44,
+              "cells": 8,
+              "overlap": 93.93939393939394,
+              "exact": 2,
+              "maxError": 1.666666666666666,
+              "perFamily": [
+                0.666666666666667,
+                1,
+                0,
+                1
+              ]
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "trainingYears": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "trainingSlots": 10,
+          "targetSlots": 3,
+          "methods": {
+            "last": {
+              "prediction": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.5,
+                "absolute": 6,
+                "total": 66,
+                "cells": 12,
+                "overlap": 95.45454545454545,
+                "exact": 7,
+                "maxError": 2,
+                "perFamily": [
+                  0.3333333333333333,
+                  0.6666666666666666,
+                  0,
+                  1
+                ]
+              }
+            },
+            "annual": {
+              "prediction": [
+                8.208333333333332,
+                8.833333333333332,
+                3.0833333333333335,
+                1.875
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.5902777777777773,
+                "absolute": 7.083333333333329,
+                "total": 66,
+                "cells": 12,
+                "overlap": 94.63383838383838,
+                "exact": 0,
+                "maxError": 2.125,
+                "perFamily": [
+                  0.5416666666666655,
+                  0.6111111111111107,
+                  0.08333333333333348,
+                  1.125
+                ]
+              }
+            },
+            "recency": {
+              "prediction": [
+                8.023011864576283,
+                8.980936347194021,
+                3.065087381958545,
+                1.9309644062711506
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.5376950723320878,
+                "absolute": 6.452340867985053,
+                "total": 66,
+                "cells": 12,
+                "overlap": 95.1118629787992,
+                "exact": 0,
+                "maxError": 2.0690355937288496,
+                "perFamily": [
+                  0.3563451979096162,
+                  0.6603121157313403,
+                  0.06508738195854491,
+                  1.0690355937288494
+                ]
+              }
+            },
+            "ensemble": {
+              "prediction": [
+                8.077115065969872,
+                8.938089893509117,
+                3.0494735717639596,
+                1.9353214687570501
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.5426576167032885,
+                "absolute": 6.511891400439462,
+                "total": 66,
+                "cells": 12,
+                "overlap": 95.06674893906101,
+                "exact": 0,
+                "maxError": 2.06467853124295,
+                "perFamily": [
+                  0.4104483993032056,
+                  0.6460299645030391,
+                  0.04947357176395961,
+                  1.0646785312429499
+                ]
+              }
+            },
+            "uniform": {
+              "prediction": [
+                4.4,
+                8.8,
+                4.4,
+                4.4
+              ],
+              "rounded": [
+                5,
+                9,
+                4,
+                4
+              ],
+              "metrics": {
+                "mae": 1.6666666666666667,
+                "absolute": 20,
+                "total": 66,
+                "cells": 12,
+                "overlap": 84.84848484848484,
+                "exact": 0,
+                "maxError": 3.5999999999999996,
+                "perFamily": [
+                  3.266666666666666,
+                  0.6000000000000002,
+                  1.4000000000000004,
+                  1.4000000000000004
+                ]
+              }
+            }
+          },
+          "selectedMethod": "last",
+          "selected": {
+            "prediction": [
+              8,
+              9,
+              3,
+              2
+            ],
+            "rounded": [
+              8,
+              9,
+              3,
+              2
+            ],
+            "metrics": {
+              "mae": 0.5,
+              "absolute": 6,
+              "total": 66,
+              "cells": 12,
+              "overlap": 95.45454545454545,
+              "exact": 7,
+              "maxError": 2,
+              "perFamily": [
+                0.3333333333333333,
+                0.6666666666666666,
+                0,
+                1
+              ]
+            }
+          }
+        }
+      ],
+      "summary": {
+        "last": {
+          "mae": 0.7222222222222223,
+          "overlap": 93.43434343434343,
+          "exact": 15,
+          "cells": 44,
+          "annualMAE": [
+            0.8333333333333334,
+            0.888888888888889,
+            0.6666666666666667,
+            0.5
+          ]
+        },
+        "annual": {
+          "mae": 0.7829861111111109,
+          "overlap": 92.88194444444444,
+          "exact": 4,
+          "cells": 44,
+          "annualMAE": [
+            0.8333333333333334,
+            1.1111111111111114,
+            0.597222222222222,
+            0.5902777777777773
+          ]
+        },
+        "recency": {
+          "mae": 0.7450373798921339,
+          "overlap": 93.2269329100715,
+          "exact": 4,
+          "cells": 44,
+          "annualMAE": [
+            0.8333333333333334,
+            1.0729838054991536,
+            0.5361373084039612,
+            0.5376950723320878
+          ]
+        },
+        "ensemble": {
+          "mae": 0.7369346295034359,
+          "overlap": 93.3005942772415,
+          "exact": 4,
+          "cells": 44,
+          "annualMAE": [
+            0.8333333333333334,
+            1.0243279351663845,
+            0.5474196328107374,
+            0.5426576167032885
+          ]
+        },
+        "uniform": {
+          "mae": 1.95,
+          "overlap": 82.27272727272727,
+          "exact": 0,
+          "cells": 44,
+          "annualMAE": [
+            2,
+            2.033333333333333,
+            2.1,
+            1.6666666666666667
+          ]
+        },
+        "selector": {
+          "mae": 0.7222222222222223,
+          "overlap": 93.43434343434343,
+          "exact": 15,
+          "cells": 44,
+          "annualMAE": [
+            0.8333333333333334,
+            0.888888888888889,
+            0.6666666666666667,
+            0.5
+          ]
+        }
+      },
+      "forecast": {
+        "targetYear": 2026,
+        "selectedMethod": "last",
+        "prediction": [
+          7.666666666666667,
+          8.333333333333334,
+          3,
+          3
+        ],
+        "rounded": [
+          8,
+          8,
+          3,
+          3
+        ],
+        "observed": [
+          [
+            7,
+            10
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "maxHistoricalErrors": [
+          1.5,
+          2.333333333333334,
+          1.3333333333333335,
+          2
+        ]
+      }
+    }
+  },
+  "diagnostics": {
+    "trendExperiment": {
+      "raw": {
+        "damping": 0.5,
+        "folds": [
+          {
+            "year": 2022,
+            "last": 0.8,
+            "trend": 0.8
+          },
+          {
+            "year": 2023,
+            "last": 1.0222222222222224,
+            "trend": 1.0222222222222224
+          },
+          {
+            "year": 2024,
+            "last": 0.5333333333333334,
+            "trend": 0.7083333333333336
+          },
+          {
+            "year": 2025,
+            "last": 0.8,
+            "trend": 0.8922222222222224
+          }
+        ],
+        "summary": {
+          "last": 0.788888888888889,
+          "trend": 0.8556944444444445
+        },
+        "beatsLastYear": false,
+        "targetYear": 2026,
+        "forecast": [
+          7.483333333333333,
+          4.35,
+          2.983333333333334,
+          3.15,
+          4.033333333333333
+        ]
+      },
+      "broad": {
+        "damping": 0.5,
+        "folds": [
+          {
+            "year": 2022,
+            "last": 0.8333333333333334,
+            "trend": 0.8333333333333334
+          },
+          {
+            "year": 2023,
+            "last": 0.888888888888889,
+            "trend": 0.888888888888889
+          },
+          {
+            "year": 2024,
+            "last": 0.6666666666666667,
+            "trend": 0.8229166666666665
+          },
+          {
+            "year": 2025,
+            "last": 0.5,
+            "trend": 0.5694444444444441
+          }
+        ],
+        "summary": {
+          "last": 0.7222222222222223,
+          "trend": 0.7786458333333333
+        },
+        "beatsLastYear": false,
+        "targetYear": 2026,
+        "forecast": [
+          7.483333333333333,
+          8.383333333333335,
+          2.983333333333334,
+          3.15
+        ]
+      }
+    },
+    "slotNoiseFloor": {
+      "raw": {
+        "years": [
+          {
+            "year": 2021,
+            "slots": 2,
+            "mae": 0.8
+          },
+          {
+            "year": 2022,
+            "slots": 3,
+            "mae": 0.6
+          },
+          {
+            "year": 2023,
+            "slots": 3,
+            "mae": 1.2666666666666668
+          },
+          {
+            "year": 2024,
+            "slots": 2,
+            "mae": 0.8
+          },
+          {
+            "year": 2025,
+            "slots": 3,
+            "mae": 0.4666666666666666
+          }
+        ],
+        "mae": 0.7866666666666667
+      },
+      "broad": {
+        "years": [
+          {
+            "year": 2021,
+            "slots": 2,
+            "mae": 0.5
+          },
+          {
+            "year": 2022,
+            "slots": 3,
+            "mae": 0.75
+          },
+          {
+            "year": 2023,
+            "slots": 3,
+            "mae": 1.0833333333333333
+          },
+          {
+            "year": 2024,
+            "slots": 2,
+            "mae": 1
+          },
+          {
+            "year": 2025,
+            "slots": 3,
+            "mae": 0.5833333333333334
+          }
+        ],
+        "mae": 0.7833333333333333
+      }
+    },
+    "mostLikelyAllocation": {
+      "raw": {
+        "halfLife": 2,
+        "folds": [
+          {
+            "year": 2022,
+            "modal": {
+              "mae": 0.8,
+              "exactRate": 0.26666666666666666
+            },
+            "lastRounded": {
+              "mae": 0.8,
+              "exactRate": 0.4666666666666667
+            },
+            "lastMean": {
+              "mae": 0.8,
+              "exactRate": 0.13333333333333333
+            }
+          },
+          {
+            "year": 2023,
+            "modal": {
+              "mae": 1.0666666666666667,
+              "exactRate": 0.26666666666666666
+            },
+            "lastRounded": {
+              "mae": 0.9333333333333333,
+              "exactRate": 0.26666666666666666
+            },
+            "lastMean": {
+              "mae": 1.0222222222222224,
+              "exactRate": 0.13333333333333333
+            }
+          },
+          {
+            "year": 2024,
+            "modal": {
+              "mae": 0.6,
+              "exactRate": 0.5
+            },
+            "lastRounded": {
+              "mae": 0.6,
+              "exactRate": 0.5
+            },
+            "lastMean": {
+              "mae": 0.5333333333333334,
+              "exactRate": 0.4
+            }
+          },
+          {
+            "year": 2025,
+            "modal": {
+              "mae": 0.5333333333333333,
+              "exactRate": 0.4666666666666667
+            },
+            "lastRounded": {
+              "mae": 0.8,
+              "exactRate": 0.4
+            },
+            "lastMean": {
+              "mae": 0.8,
+              "exactRate": 0.4
+            }
+          }
+        ],
+        "summary": {
+          "modal": {
+            "mae": 0.75,
+            "exactRate": 0.375
+          },
+          "lastRounded": {
+            "mae": 0.7833333333333334,
+            "exactRate": 0.4083333333333333
+          },
+          "lastMean": {
+            "mae": 0.788888888888889,
+            "exactRate": 0.2666666666666667
+          }
+        },
+        "beatsRoundedLast": true,
+        "forecast": {
+          "targetYear": 2026,
+          "allocation": [
+            8,
+            4,
+            3,
+            3,
+            4
+          ],
+          "expectedHits": 2.701402659981715,
+          "probabilities": [
+            [
+              {
+                "count": 7,
+                "p": 0.23719219895748087
+              },
+              {
+                "count": 8,
+                "p": 0.6738607264334638
+              },
+              {
+                "count": 9,
+                "p": 0.04447353730452766
+              },
+              {
+                "count": 10,
+                "p": 0.04447353730452766
+              }
+            ],
+            [
+              {
+                "count": 4,
+                "p": 0.34096378600137867
+              },
+              {
+                "count": 5,
+                "p": 0.37271990219249734
+              },
+              {
+                "count": 6,
+                "p": 0.041930053081845865
+              },
+              {
+                "count": 7,
+                "p": 0.1257901592455376
+              },
+              {
+                "count": 8,
+                "p": 0.1185960994787404
+              }
+            ],
+            [
+              {
+                "count": 2,
+                "p": 0.059298049739370216
+              },
+              {
+                "count": 3,
+                "p": 0.8394738474394138
+              },
+              {
+                "count": 4,
+                "p": 0.10122810282121608
+              }
+            ],
+            [
+              {
+                "count": 1,
+                "p": 0.2714917993712813
+              },
+              {
+                "count": 2,
+                "p": 0.2642977396044841
+              },
+              {
+                "count": 3,
+                "p": 0.345614361545494
+              },
+              {
+                "count": 4,
+                "p": 0.1185960994787404
+              }
+            ],
+            [
+              {
+                "count": 2,
+                "p": 0.059298049739370216
+              },
+              {
+                "count": 3,
+                "p": 0.43921201169866486
+              },
+              {
+                "count": 4,
+                "p": 0.501489938561965
+              }
+            ]
+          ],
+          "probabilityOfChosen": [
+            0.6738607264334638,
+            0.34096378600137867,
+            0.8394738474394138,
+            0.345614361545494,
+            0.501489938561965
+          ]
+        }
+      },
+      "broad": {
+        "halfLife": 2,
+        "folds": [
+          {
+            "year": 2022,
+            "modal": {
+              "mae": 0.6666666666666666,
+              "exactRate": 0.4166666666666667
+            },
+            "lastRounded": {
+              "mae": 1,
+              "exactRate": 0.4166666666666667
+            },
+            "lastMean": {
+              "mae": 0.8333333333333334,
+              "exactRate": 0.3333333333333333
+            }
+          },
+          {
+            "year": 2023,
+            "modal": {
+              "mae": 1,
+              "exactRate": 0.3333333333333333
+            },
+            "lastRounded": {
+              "mae": 0.8333333333333334,
+              "exactRate": 0.25
+            },
+            "lastMean": {
+              "mae": 0.888888888888889,
+              "exactRate": 0.16666666666666666
+            }
+          },
+          {
+            "year": 2024,
+            "modal": {
+              "mae": 0.5,
+              "exactRate": 0.75
+            },
+            "lastRounded": {
+              "mae": 0.75,
+              "exactRate": 0.375
+            },
+            "lastMean": {
+              "mae": 0.6666666666666667,
+              "exactRate": 0.25
+            }
+          },
+          {
+            "year": 2025,
+            "modal": {
+              "mae": 0.3333333333333333,
+              "exactRate": 0.6666666666666666
+            },
+            "lastRounded": {
+              "mae": 0.5,
+              "exactRate": 0.5833333333333334
+            },
+            "lastMean": {
+              "mae": 0.5,
+              "exactRate": 0.5833333333333334
+            }
+          }
+        ],
+        "summary": {
+          "modal": {
+            "mae": 0.625,
+            "exactRate": 0.5416666666666666
+          },
+          "lastRounded": {
+            "mae": 0.7708333333333334,
+            "exactRate": 0.40625
+          },
+          "lastMean": {
+            "mae": 0.7222222222222223,
+            "exactRate": 0.33333333333333337
+          }
+        },
+        "beatsRoundedLast": true,
+        "forecast": {
+          "targetYear": 2026,
+          "allocation": [
+            8,
+            8,
+            3,
+            3
+          ],
+          "expectedHits": 2.454036524133507,
+          "probabilities": [
+            [
+              {
+                "count": 7,
+                "p": 0.23719219895748087
+              },
+              {
+                "count": 8,
+                "p": 0.6738607264334638
+              },
+              {
+                "count": 9,
+                "p": 0.04447353730452766
+              },
+              {
+                "count": 10,
+                "p": 0.04447353730452766
+              }
+            ],
+            [
+              {
+                "count": 8,
+                "p": 0.5950875887151358
+              },
+              {
+                "count": 9,
+                "p": 0.11859609947874043
+              },
+              {
+                "count": 10,
+                "p": 0.22701826206675368
+              },
+              {
+                "count": 11,
+                "p": 0.059298049739370216
+              }
+            ],
+            [
+              {
+                "count": 2,
+                "p": 0.059298049739370216
+              },
+              {
+                "count": 3,
+                "p": 0.8394738474394138
+              },
+              {
+                "count": 4,
+                "p": 0.10122810282121608
+              }
+            ],
+            [
+              {
+                "count": 1,
+                "p": 0.2714917993712813
+              },
+              {
+                "count": 2,
+                "p": 0.2642977396044841
+              },
+              {
+                "count": 3,
+                "p": 0.345614361545494
+              },
+              {
+                "count": 4,
+                "p": 0.1185960994787404
+              }
+            ]
+          ],
+          "probabilityOfChosen": [
+            0.6738607264334638,
+            0.5950875887151358,
+            0.8394738474394138,
+            0.345614361545494
+          ]
+        }
+      }
+    },
+    "setterSwing": {
+      "raw": {
+        "labels": [
+          "Arithmetic",
+          "Algebra",
+          "Geometry",
+          "Numbers",
+          "Modern Math"
+        ],
+        "transitions": [
+          {
+            "from": 2021,
+            "to": 2022,
+            "delta": [
+              1.5,
+              0.833333333333333,
+              0.3333333333333335,
+              0.5,
+              0.16666666666666652
+            ],
+            "churn": 1.6666666666666665,
+            "newConvenor": true
+          },
+          {
+            "from": 2022,
+            "to": 2023,
+            "delta": [
+              0.666666666666667,
+              1.333333333333334,
+              0.3333333333333335,
+              0,
+              0.3333333333333335
+            ],
+            "churn": 1.333333333333334,
+            "newConvenor": true
+          },
+          {
+            "from": 2023,
+            "to": 2024,
+            "delta": [
+              0.666666666666667,
+              0.666666666666667,
+              0,
+              0,
+              0
+            ],
+            "churn": 0.666666666666667,
+            "newConvenor": true
+          },
+          {
+            "from": 2024,
+            "to": 2025,
+            "delta": [
+              0.33333333333333304,
+              1.666666666666667,
+              0,
+              1,
+              1
+            ],
+            "churn": 2,
+            "newConvenor": true
+          }
+        ],
+        "meanDelta": [
+          0.7916666666666667,
+          1.1250000000000002,
+          0.16666666666666674,
+          0.375,
+          0.375
+        ],
+        "maxDelta": [
+          1.5,
+          1.666666666666667,
+          0.3333333333333335,
+          1,
+          1
+        ],
+        "meanChurn": 1.416666666666667,
+        "allNewConvenor": true
+      },
+      "broad": {
+        "labels": [
+          "Arithmetic",
+          "Algebra + Modern Math",
+          "Geometry",
+          "Numbers"
+        ],
+        "transitions": [
+          {
+            "from": 2021,
+            "to": 2022,
+            "delta": [
+              1.5,
+              0.6666666666666661,
+              0.3333333333333335,
+              0.5
+            ],
+            "churn": 1.4999999999999998,
+            "newConvenor": true
+          },
+          {
+            "from": 2022,
+            "to": 2023,
+            "delta": [
+              0.666666666666667,
+              1,
+              0.3333333333333335,
+              0
+            ],
+            "churn": 1.0000000000000002,
+            "newConvenor": true
+          },
+          {
+            "from": 2023,
+            "to": 2024,
+            "delta": [
+              0.666666666666667,
+              0.6666666666666661,
+              0,
+              0
+            ],
+            "churn": 0.6666666666666665,
+            "newConvenor": true
+          },
+          {
+            "from": 2024,
+            "to": 2025,
+            "delta": [
+              0.33333333333333304,
+              0.6666666666666661,
+              0,
+              1
+            ],
+            "churn": 0.9999999999999996,
+            "newConvenor": true
+          }
+        ],
+        "meanDelta": [
+          0.7916666666666667,
+          0.7499999999999996,
+          0.16666666666666674,
+          0.375
+        ],
+        "maxDelta": [
+          1.5,
+          1,
+          0.3333333333333335,
+          1
+        ],
+        "meanChurn": 1.0416666666666665,
+        "allNewConvenor": true
+      }
+    },
+    "varc": {
+      "labels": [
+        "Summary",
+        "Sentence placement",
+        "Odd sentence",
+        "Parajumbles"
+      ],
+      "years": [
+        2021,
+        2022,
+        2024,
+        2025
+      ],
+      "folds": [
+        {
+          "year": 2022,
+          "trainingYears": [
+            2021
+          ],
+          "methods": {
+            "last": {
+              "prediction": [
+                3,
+                0,
+                2,
+                3
+              ],
+              "mae": 1
+            },
+            "annual": {
+              "prediction": [
+                3,
+                0,
+                2,
+                3
+              ],
+              "mae": 1
+            },
+            "uniform": {
+              "prediction": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "mae": 1
+            }
+          },
+          "selectedMethod": "last"
+        },
+        {
+          "year": 2024,
+          "trainingYears": [
+            2021,
+            2022
+          ],
+          "methods": {
+            "last": {
+              "prediction": [
+                3,
+                2,
+                0,
+                3
+              ],
+              "mae": 1.5
+            },
+            "annual": {
+              "prediction": [
+                3,
+                1,
+                1,
+                3
+              ],
+              "mae": 1.5
+            },
+            "uniform": {
+              "prediction": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "mae": 1
+            }
+          },
+          "selectedMethod": "last"
+        },
+        {
+          "year": 2025,
+          "trainingYears": [
+            2021,
+            2022,
+            2024
+          ],
+          "methods": {
+            "last": {
+              "prediction": [
+                3,
+                3,
+                2,
+                0
+              ],
+              "mae": 1
+            },
+            "annual": {
+              "prediction": [
+                3,
+                1.6666666666666667,
+                1.3333333333333333,
+                2
+              ],
+              "mae": 0.5
+            },
+            "uniform": {
+              "prediction": [
+                2,
+                2,
+                2,
+                2
+              ],
+              "mae": 0
+            }
+          },
+          "selectedMethod": "uniform"
+        }
+      ],
+      "summary": {
+        "last": {
+          "mae": 1.1666666666666667,
+          "annualMAE": [
+            1,
+            1.5,
+            1
+          ]
+        },
+        "annual": {
+          "mae": 1,
+          "annualMAE": [
+            1,
+            1.5,
+            0.5
+          ]
+        },
+        "uniform": {
+          "mae": 0.6666666666666666,
+          "annualMAE": [
+            1,
+            1,
+            0
+          ]
+        }
+      },
+      "presence": [
+        {
+          "label": "Summary",
+          "yearsPresent": 4,
+          "years": 4
+        },
+        {
+          "label": "Sentence placement",
+          "yearsPresent": 3,
+          "years": 4
+        },
+        {
+          "label": "Odd sentence",
+          "yearsPresent": 3,
+          "years": 4
+        },
+        {
+          "label": "Parajumbles",
+          "yearsPresent": 3,
+          "years": 4
+        }
+      ],
+      "changes": {
+        "changed": 3,
+        "transitions": 3
+      },
+      "rcAlways16": true,
+      "forecast": {
+        "targetYear": 2026,
+        "selectedMethod": "uniform",
+        "prediction": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "rounded": [
+          2,
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "dilr": {
+      "years": [
+        {
+          "year": 2021,
+          "shape": [
+            6,
+            6,
+            4,
+            4
+          ],
+          "total": 20
+        },
+        {
+          "year": 2022,
+          "shape": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "total": 20
+        },
+        {
+          "year": 2023,
+          "shape": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "total": 20
+        },
+        {
+          "year": 2024,
+          "shape": [
+            5,
+            5,
+            4,
+            4,
+            4
+          ],
+          "total": 22
+        },
+        {
+          "year": 2025,
+          "shape": [
+            5,
+            5,
+            4,
+            4,
+            4
+          ],
+          "total": 22
+        }
+      ],
+      "folds": [
+        {
+          "year": 2022,
+          "predicted": [
+            6,
+            6,
+            4,
+            4
+          ],
+          "predictedTotal": 20,
+          "totalCorrect": 1,
+          "setSizeError": 4,
+          "exactShape": 0
+        },
+        {
+          "year": 2023,
+          "predicted": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "predictedTotal": 20,
+          "totalCorrect": 1,
+          "setSizeError": 0,
+          "exactShape": 1
+        },
+        {
+          "year": 2024,
+          "predicted": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "predictedTotal": 20,
+          "totalCorrect": 0,
+          "setSizeError": 6,
+          "exactShape": 0
+        },
+        {
+          "year": 2025,
+          "predicted": [
+            5,
+            5,
+            4,
+            4,
+            4
+          ],
+          "predictedTotal": 22,
+          "totalCorrect": 1,
+          "setSizeError": 0,
+          "exactShape": 1
+        }
+      ],
+      "summary": {
+        "totalCorrect": 0.75,
+        "exactShape": 0.5,
+        "setSizeError": 2.5
+      },
+      "changes": {
+        "changed": 2,
+        "transitions": 4
+      },
+      "forecast": {
+        "targetYear": 2026,
+        "shape": [
+          5,
+          5,
+          4,
+          4,
+          4
+        ],
+        "total": 22
+      }
+    },
+    "officialMock": {
+      "recorded": {
+        "2025": {
+          "released": "2025-11-12",
+          "convenor": "IIM Kozhikode",
+          "id": "32842@@M214",
+          "url": "https://cdn4.digialm.com//OnlineAssessment/index.html?32842@@M214",
+          "releaseSource": "https://www.careers360.com/mba/articles/cat-2025-official-mock-test-released-iimcat-ac-in",
+          "accessed": "2026-11-06",
+          "sections": [
+            24,
+            22,
+            22
+          ],
+          "minutesPerSection": 40,
+          "varc": [
+            16,
+            3,
+            3,
+            2,
+            0
+          ],
+          "tita": [
+            2,
+            10,
+            8
+          ],
+          "dilrSets": [
+            4,
+            4,
+            4,
+            5,
+            5
+          ],
+          "dilrTitaBySet": [
+            1,
+            0,
+            4,
+            3,
+            2
+          ],
+          "qa": [
+            9,
+            4,
+            3,
+            2,
+            4
+          ],
+          "qaAlternative": [
+            9,
+            5,
+            3,
+            2,
+            3
+          ],
+          "qaBorderline": 7,
+          "rules": {
+            "dilrSetSizes": [
+              4,
+              5
+            ],
+            "rcQuestionsPerPassage": 4,
+            "titaWholeNumber": true
+          }
+        },
+        "2026": {
+          "released": "2026-11-06",
+          "convenor": "IIM Indore",
+          "id": "32842@@M218",
+          "url": "https://cdn4.digialm.com//OnlineAssessment/index.html?32842@@M218",
+          "linkPdf": "https://g03.tcsion.com//per/g03/pub/726/EForms/image/ImageDocUpload/71161/8/1175320.pdf",
+          "accessed": "2026-11-06",
+          "sameQuestionsAs": 2025,
+          "sameEvidence": "Same four RC passage IDs, same five DILR set IDs and sizes, same text-length and image fingerprint for all 22 QA questions, same MCQ/TITA counts; only the order is shuffled.",
+          "sections": [
+            24,
+            22,
+            22
+          ],
+          "minutesPerSection": 40,
+          "varc": [
+            16,
+            3,
+            3,
+            2,
+            0
+          ],
+          "tita": [
+            2,
+            10,
+            8
+          ],
+          "dilrSets": [
+            4,
+            5,
+            4,
+            5,
+            4
+          ],
+          "dilrTitaBySet": [
+            0,
+            2,
+            1,
+            3,
+            4
+          ],
+          "qa": [
+            9,
+            4,
+            3,
+            2,
+            4
+          ],
+          "qaAlternative": [
+            9,
+            5,
+            3,
+            2,
+            3
+          ],
+          "qaBorderline": 7,
+          "rules": {
+            "mcqOptions": 4,
+            "marksMCQ": [
+              3,
+              -1,
+              0
+            ],
+            "marksTITA": [
+              3,
+              0,
+              0
+            ],
+            "titaWholeNumber": true,
+            "dilrSetSizes": [
+              4,
+              5
+            ],
+            "rcQuestionsPerPassage": 4,
+            "sectionOrder": [
+              "VARC",
+              "DILR",
+              "QA"
+            ],
+            "onScreenCalculator": true,
+            "saveOnlyWithSaveAndNext": true
+          },
+          "officialStatements": [
+            "The mock-link PDF says CAT 2026 has 120 minutes for non-PwBD candidates, 40 minutes per section.",
+            "The same PDF says the mock uses selected questions from previous CAT papers and is not meant to reveal the CAT 2026 pattern; counts and timing in the mock are indicative.",
+            "The 4 Nov 2026 media release says the test is on 29 November 2026 in three shifts, with admit cards from 6 November.",
+            "Disputes fall under the CAT Centre 2026 in Indore, and the help desk uses an iimidr.ac.in address, which supports IIM Indore as convenor."
+          ]
+        }
+      },
+      "dilrLayoutsAllowedByRule": [
+        [
+          5,
+          5,
+          4,
+          4,
+          4
+        ]
+      ],
+      "backtest2025": {
+        "year": 2025,
+        "priorYear": 2024,
+        "slots": 3,
+        "sectionsMatch": true,
+        "dilrLayoutMatch": true,
+        "lastYearDilrLayoutMatch": true,
+        "va": {
+          "mock": [
+            3,
+            3,
+            2,
+            0
+          ],
+          "actual": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "mockMAE": 1,
+          "lastYearMAE": 1,
+          "equalSplitMAE": 0
+        },
+        "tita": {
+          "mock": [
+            2,
+            10,
+            8
+          ],
+          "actual": [
+            4,
+            11,
+            8
+          ],
+          "difference": [
+            -2,
+            -1,
+            0
+          ],
+          "totalDifference": -3
+        },
+        "qa": {
+          "raw": {
+            "mock": 0.5333333333333333,
+            "mockAlternative": 0.8,
+            "lastYear": 0.8
+          },
+          "broad": {
+            "mock": 0.6666666666666666,
+            "mockAlternative": 0.6666666666666666,
+            "lastYear": 0.5
+          }
+        }
+      },
+      "titaForecast": {
+        "targetYear": 2026,
+        "basisYear": 2025,
+        "bySection": [
+          4,
+          11,
+          8
+        ],
+        "total": 23,
+        "range": [
+          20,
+          23
+        ],
+        "sectionRanges": [
+          [
+            2,
+            4
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            8,
+            8
+          ]
+        ]
+      },
+      "note": "Counts and question types only; no mock question text is stored. Mock QA labels were assigned by this project and are never fitted."
+    },
+    "topicForecast": {
+      "groups": [
+        {
+          "key": "RAM",
+          "short": "Ratio, averages & mixtures",
+          "label": "Ratio, proportion, averages & mixtures",
+          "family": "Arithmetic",
+          "looksLike": "ratios and proportion, averages, mixtures and alligation, partnership shares"
+        },
+        {
+          "key": "PLI",
+          "short": "Percent, profit & interest",
+          "label": "Percentages, profit & loss, interest",
+          "family": "Arithmetic",
+          "looksLike": "percentage change, discounts and profit, simple and compound interest"
+        },
+        {
+          "key": "TSDW",
+          "short": "Speed, distance & work",
+          "label": "Time, speed, distance & work",
+          "family": "Arithmetic",
+          "looksLike": "relative speed, trains, boats, races and circular tracks; work rates and pipes"
+        },
+        {
+          "key": "LIN",
+          "short": "Linear equations & inequalities",
+          "label": "Linear equations & inequalities",
+          "family": "Algebra",
+          "looksLike": "equations built from a word problem, integer solutions, inequalities, modulus"
+        },
+        {
+          "key": "QUAD",
+          "short": "Quadratics",
+          "label": "Quadratic & polynomial equations",
+          "family": "Algebra",
+          "looksLike": "roots and coefficients, symmetric identities, quadratics with a parameter"
+        },
+        {
+          "key": "LOG",
+          "short": "Logs & exponents",
+          "label": "Logarithms, exponents & surds",
+          "family": "Algebra",
+          "looksLike": "log laws and change of base, exponential equations, indices and surds"
+        },
+        {
+          "key": "FUNC",
+          "short": "Functions",
+          "label": "Functions & graphs",
+          "family": "Algebra",
+          "looksLike": "composition, functional equations, graphs, maxima and minima"
+        },
+        {
+          "key": "PROG",
+          "short": "Progressions",
+          "label": "Progressions & series",
+          "family": "Modern Math",
+          "looksLike": "AP and GP terms and sums, telescoping series"
+        },
+        {
+          "key": "GEO",
+          "short": "Geometry",
+          "label": "Geometry & mensuration",
+          "family": "Geometry",
+          "looksLike": "triangles, circles and tangents, quadrilaterals, solids, coordinate geometry"
+        },
+        {
+          "key": "NUM",
+          "short": "Number system",
+          "label": "Number system",
+          "family": "Number Systems",
+          "looksLike": "divisibility and factors, remainders, digits, HCF and LCM"
+        },
+        {
+          "key": "PNC",
+          "short": "P&C and probability",
+          "label": "Permutations, combinations & probability",
+          "family": "Modern Math",
+          "looksLike": "counting arrangements and selections, probability"
+        },
+        {
+          "key": "SETS",
+          "short": "Sets & Venn",
+          "label": "Sets & Venn diagrams",
+          "family": "Modern Math",
+          "looksLike": "two- and three-set Venn counts, inclusion and exclusion"
+        }
+      ],
+      "forecast": {
+        "targetYear": 2026,
+        "halfLife": 2,
+        "expectedHits": 6.467208721691912,
+        "allocation": [
+          3,
+          2,
+          2,
+          4,
+          2,
+          1,
+          1,
+          2,
+          3,
+          2,
+          0,
+          0
+        ],
+        "groups": [
+          {
+            "mean": 3.400208520282022,
+            "mostLikely": 3,
+            "range": [
+              2,
+              5
+            ],
+            "pAtLeastOne": 1
+          },
+          {
+            "mean": 1.9654525366114424,
+            "mostLikely": 2,
+            "range": [
+              1,
+              3
+            ],
+            "pAtLeastOne": 1
+          },
+          {
+            "mean": 2.6517281667150114,
+            "mostLikely": 2,
+            "range": [
+              2,
+              4
+            ],
+            "pAtLeastOne": 1
+          },
+          {
+            "mean": 2.879321210333112,
+            "mostLikely": 4,
+            "range": [
+              2,
+              4
+            ],
+            "pAtLeastOne": 1
+          },
+          {
+            "mean": 1.5113217475146896,
+            "mostLikely": 2,
+            "range": [
+              1,
+              2
+            ],
+            "pAtLeastOne": 0.9119985838181702
+          },
+          {
+            "mean": 1.422967507225599,
+            "mostLikely": 1,
+            "range": [
+              1,
+              3
+            ],
+            "pAtLeastOne": 0.9575165577053236
+          },
+          {
+            "mean": 1.154526953205592,
+            "mostLikely": 1,
+            "range": [
+              0,
+              2
+            ],
+            "pAtLeastOne": 0.8017033225318881
+          },
+          {
+            "mean": 1.617414861337183,
+            "mostLikely": 2,
+            "range": [
+              1,
+              2
+            ],
+            "pAtLeastOne": 0.9575165577053236
+          },
+          {
+            "mean": 2.865896801995361,
+            "mostLikely": 3,
+            "range": [
+              2,
+              3
+            ],
+            "pAtLeastOne": 1
+          },
+          {
+            "mean": 1.9208680205848716,
+            "mostLikely": 2,
+            "range": [
+              1,
+              3
+            ],
+            "pAtLeastOne": 0.9381417522791505
+          },
+          {
+            "mean": 0.44257647066250133,
+            "mostLikely": 0,
+            "range": [
+              0,
+              1
+            ],
+            "pAtLeastOne": 0.4289210784963553
+          },
+          {
+            "mean": 0.1677172035326138,
+            "mostLikely": 0,
+            "range": [
+              0,
+              1
+            ],
+            "pAtLeastOne": 0.16771720353261377
+          }
+        ]
+      },
+      "backtest": {
+        "targets": [
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "byHalfLife": [
+          {
+            "halfLife": 0.5,
+            "errors": [
+              0.8082621082621082,
+              0.7815086148419482,
+              0.7173789173789172,
+              0.6906868519771745
+            ],
+            "mae": 0.749459123115037
+          },
+          {
+            "halfLife": 1,
+            "errors": [
+              0.7920227920227919,
+              0.7340252340252339,
+              0.737701804368471,
+              0.6369818950464112
+            ],
+            "mae": 0.725182931365727
+          },
+          {
+            "halfLife": 2,
+            "errors": [
+              0.7864925199516973,
+              0.728924720159355,
+              0.7621338195010269,
+              0.6185960994787405
+            ],
+            "mae": 0.7240367897727049
+          },
+          {
+            "halfLife": 3,
+            "errors": [
+              0.7876242165685183,
+              0.7316133646306989,
+              0.7702334250559772,
+              0.6203770752618066
+            ],
+            "mae": 0.7274620203792502
+          },
+          {
+            "halfLife": 5,
+            "errors": [
+              0.7890924668630563,
+              0.7340703450549522,
+              0.7764169167580336,
+              0.6231820152225165
+            ],
+            "mae": 0.7306904359746397
+          },
+          {
+            "halfLife": null,
+            "errors": [
+              0.7941595441595442,
+              0.7378917378917378,
+              0.7849002849002847,
+              0.6296296296296297
+            ],
+            "mae": 0.7366452991452991
+          }
+        ],
+        "uniform": {
+          "errors": [
+            1.0925925925925928,
+            0.9907407407407408,
+            0.888888888888889,
+            0.9722222222222223
+          ],
+          "mae": 0.9861111111111112
+        },
+        "noiseFloor": 0.6777065527065528
+      },
+      "setterRepeat": {
+        "pairs": [
+          {
+            "setter": "IIM Lucknow",
+            "earlier": 2017,
+            "later": 2023,
+            "r": -0.4105009386969523
+          },
+          {
+            "setter": "IIM Calcutta",
+            "earlier": 2018,
+            "later": 2024,
+            "r": 0.1090736843657168
+          },
+          {
+            "setter": "IIM Kozhikode",
+            "earlier": 2019,
+            "later": 2025,
+            "r": 0.327649516132444
+          }
+        ],
+        "pooledSlope": -0.03324655100548859,
+        "meanR": 0.008740753933736153
+      },
+      "titaTendency": {
+        "overall": 0.3333333333333333,
+        "questions": 348,
+        "groups": [
+          {
+            "group": "RAM",
+            "questions": 42,
+            "tita": 9,
+            "rate": 0.2196969696969697
+          },
+          {
+            "group": "PLI",
+            "questions": 42,
+            "tita": 15,
+            "rate": 0.356060606060606
+          },
+          {
+            "group": "TSDW",
+            "questions": 50,
+            "tita": 17,
+            "rate": 0.33974358974358976
+          },
+          {
+            "group": "EQ",
+            "questions": 37,
+            "tita": 13,
+            "rate": 0.3504273504273504
+          },
+          {
+            "group": "LOG",
+            "questions": 33,
+            "tita": 8,
+            "rate": 0.2476190476190476
+          },
+          {
+            "group": "FUNC",
+            "questions": 19,
+            "tita": 9,
+            "rate": 0.4603174603174603
+          },
+          {
+            "group": "PROG",
+            "questions": 21,
+            "tita": 6,
+            "rate": 0.2898550724637681
+          },
+          {
+            "group": "GEO",
+            "questions": 60,
+            "tita": 17,
+            "rate": 0.2849462365591398
+          },
+          {
+            "group": "NUM",
+            "questions": 28,
+            "tita": 13,
+            "rate": 0.45555555555555555
+          },
+          {
+            "group": "PNC",
+            "questions": 10,
+            "tita": 8,
+            "rate": 0.7222222222222222
+          },
+          {
+            "group": "SETS",
+            "questions": 6,
+            "tita": 1,
+            "rate": 0.20833333333333331
+          }
+        ]
+      },
+      "mocks": {
+        "10": "SETS QUAD TSDW NUM PLI GEO LIN TSDW NUM LIN RAM GEO QUAD LOG PLI PNC RAM LIN GEO NUM TSDW PROG",
+        "01": "PLI RAM RAM TSDW TSDW PLI RAM RAM QUAD LOG LIN QUAD FUNC FUNC GEO GEO GEO NUM NUM PROG PNC LIN",
+        "02": "PLI RAM TSDW TSDW RAM PLI PLI LIN QUAD LOG LIN QUAD FUNC GEO GEO GEO PROG NUM NUM LIN PNC PROG",
+        "03": "PLI TSDW RAM RAM TSDW RAM TSDW LIN LOG QUAD PROG QUAD FUNC LIN FUNC GEO GEO GEO NUM NUM PROG PNC",
+        "04": "PLI TSDW TSDW RAM RAM PLI PROG TSDW RAM PLI QUAD LIN LOG LIN FUNC GEO GEO GEO NUM NUM PNC LIN",
+        "05": "RAM RAM TSDW PLI TSDW RAM PLI RAM LOG QUAD QUAD LIN FUNC LIN GEO GEO GEO NUM NUM NUM PNC PROG",
+        "06": "PLI LIN GEO TSDW NUM PROG TSDW QUAD NUM RAM GEO PNC RAM LOG PLI PROG GEO NUM PLI LIN SETS TSDW",
+        "07": "PLI TSDW LIN GEO TSDW RAM NUM QUAD LIN RAM LOG GEO NUM PLI FUNC GEO PNC RAM LOG LIN PROG TSDW",
+        "08": "PLI QUAD TSDW GEO TSDW QUAD PNC PLI NUM PLI LOG GEO RAM LIN RAM NUM PROG PROG TSDW GEO SETS LIN",
+        "09": "PLI QUAD TSDW LOG PLI PNC GEO LIN TSDW LIN NUM RAM FUNC GEO TSDW RAM LOG LOG LIN RAM TSDW FUNC"
+      },
+      "mockDilr": {
+        "10": "DI DI LR LR LR",
+        "01": "DI LR LR LR LR",
+        "02": "DI LR DI DI LR",
+        "03": "DI LR DI LR LR",
+        "04": "DI LR DI LR DI",
+        "05": "LR DI DI LR LR",
+        "06": "LR DI LR DI LR",
+        "07": "LR DI LR LR LR",
+        "08": "DI LR LR DI LR",
+        "09": "LR DI LR LR LR"
+      },
+      "scenarios": {
+        "07": "IIM Indore lean",
+        "09": "IIM Indore 2020 replay"
+      },
+      "note": "Sub-topic counts from Cracku shift tables (2020-2025); question types from 2IIM per-question tags (2017-2020, 2024). Providers label borderline questions differently."
+    }
+  },
+  "sensitivity": {
+    "alternativeSources": {
+      "available": true,
+      "changes": [
+        {
+          "year": 2023,
+          "slot": 2,
+          "selectedQA": [
+            7,
+            8,
+            2,
+            2,
+            3
+          ],
+          "selectedSource": "https://www.imsindia.com/cat-2023-overall-analysis/",
+          "alternativeQA": [
+            7,
+            8,
+            3,
+            2,
+            2
+          ],
+          "alternativeSource": "https://www.imsindia.com/blog/cat/cat-2023-slot-2-analysis/",
+          "note": "IMS overall table: Geometry 2, Modern Math 3. IMS slot article: Geometry 3, Modern Math 2. Overall table is selected, matching the 2025 Slot 1 rule."
+        },
+        {
+          "year": 2025,
+          "slot": 1,
+          "selectedQA": [
+            8,
+            4,
+            3,
+            3,
+            4
+          ],
+          "selectedSource": "https://www.imsindia.com/cat-overall-analysis-2025/",
+          "alternativeQA": [
+            8,
+            5,
+            3,
+            3,
+            3
+          ],
+          "alternativeSource": "https://www.imsindia.com/cat-2025-slot-1-analysis/",
+          "note": "Overall table selected; slot-specific table reallocates one Modern Math question to Algebra. Source prose also differs."
+        }
+      ],
+      "raw": {
+        "taxonomy": "raw",
+        "labels": [
+          "Arithmetic",
+          "Algebra",
+          "Geometry",
+          "Numbers",
+          "Modern Math"
+        ],
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "slots": 13,
+        "questions": 286,
+        "folds": [
+          {
+            "year": 2022,
+            "trainingYears": [
+              2021
+            ],
+            "trainingSlots": 2,
+            "targetSlots": 3,
+            "methods": {
+              "last": {
+                "prediction": [
+                  9.5,
+                  4.5,
+                  3,
+                  1.5,
+                  3.5
+                ],
+                "rounded": [
+                  10,
+                  5,
+                  3,
+                  1,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.8,
+                  "absolute": 12,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 90.9090909090909,
+                  "exact": 2,
+                  "maxError": 1.5,
+                  "perFamily": [
+                    1.5,
+                    0.8333333333333334,
+                    0.3333333333333333,
+                    0.8333333333333334,
+                    0.5
+                  ]
+                }
+              },
+              "annual": {
+                "prediction": [
+                  9.5,
+                  4.5,
+                  3,
+                  1.5,
+                  3.5
+                ],
+                "rounded": [
+                  10,
+                  5,
+                  3,
+                  1,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.8,
+                  "absolute": 12,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 90.9090909090909,
+                  "exact": 2,
+                  "maxError": 1.5,
+                  "perFamily": [
+                    1.5,
+                    0.8333333333333334,
+                    0.3333333333333333,
+                    0.8333333333333334,
+                    0.5
+                  ]
+                }
+              },
+              "recency": {
+                "prediction": [
+                  9.5,
+                  4.5,
+                  3,
+                  1.5,
+                  3.5
+                ],
+                "rounded": [
+                  10,
+                  5,
+                  3,
+                  1,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.8,
+                  "absolute": 12,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 90.9090909090909,
+                  "exact": 2,
+                  "maxError": 1.5,
+                  "perFamily": [
+                    1.5,
+                    0.8333333333333334,
+                    0.3333333333333333,
+                    0.8333333333333334,
+                    0.5
+                  ]
+                }
+              },
+              "ensemble": {
+                "prediction": [
+                  9.5,
+                  4.5,
+                  3,
+                  1.5,
+                  3.5
+                ],
+                "rounded": [
+                  10,
+                  5,
+                  3,
+                  1,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.8,
+                  "absolute": 12,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 90.9090909090909,
+                  "exact": 2,
+                  "maxError": 1.5,
+                  "perFamily": [
+                    1.5,
+                    0.8333333333333334,
+                    0.3333333333333333,
+                    0.8333333333333334,
+                    0.5
+                  ]
+                }
+              },
+              "uniform": {
+                "prediction": [
+                  4.4,
+                  4.4,
+                  4.4,
+                  4.4,
+                  4.4
+                ],
+                "rounded": [
+                  5,
+                  5,
+                  4,
+                  4,
+                  4
+                ],
+                "metrics": {
+                  "mae": 1.813333333333333,
+                  "absolute": 27.199999999999996,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 79.39393939393939,
+                  "exact": 0,
+                  "maxError": 3.5999999999999996,
+                  "perFamily": [
+                    3.5999999999999996,
+                    0.933333333333333,
+                    1.066666666666667,
+                    2.4000000000000004,
+                    1.066666666666667
+                  ]
+                }
+              }
+            },
+            "selectedMethod": "last",
+            "selected": {
+              "prediction": [
+                9.5,
+                4.5,
+                3,
+                1.5,
+                3.5
+              ],
+              "rounded": [
+                10,
+                5,
+                3,
+                1,
+                3
+              ],
+              "metrics": {
+                "mae": 0.8,
+                "absolute": 12,
+                "total": 66,
+                "cells": 15,
+                "overlap": 90.9090909090909,
+                "exact": 2,
+                "maxError": 1.5,
+                "perFamily": [
+                  1.5,
+                  0.8333333333333334,
+                  0.3333333333333333,
+                  0.8333333333333334,
+                  0.5
+                ]
+              }
+            }
+          },
+          {
+            "year": 2023,
+            "trainingYears": [
+              2021,
+              2022
+            ],
+            "trainingSlots": 5,
+            "targetSlots": 3,
+            "methods": {
+              "last": {
+                "prediction": [
+                  8,
+                  5.333333333333333,
+                  3.3333333333333335,
+                  2,
+                  3.3333333333333335
+                ],
+                "rounded": [
+                  8,
+                  6,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 1.0222222222222224,
+                  "absolute": 15.333333333333336,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 88.38383838383838,
+                  "exact": 2,
+                  "maxError": 2.666666666666667,
+                  "perFamily": [
+                    0.6666666666666666,
+                    2.2222222222222223,
+                    0.4444444444444445,
+                    0.6666666666666666,
+                    1.1111111111111112
+                  ]
+                }
+              },
+              "annual": {
+                "prediction": [
+                  8.75,
+                  4.916666666666666,
+                  3.166666666666667,
+                  1.75,
+                  3.416666666666667
+                ],
+                "rounded": [
+                  9,
+                  5,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 1.2111111111111115,
+                  "absolute": 18.16666666666667,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 86.23737373737373,
+                  "exact": 0,
+                  "maxError": 3.083333333333334,
+                  "perFamily": [
+                    1.4166666666666667,
+                    2.361111111111111,
+                    0.388888888888889,
+                    0.75,
+                    1.138888888888889
+                  ]
+                }
+              },
+              "recency": {
+                "prediction": [
+                  8.621320343559644,
+                  4.988155364689088,
+                  3.195262145875635,
+                  1.7928932188134525,
+                  3.4023689270621826
+                ],
+                "rounded": [
+                  9,
+                  5,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 1.1787029013409471,
+                  "absolute": 17.680543520114206,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 86.60564884839833,
+                  "exact": 0,
+                  "maxError": 3.0118446353109123,
+                  "perFamily": [
+                    1.2879870102263105,
+                    2.3372815451036373,
+                    0.3984207152918784,
+                    0.7357022603955158,
+                    1.1341229756873943
+                  ]
+                }
+              },
+              "ensemble": {
+                "prediction": [
+                  8.457106781186548,
+                  5.079385121563029,
+                  3.2317540486252114,
+                  1.8476310729378174,
+                  3.384122975687394
+                ],
+                "rounded": [
+                  9,
+                  5,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 1.1373454115580934,
+                  "absolute": 17.0601811733714,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 87.07562032320348,
+                  "exact": 0,
+                  "maxError": 2.9206148784369708,
+                  "perFamily": [
+                    1.1237734478532146,
+                    2.3068716261456568,
+                    0.4105846828750705,
+                    0.7174563090207275,
+                    1.128040991895798
+                  ]
+                }
+              },
+              "uniform": {
+                "prediction": [
+                  4.4,
+                  4.4,
+                  4.4,
+                  4.4,
+                  4.4
+                ],
+                "rounded": [
+                  5,
+                  5,
+                  4,
+                  4,
+                  4
+                ],
+                "metrics": {
+                  "mae": 2.133333333333333,
+                  "absolute": 31.999999999999993,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 75.75757575757575,
+                  "exact": 0,
+                  "maxError": 3.5999999999999996,
+                  "perFamily": [
+                    2.933333333333333,
+                    2.533333333333333,
+                    1.066666666666667,
+                    2.4000000000000004,
+                    1.7333333333333336
+                  ]
+                }
+              }
+            },
+            "selectedMethod": "last",
+            "selected": {
+              "prediction": [
+                8,
+                5.333333333333333,
+                3.3333333333333335,
+                2,
+                3.3333333333333335
+              ],
+              "rounded": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 1.0222222222222224,
+                "absolute": 15.333333333333336,
+                "total": 66,
+                "cells": 15,
+                "overlap": 88.38383838383838,
+                "exact": 2,
+                "maxError": 2.666666666666667,
+                "perFamily": [
+                  0.6666666666666666,
+                  2.2222222222222223,
+                  0.4444444444444445,
+                  0.6666666666666666,
+                  1.1111111111111112
+                ]
+              }
+            }
+          },
+          {
+            "year": 2024,
+            "trainingYears": [
+              2021,
+              2022,
+              2023
+            ],
+            "trainingSlots": 8,
+            "targetSlots": 2,
+            "methods": {
+              "last": {
+                "prediction": [
+                  7.333333333333333,
+                  6.666666666666667,
+                  3.3333333333333335,
+                  2,
+                  2.6666666666666665
+                ],
+                "rounded": [
+                  7,
+                  7,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.6666666666666667,
+                  "absolute": 6.666666666666668,
+                  "total": 44,
+                  "cells": 10,
+                  "overlap": 92.42424242424242,
+                  "exact": 0,
+                  "maxError": 1.666666666666667,
+                  "perFamily": [
+                    0.666666666666667,
+                    1,
+                    0.3333333333333335,
+                    1,
+                    0.3333333333333335
+                  ]
+                }
+              },
+              "annual": {
+                "prediction": [
+                  8.277777777777777,
+                  5.5,
+                  3.2222222222222228,
+                  1.8333333333333333,
+                  3.1666666666666665
+                ],
+                "rounded": [
+                  8,
+                  6,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.5333333333333332,
+                  "absolute": 5.333333333333332,
+                  "total": 44,
+                  "cells": 10,
+                  "overlap": 93.93939393939394,
+                  "exact": 0,
+                  "maxError": 1.5,
+                  "perFamily": [
+                    0.2777777777777768,
+                    1,
+                    0.22222222222222276,
+                    1,
+                    0.16666666666666652
+                  ]
+                }
+              },
+              "recency": {
+                "prediction": [
+                  8.037756819943498,
+                  5.748658352711809,
+                  3.257819693446338,
+                  1.8867295401695068,
+                  3.069035593728849
+                ],
+                "rounded": [
+                  8,
+                  6,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.47292242142373697,
+                  "absolute": 4.7292242142373695,
+                  "total": 44,
+                  "cells": 10,
+                  "overlap": 94.62588157473026,
+                  "exact": 0,
+                  "maxError": 1.251341647288191,
+                  "perFamily": [
+                    0.03775681994349789,
+                    1,
+                    0.25781969344633815,
+                    1,
+                    0.06903559372884915
+                  ]
+                }
+              },
+              "ensemble": {
+                "prediction": [
+                  7.882955977018203,
+                  5.9717750064594926,
+                  3.2711250830006313,
+                  1.9066876245009468,
+                  2.9674563090207275
+                ],
+                "rounded": [
+                  8,
+                  6,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.48414255939234013,
+                  "absolute": 4.841425593923401,
+                  "total": 44,
+                  "cells": 10,
+                  "overlap": 94.49838000690522,
+                  "exact": 0,
+                  "maxError": 1.0933123754990532,
+                  "perFamily": [
+                    0.11704402298179684,
+                    1,
+                    0.2711250830006313,
+                    1,
+                    0.032543690979272455
+                  ]
+                }
+              },
+              "uniform": {
+                "prediction": [
+                  4.4,
+                  4.4,
+                  4.4,
+                  4.4,
+                  4.4
+                ],
+                "rounded": [
+                  5,
+                  5,
+                  4,
+                  4,
+                  4
+                ],
+                "metrics": {
+                  "mae": 2.0799999999999996,
+                  "absolute": 20.799999999999997,
+                  "total": 44,
+                  "cells": 10,
+                  "overlap": 76.36363636363637,
+                  "exact": 0,
+                  "maxError": 3.5999999999999996,
+                  "perFamily": [
+                    3.5999999999999996,
+                    1.5999999999999996,
+                    1.4000000000000004,
+                    2.4000000000000004,
+                    1.4000000000000004
+                  ]
+                }
+              }
+            },
+            "selectedMethod": "last",
+            "selected": {
+              "prediction": [
+                7.333333333333333,
+                6.666666666666667,
+                3.3333333333333335,
+                2,
+                2.6666666666666665
+              ],
+              "rounded": [
+                7,
+                7,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 0.6666666666666667,
+                "absolute": 6.666666666666668,
+                "total": 44,
+                "cells": 10,
+                "overlap": 92.42424242424242,
+                "exact": 0,
+                "maxError": 1.666666666666667,
+                "perFamily": [
+                  0.666666666666667,
+                  1,
+                  0.3333333333333335,
+                  1,
+                  0.3333333333333335
+                ]
+              }
+            }
+          },
+          {
+            "year": 2025,
+            "trainingYears": [
+              2021,
+              2022,
+              2023,
+              2024
+            ],
+            "trainingSlots": 10,
+            "targetSlots": 3,
+            "methods": {
+              "last": {
+                "prediction": [
+                  8,
+                  6,
+                  3,
+                  2,
+                  3
+                ],
+                "rounded": [
+                  8,
+                  6,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.6666666666666666,
+                  "absolute": 10,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 92.42424242424242,
+                  "exact": 7,
+                  "maxError": 2,
+                  "perFamily": [
+                    0.3333333333333333,
+                    1.3333333333333333,
+                    0,
+                    1,
+                    0.6666666666666666
+                  ]
+                }
+              },
+              "annual": {
+                "prediction": [
+                  8.208333333333332,
+                  5.625,
+                  3.166666666666667,
+                  1.875,
+                  3.125
+                ],
+                "rounded": [
+                  8,
+                  6,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.6833333333333331,
+                  "absolute": 10.249999999999996,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 92.23484848484848,
+                  "exact": 0,
+                  "maxError": 2.125,
+                  "perFamily": [
+                    0.5416666666666655,
+                    0.9583333333333334,
+                    0.16666666666666696,
+                    1.125,
+                    0.625
+                  ]
+                }
+              },
+              "recency": {
+                "prediction": [
+                  8.023011864576283,
+                  5.846813371506626,
+                  3.157134840263677,
+                  1.9309644062711506,
+                  3.042075517382262
+                ],
+                "rounded": [
+                  8,
+                  6,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.683060766189603,
+                  "absolute": 10.245911492844044,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 92.23794583875451,
+                  "exact": 0,
+                  "maxError": 2.0690355937288496,
+                  "perFamily": [
+                    0.3563451979096162,
+                    1.1801467048399596,
+                    0.15713484026367697,
+                    1.0690355937288494,
+                    0.6526414942059127
+                  ]
+                }
+              },
+              "ensemble": {
+                "prediction": [
+                  8.077115065969872,
+                  5.823937790502209,
+                  3.1079338356434483,
+                  1.9353214687570501,
+                  3.055691839127421
+                ],
+                "rounded": [
+                  8,
+                  6,
+                  3,
+                  2,
+                  3
+                ],
+                "metrics": {
+                  "mae": 0.6776869220632011,
+                  "absolute": 10.165303830948018,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 92.29901224928182,
+                  "exact": 0,
+                  "maxError": 2.06467853124295,
+                  "perFamily": [
+                    0.4104483993032056,
+                    1.1572711238355426,
+                    0.10793383564344827,
+                    1.0646785312429499,
+                    0.6481027202908597
+                  ]
+                }
+              },
+              "uniform": {
+                "prediction": [
+                  4.4,
+                  4.4,
+                  4.4,
+                  4.4,
+                  4.4
+                ],
+                "rounded": [
+                  5,
+                  5,
+                  4,
+                  4,
+                  4
+                ],
+                "metrics": {
+                  "mae": 1.4666666666666661,
+                  "absolute": 21.999999999999993,
+                  "total": 66,
+                  "cells": 15,
+                  "overlap": 83.33333333333334,
+                  "exact": 0,
+                  "maxError": 3.5999999999999996,
+                  "perFamily": [
+                    3.266666666666666,
+                    0.5333333333333332,
+                    1.4000000000000004,
+                    1.4000000000000004,
+                    0.7333333333333337
+                  ]
+                }
+              }
+            },
+            "selectedMethod": "ensemble",
+            "selected": {
+              "prediction": [
+                8.077115065969872,
+                5.823937790502209,
+                3.1079338356434483,
+                1.9353214687570501,
+                3.055691839127421
+              ],
+              "rounded": [
+                8,
+                6,
+                3,
+                2,
+                3
+              ],
+              "metrics": {
+                "mae": 0.6776869220632011,
+                "absolute": 10.165303830948018,
+                "total": 66,
+                "cells": 15,
+                "overlap": 92.29901224928182,
+                "exact": 0,
+                "maxError": 2.06467853124295,
+                "perFamily": [
+                  0.4104483993032056,
+                  1.1572711238355426,
+                  0.10793383564344827,
+                  1.0646785312429499,
+                  0.6481027202908597
+                ]
+              }
+            }
+          }
+        ],
+        "summary": {
+          "last": {
+            "mae": 0.7888888888888889,
+            "overlap": 91.03535353535354,
+            "exact": 11,
+            "cells": 55,
+            "annualMAE": [
+              0.8,
+              1.0222222222222224,
+              0.6666666666666667,
+              0.6666666666666666
+            ]
+          },
+          "annual": {
+            "mae": 0.8069444444444445,
+            "overlap": 90.83017676767676,
+            "exact": 2,
+            "cells": 55,
+            "annualMAE": [
+              0.8,
+              1.2111111111111115,
+              0.5333333333333332,
+              0.6833333333333331
+            ]
+          },
+          "recency": {
+            "mae": 0.7836715222385718,
+            "overlap": 91.0946417927435,
+            "exact": 2,
+            "cells": 55,
+            "annualMAE": [
+              0.8,
+              1.1787029013409471,
+              0.47292242142373697,
+              0.683060766189603
+            ]
+          },
+          "ensemble": {
+            "mae": 0.7747937232534088,
+            "overlap": 91.19552587212036,
+            "exact": 2,
+            "cells": 55,
+            "annualMAE": [
+              0.8,
+              1.1373454115580934,
+              0.48414255939234013,
+              0.6776869220632011
+            ]
+          },
+          "uniform": {
+            "mae": 1.8733333333333329,
+            "overlap": 78.71212121212122,
+            "exact": 0,
+            "cells": 55,
+            "annualMAE": [
+              1.813333333333333,
+              2.133333333333333,
+              2.0799999999999996,
+              1.4666666666666661
+            ]
+          },
+          "selector": {
+            "mae": 0.7916439527380226,
+            "overlap": 91.00404599161338,
+            "exact": 4,
+            "cells": 55,
+            "annualMAE": [
+              0.8,
+              1.0222222222222224,
+              0.6666666666666667,
+              0.6776869220632011
+            ]
+          }
+        },
+        "forecast": {
+          "targetYear": 2026,
+          "selectedMethod": "ensemble",
+          "prediction": [
+            7.887631693207589,
+            5.175643661162169,
+            3.07818714538485,
+            2.4704382537105647,
+            3.388099246534828
+          ],
+          "rounded": [
+            8,
+            5,
+            3,
+            3,
+            3
+          ],
+          "observed": [
+            [
+              7,
+              10
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "maxHistoricalErrors": [
+            1.5,
+            2.666666666666667,
+            1,
+            2.06467853124295,
+            1.3333333333333335
+          ]
+        }
+      },
+      "broad": {
+        "taxonomy": "broad",
+        "labels": [
+          "Arithmetic",
+          "Algebra + Modern Math",
+          "Geometry",
+          "Numbers"
+        ],
+        "years": [
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ],
+        "slots": 13,
+        "questions": 286,
+        "folds": [
+          {
+            "year": 2022,
+            "trainingYears": [
+              2021
+            ],
+            "trainingSlots": 2,
+            "targetSlots": 3,
+            "methods": {
+              "last": {
+                "prediction": [
+                  9.5,
+                  8,
+                  3,
+                  1.5
+                ],
+                "rounded": [
+                  10,
+                  8,
+                  3,
+                  1
+                ],
+                "metrics": {
+                  "mae": 0.8333333333333334,
+                  "absolute": 10,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 92.42424242424242,
+                  "exact": 4,
+                  "maxError": 2,
+                  "perFamily": [
+                    1.5,
+                    0.6666666666666666,
+                    0.3333333333333333,
+                    0.8333333333333334
+                  ]
+                }
+              },
+              "annual": {
+                "prediction": [
+                  9.5,
+                  8,
+                  3,
+                  1.5
+                ],
+                "rounded": [
+                  10,
+                  8,
+                  3,
+                  1
+                ],
+                "metrics": {
+                  "mae": 0.8333333333333334,
+                  "absolute": 10,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 92.42424242424242,
+                  "exact": 4,
+                  "maxError": 2,
+                  "perFamily": [
+                    1.5,
+                    0.6666666666666666,
+                    0.3333333333333333,
+                    0.8333333333333334
+                  ]
+                }
+              },
+              "recency": {
+                "prediction": [
+                  9.5,
+                  8,
+                  3,
+                  1.5
+                ],
+                "rounded": [
+                  10,
+                  8,
+                  3,
+                  1
+                ],
+                "metrics": {
+                  "mae": 0.8333333333333334,
+                  "absolute": 10,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 92.42424242424242,
+                  "exact": 4,
+                  "maxError": 2,
+                  "perFamily": [
+                    1.5,
+                    0.6666666666666666,
+                    0.3333333333333333,
+                    0.8333333333333334
+                  ]
+                }
+              },
+              "ensemble": {
+                "prediction": [
+                  9.5,
+                  8,
+                  3,
+                  1.5
+                ],
+                "rounded": [
+                  10,
+                  8,
+                  3,
+                  1
+                ],
+                "metrics": {
+                  "mae": 0.8333333333333334,
+                  "absolute": 10,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 92.42424242424242,
+                  "exact": 4,
+                  "maxError": 2,
+                  "perFamily": [
+                    1.5,
+                    0.6666666666666666,
+                    0.3333333333333333,
+                    0.8333333333333334
+                  ]
+                }
+              },
+              "uniform": {
+                "prediction": [
+                  4.4,
+                  8.8,
+                  4.4,
+                  4.4
+                ],
+                "rounded": [
+                  5,
+                  9,
+                  4,
+                  4
+                ],
+                "metrics": {
+                  "mae": 2,
+                  "absolute": 24,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 81.81818181818181,
+                  "exact": 0,
+                  "maxError": 3.5999999999999996,
+                  "perFamily": [
+                    3.5999999999999996,
+                    0.9333333333333336,
+                    1.066666666666667,
+                    2.4000000000000004
+                  ]
+                }
+              }
+            },
+            "selectedMethod": "last",
+            "selected": {
+              "prediction": [
+                9.5,
+                8,
+                3,
+                1.5
+              ],
+              "rounded": [
+                10,
+                8,
+                3,
+                1
+              ],
+              "metrics": {
+                "mae": 0.8333333333333334,
+                "absolute": 10,
+                "total": 66,
+                "cells": 12,
+                "overlap": 92.42424242424242,
+                "exact": 4,
+                "maxError": 2,
+                "perFamily": [
+                  1.5,
+                  0.6666666666666666,
+                  0.3333333333333333,
+                  0.8333333333333334
+                ]
+              }
+            }
+          },
+          {
+            "year": 2023,
+            "trainingYears": [
+              2021,
+              2022
+            ],
+            "trainingSlots": 5,
+            "targetSlots": 3,
+            "methods": {
+              "last": {
+                "prediction": [
+                  8,
+                  8.666666666666666,
+                  3.3333333333333335,
+                  2
+                ],
+                "rounded": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.7222222222222223,
+                  "absolute": 8.666666666666668,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 93.43434343434343,
+                  "exact": 2,
+                  "maxError": 1.333333333333334,
+                  "perFamily": [
+                    0.6666666666666666,
+                    1.1111111111111114,
+                    0.4444444444444445,
+                    0.6666666666666666
+                  ]
+                }
+              },
+              "annual": {
+                "prediction": [
+                  8.75,
+                  8.333333333333332,
+                  3.166666666666667,
+                  1.75
+                ],
+                "rounded": [
+                  9,
+                  8,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.9444444444444446,
+                  "absolute": 11.333333333333336,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 91.41414141414141,
+                  "exact": 0,
+                  "maxError": 1.75,
+                  "perFamily": [
+                    1.4166666666666667,
+                    1.2222222222222225,
+                    0.388888888888889,
+                    0.75
+                  ]
+                }
+              },
+              "recency": {
+                "prediction": [
+                  8.621320343559644,
+                  8.390524291751271,
+                  3.195262145875635,
+                  1.7928932188134525
+                ],
+                "rounded": [
+                  9,
+                  8,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.9063171388324869,
+                  "absolute": 10.875805665989843,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 91.76075328334103,
+                  "exact": 0,
+                  "maxError": 1.6213203435596437,
+                  "perFamily": [
+                    1.2879870102263105,
+                    1.203158569416243,
+                    0.3984207152918784,
+                    0.7357022603955158
+                  ]
+                }
+              },
+              "ensemble": {
+                "prediction": [
+                  8.457106781186548,
+                  8.463508097250424,
+                  3.2317540486252114,
+                  1.8476310729378174
+                ],
+                "rounded": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.8576612684997178,
+                  "absolute": 10.291935221996614,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 92.2030793772753,
+                  "exact": 0,
+                  "maxError": 1.5364919027495763,
+                  "perFamily": [
+                    1.1237734478532146,
+                    1.1788306342498587,
+                    0.4105846828750705,
+                    0.7174563090207275
+                  ]
+                }
+              },
+              "uniform": {
+                "prediction": [
+                  4.4,
+                  8.8,
+                  4.4,
+                  4.4
+                ],
+                "rounded": [
+                  5,
+                  9,
+                  4,
+                  4
+                ],
+                "metrics": {
+                  "mae": 1.8666666666666665,
+                  "absolute": 22.4,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 83.03030303030303,
+                  "exact": 0,
+                  "maxError": 3.5999999999999996,
+                  "perFamily": [
+                    2.933333333333333,
+                    1.0666666666666664,
+                    1.066666666666667,
+                    2.4000000000000004
+                  ]
+                }
+              }
+            },
+            "selectedMethod": "last",
+            "selected": {
+              "prediction": [
+                8,
+                8.666666666666666,
+                3.3333333333333335,
+                2
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.7222222222222223,
+                "absolute": 8.666666666666668,
+                "total": 66,
+                "cells": 12,
+                "overlap": 93.43434343434343,
+                "exact": 2,
+                "maxError": 1.333333333333334,
+                "perFamily": [
+                  0.6666666666666666,
+                  1.1111111111111114,
+                  0.4444444444444445,
+                  0.6666666666666666
+                ]
+              }
+            }
+          },
+          {
+            "year": 2024,
+            "trainingYears": [
+              2021,
+              2022,
+              2023
+            ],
+            "trainingSlots": 8,
+            "targetSlots": 2,
+            "methods": {
+              "last": {
+                "prediction": [
+                  7.333333333333333,
+                  9.333333333333334,
+                  3.3333333333333335,
+                  2
+                ],
+                "rounded": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.7500000000000002,
+                  "absolute": 6.000000000000002,
+                  "total": 44,
+                  "cells": 8,
+                  "overlap": 93.18181818181817,
+                  "exact": 0,
+                  "maxError": 1.333333333333334,
+                  "perFamily": [
+                    0.666666666666667,
+                    1,
+                    0.3333333333333335,
+                    1
+                  ]
+                }
+              },
+              "annual": {
+                "prediction": [
+                  8.277777777777777,
+                  8.666666666666666,
+                  3.2222222222222228,
+                  1.8333333333333333
+                ],
+                "rounded": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.6249999999999999,
+                  "absolute": 4.999999999999999,
+                  "total": 44,
+                  "cells": 8,
+                  "overlap": 94.31818181818183,
+                  "exact": 0,
+                  "maxError": 1.333333333333334,
+                  "perFamily": [
+                    0.2777777777777768,
+                    1,
+                    0.22222222222222276,
+                    1
+                  ]
+                }
+              },
+              "recency": {
+                "prediction": [
+                  8.037756819943498,
+                  8.817693946440658,
+                  3.257819693446338,
+                  1.8867295401695068
+                ],
+                "rounded": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.573894128347459,
+                  "absolute": 4.591153026779672,
+                  "total": 44,
+                  "cells": 8,
+                  "overlap": 94.78278065138673,
+                  "exact": 0,
+                  "maxError": 1.1823060535593424,
+                  "perFamily": [
+                    0.03775681994349789,
+                    1,
+                    0.25781969344633815,
+                    1
+                  ]
+                }
+              },
+              "ensemble": {
+                "prediction": [
+                  7.882955977018203,
+                  8.93923131548022,
+                  3.2711250830006313,
+                  1.9066876245009468
+                ],
+                "rounded": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.597042276495607,
+                  "absolute": 4.776338211964856,
+                  "total": 44,
+                  "cells": 8,
+                  "overlap": 94.57234294094903,
+                  "exact": 0,
+                  "maxError": 1.0933123754990532,
+                  "perFamily": [
+                    0.11704402298179684,
+                    1,
+                    0.2711250830006313,
+                    1
+                  ]
+                }
+              },
+              "uniform": {
+                "prediction": [
+                  4.4,
+                  8.8,
+                  4.4,
+                  4.4
+                ],
+                "rounded": [
+                  5,
+                  9,
+                  4,
+                  4
+                ],
+                "metrics": {
+                  "mae": 2.1,
+                  "absolute": 16.8,
+                  "total": 44,
+                  "cells": 8,
+                  "overlap": 80.9090909090909,
+                  "exact": 0,
+                  "maxError": 3.5999999999999996,
+                  "perFamily": [
+                    3.5999999999999996,
+                    1,
+                    1.4000000000000004,
+                    2.4000000000000004
+                  ]
+                }
+              }
+            },
+            "selectedMethod": "last",
+            "selected": {
+              "prediction": [
+                7.333333333333333,
+                9.333333333333334,
+                3.3333333333333335,
+                2
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.7500000000000002,
+                "absolute": 6.000000000000002,
+                "total": 44,
+                "cells": 8,
+                "overlap": 93.18181818181817,
+                "exact": 0,
+                "maxError": 1.333333333333334,
+                "perFamily": [
+                  0.666666666666667,
+                  1,
+                  0.3333333333333335,
+                  1
+                ]
+              }
+            }
+          },
+          {
+            "year": 2025,
+            "trainingYears": [
+              2021,
+              2022,
+              2023,
+              2024
+            ],
+            "trainingSlots": 10,
+            "targetSlots": 3,
+            "methods": {
+              "last": {
+                "prediction": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "rounded": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.5,
+                  "absolute": 6,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 95.45454545454545,
+                  "exact": 7,
+                  "maxError": 2,
+                  "perFamily": [
+                    0.3333333333333333,
+                    0.6666666666666666,
+                    0,
+                    1
+                  ]
+                }
+              },
+              "annual": {
+                "prediction": [
+                  8.208333333333332,
+                  8.75,
+                  3.166666666666667,
+                  1.875
+                ],
+                "rounded": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.6041666666666664,
+                  "absolute": 7.249999999999997,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 94.50757575757575,
+                  "exact": 0,
+                  "maxError": 2.125,
+                  "perFamily": [
+                    0.5416666666666655,
+                    0.5833333333333334,
+                    0.16666666666666696,
+                    1.125
+                  ]
+                }
+              },
+              "recency": {
+                "prediction": [
+                  8.023011864576283,
+                  8.88888888888889,
+                  3.157134840263677,
+                  1.9309644062711506
+                ],
+                "rounded": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.5530363153829431,
+                  "absolute": 6.636435784595316,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 94.97239713288234,
+                  "exact": 0,
+                  "maxError": 2.0690355937288496,
+                  "perFamily": [
+                    0.3563451979096162,
+                    0.6296296296296298,
+                    0.15713484026367697,
+                    1.0690355937288494
+                  ]
+                }
+              },
+              "ensemble": {
+                "prediction": [
+                  8.077115065969872,
+                  8.87962962962963,
+                  3.1079338356434483,
+                  1.9353214687570501
+                ],
+                "rounded": [
+                  8,
+                  9,
+                  3,
+                  2
+                ],
+                "metrics": {
+                  "mae": 0.5524009940165368,
+                  "absolute": 6.628811928198441,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 94.97817278166785,
+                  "exact": 0,
+                  "maxError": 2.06467853124295,
+                  "perFamily": [
+                    0.4104483993032056,
+                    0.6265432098765432,
+                    0.10793383564344827,
+                    1.0646785312429499
+                  ]
+                }
+              },
+              "uniform": {
+                "prediction": [
+                  4.4,
+                  8.8,
+                  4.4,
+                  4.4
+                ],
+                "rounded": [
+                  5,
+                  9,
+                  4,
+                  4
+                ],
+                "metrics": {
+                  "mae": 1.6666666666666667,
+                  "absolute": 20,
+                  "total": 66,
+                  "cells": 12,
+                  "overlap": 84.84848484848484,
+                  "exact": 0,
+                  "maxError": 3.5999999999999996,
+                  "perFamily": [
+                    3.266666666666666,
+                    0.6000000000000002,
+                    1.4000000000000004,
+                    1.4000000000000004
+                  ]
+                }
+              }
+            },
+            "selectedMethod": "ensemble",
+            "selected": {
+              "prediction": [
+                8.077115065969872,
+                8.87962962962963,
+                3.1079338356434483,
+                1.9353214687570501
+              ],
+              "rounded": [
+                8,
+                9,
+                3,
+                2
+              ],
+              "metrics": {
+                "mae": 0.5524009940165368,
+                "absolute": 6.628811928198441,
+                "total": 66,
+                "cells": 12,
+                "overlap": 94.97817278166785,
+                "exact": 0,
+                "maxError": 2.06467853124295,
+                "perFamily": [
+                  0.4104483993032056,
+                  0.6265432098765432,
+                  0.10793383564344827,
+                  1.0646785312429499
+                ]
+              }
+            }
+          }
+        ],
+        "summary": {
+          "last": {
+            "mae": 0.7013888888888891,
+            "overlap": 93.62373737373737,
+            "exact": 13,
+            "cells": 44,
+            "annualMAE": [
+              0.8333333333333334,
+              0.7222222222222223,
+              0.7500000000000002,
+              0.5
+            ]
+          },
+          "annual": {
+            "mae": 0.7517361111111112,
+            "overlap": 93.16603535353535,
+            "exact": 4,
+            "cells": 44,
+            "annualMAE": [
+              0.8333333333333334,
+              0.9444444444444446,
+              0.6249999999999999,
+              0.6041666666666664
+            ]
+          },
+          "recency": {
+            "mae": 0.7166452289740556,
+            "overlap": 93.48504337296313,
+            "exact": 4,
+            "cells": 44,
+            "annualMAE": [
+              0.8333333333333334,
+              0.9063171388324869,
+              0.573894128347459,
+              0.5530363153829431
+            ]
+          },
+          "ensemble": {
+            "mae": 0.7101094680862987,
+            "overlap": 93.54445938103366,
+            "exact": 4,
+            "cells": 44,
+            "annualMAE": [
+              0.8333333333333334,
+              0.8576612684997178,
+              0.597042276495607,
+              0.5524009940165368
+            ]
+          },
+          "uniform": {
+            "mae": 1.9083333333333334,
+            "overlap": 82.65151515151516,
+            "exact": 0,
+            "cells": 44,
+            "annualMAE": [
+              2,
+              1.8666666666666665,
+              2.1,
+              1.6666666666666667
+            ]
+          },
+          "selector": {
+            "mae": 0.7144891373930232,
+            "overlap": 93.50464420551798,
+            "exact": 6,
+            "cells": 44,
+            "annualMAE": [
+              0.8333333333333334,
+              0.7222222222222223,
+              0.7500000000000002,
+              0.5524009940165368
+            ]
+          }
+        },
+        "forecast": {
+          "targetYear": 2026,
+          "selectedMethod": "last",
+          "prediction": [
+            7.666666666666667,
+            8.333333333333334,
+            3,
+            3
+          ],
+          "rounded": [
+            8,
+            8,
+            3,
+            3
+          ],
+          "observed": [
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              10
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "maxHistoricalErrors": [
+            1.5,
+            2,
+            1,
+            2.06467853124295
+          ]
+        }
+      },
+      "broadStudyUnchanged": false,
+      "selectorMAEDifference": {
+        "raw": 0.002755063849133599,
+        "broad": -0.0077330848291990995
+      }
+    }
+  }
+}

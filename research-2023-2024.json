@@ -1,0 +1,212 @@
+{
+  "rows": [
+    {
+      "year": 2024,
+      "slot": 1,
+      "provider": "IMS",
+      "qa": [
+        8,
+        7,
+        3,
+        1,
+        3
+      ],
+      "source": "https://www.imsindia.com/blog/cat/cat-exam-analysis-2024/",
+      "verification": "Verified all five cells in the IMS overall-analysis search-index copy. Direct web open returned 410 Gone. This IMS vector is kept outside the Career Launcher rows and must remain a separate-provider dataset."
+    },
+    {
+      "year": 2024,
+      "slot": 2,
+      "provider": "IMS",
+      "qa": [
+        8,
+        5,
+        3,
+        3,
+        3
+      ],
+      "source": "https://www.imsindia.com/blog/cat/cat-2024-slot-2-analysis/",
+      "verification": "Verified all five QA cells, VARC composition, section sizes and displayed DILR set sizes in the IMS article's search-index copy. The page has several Slot 1 subheadings despite explicitly being the Slot 2 article and describing Slot 2 throughout. Direct web open returned 410 Gone. Keep separate from Career Launcher rows.",
+      "varc": [
+        16,
+        3,
+        3,
+        2,
+        0
+      ],
+      "sections": [
+        24,
+        22,
+        22
+      ],
+      "dilr": [
+        5,
+        4,
+        4,
+        5,
+        4
+      ]
+    }
+  ],
+  "supplementaryRows": [
+    {
+      "year": 2023,
+      "slot": 1,
+      "provider": "Career Launcher",
+      "qa": [
+        9,
+        8,
+        3,
+        1,
+        1
+      ],
+      "source": "https://www.careerlauncher.com/cat/analysis-cut-off/2023/slot1/",
+      "varc": [
+        16,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sections": [
+        24,
+        20,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "verification": "Copied the five explicit QA topic-total cells. The source's listed subtopics and TITA summaries have inconsistencies; these are provider-reported topic totals, not a question-level recount."
+    },
+    {
+      "year": 2023,
+      "slot": 2,
+      "provider": "Career Launcher",
+      "qa": [
+        9,
+        7,
+        3,
+        3,
+        0
+      ],
+      "source": "https://www.careerlauncher.com/cat/analysis-cut-off/2023/slot2/",
+      "varc": [
+        16,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sections": [
+        24,
+        20,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "verification": "Copied the five explicit QA topic-total cells, including an explicit zero for Modern Math. The Numbers description lists two subitems although its total cell says three. No missing category was inferred."
+    },
+    {
+      "year": 2023,
+      "slot": 3,
+      "provider": "Career Launcher",
+      "qa": [
+        8,
+        7,
+        3,
+        4,
+        0
+      ],
+      "source": "https://www.careerlauncher.com/cat/analysis-cut-off/2023/slot3/",
+      "varc": [
+        16,
+        2,
+        2,
+        2,
+        2
+      ],
+      "sections": [
+        24,
+        20,
+        22
+      ],
+      "dilr": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "verification": "Copied the five explicit QA topic-total cells, including an explicit zero for Modern Math. The Numbers description lists three subitems although its total cell says four. No missing category was inferred."
+    }
+  ],
+  "notes": [
+    {
+      "kind": "schema",
+      "text": "rows contains IMS-only primary-model evidence. supplementaryRows contains Career Launcher 2023 archive evidence and must not be mixed into the IMS forecast. QA order: Arithmetic, Algebra, Geometry, Numbers, Modern Math. VARC order: RC, summary, sentence placement/paragraph completion, odd sentence, parajumbles. Sections: VARC, DILR, QA. DILR entries are question counts per set. Retrieved 2026-09-08."
+    },
+    {
+      "kind": "provider_separation",
+      "text": "These are provider-reported broad-topic totals, not official CAT topic tags or a question-level recount. Career Launcher often includes logarithms, functions and sequences/series in Algebra; IMS classifies some of these under Modern Math. Supplementary Career Launcher rows may populate clearly labelled archive tables but are excluded from the IMS training/backtest dataset."
+    },
+    {
+      "kind": "primary_gap",
+      "text": "No complete original IMS QA vector for CAT 2023 was verified. Preserve the 2023 gap in the primary timeline. IMS 2024 Slot 3 remains excluded because the Modern Math cell is blank. Do not interpolate missing years or infer the blank category from a total."
+    },
+    {
+      "kind": "internal_source_conflict",
+      "year": 2023,
+      "slot": 1,
+      "source": "https://www.careerlauncher.com/cat/analysis-cut-off/2023/slot1/",
+      "text": "The QA total cells show Arithmetic 9 and Algebra 8, but the individually listed subtopic counts add to 8 and 7 respectively. The page's top QA TITA count is 7 while its QA narrative says 6. The row retains only the explicit broad-topic total cells; TITA counts have not been imported."
+    },
+    {
+      "kind": "cross_provider_conflict",
+      "text": "The 2023 IMS archive reports 8 DILR TITAs, whereas the Career Launcher 2023 pages report 6. This file deliberately omits section MCQ/TITA splits instead of resolving that discrepancy without a question-level audit. The 2024 Slot 2 providers also assign different set sizes to particular named DILR sets, although both give the same overall multiset [5,5,4,4,4]. Avoid importing topic-to-set-size mappings across providers."
+    },
+    {
+      "kind": "missing_primary_evidence",
+      "provider": "IMS",
+      "year": 2024,
+      "slot": 3,
+      "source": "https://www.imsindia.com/blog/cat/cat-exam-analysis-2024/",
+      "observed_qa_partial": [
+        8,
+        7,
+        3,
+        1,
+        null
+      ],
+      "text": "The overall table leaves Slot 3 Modern Math blank. It was not filled by subtracting other counts from 22, borrowing Slot 1, or substituting another provider's count. Blog and root Slot 3 endpoints were unavailable to direct web access."
+    },
+    {
+      "kind": "missing_primary_evidence",
+      "provider": "IMS",
+      "year": 2023,
+      "slots": [
+        1,
+        2,
+        3
+      ],
+      "source": "https://www.imsindia.com/ims-cat-2024-ananlysis/",
+      "verified_sections": [
+        24,
+        20,
+        22
+      ],
+      "verified_dilr": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "text": "Despite the 2024 string in its URL, the archive title and repeated section headings explicitly describe CAT 2023. Both browser extraction and a direct HTML read found only broad structure; the Detailed Overall Analysis anchor has no href and the slot headings are accordion buttons, not links to detailed QA tables. All three guessed /blog/cat/cat-2023-slot-N-analysis/ and /cat-2023-slot-N-analysis/ URLs returned 410 Gone through web access. Secondary reproductions were not treated as original IMS evidence."
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+/* Original CAT-style DILR practice; not an actual future exam paper. */
+(() => {
+window.CAT2026_DILR = [
+  {
+    "id": "D01",
+    "section": "DILR",
+    "topic": "DI · inventory recurrence",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Four days of factory inventory",
+    "passage": "A factory opens Day 1 with 20 units in stock. Output on Days 1–4 is x, x + 10, 2x and x + 20 respectively, where x is a positive integer. Each day's output is available before that day's sales. Sales are 30 on Day 1, exactly half the available stock on Day 2, 40 on Day 3 and 60 on Day 4. Day 4 closes with 100 units. Stock is never negative and nothing is lost or returned.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is x?",
+    "options": [],
+    "answer": "45",
+    "solution": "Closing stock each day becomes the next day's opening stock. Day 1 closes at x − 10. Day 2 starts with x − 10, produces x + 10, and sells half of 2x, leaving x. Day 3 closes at 3x − 40. Day 4 closes at 4x − 80 = 100, so x = 45.\nDay | Output | Sales | Closing stock\n1 | 45 | 30 | 35\n2 | 55 | 45 | 45\n3 | 90 | 40 | 95\n4 | 65 | 60 | 100\n\nThe Day 4 balance 4x − 80 = 100 gives x = 45."
+  },
+  {
+    "id": "D02",
+    "section": "DILR",
+    "topic": "DI · inventory recurrence",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Four days of factory inventory",
+    "passage": "A factory opens Day 1 with 20 units in stock. Output on Days 1–4 is x, x + 10, 2x and x + 20 respectively, where x is a positive integer. Each day's output is available before that day's sales. Sales are 30 on Day 1, exactly half the available stock on Day 2, 40 on Day 3 and 60 on Day 4. Day 4 closes with 100 units. Stock is never negative and nothing is lost or returned.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many units are sold on Day 2?",
+    "options": [
+      "45",
+      "40",
+      "35",
+      "55"
+    ],
+    "answer": 0,
+    "solution": "Closing stock each day becomes the next day's opening stock. Day 1 closes at x − 10. Day 2 starts with x − 10, produces x + 10, and sells half of 2x, leaving x. Day 3 closes at 3x − 40. Day 4 closes at 4x − 80 = 100, so x = 45.\nDay | Output | Sales | Closing stock\n1 | 45 | 30 | 35\n2 | 55 | 45 | 45\n3 | 90 | 40 | 95\n4 | 65 | 60 | 100\n\nAvailable stock is 90 and half is sold, giving 45."
+  },
+  {
+    "id": "D03",
+    "section": "DILR",
+    "topic": "DI · inventory recurrence",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Four days of factory inventory",
+    "passage": "A factory opens Day 1 with 20 units in stock. Output on Days 1–4 is x, x + 10, 2x and x + 20 respectively, where x is a positive integer. Each day's output is available before that day's sales. Sales are 30 on Day 1, exactly half the available stock on Day 2, 40 on Day 3 and 60 on Day 4. Day 4 closes with 100 units. Stock is never negative and nothing is lost or returned.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the closing stock on Day 3?",
+    "options": [],
+    "answer": "95",
+    "solution": "Closing stock each day becomes the next day's opening stock. Day 1 closes at x − 10. Day 2 starts with x − 10, produces x + 10, and sells half of 2x, leaving x. Day 3 closes at 3x − 40. Day 4 closes at 4x − 80 = 100, so x = 45.\nDay | Output | Sales | Closing stock\n1 | 45 | 30 | 35\n2 | 55 | 45 | 45\n3 | 90 | 40 | 95\n4 | 65 | 60 | 100\n\n45 + 90 − 40 = 95."
+  },
+  {
+    "id": "D04",
+    "section": "DILR",
+    "topic": "DI · inventory recurrence",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Four days of factory inventory",
+    "passage": "A factory opens Day 1 with 20 units in stock. Output on Days 1–4 is x, x + 10, 2x and x + 20 respectively, where x is a positive integer. Each day's output is available before that day's sales. Sales are 30 on Day 1, exactly half the available stock on Day 2, 40 on Day 3 and 60 on Day 4. Day 4 closes with 100 units. Stock is never negative and nothing is lost or returned.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which day has the greatest closing stock?",
+    "options": [
+      "Day 1",
+      "Day 2",
+      "Day 4",
+      "Day 3"
+    ],
+    "answer": 2,
+    "solution": "Closing stock each day becomes the next day's opening stock. Day 1 closes at x − 10. Day 2 starts with x − 10, produces x + 10, and sells half of 2x, leaving x. Day 3 closes at 3x − 40. Day 4 closes at 4x − 80 = 100, so x = 45.\nDay | Output | Sales | Closing stock\n1 | 45 | 30 | 35\n2 | 55 | 45 | 45\n3 | 90 | 40 | 95\n4 | 65 | 60 | 100\n\nClosing stocks are 35, 45, 95 and 100, so Day 4 is greatest."
+  },
+  {
+    "id": "D05",
+    "section": "DILR",
+    "topic": "DI · inventory recurrence",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Four days of factory inventory",
+    "passage": "A factory opens Day 1 with 20 units in stock. Output on Days 1–4 is x, x + 10, 2x and x + 20 respectively, where x is a positive integer. Each day's output is available before that day's sales. Sales are 30 on Day 1, exactly half the available stock on Day 2, 40 on Day 3 and 60 on Day 4. Day 4 closes with 100 units. Stock is never negative and nothing is lost or returned.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If only Day 4 sales are reduced by one third, what is the revised closing stock?",
+    "options": [
+      "140",
+      "130",
+      "120",
+      "110"
+    ],
+    "answer": 2,
+    "solution": "Closing stock each day becomes the next day's opening stock. Day 1 closes at x − 10. Day 2 starts with x − 10, produces x + 10, and sells half of 2x, leaving x. Day 3 closes at 3x − 40. Day 4 closes at 4x − 80 = 100, so x = 45.\nDay | Output | Sales | Closing stock\n1 | 45 | 30 | 35\n2 | 55 | 45 | 45\n3 | 90 | 40 | 95\n4 | 65 | 60 | 100\n\nDay 4 sales fall from 60 to 40, adding 20 to the original closing stock: 120."
+  },
+  {
+    "id": "D06",
+    "section": "DILR",
+    "topic": "LR · numerical constraint decoding",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "The five-digit identification system",
+    "passage": "A, B, C, D and E represent five distinct digits from 1 to 9. They satisfy A + B = C, C + D = E and A × D = B + C. E is odd and B > A. A two-letter expression such as AD means the two-digit number with tens digit A and units digit D; products are always written with ×.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What digit does C represent?",
+    "options": [],
+    "answer": "5",
+    "solution": "Substitute C = A + B into A × D = B + C to obtain A(D − 1) = 2B. Also E = A + B + D ≤ 9. Testing positive distinct digits with B > A and odd E leaves only A = 2, B = 3, C = 5, D = 4, E = 9. The bound on E sharply restricts A and D; this also checks all 15,120 distinct-digit assignments.\n\nThe unique assignment has C = 5."
+  },
+  {
+    "id": "D07",
+    "section": "DILR",
+    "topic": "LR · numerical constraint decoding",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "The five-digit identification system",
+    "passage": "A, B, C, D and E represent five distinct digits from 1 to 9. They satisfy A + B = C, C + D = E and A × D = B + C. E is odd and B > A. A two-letter expression such as AD means the two-digit number with tens digit A and units digit D; products are always written with ×.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the two-digit number AD?",
+    "options": [
+      "25",
+      "34",
+      "24",
+      "14"
+    ],
+    "answer": 2,
+    "solution": "Substitute C = A + B into A × D = B + C to obtain A(D − 1) = 2B. Also E = A + B + D ≤ 9. Testing positive distinct digits with B > A and odd E leaves only A = 2, B = 3, C = 5, D = 4, E = 9. The bound on E sharply restricts A and D; this also checks all 15,120 distinct-digit assignments.\n\nAD means 10A + D = 20 + 4 = 24."
+  },
+  {
+    "id": "D08",
+    "section": "DILR",
+    "topic": "LR · numerical constraint decoding",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "The five-digit identification system",
+    "passage": "A, B, C, D and E represent five distinct digits from 1 to 9. They satisfy A + B = C, C + D = E and A × D = B + C. E is odd and B > A. A two-letter expression such as AD means the two-digit number with tens digit A and units digit D; products are always written with ×.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is E − A?",
+    "options": [],
+    "answer": "7",
+    "solution": "Substitute C = A + B into A × D = B + C to obtain A(D − 1) = 2B. Also E = A + B + D ≤ 9. Testing positive distinct digits with B > A and odd E leaves only A = 2, B = 3, C = 5, D = 4, E = 9. The bound on E sharply restricts A and D; this also checks all 15,120 distinct-digit assignments.\n\n9 − 2 = 7."
+  },
+  {
+    "id": "D09",
+    "section": "DILR",
+    "topic": "LR · numerical constraint decoding",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "The five-digit identification system",
+    "passage": "A, B, C, D and E represent five distinct digits from 1 to 9. They satisfy A + B = C, C + D = E and A × D = B + C. E is odd and B > A. A two-letter expression such as AD means the two-digit number with tens digit A and units digit D; products are always written with ×.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is A + B + C + D + E?",
+    "options": [],
+    "answer": "23",
+    "solution": "Substitute C = A + B into A × D = B + C to obtain A(D − 1) = 2B. Also E = A + B + D ≤ 9. Testing positive distinct digits with B > A and odd E leaves only A = 2, B = 3, C = 5, D = 4, E = 9. The bound on E sharply restricts A and D; this also checks all 15,120 distinct-digit assignments.\n\n2 + 3 + 5 + 4 + 9 = 23."
+  },
+  {
+    "id": "D10",
+    "section": "DILR",
+    "topic": "LR · numerical constraint decoding",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "The five-digit identification system",
+    "passage": "A, B, C, D and E represent five distinct digits from 1 to 9. They satisfy A + B = C, C + D = E and A × D = B + C. E is odd and B > A. A two-letter expression such as AD means the two-digit number with tens digit A and units digit D; products are always written with ×.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is C² − A × E?",
+    "options": [
+      "11",
+      "5",
+      "9",
+      "7"
+    ],
+    "answer": 3,
+    "solution": "Substitute C = A + B into A × D = B + C to obtain A(D − 1) = 2B. Also E = A + B + D ≤ 9. Testing positive distinct digits with B > A and odd E leaves only A = 2, B = 3, C = 5, D = 4, E = 9. The bound on E sharply restricts A and D; this also checks all 15,120 distinct-digit assignments.\n\n25 − 18 = 7."
+  },
+  {
+    "id": "D11",
+    "section": "DILR",
+    "topic": "DI · simultaneous constraints and revenue",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "The chemical production frontier",
+    "passage": "A laboratory makes whole batches of products X, Y and Z. X consumes 2 units of resource R and 1 of S; Y consumes 1 of R and 2 of S; Z consumes 3 of R and 1 of S. Exactly 40 units of R and 30 of S must be used, with no waste. At least five X batches must be made. Revenue per batch is ₹7 for X, ₹6 for Y and ₹9 for Z. Batch counts may otherwise be zero.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many feasible production mixes are possible?",
+    "options": [],
+    "answer": "3",
+    "solution": "The resource equations are 2x + y + 3z = 40 and x + 2y + z = 30. They give z = 3y − 20 and x = 50 − 5y. Non-negative z and x ≥ 5 force y = 7, 8 or 9.\nX | Y | Z | Revenue\n5 | 9 | 7 | 152\n10 | 8 | 4 | 154\n15 | 7 | 1 | 156\n\nOnly y = 7, 8 or 9 yields non-negative counts with x ≥ 5."
+  },
+  {
+    "id": "D12",
+    "section": "DILR",
+    "topic": "DI · simultaneous constraints and revenue",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "The chemical production frontier",
+    "passage": "A laboratory makes whole batches of products X, Y and Z. X consumes 2 units of resource R and 1 of S; Y consumes 1 of R and 2 of S; Z consumes 3 of R and 1 of S. Exactly 40 units of R and 30 of S must be used, with no waste. At least five X batches must be made. Revenue per batch is ₹7 for X, ₹6 for Y and ₹9 for Z. Batch counts may otherwise be zero.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which mix maximises revenue? Counts are X, Y, Z.",
+    "options": [
+      "15, 7, 1",
+      "5, 9, 7",
+      "20, 6, 0",
+      "10, 8, 4"
+    ],
+    "answer": 0,
+    "solution": "The resource equations are 2x + y + 3z = 40 and x + 2y + z = 30. They give z = 3y − 20 and x = 50 − 5y. Non-negative z and x ≥ 5 force y = 7, 8 or 9.\nX | Y | Z | Revenue\n5 | 9 | 7 | 152\n10 | 8 | 4 | 154\n15 | 7 | 1 | 156\n\nRevenues are 156, 154 and 152 for (15, 7, 1), (10, 8, 4) and (5, 9, 7), respectively."
+  },
+  {
+    "id": "D13",
+    "section": "DILR",
+    "topic": "DI · simultaneous constraints and revenue",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "The chemical production frontier",
+    "passage": "A laboratory makes whole batches of products X, Y and Z. X consumes 2 units of resource R and 1 of S; Y consumes 1 of R and 2 of S; Z consumes 3 of R and 1 of S. Exactly 40 units of R and 30 of S must be used, with no waste. At least five X batches must be made. Revenue per batch is ₹7 for X, ₹6 for Y and ₹9 for Z. Batch counts may otherwise be zero.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Among mixes earning at least ₹154, what is the greatest number of Z batches?",
+    "options": [],
+    "answer": "4",
+    "solution": "The resource equations are 2x + y + 3z = 40 and x + 2y + z = 30. They give z = 3y − 20 and x = 50 − 5y. Non-negative z and x ≥ 5 force y = 7, 8 or 9.\nX | Y | Z | Revenue\n5 | 9 | 7 | 152\n10 | 8 | 4 | 154\n15 | 7 | 1 | 156\n\nOnly the first two mixes qualify; their Z counts are 1 and 4, giving 4."
+  },
+  {
+    "id": "D14",
+    "section": "DILR",
+    "topic": "DI · simultaneous constraints and revenue",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "The chemical production frontier",
+    "passage": "A laboratory makes whole batches of products X, Y and Z. X consumes 2 units of resource R and 1 of S; Y consumes 1 of R and 2 of S; Z consumes 3 of R and 1 of S. Exactly 40 units of R and 30 of S must be used, with no waste. At least five X batches must be made. Revenue per batch is ₹7 for X, ₹6 for Y and ₹9 for Z. Batch counts may otherwise be zero.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If the revenue per Y batch rises to ₹10, how many Y batches occur in the revenue-maximising mix?",
+    "options": [
+      "9",
+      "7",
+      "6",
+      "8"
+    ],
+    "answer": 0,
+    "solution": "The resource equations are 2x + y + 3z = 40 and x + 2y + z = 30. They give z = 3y − 20 and x = 50 − 5y. Non-negative z and x ≥ 5 force y = 7, 8 or 9.\nX | Y | Z | Revenue\n5 | 9 | 7 | 152\n10 | 8 | 4 | 154\n15 | 7 | 1 | 156\n\nRevised revenues are 184, 186 and 188. Thus y = 9 is optimal."
+  },
+  {
+    "id": "D15",
+    "section": "DILR",
+    "topic": "LR · pair sums and partial identification",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Ages inferred from pair totals",
+    "passage": "Six researchers A through F have distinct integer ages 21, 22, 23, 24, 25 and 26, one each. A and B together are 49 years old; C and D together are 47; E and F together are 45. A is older than D, and B is younger than E.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is F's age?",
+    "options": [],
+    "answer": "21",
+    "solution": "The distinct ages are 21–26. The three disjoint pair sums and the two inequalities leave:\nA | B | C | D | E | F\n26 | 23 | 22 | 25 | 24 | 21\n26 | 23 | 25 | 22 | 24 | 21\nThus only C and D remain interchangeable; the other four ages are fixed.\n\nF is 21 in both feasible assignments."
+  },
+  {
+    "id": "D16",
+    "section": "DILR",
+    "topic": "LR · pair sums and partial identification",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Ages inferred from pair totals",
+    "passage": "Six researchers A through F have distinct integer ages 21, 22, 23, 24, 25 and 26, one each. A and B together are 49 years old; C and D together are 47; E and F together are 45. A is older than D, and B is younger than E.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Who is necessarily the oldest?",
+    "options": [
+      "C",
+      "E",
+      "D",
+      "A"
+    ],
+    "answer": 3,
+    "solution": "The distinct ages are 21–26. The three disjoint pair sums and the two inequalities leave:\nA | B | C | D | E | F\n26 | 23 | 22 | 25 | 24 | 21\n26 | 23 | 25 | 22 | 24 | 21\nThus only C and D remain interchangeable; the other four ages are fixed.\n\nA is 26 in both rows; no other person can have that age."
+  },
+  {
+    "id": "D17",
+    "section": "DILR",
+    "topic": "LR · pair sums and partial identification",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Ages inferred from pair totals",
+    "passage": "Six researchers A through F have distinct integer ages 21, 22, 23, 24, 25 and 26, one each. A and B together are 49 years old; C and D together are 47; E and F together are 45. A is older than D, and B is younger than E.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If C is younger than D, what is their age difference?",
+    "options": [],
+    "answer": "3",
+    "solution": "The distinct ages are 21–26. The three disjoint pair sums and the two inequalities leave:\nA | B | C | D | E | F\n26 | 23 | 22 | 25 | 24 | 21\n26 | 23 | 25 | 22 | 24 | 21\nThus only C and D remain interchangeable; the other four ages are fixed.\n\nThe extra condition fixes C = 22 and D = 25, a difference of 3."
+  },
+  {
+    "id": "D18",
+    "section": "DILR",
+    "topic": "LR · pair sums and partial identification",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Ages inferred from pair totals",
+    "passage": "Six researchers A through F have distinct integer ages 21, 22, 23, 24, 25 and 26, one each. A and B together are 49 years old; C and D together are 47; E and F together are 45. A is older than D, and B is younger than E.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which pair of people is not individually identifiable from the original information?",
+    "options": [
+      "E and F",
+      "A and B",
+      "B and E",
+      "C and D"
+    ],
+    "answer": 3,
+    "solution": "The distinct ages are 21–26. The three disjoint pair sums and the two inequalities leave:\nA | B | C | D | E | F\n26 | 23 | 22 | 25 | 24 | 21\n26 | 23 | 25 | 22 | 24 | 21\nThus only C and D remain interchangeable; the other four ages are fixed.\n\nThe two feasible assignments differ only by exchanging C's and D's ages."
+  },
+  {
+    "id": "D19",
+    "section": "DILR",
+    "topic": "LR · tournaments and conditional results",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "A league with an unresolved triangle",
+    "passage": "Five teams A–E play each other once. A win earns 3 points, a draw 1 per team and a loss 0. Final points are A = 10, B = 7, C = 4, D = 4, E = 3. A drew with B; C drew with D; C defeated E. No penalties or bonuses apply.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many games ended in draws?",
+    "options": [],
+    "answer": "2",
+    "solution": "Ten games distribute 28 points, so exactly two games are draws; they are the stated A–B and C–D draws. A wins its other three games. B has two wins and one loss; C and D each have one win, one draw and two losses; E has one win and three losses. C's win is against E. The unresolved triangle B, D, E has two orientations: B beats D, D beats E, E beats B; or D beats B, B beats E, E beats D.\n\nThe ten games would give 30 points if decisive; the actual sum of 28 implies two draws."
+  },
+  {
+    "id": "D20",
+    "section": "DILR",
+    "topic": "LR · tournaments and conditional results",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "A league with an unresolved triangle",
+    "passage": "Five teams A–E play each other once. A win earns 3 points, a draw 1 per team and a loss 0. Final points are A = 10, B = 7, C = 4, D = 4, E = 3. A drew with B; C drew with D; C defeated E. No penalties or bonuses apply.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which statement must be true?",
+    "options": [
+      "E defeated D",
+      "D defeated B",
+      "B lost exactly one game",
+      "B defeated E"
+    ],
+    "answer": 2,
+    "solution": "Ten games distribute 28 points, so exactly two games are draws; they are the stated A–B and C–D draws. A wins its other three games. B has two wins and one loss; C and D each have one win, one draw and two losses; E has one win and three losses. C's win is against E. The unresolved triangle B, D, E has two orientations: B beats D, D beats E, E beats B; or D beats B, B beats E, E beats D.\n\nSeven points from four games, including its draw with A, requires two wins and one loss."
+  },
+  {
+    "id": "D21",
+    "section": "DILR",
+    "topic": "LR · tournaments and conditional results",
+    "difficulty": "Hard",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "A league with an unresolved triangle",
+    "passage": "Five teams A–E play each other once. A win earns 3 points, a draw 1 per team and a loss 0. Final points are A = 10, B = 7, C = 4, D = 4, E = 3. A drew with B; C drew with D; C defeated E. No penalties or bonuses apply.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many complete sets of game results satisfy all the data?",
+    "options": [],
+    "answer": "2",
+    "solution": "Ten games distribute 28 points, so exactly two games are draws; they are the stated A–B and C–D draws. A wins its other three games. B has two wins and one loss; C and D each have one win, one draw and two losses; E has one win and three losses. C's win is against E. The unresolved triangle B, D, E has two orientations: B beats D, D beats E, E beats B; or D beats B, B beats E, E beats D.\n\nThe two possible directed cycles on B, D and E are the only remaining alternatives."
+  },
+  {
+    "id": "D22",
+    "section": "DILR",
+    "topic": "LR · tournaments and conditional results",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "A league with an unresolved triangle",
+    "passage": "Five teams A–E play each other once. A win earns 3 points, a draw 1 per team and a loss 0. Final points are A = 10, B = 7, C = 4, D = 4, E = 3. A drew with B; C drew with D; C defeated E. No penalties or bonuses apply.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If E defeated B, what was the result of D against E?",
+    "options": [
+      "D won",
+      "Draw",
+      "Cannot be determined",
+      "E won"
+    ],
+    "answer": 0,
+    "solution": "Ten games distribute 28 points, so exactly two games are draws; they are the stated A–B and C–D draws. A wins its other three games. B has two wins and one loss; C and D each have one win, one draw and two losses; E has one win and three losses. C's win is against E. The unresolved triangle B, D, E has two orientations: B beats D, D beats E, E beats B; or D beats B, B beats E, E beats D.\n\nE's sole win has been used against B; D's sole win must therefore be against E, giving the first triangle orientation."
+  }
+];
+})();

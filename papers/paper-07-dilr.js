@@ -1,0 +1,368 @@
+/* Original CAT-style DILR practice for Paper 07; solved by tests/dilr-series-06-10.py. Not an actual exam paper. */
+(() => {
+window.CAT2026_DILR = [
+  {
+    "id": "D01",
+    "section": "DILR",
+    "topic": "LR · circular arrangement",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Eight friends at a round table",
+    "passage": "Eight friends A, B, C, D, E, F, G and H sit around a circular table at eight equally spaced seats, all facing the centre.\nB sits directly opposite A.\nC sits immediately clockwise of B.\nD and E sit next to each other.\nF does not sit next to A, and H does not sit next to B.\nG sits two seats clockwise of D, with exactly one person between them.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many different seating arrangements satisfy all the conditions? (Arrangements that are rotations of each other count as the same.)",
+    "options": [],
+    "answer": "2",
+    "solution": "Number the seats 1 to 8 clockwise with A in seat 1. B is in seat 5 (opposite A) and C in seat 6. G is two seats clockwise from D, D and E are neighbours, and F and H avoid the stated neighbours. Exhaustive placement leaves two seatings (seats 1 to 8, clockwise):\nADEGBCFH\nAGHFBCED\n\nFixing A removes rotations; the two listed seatings remain."
+  },
+  {
+    "id": "D02",
+    "section": "DILR",
+    "topic": "LR · circular arrangement",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Eight friends at a round table",
+    "passage": "Eight friends A, B, C, D, E, F, G and H sit around a circular table at eight equally spaced seats, all facing the centre.\nB sits directly opposite A.\nC sits immediately clockwise of B.\nD and E sit next to each other.\nF does not sit next to A, and H does not sit next to B.\nG sits two seats clockwise of D, with exactly one person between them.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which of the following pairs sit next to each other in every possible arrangement?",
+    "options": [
+      "G and H",
+      "E and F",
+      "C and G",
+      "A and D"
+    ],
+    "answer": 3,
+    "solution": "Number the seats 1 to 8 clockwise with A in seat 1. B is in seat 5 (opposite A) and C in seat 6. G is two seats clockwise from D, D and E are neighbours, and F and H avoid the stated neighbours. Exhaustive placement leaves two seatings (seats 1 to 8, clockwise):\nADEGBCFH\nAGHFBCED\n\nA and D are neighbours in both seatings; the other pairs are neighbours in at most one."
+  },
+  {
+    "id": "D03",
+    "section": "DILR",
+    "topic": "LR · circular arrangement",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL1",
+    "groupTitle": "Eight friends at a round table",
+    "passage": "Eight friends A, B, C, D, E, F, G and H sit around a circular table at eight equally spaced seats, all facing the centre.\nB sits directly opposite A.\nC sits immediately clockwise of B.\nD and E sit next to each other.\nF does not sit next to A, and H does not sit next to B.\nG sits two seats clockwise of D, with exactly one person between them.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Counting clockwise from A, how many people sit strictly between A and C?",
+    "options": [],
+    "answer": "4",
+    "solution": "Number the seats 1 to 8 clockwise with A in seat 1. B is in seat 5 (opposite A) and C in seat 6. G is two seats clockwise from D, D and E are neighbours, and F and H avoid the stated neighbours. Exhaustive placement leaves two seatings (seats 1 to 8, clockwise):\nADEGBCFH\nAGHFBCED\n\nC is always in seat 6, so seats 2 to 5 hold four people."
+  },
+  {
+    "id": "D04",
+    "section": "DILR",
+    "topic": "LR · circular arrangement",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Eight friends at a round table",
+    "passage": "Eight friends A, B, C, D, E, F, G and H sit around a circular table at eight equally spaced seats, all facing the centre.\nB sits directly opposite A.\nC sits immediately clockwise of B.\nD and E sit next to each other.\nF does not sit next to A, and H does not sit next to B.\nG sits two seats clockwise of D, with exactly one person between them.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If E sits immediately clockwise of D, who sits opposite G?",
+    "options": [
+      "C",
+      "H",
+      "E",
+      "F"
+    ],
+    "answer": 1,
+    "solution": "Number the seats 1 to 8 clockwise with A in seat 1. B is in seat 5 (opposite A) and C in seat 6. G is two seats clockwise from D, D and E are neighbours, and F and H avoid the stated neighbours. Exhaustive placement leaves two seatings (seats 1 to 8, clockwise):\nADEGBCFH\nAGHFBCED\n\nOnly ADEGBCFH has E immediately clockwise of D; G is in seat 4 and H is opposite."
+  },
+  {
+    "id": "D05",
+    "section": "DILR",
+    "topic": "LR · circular arrangement",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL1",
+    "groupTitle": "Eight friends at a round table",
+    "passage": "Eight friends A, B, C, D, E, F, G and H sit around a circular table at eight equally spaced seats, all facing the centre.\nB sits directly opposite A.\nC sits immediately clockwise of B.\nD and E sit next to each other.\nF does not sit next to A, and H does not sit next to B.\nG sits two seats clockwise of D, with exactly one person between them.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If F sits opposite D, who sits immediately clockwise of A?",
+    "options": [
+      "D",
+      "G",
+      "E",
+      "H"
+    ],
+    "answer": 1,
+    "solution": "Number the seats 1 to 8 clockwise with A in seat 1. B is in seat 5 (opposite A) and C in seat 6. G is two seats clockwise from D, D and E are neighbours, and F and H avoid the stated neighbours. Exhaustive placement leaves two seatings (seats 1 to 8, clockwise):\nADEGBCFH\nAGHFBCED\n\nOnly AGHFBCED has F opposite D; there G is next clockwise from A."
+  },
+  {
+    "id": "D06",
+    "section": "DILR",
+    "topic": "DI · derived values and rates",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Output and defects at four plants",
+    "passage": "Four plants K, L, M and N together produced 2,100 units last month. Plant M produced 400 units. L produced 25% more units than K, and N produced as many units as K and M together.\nThe defect rates were 5% at K, 4% at L, 7.5% at M and 2.5% at N (defect rate = defective units as a percentage of the plant's output).\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many units did plant N produce?",
+    "options": [],
+    "answer": "800",
+    "solution": "K produced k units, L 1.25k, M 400 and N k + 400. The total gives 3.25k + 800 = 2100, so k = 400.\nPlant | Output | Defect rate | Defective units\nK | 400 | 5% | 20\nL | 500 | 4% | 20\nM | 400 | 7.5% | 30\nN | 800 | 2.5% | 20\n\nN = k + 400 = 800 units."
+  },
+  {
+    "id": "D07",
+    "section": "DILR",
+    "topic": "DI · derived values and rates",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Output and defects at four plants",
+    "passage": "Four plants K, L, M and N together produced 2,100 units last month. Plant M produced 400 units. L produced 25% more units than K, and N produced as many units as K and M together.\nThe defect rates were 5% at K, 4% at L, 7.5% at M and 2.5% at N (defect rate = defective units as a percentage of the plant's output).\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which plant produced the largest number of defective units?",
+    "options": [
+      "K",
+      "L",
+      "N",
+      "M"
+    ],
+    "answer": 3,
+    "solution": "K produced k units, L 1.25k, M 400 and N k + 400. The total gives 3.25k + 800 = 2100, so k = 400.\nPlant | Output | Defect rate | Defective units\nK | 400 | 5% | 20\nL | 500 | 4% | 20\nM | 400 | 7.5% | 30\nN | 800 | 2.5% | 20\n\nDefective units were 20, 20, 30 and 20; M is highest."
+  },
+  {
+    "id": "D08",
+    "section": "DILR",
+    "topic": "DI · derived values and rates",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Output and defects at four plants",
+    "passage": "Four plants K, L, M and N together produced 2,100 units last month. Plant M produced 400 units. L produced 25% more units than K, and N produced as many units as K and M together.\nThe defect rates were 5% at K, 4% at L, 7.5% at M and 2.5% at N (defect rate = defective units as a percentage of the plant's output).\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many non-defective units did the four plants produce in all?",
+    "options": [],
+    "answer": "2010",
+    "solution": "K produced k units, L 1.25k, M 400 and N k + 400. The total gives 3.25k + 800 = 2100, so k = 400.\nPlant | Output | Defect rate | Defective units\nK | 400 | 5% | 20\nL | 500 | 4% | 20\nM | 400 | 7.5% | 30\nN | 800 | 2.5% | 20\n\nDefective units total 90, so 2100 − 90 = 2010 were non-defective."
+  },
+  {
+    "id": "D09",
+    "section": "DILR",
+    "topic": "DI · derived values and rates",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL2",
+    "groupTitle": "Output and defects at four plants",
+    "passage": "Four plants K, L, M and N together produced 2,100 units last month. Plant M produced 400 units. L produced 25% more units than K, and N produced as many units as K and M together.\nThe defect rates were 5% at K, 4% at L, 7.5% at M and 2.5% at N (defect rate = defective units as a percentage of the plant's output).\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Each defective unit is reworked at a cost of ₹15. What is the total rework cost, in rupees?",
+    "options": [],
+    "answer": "1350",
+    "solution": "K produced k units, L 1.25k, M 400 and N k + 400. The total gives 3.25k + 800 = 2100, so k = 400.\nPlant | Output | Defect rate | Defective units\nK | 400 | 5% | 20\nL | 500 | 4% | 20\nM | 400 | 7.5% | 30\nN | 800 | 2.5% | 20\n\n90 defective units × ₹15 = ₹1,350."
+  },
+  {
+    "id": "D10",
+    "section": "DILR",
+    "topic": "DI · derived values and rates",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL2",
+    "groupTitle": "Output and defects at four plants",
+    "passage": "Four plants K, L, M and N together produced 2,100 units last month. Plant M produced 400 units. L produced 25% more units than K, and N produced as many units as K and M together.\nThe defect rates were 5% at K, 4% at L, 7.5% at M and 2.5% at N (defect rate = defective units as a percentage of the plant's output).\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which of the following is closest to the overall defect rate of the four plants together?",
+    "options": [
+      "3.8%",
+      "4.3%",
+      "4.0%",
+      "4.6%"
+    ],
+    "answer": 1,
+    "solution": "K produced k units, L 1.25k, M 400 and N k + 400. The total gives 3.25k + 800 = 2100, so k = 400.\nPlant | Output | Defect rate | Defective units\nK | 400 | 5% | 20\nL | 500 | 4% | 20\nM | 400 | 7.5% | 30\nN | 800 | 2.5% | 20\n\nOverall the rate is 90/2100 = 4.29%, which rounds to 4.3%."
+  },
+  {
+    "id": "D11",
+    "section": "DILR",
+    "topic": "LR · scheduling with precedence",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Six tasks of a project",
+    "passage": "A project consists of six tasks. Each task can start only after all the tasks it needs have finished; tasks that do not depend on each other can run at the same time, and enough staff are available for this.\n\nTask | Duration (days) | Can start only after\nA | 3 | —\nB | 5 | —\nC | 2 | A\nD | 4 | A, B\nE | 6 | C\nF | 3 | D, E\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the minimum number of days needed to complete the project?",
+    "options": [],
+    "answer": "14",
+    "solution": "Earliest finish times, taking each task as soon as all its predecessors finish:\nTask | Days | Needs | Earliest finish | Spare days\nA | 3 | — | 3 | 0\nB | 5 | — | 5 | 2\nC | 2 | A | 5 | 0\nD | 4 | A, B | 9 | 2\nE | 6 | C | 11 | 0\nF | 3 | D, E | 14 | 0\nThe longest chain A–C–E–F takes 14 days. Spare days are the most a single task can slip without delaying completion.\n\nThe chain A–C–E–F takes 3 + 2 + 6 + 3 = 14 days."
+  },
+  {
+    "id": "D12",
+    "section": "DILR",
+    "topic": "LR · scheduling with precedence",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Six tasks of a project",
+    "passage": "A project consists of six tasks. Each task can start only after all the tasks it needs have finished; tasks that do not depend on each other can run at the same time, and enough staff are available for this.\n\nTask | Duration (days) | Can start only after\nA | 3 | —\nB | 5 | —\nC | 2 | A\nD | 4 | A, B\nE | 6 | C\nF | 3 | D, E\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which of the following tasks can be delayed by 2 days without delaying the completion of the project?",
+    "options": [
+      "E",
+      "C",
+      "A",
+      "B"
+    ],
+    "answer": 3,
+    "solution": "Earliest finish times, taking each task as soon as all its predecessors finish:\nTask | Days | Needs | Earliest finish | Spare days\nA | 3 | — | 3 | 0\nB | 5 | — | 5 | 2\nC | 2 | A | 5 | 0\nD | 4 | A, B | 9 | 2\nE | 6 | C | 11 | 0\nF | 3 | D, E | 14 | 0\nThe longest chain A–C–E–F takes 14 days. Spare days are the most a single task can slip without delaying completion.\n\nB finishes on day 5 but D need not start until day 7, so B has 2 spare days. A, C and E lie on the longest chain."
+  },
+  {
+    "id": "D13",
+    "section": "DILR",
+    "topic": "LR · scheduling with precedence",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL3",
+    "groupTitle": "Six tasks of a project",
+    "passage": "A project consists of six tasks. Each task can start only after all the tasks it needs have finished; tasks that do not depend on each other can run at the same time, and enough staff are available for this.\n\nTask | Duration (days) | Can start only after\nA | 3 | —\nB | 5 | —\nC | 2 | A\nD | 4 | A, B\nE | 6 | C\nF | 3 | D, E\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If task E takes 8 days instead of 6, what is the minimum number of days needed for the project?",
+    "options": [],
+    "answer": "16",
+    "solution": "Earliest finish times, taking each task as soon as all its predecessors finish:\nTask | Days | Needs | Earliest finish | Spare days\nA | 3 | — | 3 | 0\nB | 5 | — | 5 | 2\nC | 2 | A | 5 | 0\nD | 4 | A, B | 9 | 2\nE | 6 | C | 11 | 0\nF | 3 | D, E | 14 | 0\nThe longest chain A–C–E–F takes 14 days. Spare days are the most a single task can slip without delaying completion.\n\nThe chain A–C–E–F becomes 3 + 2 + 8 + 3 = 16 days."
+  },
+  {
+    "id": "D14",
+    "section": "DILR",
+    "topic": "LR · scheduling with precedence",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL3",
+    "groupTitle": "Six tasks of a project",
+    "passage": "A project consists of six tasks. Each task can start only after all the tasks it needs have finished; tasks that do not depend on each other can run at the same time, and enough staff are available for this.\n\nTask | Duration (days) | Can start only after\nA | 3 | —\nB | 5 | —\nC | 2 | A\nD | 4 | A, B\nE | 6 | C\nF | 3 | D, E\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Shortening which one of the following tasks by one day shortens the whole project by one day?",
+    "options": [
+      "D",
+      "None of these tasks",
+      "E",
+      "B"
+    ],
+    "answer": 2,
+    "solution": "Earliest finish times, taking each task as soon as all its predecessors finish:\nTask | Days | Needs | Earliest finish | Spare days\nA | 3 | — | 3 | 0\nB | 5 | — | 5 | 2\nC | 2 | A | 5 | 0\nD | 4 | A, B | 9 | 2\nE | 6 | C | 11 | 0\nF | 3 | D, E | 14 | 0\nThe longest chain A–C–E–F takes 14 days. Spare days are the most a single task can slip without delaying completion.\n\nOnly E lies on the longest chain among the options; B and D have spare days."
+  },
+  {
+    "id": "D15",
+    "section": "DILR",
+    "topic": "LR · distribution with constraints",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Coins in five boxes",
+    "passage": "Five boxes P, Q, R, S and T together contain 36 coins. Each box contains at least 2 coins, no two boxes contain the same number of coins, and no box contains exactly 4 coins.\nP contains more coins than Q but fewer than R.\nR contains twice as many coins as T.\nS contains an odd number of coins.\nQ and T together contain 9 coins.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "What is the largest possible number of coins in box S?",
+    "options": [],
+    "answer": "7",
+    "solution": "R = 2T and Q + T = 9, with every box holding a different number of at least 2 coins and no box holding exactly 4. Checking all cases leaves:\nP | Q | R | S | T\n8 | 2 | 14 | 5 | 7\n8 | 3 | 12 | 7 | 6\n10 | 2 | 14 | 3 | 7\n10 | 3 | 12 | 5 | 6\n\nThe feasible values of S are 5, 7, 3 and 5; the largest is 7."
+  },
+  {
+    "id": "D16",
+    "section": "DILR",
+    "topic": "LR · distribution with constraints",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Coins in five boxes",
+    "passage": "Five boxes P, Q, R, S and T together contain 36 coins. Each box contains at least 2 coins, no two boxes contain the same number of coins, and no box contains exactly 4 coins.\nP contains more coins than Q but fewer than R.\nR contains twice as many coins as T.\nS contains an odd number of coins.\nQ and T together contain 9 coins.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Which box always contains the second-highest number of coins?",
+    "options": [
+      "S",
+      "P",
+      "Q",
+      "T"
+    ],
+    "answer": 1,
+    "solution": "R = 2T and Q + T = 9, with every box holding a different number of at least 2 coins and no box holding exactly 4. Checking all cases leaves:\nP | Q | R | S | T\n8 | 2 | 14 | 5 | 7\n8 | 3 | 12 | 7 | 6\n10 | 2 | 14 | 3 | 7\n10 | 3 | 12 | 5 | 6\n\nR is always highest and P is second in every feasible distribution."
+  },
+  {
+    "id": "D17",
+    "section": "DILR",
+    "topic": "LR · distribution with constraints",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL4",
+    "groupTitle": "Coins in five boxes",
+    "passage": "Five boxes P, Q, R, S and T together contain 36 coins. Each box contains at least 2 coins, no two boxes contain the same number of coins, and no box contains exactly 4 coins.\nP contains more coins than Q but fewer than R.\nR contains twice as many coins as T.\nS contains an odd number of coins.\nQ and T together contain 9 coins.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If S contains more coins than T, how many coins does P contain?",
+    "options": [],
+    "answer": "8",
+    "solution": "R = 2T and Q + T = 9, with every box holding a different number of at least 2 coins and no box holding exactly 4. Checking all cases leaves:\nP | Q | R | S | T\n8 | 2 | 14 | 5 | 7\n8 | 3 | 12 | 7 | 6\n10 | 2 | 14 | 3 | 7\n10 | 3 | 12 | 5 | 6\n\nOnly (8, 3, 12, 7, 6) has S above T, so P holds 8 coins."
+  },
+  {
+    "id": "D18",
+    "section": "DILR",
+    "topic": "LR · distribution with constraints",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL4",
+    "groupTitle": "Coins in five boxes",
+    "passage": "Five boxes P, Q, R, S and T together contain 36 coins. Each box contains at least 2 coins, no two boxes contain the same number of coins, and no box contains exactly 4 coins.\nP contains more coins than Q but fewer than R.\nR contains twice as many coins as T.\nS contains an odd number of coins.\nQ and T together contain 9 coins.\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many different distributions of coins satisfy all the conditions?",
+    "options": [
+      "8",
+      "5",
+      "4",
+      "6"
+    ],
+    "answer": 2,
+    "solution": "R = 2T and Q + T = 9, with every box holding a different number of at least 2 coins and no box holding exactly 4. Checking all cases leaves:\nP | Q | R | S | T\n8 | 2 | 14 | 5 | 7\n8 | 3 | 12 | 7 | 6\n10 | 2 | 14 | 3 | 7\n10 | 3 | 12 | 5 | 6\n\nFour distributions remain."
+  },
+  {
+    "id": "D19",
+    "section": "DILR",
+    "topic": "LR · consistency of statements",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "Truth-tellers and liars",
+    "passage": "Each of five people A, B, C, D and E is either a truth-teller, who always tells the truth, or a liar, who always lies. They make these statements:\nA: “B is a liar.”\nB: “C and D are of the same type.”\nC: “Exactly two of us five are liars.”\nD: “A is a truth-teller.”\nE: “D is a liar.”\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "How many of the five are liars?",
+    "options": [],
+    "answer": "3",
+    "solution": "Test all 32 assignments: a truth-teller's statement must be true and a liar's false. Two assignments survive:\nA truth-teller, B liar, C liar, D truth-teller, E liar\nA liar, B truth-teller, C liar, D liar, E truth-teller\nC's claim that exactly two are liars is false in both, since each has three liars.\n\nBoth consistent assignments have exactly three liars."
+  },
+  {
+    "id": "D20",
+    "section": "DILR",
+    "topic": "LR · consistency of statements",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "Truth-tellers and liars",
+    "passage": "Each of five people A, B, C, D and E is either a truth-teller, who always tells the truth, or a liar, who always lies. They make these statements:\nA: “B is a liar.”\nB: “C and D are of the same type.”\nC: “Exactly two of us five are liars.”\nD: “A is a truth-teller.”\nE: “D is a liar.”\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "Who is certainly a liar?",
+    "options": [
+      "A",
+      "B",
+      "D",
+      "C"
+    ],
+    "answer": 3,
+    "solution": "Test all 32 assignments: a truth-teller's statement must be true and a liar's false. Two assignments survive:\nA truth-teller, B liar, C liar, D truth-teller, E liar\nA liar, B truth-teller, C liar, D liar, E truth-teller\nC's claim that exactly two are liars is false in both, since each has three liars.\n\nC is a liar in both assignments; each of the others is a truth-teller in one of them."
+  },
+  {
+    "id": "D21",
+    "section": "DILR",
+    "topic": "LR · consistency of statements",
+    "difficulty": "Moderate",
+    "type": "TITA",
+    "groupId": "DL5",
+    "groupTitle": "Truth-tellers and liars",
+    "passage": "Each of five people A, B, C, D and E is either a truth-teller, who always tells the truth, or a liar, who always lies. They make these statements:\nA: “B is a liar.”\nB: “C and D are of the same type.”\nC: “Exactly two of us five are liars.”\nD: “A is a truth-teller.”\nE: “D is a liar.”\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If A is a truth-teller, how many of B, C and E are truth-tellers?",
+    "options": [],
+    "answer": "0",
+    "solution": "Test all 32 assignments: a truth-teller's statement must be true and a liar's false. Two assignments survive:\nA truth-teller, B liar, C liar, D truth-teller, E liar\nA liar, B truth-teller, C liar, D liar, E truth-teller\nC's claim that exactly two are liars is false in both, since each has three liars.\n\nWith A truthful, B, C and E are all liars, so the answer is 0."
+  },
+  {
+    "id": "D22",
+    "section": "DILR",
+    "topic": "LR · consistency of statements",
+    "difficulty": "Moderate",
+    "type": "MCQ",
+    "groupId": "DL5",
+    "groupTitle": "Truth-tellers and liars",
+    "passage": "Each of five people A, B, C, D and E is either a truth-teller, who always tells the truth, or a liar, who always lies. They make these statements:\nA: “B is a liar.”\nB: “C and D are of the same type.”\nC: “Exactly two of us five are liars.”\nD: “A is a truth-teller.”\nE: “D is a liar.”\n\nAny additional condition or change in a question applies only to that question.",
+    "question": "If E is a truth-teller, which of the following must be true?",
+    "options": [
+      "B is a truth-teller",
+      "D is a truth-teller",
+      "A is a truth-teller",
+      "C is a truth-teller"
+    ],
+    "answer": 0,
+    "solution": "Test all 32 assignments: a truth-teller's statement must be true and a liar's false. Two assignments survive:\nA truth-teller, B liar, C liar, D truth-teller, E liar\nA liar, B truth-teller, C liar, D liar, E truth-teller\nC's claim that exactly two are liars is false in both, since each has three liars.\n\nE truthful leaves only the assignment in which A, C and D lie and B and E tell the truth."
+  }
+];
+})();

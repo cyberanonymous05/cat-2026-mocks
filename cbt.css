@@ -1,0 +1,169 @@
+/* Exam screen laid out like computer-based CAT practice software. It stays light in every
+   colour scheme, as test software does, and sets its own colours so site themes never leak in. */
+body.cbt-mode{background:#fff}
+body.cbt-mode .masthead,body.cbt-mode .site-footer{display:none}
+body.cbt-mode main{max-width:none;padding:0}
+.cbt{--cbt-ink:#1d1d1d;--cbt-muted:#5a5a5a;--cbt-line:#c8c8c8;--cbt-dark:#383838;--cbt-yellow:#ffe94a;--cbt-blue:#2b7bc0;--cbt-blue-2:#1d649f;--cbt-sky:#d6e8f7;--cbt-panel:#eef5fb;--cbt-green:#3a9d3f;--cbt-red:#d8471f;--cbt-purple:#6b3fa0;--cbt-grey:#ebebeb;
+  display:flex;flex-direction:column;height:100vh;height:100dvh;background:#fff;color:var(--cbt-ink);font:14px/1.5 Arial,Helvetica,sans-serif;color-scheme:light}
+.cbt button{font:inherit;color:inherit;cursor:pointer}
+.cbt button:disabled{cursor:not-allowed}
+.cbt :focus-visible{outline:2px solid #1d649f;outline-offset:2px}
+.cbt-brand{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:6px 14px;border-bottom:1px solid #d9d9d9;background:#fff}
+.cbt-brand-name{font-size:16px;letter-spacing:.2px}
+.cbt-brand-note{font-size:11px;color:var(--cbt-muted)}
+.cbt-bar{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--cbt-dark);color:#fff;padding:3px 10px;min-height:32px;flex-wrap:wrap}
+.cbt-exam{color:var(--cbt-yellow);font-size:13px;font-weight:700}
+.cbt-links{display:flex;gap:2px;flex-wrap:wrap}
+.cbt-links button{background:none;border:1px solid transparent;color:#fff;font-size:12px;font-weight:700;padding:3px 8px;display:inline-flex;align-items:center;gap:6px;border-radius:3px}
+.cbt-links button:hover{background:#ffffff22}
+.cbt-links .cbt-exit{border-color:#ffffff66}
+.cbt .ico{display:inline-grid;place-items:center;width:16px;height:16px;border-radius:50%;font-style:normal;font-size:10px;font-weight:700;line-height:1;flex:none}
+.cbt .i-info{background:#2b86d6;color:#fff;font-family:Georgia,serif}
+.cbt .i-paper{background:#3aa548;color:#fff}
+.cbt-body{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) 12px 264px;position:relative}
+.cbt.palette-hidden .cbt-body{grid-template-columns:minmax(0,1fr) 12px}
+.cbt.palette-hidden .cbt-side{display:none}
+.cbt-main{display:flex;flex-direction:column;min-width:0;min-height:0}
+.cbt-sections{display:flex;align-items:center;gap:10px;background:var(--cbt-grey);padding:5px 10px;border-bottom:1px solid var(--cbt-line)}
+.cbt-label{font-size:12px;font-weight:700;color:#333}
+.cbt-tabs{display:flex;gap:6px;flex:1;flex-wrap:wrap}
+.cbt-tabs button{display:inline-flex;align-items:center;gap:6px;border:1px solid #a8a8a8;background:#fff;padding:3px 9px;border-radius:3px;font-size:12px;font-weight:700;color:#333}
+.cbt-tabs button.active{background:var(--cbt-blue);border-color:var(--cbt-blue-2);color:#fff}
+.cbt-tabs button:disabled{opacity:.55}
+.cbt-calc{margin-left:auto;border:1px solid #b9822b;background:#f5b350;border-radius:4px;width:36px;height:30px;display:grid;place-items:center;padding:0}
+.cbt-calc:hover{background:#f8c06c}
+.cbt-timebar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:5px 12px;border-bottom:1px solid var(--cbt-line);font-size:13px}
+.cbt-cur{font-weight:700;display:flex;align-items:baseline;gap:8px;min-width:0}
+.cbt-cur small{font-weight:400;color:var(--cbt-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cbt-time{white-space:nowrap;font-weight:700}
+.cbt-time b,.cbt-summary-time b{font-variant-numeric:tabular-nums;font-size:15px}
+.cbt-time b.low,.cbt-summary-time b.low{color:#c62828}
+.cbt-qhead{display:flex;justify-content:space-between;align-items:center;gap:6px 12px;flex-wrap:wrap;padding:6px 12px;border-bottom:1px solid var(--cbt-line)}
+.cbt-qhead>b{font-size:15px}
+.cbt-marks{font-size:11px;color:#333}
+.cbt .pos{color:#2e7d32}.cbt .neg{color:#c62828}
+.cbt-qarea{flex:1;min-height:0;overflow:auto;padding:14px 16px;font-size:15px;line-height:1.65}
+.cbt-qarea.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding:0;overflow:hidden}
+.cbt-qarea.split>.cbt-passage,.cbt-qarea.split>.cbt-question{overflow:auto;padding:14px 16px;min-height:0}
+.cbt.zoom-1 .cbt-qarea{font-size:17px}.cbt.zoom-2 .cbt-qarea{font-size:19px}
+.cbt-passage{border-right:1px solid var(--cbt-line)}
+.cbt-passage h3{font-size:13px;margin:0 0 10px;color:var(--cbt-muted);font-weight:700}
+.cbt-passage p,.cbt-question p{margin:0 0 10px}
+.cbt .question-text{font-weight:400;font-size:inherit;line-height:inherit;white-space:normal;margin-bottom:12px}
+.cbt-options{display:grid;gap:6px}
+.cbt-option{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;background:#fff;border:1px solid transparent;border-radius:3px;padding:6px 8px;line-height:1.5}
+.cbt-option:hover{background:#f2f7fc;border-color:#d4e3f1}
+.cbt-option .radio{flex:none;width:16px;height:16px;border:1.5px solid #666;border-radius:50%;margin-top:3px;display:grid;place-items:center;background:#fff}
+.cbt-option[aria-pressed="true"]{background:#e9f2fb;border-color:#9dc2e5}
+.cbt-option[aria-pressed="true"] .radio{border-color:var(--cbt-blue-2)}
+.cbt-option[aria-pressed="true"] .radio::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--cbt-blue-2)}
+.cbt-tita-label{display:block;font-size:12px;color:var(--cbt-muted);margin-bottom:4px}
+.cbt-tita input{width:min(240px,100%);font:18px Arial,sans-serif;padding:5px 8px;border:1px solid #888;border-radius:2px;margin-bottom:8px;background:#fff;color:#111}
+.cbt-keypad{display:grid;grid-template-columns:repeat(3,48px);gap:4px;padding:6px;background:#e7e7e7;border:1px solid #c1c1c1;width:max-content;border-radius:3px}
+.cbt-keypad button{height:32px;border:1px solid #9c9c9c;background:linear-gradient(#fff,#e3e3e3);border-radius:3px;font-weight:700;padding:0}
+.cbt-keypad button:active{background:#d4d4d4}
+.cbt-keypad .wide{grid-column:1/-1}
+.cbt-keypad .arrows{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.cbt-hint{font-size:12px;color:var(--cbt-muted);margin-top:8px}
+.cbt-actions{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;padding:7px 12px;border-top:1px solid var(--cbt-line);background:#fff}
+.cbt-actions>div{display:flex;gap:8px;flex-wrap:wrap}
+.cbt-btn{border:1px solid #9a9a9a;background:#fff;padding:6px 14px;border-radius:3px;font-size:13px;font-weight:600;color:#222}
+.cbt-btn:hover{background:#f1f1f1}
+.cbt-btn.primary{background:var(--cbt-blue);border-color:var(--cbt-blue-2);color:#fff}
+.cbt-btn.primary:hover{background:var(--cbt-blue-2)}
+.cbt-collapse{border:0;background:#2b2b2b;color:#fff;font-size:12px;padding:0;align-self:center;height:58px;border-radius:3px 0 0 3px}
+.cbt-side{display:flex;flex-direction:column;min-height:0;background:var(--cbt-panel);border-left:1px solid var(--cbt-line)}
+.cbt-profile{display:flex;align-items:center;gap:10px;padding:8px 10px;background:#fff;border-bottom:1px solid var(--cbt-line)}
+.cbt-avatar{width:52px;height:52px;flex:none}
+.cbt-profile b{display:block;font-size:14px}.cbt-profile small{color:var(--cbt-muted);font-size:11px}
+.cbt-legend{display:grid;grid-template-columns:1fr 1fr;gap:6px 8px;padding:8px 10px;font-size:11px;line-height:1.3;background:#fff;border-bottom:1px solid var(--cbt-line)}
+.cbt-legend>div{display:flex;align-items:center;gap:6px}
+.cbt-legend .wide{grid-column:1/-1}
+.cbt-legend .qs,.cbt-instr .qs{width:30px;height:26px;font-size:11px;flex:none}
+.cbt-secname{background:var(--cbt-blue);color:#fff;font-weight:700;padding:4px 10px;font-size:13px}
+.cbt-choose{background:var(--cbt-sky);padding:3px 10px;font-weight:700;font-size:12px}
+.cbt-side .palette-grid{display:grid;grid-template-columns:repeat(4,44px);justify-content:space-evenly;gap:10px 6px;padding:10px 6px;overflow:auto;flex:1;align-content:start}
+.cbt-submit{padding:7px 10px;border-top:1px solid var(--cbt-line);background:#fff;display:grid}
+/* Palette status shapes. The button stays a rectangle so focus rings work; ::before draws the shape. */
+.qs{position:relative;display:inline-grid;place-items:center;width:44px;height:38px;border:0;background:none;padding:0;font-weight:700;font-size:13px;color:#222;isolation:isolate;vertical-align:middle}
+.qs>span{position:relative;z-index:1}
+.qs::before{content:'';position:absolute;inset:0;background:#f0f0f0;border:1px solid #b4b4b4;border-radius:4px}
+.qs.st-a,.qs.st-na,.qs.st-m,.qs.st-am{color:#fff}
+.qs.st-a::before{background:var(--cbt-green);border:0;border-radius:0;clip-path:polygon(50% 0,100% 30%,100% 100%,0 100%,0 30%)}
+.qs.st-na::before{background:var(--cbt-red);border:0;border-radius:0;clip-path:polygon(0 0,100% 0,100% 70%,50% 100%,0 70%)}
+.qs.st-m::before,.qs.st-am::before{background:var(--cbt-purple);border:0;border-radius:50%;inset:0 3px}
+.qs.st-am::after{content:'✓';position:absolute;z-index:2;right:0;bottom:-2px;width:14px;height:14px;border-radius:50%;background:var(--cbt-green);color:#fff;font-size:9px;line-height:14px;text-align:center;border:1px solid #fff}
+.palette-grid .qs.current{outline:2px solid #111;outline-offset:2px}
+.palette-grid .qs:hover::before{filter:brightness(1.08)}
+.cbt-foot{background:#5c7084;color:#fff;font-size:11px;text-align:center;padding:3px 8px}
+/* Exam summary and confirmation */
+.cbt-summary{flex:1;overflow:auto;padding:14px 20px 24px;background:#fff}
+.cbt-summary-time{text-align:right;font-size:13px;font-weight:700;margin-bottom:6px}
+.cbt-summary h2{font-size:17px;text-align:center;margin:0 0 10px;letter-spacing:0}
+.cbt-summary h3{font-size:13px;margin:16px 0 6px}.cbt-summary h3 small{font-weight:400;color:var(--cbt-muted)}
+.cbt-yet{font-size:13px;margin:10px 0}
+.cbt .cbt-sum{width:100%;border-collapse:collapse;font-size:12px}
+.cbt .cbt-sum th{background:#cfe2f3;color:#222;font-weight:700;text-transform:none;letter-spacing:0;font-size:12px;padding:8px;border:1px solid #a5bfd6;text-align:center}
+.cbt .cbt-sum td{border:1px solid #c5d2de;padding:8px;text-align:center;font-size:13px}
+.cbt-ask{margin:26px auto 0;text-align:center;font-size:13px;max-width:640px}
+.cbt-ask-buttons{display:flex;gap:12px;justify-content:center;margin-top:12px}
+.cbt-ask-buttons .cbt-btn{min-width:80px}
+/* Question paper and instructions */
+.cbt-modal{position:absolute;inset:6px;z-index:20;background:#fff;border:1px solid #777;box-shadow:0 10px 30px #0005;display:flex;flex-direction:column;min-height:0}
+.cbt-modal-head{display:flex;justify-content:space-between;align-items:center;background:var(--cbt-blue);color:#fff;padding:5px 10px}
+.cbt-modal-head button{background:none;border:0;color:#fff;font-weight:700}
+.cbt-modal-note{color:#1748a0;font-size:15px;padding:8px 14px;margin:0;border-bottom:1px solid #ddd}
+.cbt-modal-body{overflow:auto;padding:10px 16px;flex:1;font-size:14px;line-height:1.6}
+.cbt-qp-item{display:grid;grid-template-columns:46px minmax(0,1fr);gap:6px;padding:10px 0;border-bottom:1px solid #e3e3e3}
+.cbt-qp-item p{margin:0 0 6px}
+.cbt-qp-opts{margin:4px 0;padding-left:22px}
+.cbt-qp-marks{font-size:11px;font-style:italic;color:#333}
+.cbt-qp-passage{background:#f7f7f7;border:1px solid #e0e0e0;padding:8px 10px;margin:10px 0}
+.cbt-qp-passage summary{font-weight:700}
+.cbt-instr{padding-left:20px;margin:6px 0}.cbt-instr li{margin-bottom:9px}
+/* Data tables inside DILR sets */
+.cbt-table-wrap{overflow-x:auto;margin:6px 0 12px;max-width:100%}
+.cbt .cbt-table{border-collapse:collapse;width:auto;min-width:50%;background:#fff}
+.cbt .cbt-table th,.cbt .cbt-table td{border:1px solid #999;padding:4px 9px;text-align:center;font-size:.9em;text-transform:none;letter-spacing:0;color:#111}
+.cbt .cbt-table th{background:#eef2f6;font-weight:700}
+/* On-screen calculator */
+.calc{position:fixed;z-index:60;right:300px;top:118px;width:292px;background:#efefef;border:1px solid #6b6b6b;border-radius:4px;box-shadow:0 12px 30px #0006;font:13px Arial,Helvetica,sans-serif;color:#111;color-scheme:light}
+.calc[hidden]{display:none}
+.calc:focus{outline:none}
+.calc-head{display:flex;justify-content:space-between;align-items:center;background:#2b7bc0;color:#fff;padding:5px 8px;cursor:move;user-select:none;touch-action:none;border-radius:3px 3px 0 0}
+.calc-head button{background:none;border:0;color:#fff;font-weight:700;cursor:pointer;font-size:13px}
+.calc-screen{margin:8px;background:#fff;border:1px solid #999;padding:4px 8px;text-align:right}
+.calc-expr{font-size:11px;color:#666;min-height:16px;white-space:nowrap;overflow:hidden}
+.calc-value{font-size:22px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.calc-mem{float:left;font-size:11px;color:#2b7bc0;font-weight:700;line-height:28px}
+.calc-keys{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;padding:0 8px 8px}
+.calc-keys button{height:32px;border:1px solid #a3a3a3;border-radius:3px;background:linear-gradient(#fff,#e0e0e0);font-weight:700;font-size:12px;color:#111;cursor:pointer;padding:0}
+.calc-keys button:active{background:#d2d2d2}
+.calc-keys .op{background:linear-gradient(#f8fbff,#d9e6f3)}
+.calc-keys .eq{grid-row:span 2;height:auto;background:linear-gradient(#ecf8ec,#bde0bf)}
+.calc-keys .zero{grid-column:span 2}
+.calc-keys .mem{font-size:11px}
+.calc-keys .clr{color:#b3261e}
+@media (max-width:900px){
+  .cbt{height:auto;min-height:100vh}
+  .cbt-body{display:flex;flex-direction:column}
+  .cbt-collapse{display:none}
+  .cbt.palette-hidden .cbt-side{display:flex}
+  .cbt-qarea,.cbt-qarea.split{display:block;overflow:visible;padding:12px}
+  .cbt-qarea.split>.cbt-passage{border-right:0;border-bottom:1px solid var(--cbt-line);max-height:55vh;padding:0 0 12px;margin-bottom:12px}
+  .cbt-qarea.split>.cbt-question{overflow:visible;padding:0}
+  .cbt-side{border-left:0;border-top:2px solid var(--cbt-line)}
+  .cbt-side .palette-grid{grid-template-columns:repeat(auto-fill,44px);overflow:visible}
+  .cbt-brand-note{display:none}
+  .cbt-actions{position:sticky;bottom:0;z-index:5;box-shadow:0 -2px 6px #0001}
+  .cbt-modal{position:fixed;inset:6px}
+}
+@media (max-width:520px){
+  .cbt-legend{grid-template-columns:1fr}
+  .cbt-btn{padding:6px 9px;font-size:12px}
+  .cbt-links button{padding:3px 5px;font-size:11px}
+  .cbt-cur small{display:none}
+  .cbt-summary{padding:12px}
+  .calc{left:8px!important;right:8px;top:auto!important;bottom:8px;width:auto}
+}
+@media print{.cbt,.calc{display:none!important}}

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101b18">
+  <meta name="description" content="CAT previous-paper intelligence, 1991–2025 trends, CAT 2026 syllabus, evidence-led forecast and prediction mocks.">
+  <title>CAT 2026 Intelligence Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#overview" aria-label="CAT Intelligence home"><span class="brand-mark">C26</span><span>CAT Intelligence<small>Evidence over folklore</small></span></a>
+    <button class="menu" id="menuBtn" aria-label="Open navigation">Menu</button>
+    <nav id="mainNav">
+      <a href="#overview" class="active">Overview</a><a href="validation.html">Evidence lab</a><a href="papers.html">All 10 papers</a><a href="topics.html">Topic forecast</a><a href="#archive">Archive</a><a href="#syllabus">Syllabus</a><a href="#forecast">Forecast</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="hero-copy">
+        <p class="kicker"><span></span> Updated 08 September 2026 · Final research edition</p>
+        <h1>Test the forecast.<br><em>Then take the paper.</em></h1>
+        <p class="lede">Ten complete original CAT 2026 practice papers: 680 questions with worked solutions, an exam screen laid out like the computer-based test with an on-screen calculator, separate saved attempts and downloadable PDFs. Explore the multi-year count tests, source audits and inspectable forecast alongside the collection.</p>
+        <div class="hero-actions"><a class="btn primary" href="papers.html">Choose from 10 papers <span>→</span></a><a class="btn ghost" href="validation.html">Inspect the final evidence</a></div>
+        <p class="micro">Independent practice paper. Exact unreleased questions cannot be known. Backtest scores measure counts and distributions. <a href="CAT-2026-Study-Pack.zip" download>Download the complete study pack ↓</a></p>
+      </div>
+      <aside class="signal-card">
+        <div class="signal-head"><p>CAT 2026 organiser</p><span class="live">REPORTED</span></div>
+        <div class="signal-main"><span>IIM</span><strong>INDORE</strong></div>
+        <div class="signal-grid"><div><small>Exam date</small><b>29 NOV 2026</b></div><div><small>Convenor</small><b>PROF. ADITYA BILLORE</b></div></div>
+        <div class="confidence"><div><span>Practice paper</span><b>68 QUESTIONS + SOLUTIONS</b></div></div>
+        <p class="source-line">Reported by MBAUniverse. The official portal (read 6 Nov 2026) supports IIM Indore: disputes fall under the CAT Centre 2026 in Indore and the help desk uses an iimidr.ac.in address. Test day 29 Nov 2026, three shifts. <a href="https://www.mbauniverse.com/articles/cat-exam-convenor" target="_blank" rel="noreferrer">Source ↗</a> · <a href="https://iimcat.ac.in" target="_blank" rel="noreferrer">iimcat.ac.in ↗</a></p>
+      </aside>
+    </section>
+
+    <section class="metric-strip" aria-label="Key findings">
+      <div><strong>10</strong><span>complete original practice papers</span></div><div><strong>680</strong><span>questions with worked explanations</span></div><div><strong>35</strong><span>archive years indexed; audit incomplete</span></div><div><strong>3×40</strong><span>minutes in every timed paper</span></div>
+    </section>
+
+    <section class="section" id="archive">
+      <div class="section-heading"><div><p class="kicker">01 / THE ARCHIVE</p><h2>The historical paper index</h2><p>1991–2025 archive coverage. The recent forecast uses explicitly sourced rows; a complete question-by-question audit of every legacy paper has not been completed.</p></div><a class="text-link" href="https://quantifiers.in/cat-previous-year-papers/" target="_blank" rel="noreferrer">Original PYQ library ↗</a></div>
+      <div class="archive-tools"><label><span>Find a year</span><input id="yearSearch" inputmode="numeric" placeholder="e.g. 2023"></label><div class="chips" id="eraFilters"><button class="active" data-era="all">All years</button><button data-era="modern">2020–25</button><button data-era="three">2015–19</button><button data-era="cbt">2009–14</button><button data-era="paper">1991–08</button></div></div>
+      <div class="archive-layout"><div class="year-table-wrap"><table><thead><tr><th>Year</th><th>Format</th><th>Questions</th><th>Time</th><th>Conducting IIM</th><th></th></tr></thead><tbody id="yearTable"></tbody></table></div><aside class="year-detail" id="yearDetail"></aside></div>
+      <p class="method-note"><b>Coverage:</b> Legacy rows awaiting source verification show unknown fields. Coaching reconstructions may differ. Difficulty notes are editorial; they are not used as quantitative forecast inputs.</p>
+    </section>
+
+    <section class="section dark-section" id="trends">
+      <div class="section-heading"><div><p class="kicker">02 / TREND LAB</p><h2>What repeats is the skill,<br>not the question.</h2></div><div class="toggle" id="trendTabs"><button class="active" data-trend="QA">QA</button><button data-trend="DILR">DILR</button><button data-trend="VARC">VARC</button></div></div>
+      <div class="trend-grid">
+        <article class="chart-panel"><div class="chart-top"><div><small id="chartPeriod">Loading audited source coverage…</small><h3 id="chartTitle">QA count forecast</h3></div><strong id="chartLead">—</strong></div><div id="barChart" class="bar-chart"></div></article>
+        <article class="takeaway"><span class="number">01</span><p class="label">THE READING</p><h3 id="takeawayTitle">Keep every family in your preparation.</h3><p id="takeawayText">The sourced count model and the authored mock use explicitly labelled topic conventions.</p><div class="do-this"><small>Do this</small><p id="takeawayAction">Inspect the multi-year evidence and practise the full syllabus.</p></div></article>
+      </div>
+      <div class="pattern-cards" id="patternCards"></div>
+      <div class="modern-audit">
+        <div><p class="label">MODERN PAPER AUDIT</p><h3>Section split, year by year</h3><p>Use the last six papers for simulation; use older papers mainly as deep practice banks.</p></div>
+        <div class="audit-table"><div class="audit-head"><span>Year</span><span>VARC</span><span>DILR</span><span>QA</span><span>Read</span></div><div><b>2025</b><span>24</span><span>22</span><span>22</span><small>DILR selector</small></div><div><b>2024</b><span>24</span><span>22</span><span>22</span><small>68-Q reset</small></div><div><b>2023</b><span>24</span><span>20</span><span>22</span><small>QA bite</small></div><div><b>2022</b><span>24</span><span>20</span><span>22</span><small>stable shell</small></div><div><b>2021</b><span>24</span><span>20</span><span>22</span><small>66-Q reset</small></div><div><b>2020</b><span>26</span><span>24</span><span>26</span><small>2-hour shift</small></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="syllabus">
+      <div class="section-heading"><div><p class="kicker">03 / CAT 2026 SYLLABUS</p><h2>The preparation map</h2><p>CAT does not publish a granular chapter list. This is an evidence-derived syllabus from recurring PYQ families—not an official topic guarantee.</p></div><div class="legend"><span><i class="p1"></i>Tier 1</span><span><i class="p2"></i>Tier 2</span><span><i class="p3"></i>Coverage</span></div></div>
+      <div class="syllabus-tabs" id="syllabusTabs"><button class="active" data-syllabus="QA">Quantitative Ability</button><button data-syllabus="DILR">DILR</button><button data-syllabus="VARC">VARC</button></div>
+      <div class="syllabus-board" id="syllabusBoard"></div>
+    </section>
+
+    <section class="section forecast-section" id="forecast">
+      <div class="section-heading"><div><p class="kicker">04 / THE 2026 FORECAST</p><h2>A forecast you can inspect</h2></div><div class="stamp">RESEARCH v3.0<br><b>08 SEP 2026</b></div></div>
+      <div class="truth-banner"><b>Reported organiser</b><span>IIM Indore · Prof. Aditya Billore</span><b>Mock scenario</b><span>68 questions · 120 minutes · 24/22/22 split</span><b>Historical tests</b><a href="validation.html">Compare methods across years →</a></div>
+      <div class="forecast-layout">
+        <div class="paper-shape"><p class="label">RECENT-FORMAT PRACTICE SCENARIO</p><div class="shape-total"><strong>68</strong><span>questions<br>204 marks</span></div><div class="shape-row varc"><span>VARC</span><i><b style="width:100%"></b></i><strong>24</strong><small>40 min</small></div><div class="shape-row dilr"><span>DILR</span><i><b style="width:92%"></b></i><strong>22</strong><small>40 min</small></div><div class="shape-row qa"><span>QA</span><i><b style="width:92%"></b></i><strong>22</strong><small>40 min</small></div><p class="shape-note">The 68-question pattern held in 2024 and 2025. This is a preparation scenario, not a verified 2026 question-count announcement or a calibrated probability.</p></div>
+        <div class="probability-list">
+          <article><div><span>16</span><h3>RC questions in the mock</h3></div><p>The reported 2025 architecture was four passages × four questions. Four new passages follow that structure here.</p></article>
+          <article><div><span>14</span><h3>Arithmetic + Algebra in Paper 01</h3></div><p>Paper 01 uses an 8 + 6 allocation; its other eight questions cover Geometry, Numbers and Modern Math. The ten-paper library varies these mixes; Papers 06–10 follow the forecast’s five most likely allocations.</p></article>
+          <article><div><span>5</span><h3>Connected DILR sets</h3></div><p>The 5/5/4/4/4 architecture follows the recent format, and it is the only layout the official mock’s four-or-five rule allows for 22 questions. The five contexts and constraints are original practice choices.</p></article>
+          <article><div><span>2</span><h3>Parajumbles return</h3></div><p>The 2024 carry-forward baseline missed their 2025 return. The new mock includes them alongside the other VA forms.</p></article>
+        </div>
+      </div>
+      <div class="convenor-card"><div><p class="label">THE PERSON, WITHOUT THE MYTH</p><h3>Prof. Aditya Billore</h3><p>Reported CAT 2026 convenor, IIM Indore. This is an organiser/convenor report, not identification of the individual question authors.</p></div><div><p class="label">WHAT THAT ACTUALLY MEANS</p><p>A professor’s academic field is not evidence of specific RC topics or QA questions. No professor-based signal enters this forecast. The official portal returned an access error during the audit; current reporting remains labelled accordingly.</p></div><a href="https://www.mbauniverse.com/articles/cat-exam-convenor" target="_blank" rel="noreferrer">Read the convenor report ↗</a></div>
+    </section>
+
+    <section class="section" id="convenors">
+      <div class="section-heading"><div><p class="kicker">ORGANISERS / VERIFIED ROLE, NOT QUESTION AUTHORSHIP</p><h2>Who convened the recent exams?</h2><p>These sources identify public convenors or chairpersons. They do not identify who authored each question. No professor’s research specialisation is used to forecast the paper.</p></div></div>
+      <div class="year-table-wrap"><table><thead><tr><th>Exam</th><th>Conducting IIM</th><th>Public convenor / chairperson</th><th>Evidence</th></tr></thead><tbody>
+        <tr><td>2021</td><td>Ahmedabad</td><td>M. P. Ram Mohan</td><td><a href="https://www.iima.ac.in/faculty-research/faculty-directory/mp-ram-mohan" target="_blank" rel="noreferrer">IIMA faculty record ↗</a></td></tr>
+        <tr><td>2022</td><td>Bangalore</td><td>Ashis Mishra</td><td><a href="https://www.iimb.ac.in/cat-digital-campaigns-2022" target="_blank" rel="noreferrer">IIMB announcement ↗</a></td></tr>
+        <tr><td>2023</td><td>Lucknow</td><td>Sanjeet Singh</td><td><a href="https://iiml.ac.in/index.php/faculty-data?n=MTI5" target="_blank" rel="noreferrer">IIML faculty record ↗</a></td></tr>
+        <tr><td>2024</td><td>Calcutta</td><td>Ramya T. Venkateswaran</td><td><a href="https://cdn.digialm.com/per/g06/pub/32842/EForms/CAT24/CAT_2024_Media_Release_V1.pdf" target="_blank" rel="noreferrer">CAT media release ↗</a></td></tr>
+        <tr><td>2025</td><td>Kozhikode</td><td>Ram Kumar P. N.</td><td><a href="https://iimk.ac.in/faculty-profiles/RAM-KUMAR-PN" target="_blank" rel="noreferrer">IIMK faculty record ↗</a></td></tr>
+        <tr><td>2026</td><td>Indore — reported</td><td>Aditya Billore — reported</td><td><a href="https://www.mbauniverse.com/articles/cat-exam-convenor" target="_blank" rel="noreferrer">Secondary report ↗</a></td></tr>
+      </tbody></table></div><p class="method-note">Convenor coverage here is 2021–2026, not all archive years. The official CAT 2026 portal was read on 5–6 November 2026 (media release, mock-link PDF and official mock); earlier years' convenors come from secondary reporting. A historical rotation is not a deterministic question-setting model.</p>
+    </section>
+
+    <section class="section mocks-section" id="mocks">
+      <div class="section-heading"><div><p class="kicker">05 / THE TEN-PAPER COLLECTION</p><h2>Ten complete rehearsals.</h2><p>40 original RC passages, 50 connected DILR sets and 220 QA questions across ten papers. Every paper has worked solutions and separate question/solution PDFs.</p></div><button class="btn primary" id="startSampler">Open all 10 papers <span>→</span></button></div>
+      <div class="mock-grid" id="mockGrid"></div>
+      <div class="mock-rules"><div><b>+3</b><span>correct answer</span></div><div><b>−1</b><span>wrong MCQ</span></div><div><b>0</b><span>wrong TITA</span></div><div><b>40′</b><span>per section</span></div><button id="printBlueprints">Open printable paper</button></div>
+    </section>
+
+    <section class="sources section">
+      <div><p class="kicker">SOURCES & METHOD</p><h2>Read the evidence yourself.</h2></div>
+      <div class="source-grid">
+        <a href="https://iimcat.ac.in" target="_blank" rel="noreferrer"><span>00</span><b>Official CAT website</b><small>Authoritative notices, dates and candidate information</small></a>
+        <a href="https://quantifiers.in/cat-previous-year-papers/" target="_blank" rel="noreferrer"><span>01</span><b>Quantifiers PYQ library</b><small>1991–2024 papers and sectional links</small></a>
+        <a href="https://www.mbauniverse.com/articles/cat-exam-convenor" target="_blank" rel="noreferrer"><span>02</span><b>CAT 2026 convenor dossier</b><small>Current institute, convenor, date and history</small></a>
+        <a href="https://bschool.careers360.com/articles/cat-exam-topic-wise-weightage-analysis-qa-dilr-varc" target="_blank" rel="noreferrer"><span>03</span><b>CAT 2025 topic analysis</b><small>Section structure and topic-level review</small></a>
+        <a href="https://bschool.careers360.com/articles/cat-topic-wise-weightage" target="_blank" rel="noreferrer"><span>04</span><b>CAT 2024 slot analysis</b><small>Topic distribution across all three slots</small></a>
+      </div>
+      <p class="disclaimer">This independent study aid is not affiliated with the IIMs or coaching providers. The earlier uncalibrated forecast percentages have been removed. <a href="backtest.html">The historical test</a> reports distribution overlap, exact count matches and errors with source limitations. Those metrics do not measure the probability of reproducing future questions.</p>
+    </section>
+  </main>
+
+  <dialog id="mockDialog"><button class="dialog-close" id="closeDialog" aria-label="Close">×</button><div id="mockApp"></div></dialog>
+  <footer><a class="brand" href="#overview"><span class="brand-mark">C26</span><span>CAT Intelligence</span></a><p>Built for decisions, not prediction theatre.</p><a href="#overview">Back to top ↑</a></footer>
+  <script src="history-data.js"></script>
+  <script src="forecast-engine.js"></script>
+  <script src="evidence.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
